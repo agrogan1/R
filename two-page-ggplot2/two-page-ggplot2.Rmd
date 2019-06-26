@@ -1,0 +1,211 @@
+---
+title: "A Two Page Guide to ggplot2"
+author: "Andy Grogan-Kaylor (http://www.umich.edu/~agrogan)"
+date: '`r format(Sys.Date(), format="%B %d, %Y")`'
+output:
+  tint::tintHtml:
+    number_sections: yes
+    toc: yes
+    highlight: haddock
+  tint::tintPdf:
+    number_sections: yes
+    toc: no
+    highlight: haddock
+  tufte::tufte_handout:
+    number_sections: yes
+    toc: no
+  html_document:
+    fig_height: 3
+    highlight: haddock
+    keep_md: no
+    number_sections: yes
+    theme: yeti
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+  pdf_document:
+    fig_height: 1.25
+    highlight: haddock
+    latex_engine: xelatex
+geometry: margin=0.25in
+subtitle: For Applied and Community Based Research and Program Evaluation
+header-includes:
+   - \usepackage[dvipsnames]{xcolor}
+fontsize: 10pt
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      fig.margin = TRUE)
+
+```
+
+```{r, echo=FALSE}
+
+library(ggplot2) # beautiful graphs
+
+library(ggthemes) # nice themes for ggplot2
+
+library(icon) # font awesome icons
+
+library(pander)
+
+library(tufte)
+
+library(tint)
+
+library(png) # for png's
+
+library(grid)
+
+```
+
+[[Share on Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fagrogan1.github.io%2Ftwo_page_ggplot.pdf&text=Two%20Page%20%23ggplot2%20%23dataviz)] 
+
+# Why?[^moreinformation]
+
+A great deal of data analysis and visualization involves the same core set of steps:  get some data, clean it up a little, run some descriptive statistics, run some bivariate statistics, create a graph or a visualization. **ggplot2** can be an important part of a replicable, automated, documented workflow for complex projects.
+
+$$\text{have a question} \rightarrow \text{get data} \rightarrow \text{process and clean data} \rightarrow$$ 
+$$\text{visualize data} \rightarrow \text{analyze data} \rightarrow \text{make conclusions}$$
+
+Given the fact that we often want to apply the same core set of tasks to new questions and new data, there are ways to overcome the steep learning curve and learn a replicable set of commands that can be applied to problem after problem.[^code] 
+
+[^code]: The same 5 to 10 lines of ggplot2 code can often be tweaked over and over again for multiple projects.
+
+# The Essential Idea Of ggplot2 Is Simple 
+
+There are 3 essential elements to any ggplot call:
+
+1. An *aesthetic* that tells ggplot which variables are being mapped to the *x axis*, *y axis*, (and often other attributes of the graph, such as the *color fill*).  Intuitively, the aesthetic can be thought of as **what you are graphing**.
+2. A *geom* or *geometry* that tells ggplot about the basic structure of the graph.  Intuitively, the geom can be thought of as **how you are graphing it**.
+3. Other options, such as a *graph title*, *axis labels* and *overall theme* for the graph.
+
+```{r, echo = FALSE}
+
+N <- 100
+
+predictor <- rnorm(N, 100, 10)
+
+e <- rnorm(N, 0, 5)
+
+outcome <- predictor + e
+
+group <- c(rep("A", 30),
+           rep("B", 70))
+
+mydata <- data.frame(predictor, outcome, group)
+
+```
+
+```{r, echo=FALSE, eval=FALSE}
+
+pander(head(mydata))
+
+```
+
+```{r, eval = TRUE, echo=FALSE, fig.margin=TRUE, fig.cap='Sample Data'}
+
+img <- readPNG("mydata.png")
+
+grid.raster(img)
+
+```
+
+# Get Started
+
+```{r call_libraries, echo=TRUE, eval=FALSE}
+
+library(ggplot2) # beautiful graphs
+
+library(ggthemes) # nice themes for ggplot2
+
+```
+
+# Some Examples[^vartype]
+
+## One Continuous Variable
+
+```{r}
+
+# anything that starts with a '#' is a comment
+
+ggplot(mydata, # the data I am using
+       aes(x = outcome)) + # the variable I am using
+  geom_histogram() # how I am graphing it
+
+```
+
+[^vartype]: Changing variables from factor to numeric (e.g. `aes(x = as.numeric(outcome))`), and *vice versa* can sometimes be a simple solution that solves a lot of problems when you are trying to graph your variables.
+
+## One Categorical Variable[^fill]
+
+```{r}
+
+ggplot(mydata, # the data I am using
+       aes(x = group,
+           fill = group)) + # the variable I am using
+  geom_bar() # how I am graphing it
+
+```
+
+```{r, echo = FALSE}
+
+ggsave(file = "barchart.png")
+
+```
+
+[^fill]: Notice how the use of `fill` in the aesthetic generates a legend.
+
+## Continuous by Continuous[^color]
+
+```{r}
+
+ggplot(mydata, # the data I am using
+       aes(x = predictor, y = outcome,
+           color = group)) + # the variables I am using
+  geom_point() + # how I am graphing it
+  geom_smooth()
+
+```
+
+[^color]: Notice how the use of `color` in the aesthetic generates a legend.
+
+## Add Some Options[^legend]
+
+[^legend]: Notice how use of `scale_ ...` governs both the use of color in the graph below, as well as the legend that is produced in the graph. This graph uses official UNICEF colors to illustrate this idea. The graph below uses `scale...manual...` to manually choose the colors, but there are many other options, particularly when using `library(ggthemes)`.  `scale_..._viridis_...` are especially good color palettes.
+
+```{r}
+
+ggplot(mydata, # the data I am using
+       aes(x = predictor, y = outcome,
+           color = group)) + # the variables I am using
+  geom_point() + # how I am graphing it
+  geom_smooth() + 
+  labs(title = "My title", 
+       x = "title for x axis", 
+       y = "title for y axis") + 
+  scale_colour_manual(name = "Group",
+                      values = c("#FF0099", 
+                                 "#0099FF"), # manual colors 
+                      labels = c("group1", 
+                                 "group2")) +
+  theme_minimal() + # theme
+  theme(plot.title = element_text(size = 20, # add to theme
+                                  color = "#0099FF")) 
+
+```
+
+```{r, echo = FALSE}
+
+ggsave(file = "scatterplot.png")
+
+```
+
+[^moreinformation]: More information can be found here:  http://www-personal.umich.edu/~agrogan/ggplot2 
+
+
