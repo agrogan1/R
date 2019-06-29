@@ -5,6 +5,14 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
+  bookdown::gitbook:
+    highlight: haddock
+    css: styles.css
+    config:
+      download:
+      - introduction-to-R.pdf
+      - introduction-to-R.epub
+  bookdown::epub_book: default  
   html_document:
     css: styles.css
     fig_height: 3
@@ -16,14 +24,6 @@ output:
     toc_float:
       collapsed: yes
       smooth_scroll: yes
-  bookdown::epub_book: default  
-  bookdown::gitbook:
-    highlight: haddock
-    css: styles.css
-    config:
-      download:
-      - introduction-to-R.pdf
-      - introduction-to-R.epub
   tint::tintPdf:
     highlight: haddock
     number_sections: yes
@@ -243,6 +243,7 @@ library(png)
 library(grid)
 
 img <- readPNG("Rcommander.png")
+
 grid.raster(img)
 
 ```
