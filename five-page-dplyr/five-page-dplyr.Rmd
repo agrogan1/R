@@ -1,0 +1,262 @@
+---
+title: "Five Page dplyr"
+author: "Andy Grogan-Kaylor"
+date: "`r Sys.Date()`"
+output: 
+  tint::tintHtml:
+    number_sections: yes
+    toc: yes
+    highlight: haddock
+  tint::tintPdf:
+    number_sections: yes
+    toc: yes
+    highlight: haddock
+geometry: margin=0.5in
+mainfont: Roboto Condensed
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      fig.margin = TRUE)
+
+library(tibble)
+
+library(pander)
+
+```
+
+# Background
+
+`dplyr` is a very powerful R library for managing and processing data.[^dplyr]
+
+[^dplyr]: The origins of the name `dplyr` seem somewhat obscure, but I sometimes think of this package as the *data plyers*.
+
+While `dplyr` is very powerful, learning to use `dplyr` can be very confusing. This guide aims to present some of the most common `dplyr` functions and commands in the form of a brief cheatsheet.
+
+```{r}
+
+library(dplyr)
+
+```
+
+# Simulated Data
+
+```{r, echo=FALSE}
+
+N <- 5
+
+year <- round(runif(N, min = 2015, max = 2018),
+              digits = 0)
+
+
+x <- round(rnorm(N, 40, 10), digits = 2)
+
+x[1] <- NA # introduce a missing value
+
+y <- rbinom(N, 1, .5)
+
+y[2] <- 2 # introduce alternate value
+
+y <- factor(y,
+            levels = c(0, 1, 2),
+            labels = c("Group A", "Group B", "Group C"))
+
+z <- round(rnorm(N, 100, 10), digits = 2)
+
+mydata <- tibble(year, x, y, z)
+
+```
+
+```{r, echo=FALSE}
+
+pander(head(mydata))
+  
+```
+
+# Piping
+
+*Pipes* `%>%` connect pieces of a command e.g. *data* to *data wrangling* to a *graph command.*
+
+# Aggregate Data: `group_by()` & `summarise()`
+
+```{r}
+
+mynewdata <- mydata %>% 
+  group_by(year) %>% # group by y
+  summarise(mean_x = mean(x), # mean of x
+            n = n()) # count up
+
+```
+
+```{r, echo=FALSE}
+
+pander(head(mynewdata))
+  
+```
+
+# Select A Subset of Variables: `select()`
+
+```{r}
+
+mynewdata <- mydata %>% 
+  select(x,y) # select only x and y
+
+```
+
+```{r, echo=FALSE}
+
+pander(head(mynewdata))
+  
+```
+
+# Filter A Subset of Rows: `filter()`
+
+```{r}
+
+mynewdata <- mydata %>% 
+  filter(year > 2010) # filter on year
+
+```
+
+```{r, echo=FALSE}
+
+pander(head(mynewdata))
+  
+```
+
+# Create New Variables: `mutate()`
+
+```{r}
+
+mynewdata <- mydata %>% 
+  mutate(myscale = x + z) # create a new variable e.g. a scale
+
+```
+
+```{r, echo=FALSE}
+
+pander(head(mynewdata))
+  
+```
+
+# Recode Variables: `mutate()`
+
+## Continuous Into Categorical: `mutate()` & `cut()`
+
+```{r}
+
+mynewdata <- mydata %>% 
+  mutate(zcategorical = cut(z, # cut at breaks
+                            breaks=c(-Inf, 100, Inf), 
+               labels = c("low", "high")))
+
+```
+
+```{r, echo=FALSE}
+
+pander(head(mynewdata))
+  
+```
+
+## Categorical Into Categorical: `mutate()` & `recode()`
+
+```{r}
+
+mynewdata <- mydata %>% 
+  mutate(yrecoded = dplyr::recode(y, # recode values
+                         "Group A" = "Red Group",
+                         "Group B" = "Blue Group", 
+                         .default = "Other"))
+```
+
+```{r, echo=FALSE}
+
+pander(head(mynewdata))
+  
+```
+
+# Rename Variables: `rename()`
+
+```{r}
+
+newdata <- mydata %>% 
+  rename(age = x, # rename
+         mental_health = z)
+
+```
+
+```{r, echo = FALSE}
+
+pander(head(newdata))
+
+```
+
+# Drop Missing Values: `filter()`
+
+```{r}
+
+newdata <- mydata %>% 
+  filter(!is.na(x)) # filter by x is not missing
+
+```
+
+```{r, echo = FALSE}
+
+pander(head(newdata))
+
+```
+
+# Random Sample
+
+```{r}
+
+newdata <- mydata %>% 
+  sample_frac(.5) # fraction of data to sample
+
+```
+
+```{r, echo = FALSE}
+
+pander(head(newdata))
+
+```
+
+# Connecting To Other Packages Like `ggplot`
+
+Notice how, in the code below, I never actually create the new data set `mynewdata`.  I simply pipe `mydata` into a `dplyr` command, and pipe the result directly to `ggplot2`.
+
+```{r}
+
+library(ggplot2)
+
+mydata %>% # my data
+  mutate(myscale = x + z) %>% # dplyr command to make new variable
+  ggplot(aes(x = year, # the rest is ggplot
+             y = myscale)) +
+  geom_point() + # points
+  geom_smooth(se = FALSE) + # smoother without confidence interval
+  labs(title = "My Scale By Year") + # labels
+  theme(axis.text.x = element_text(size = 10, # tweak theme
+                                   angle = 90))
+  
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
