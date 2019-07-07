@@ -1,0 +1,670 @@
+---
+title: "Introduction to ggplot2"
+author: "Andy Grogan-Kaylor"
+date: '`r format(Sys.Date(), format="%B %d, %Y")`'
+output:
+  pdf_document:
+    fig_height: 2
+    highlight: haddock
+    latex_engine: xelatex
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+  bookdown::gitbook:
+    config:
+      download:
+      - introduction-to-ggplot2.pdf
+      - introduction-to-ggplot2.epub
+    highlight: haddock
+    css: styles.css
+  bookdown::epub_book: default
+  html_document:
+    code_folding: hide
+    css: styles.css
+    fig_height: 3
+    highlight: haddock
+    number_sections: yes
+    theme: default
+    toc: yes
+    toc_depth: 4
+    toc_float:
+      collapsed: yes
+      smooth_scroll: yes
+geometry: margin=1.0in
+mainfont: Tw Cen MT
+fontsize: 12pt
+site: bookdown::bookdown_site
+cover-image: Intro-to-ggplot2-Forest.png
+---
+
+```{r global_options, echo=FALSE}
+
+knitr::opts_chunk$set(echo=TRUE, 
+                      warning=FALSE, 
+                      message=FALSE)
+
+```
+
+# Background
+
+[R](https://www.r-project.org/foundation/) has a number of graphing libraries, including *base* graphics that are installed whenever you install R.
+
+[ggplot2](http://ggplot2.org/), is a graphing library in R that makes beautiful graphs.  ggplot2 graph syntax can be formidably complex, with a somewhat steep learning curve.
+
+That being said, learning ggplot2 is worth the effort for a couple of reasons. First, the graphs are beautiful. Second, ggplot2's syntax, though seemingly arcane at times, forces you to think about the nature of your data, and the ideas that you are graphing.  Lastly, a little bit of knowledge about ggplot2 can go a long way, and can build a powerful foundation for future learning.
+
+```{r, eval = TRUE, echo = FALSE, fig.height = 3.0}
+
+library(png)
+
+library(grid)
+
+cover <- readPNG("Intro-to-ggplot2-Forest.png")
+
+grid.raster(cover)
+
+```
+
+# ggplot in 3 easy steps (maybe 2 easy steps)
+
+## **aesthetic**:  *what* you want to graph (e.g. x, y, z).
+
+## **geom**:  *how* you want to graph it.
+
+```{r, eval = TRUE, echo = FALSE, fig.height = 2.0}
+
+library(png)
+
+library(grid)
+
+banner <- readPNG("banner.png")
+
+grid.raster(banner)
+
+```
+
+## **options**: *optional* titles, themes, etc.
+
+# A Simple Quick Example
+
+The intent of this tutorial is to build the foundation of this idea that: 
+
+> A little bit of ggplot can go a long way
+
+and to give you a simple introduction to the idea that any  ggplot graph is composed of:
+
+> an `aesthetic` + `a geom or two` + `other optional elements like titles and themes`.
+
+```{r, echo = FALSE}
+
+library(ggplot2)
+
+my_outcome <- rnorm(100, 100, 10)
+
+my_demo_data <- data.frame(my_outcome)
+
+```
+
+So, as a quick and simple example...
+
+```{r, echo = TRUE}
+
+library(ggplot2)
+
+ggplot(my_demo_data, # the data that I am using
+       aes(x = my_outcome)) + # aesthetic: what I am graphing
+  geom_histogram(fill = "red", # geom: how I am graphing it
+                 color = "black") 
+
+```
+
+And now, with labels...
+
+```{r, echo = TRUE}
+
+ggplot(my_demo_data, # the data that I am using
+       aes(x = my_outcome)) + # aesthetic: what I am graphing
+  geom_histogram(fill = "red", # geom: how I am graphing it
+                 color = "black") +
+  labs(title = "Your Title Here",
+       subtitle = "Your Subtitle Here",
+       caption = "A Caption, If You Want One",
+       x = "my outcome",
+       y = "count")
+
+```
+
+This document is a *very brief* introduction to the *basic* ideas of ggplot2.  More information about ggplot can be found [here](http://ggplot2.org/).  More ggplot2 examples can be found [here](http://www-personal.umich.edu/~agrogan/how_to_choose_a_chart/how_to_choose_a_chart_v3.html).  
+
+# Call The Relevant Libraries
+
+You will need a few [R libraries](http://www-personal.umich.edu/~agrogan/R/introduction-to-R.html#2_base_r_and_libraries) to work in ggplot.  You may *only* need `library(ggplot2)`, but some of these other libraries may also be helpful.
+
+```{r, call_libraries}
+
+library(ggplot2) # beautiful graphs
+
+library(ggthemes) # nice themes for ggplot2
+
+library(ggbeeswarm) # "beeswarm" plots
+
+library(cowplot) # arrrange graphs
+
+library(pander) # nice tables
+
+library(psych) # nice table of descriptive statistics
+
+```
+
+# Simulated Data
+
+In this example, we simulate some data. But your own learning of ggplot will progress more quickly if you use data that you have access to, on an issue that you care about.
+
+Here are the first few rows of simulated data:
+
+```{r, echo=FALSE}
+
+# simulated data
+
+N <- 500 # set sample size 
+
+predictor <- rnorm(n = N, 
+                   mean = 100, 
+                   sd = 25) # n, mean, sd
+
+group <- rbinom(n = N, 
+                1, 
+                .5) # n, number of trials, probability
+
+outcome <- predictor + 
+  10 * group +
+  rnorm(n = N, 
+        mean = 0, 
+        sd = 15) # outcome is a function of predictor + group + error
+
+group <- factor(group)
+
+mydata <- data.frame(predictor, 
+                     outcome, 
+                     group) # make data frame 
+
+pander(head(mydata, 10)) # nice looking table of first few rows of data
+
+```
+
+# The Essential Idea Of `ggplot2` Is Simple.  
+
+There are 3 essential elements to any ggplot call:
+
+1. An *aesthetic* that tells ggplot which variables are being mapped to the *x axis*, *y axis*, (and often other attributes of the graph, such as the *color fill*).  Intuitively, the aesthetic can be thought of as *what you are graphing*.
+2. A *geom* or *geometry* that tells ggplot about the basic structure of the graph.  Intuitively, the geom can be thought of as *how you are graphing it*.
+3. Other options, such as a *graph title*, *axis labels* and *overall theme* for the graph.
+
+## ggplot2 Starts By Calling The `aes`thetic
+
+For one variable:
+
+`p <- ggplot(mydata, aes(x = ...))`  This says there is only one variable running along the horizontal *x* axis in the aesthetic.  
+
+> The `p <-...` means that we are *assigning* this graph aesthetic to plot *p*. We can then add other features to plot *p* as we continue our work. This *iterative* nature of `ggplot2` is one of the things that makes it so powerful. As your workflow and your documents become more complex, you can build a simple consistent foundation[^foundation] for your graphs, then add something simple to make a first graph, and a different something simple to make a second graph.
+
+[^foundation]:  By way of illustration, this foundation could be just an aesthetic (e.g. `aes(...)`) alone, or possibly an aesthetic plus a theme (e.g. `theme_tufte()`), plus axis labels to create a consistent look and feel for your graphs across a report.
+
+For two variables:
+
+`p <- ggplot(mydata, aes(x = ..., y = ...))`  This says there are two variables: one for the horizontal *x* axis; and another for the vertical *y* axis, in the aesthetic.
+
+## We Then Call The `geom`etry
+
+We can then add different geometries to our plot:
+
+For one variable:
+
+`+ geom_density()` This says add a density geometry to the graph.
+
+`+ geom_histogram()` This says add a histogram geometry to the graph.
+
+`+ geom_violin()` This says add a *violin plot* geometry to the graph.
+
+`+ geom_beeswarm()` This says add a *beeswarm* geometry to the graph. 
+
+> A *beeswarm* is a creative layout of points that intuitively lets you understand the distribution of a quantity.  The *beeswarm* geometry requires separate installation of the `ggbeeswarm` package.  You also need to call `library(ggbeeswarm)` to use this geometry.
+
+For two variables:
+
+` + geom_point()`   This says add a point (scatterplot) geometry to the graph.
+
+`+ geom_smooth()` This says add a smoother to the graph.
+
+# Examples
+
+## One Continuous Variable At A Time
+
+### Dotplot
+
+```{r}
+
+# call ggplot2 where aesthetic is: x uses our predictor variable
+
+p1 <- ggplot(mydata, 
+             aes(x = predictor)) 
+
+```
+
+```{r}
+
+p1 + 
+  geom_dotplot(dotsize = .15) # add dotplot geom
+
+```
+
+### Add Some Options
+
+```{r}
+
+p1 + 
+  geom_dotplot(dotsize = .15, 
+               fill="red") + # add dotplot geom in red
+  labs(title ="Dotplot of predictor") # Add title
+
+```
+
+### Different Geoms
+
+#### Histogram
+
+```{r}
+
+p1 + geom_histogram(fill = "blue", 
+                    color="black") + # add histogram geom in blue
+  labs(title ="Histogram of predictor") # Add title
+
+```
+
+#### Density
+
+```{r}
+
+p1 + geom_density(fill = "gold") + # add density geom in gold
+  labs(title ="Density of predictor") # Add title
+
+```
+
+#### Violin Plot
+
+```{r}
+
+p2 <- ggplot(mydata, 
+             aes(x = 1, # we need an aesthetic with _x_
+                 y = predictor)) # & _y_
+
+p2 + geom_violin(fill = "purple") +
+  labs(title ="Violin Plot of predictor") # Add title
+
+```
+
+#### Beeswarm
+
+```{r}
+
+p3 <- ggplot(mydata, 
+             aes(x = predictor, # we need an aesthetic with _x_
+                 y = 1)) # & _y_
+
+p3 + geom_beeswarm(color = "red", 
+                   groupOnX = FALSE) +
+  labs(title = "Beeswarm Plot of predictor") + # Add title
+  theme(axis.title.y = element_blank(), 
+        axis.text.y = element_blank()) # tweak y axis
+
+
+```
+
+## One Categorical Variable at a Time
+
+The easiest way to represent a single categorical variable is likely a bar graph.
+
+> Here bars represent the **count** of observations in each group.
+
+```{r}
+
+p_barchart <- ggplot(mydata,
+                     aes(x = group)) +
+  geom_bar(fill = "red") 
+
+p_barchart
+
+```
+
+> Changing the *aesthetic* slightly results in a *stacked* bar chart.  Since all groups are stacked in 1 bar, we have to add information about the colors that we want to use to distinguish the groups.
+
+```{r}
+
+p_stacked_barchart <- ggplot(mydata, 
+                             aes(x = 1,
+                                 fill = group)) +
+  geom_bar() +
+  scale_fill_manual(values = c("red", "blue"))
+
+p_stacked_barchart
+
+```
+
+## A Categorical Variable and A Continuous Variable
+
+### Barchart
+
+> Here bars represent the **average value of our outcome variable** for members of each group.
+
+```{r}
+
+p_barchart_of_mean <- ggplot(mydata, 
+                             aes(x = group, # slightly different aesthetic
+                                 y = outcome)) + 
+  stat_summary(fun.y = mean, # take the mean of the data
+               fill = "blue", # fill color
+               geom = "bar") # we want to summarize data with bars
+
+p_barchart_of_mean
+
+```
+
+## Two Continuous Variables At A Time
+
+### Basic Scatterplot
+
+```{r}
+
+# call ggplot2 where aesthetic uses both predictor and outcome
+
+p4 <- ggplot(mydata, 
+             aes(x = predictor, 
+                 y = outcome)) # set up aesthetic
+
+p4 + geom_point() # add point geom (scatterplot)
+
+```
+
+### Add Some Options
+
+```{r}
+
+p4 + # start with basic plot that has only an aesthetic
+  geom_point(color = "blue") + # add point geom in blue
+  labs(title ="Scatterplot of Outcome by Predictor") # add title
+
+```
+
+### Try A Smoother
+
+```{r}
+
+p4 + 
+  geom_smooth() + # add smooth geom
+  labs(title ="Smoother of Outcome by Predictor") # add title
+
+```
+
+### Try A Density Plot
+
+#### Simple Density
+
+```{r}
+
+p4 + 
+  geom_density2d(color = "blue") + # add density geom 
+  labs(title ="Density Plot of Outcome by Predictor") # add title
+
+
+```
+
+#### Filled Density
+
+> While not strictly necessary, the use of `scale_fill_gradient` seems to improve the presentation. You can choose your own colors.
+
+```{r}
+
+p4 + 
+  stat_density_2d(aes(fill = ..level..), 
+                  geom = "polygon") + # add filled density geom 
+  scale_fill_gradient(low = "blue",
+                      high = "red") +
+  labs(title ="Density Plot of Outcome by Predictor") # add title
+
+```
+
+#### Add Points
+
+```{r}
+
+p4 + 
+  stat_density_2d(aes(fill = ..level..), 
+                  geom = "polygon") + # add filled density geom
+  geom_point(color = "orange") +
+    scale_fill_gradient(low = "blue",
+                      high = "red") +
+  labs(title ="Density Plot of Outcome by Predictor") # add title
+
+
+```
+
+#### Use a Raster Geom Instead
+
+```{r}
+
+p4 + 
+  stat_density_2d(geom = "raster", 
+                  aes(fill = ..density..),
+                  contour = FALSE) +
+  scale_fill_gradient(low = "blue",
+                      high = "red") +
+  labs(title ="Density Plot (Raster) of Outcome by Predictor") # add title
+
+```
+
+### Try a Hexagon Geom
+
+`geom_hex` may be a useful visualization, especially when there is the possiblity of *over-plotting* due to many many points.
+
+```{r}
+
+p4 + 
+  geom_hex() +
+   scale_fill_gradient(low = "blue",
+                      high = "red") +
+  labs(title ="Hexagon Plot of Outcome by Predictor") # add title
+
+```
+
+### Combine Points and Smoother And Add Some Themes
+
+#### Themes Included With `ggplot2` 
+
+##### Default ggplot2 Theme
+
+```{r, fig.height=4}
+
+p4 + 
+  geom_point() + # point geom
+  geom_smooth() + # add smooth geom
+  labs(title ="Scatterplot And Smoother of Outcome", 
+       subtitle = "nby Predictor") + # add title
+  theme_grey() # default theme
+
+```
+
+##### The "minimal" theme
+
+```{r, fig.height=4}
+
+p4 + 
+  geom_point() + # point geom
+  geom_smooth() + # add smooth geom
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor") + # add title
+  theme_minimal() # default theme
+
+```
+
+#### Themes requiring `ggthemes()`
+
+> The themes below make use of `library(ggthemes)` which you will need to install.
+
+##### "538" Theme
+
+```{r, fig.height=4}
+
+p4 + 
+  geom_point() + # point geom
+  geom_smooth() + # add smooth geom
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor") + # add title
+  theme_fivethirtyeight() + # "538"-like theme
+  scale_color_fivethirtyeight() # "538"-like colors
+
+```
+
+##### "Solarized Theme"
+
+```{r, fig.height=4}
+
+p4 + 
+  geom_point() + # point geom
+  geom_smooth() + # add smooth geom
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor") + # add title
+  theme_solarized() + # Google Docs theme
+  scale_colour_solarized() # Google Docs colors
+
+```
+
+##### "Solarized Dark" Theme
+
+```{r, fig.height=4}
+
+p4 + 
+  geom_point() + # point geom
+  geom_smooth() + # add smooth geom
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor") + # add title
+  theme_solarized(light = FALSE) + # solarized dark theme
+  scale_colour_solarized("blue") # solarized dark color palette
+
+```
+
+##### "Economist" Theme
+
+```{r, fig.height=4}
+
+p4 + 
+  geom_point() + # point geom
+  geom_smooth() + # add smooth geom
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor") + # add title
+  theme_economist() + # Economist magazine theme
+  scale_colour_economist() # Economist magazine colors
+
+```
+  
+##### "Tufte" Theme
+
+```{r, fig.height=4}
+
+# same plot with theme and geom based on the work of Edward Tufte
+
+p4 + 
+  geom_point() + 
+  geom_smooth(color = "red") + 
+  theme_tufte() +
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor")
+
+```
+
+##### "Google Docs Theme"
+
+```{r, fig.height=4}
+
+p4 + 
+  geom_point() + # point geom
+  geom_smooth() + # add smooth geom
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor") + # add title
+  theme_gdocs() + # Google Docs theme
+  scale_colour_gdocs() # Google Docs colors
+
+```
+
+## Two Continous Variables And A Third Categorical Variable
+
+### Modify the aesthetic to include *group*.
+
+```{r, fig.height=4}
+
+p5 <- ggplot(mydata, 
+             aes(x = predictor, y = outcome, 
+                 color = group)) # aesthetic includes color by group
+
+p5 + geom_point() + 
+  geom_smooth() + 
+  theme_economist() +
+  scale_color_economist() +
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor")
+
+```
+
+### Add facets or "small multiples" by group
+
+```{r, fig.height=4}
+
+p5 + 
+  geom_point() + 
+  geom_smooth() + 
+  facet_wrap(~group) + # facets or "small multiples" by group
+  theme_economist() +
+  scale_color_economist() +
+  labs(title ="Scatterplot And Smoother of Outcome \nby Predictor")
+
+
+```
+
+# There Is A Lot More That Can Be Done With ggplot2
+
+More information can be found at [ggplot2](https://ggplot2.tidyverse.org/).
+
+More ggplot2 examples can be found [here](http://www-personal.umich.edu/~agrogan/how_to_choose_a_chart/how_to_choose_a_chart_v3.html).
+
+*****
+
+Graphics made with the [ggplot2](https://ggplot2.tidyverse.org/) graphing library created by Hadley Wickham.
+
+Available online at [https://agroganweb.wordpress.com/data-visualization-dataviz/](https://agroganweb.wordpress.com/data-visualization-dataviz/)
+
+*Quick Introduction to ggplot2* by Andrew Grogan-Kaylor is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+Last updated: ```r format(Sys.Date(),"%B %d %Y")```  at ```r format(Sys.time(),"%H:%M")```
+
+```{r make_banner, echo = FALSE, eval=TRUE}
+
+banner <- plot_grid(p1 + 
+                      geom_histogram(fill = "blue") + 
+                      labs(title ="Histogram of predictor"), 
+                    p3 + 
+                      geom_beeswarm(color = "red", 
+                                       groupOnX = FALSE) + 
+                      labs(title ="Beeswarm Plot of predictor") + 
+                      theme(axis.title.y = element_blank(), 
+                            axis.text.y = element_blank()),
+                    p1 + 
+                      geom_density(fill = "gold") + 
+                      labs(title ="Density of predictor"), 
+                    p4 + 
+                      geom_smooth(color = "blue") + 
+                      geom_point() +
+                      labs(title ="Smoother of Outcome \nby Predictor"), 
+                    nrow = 1)
+
+save_plot("banner.png", banner,
+          ncol = 3,
+          nrow = 1)
+```
+
+
+
+
+
+
+
