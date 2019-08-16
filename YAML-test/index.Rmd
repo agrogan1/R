@@ -3,6 +3,34 @@ title: "RMarkdown YAML Test"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      countIncrementalSlides: no
+      highlightLines: yes
+      highlightStyle: github
+  revealjs::revealjs_presentation:
+    fig_height: 4
+    highlight: haddock
+    reveal_options:
+      chalkboard:
+        theme: chalkboard
+        toggleChalkboardButton: yes
+        toggleNotesButton: yes
+      previewLinks: yes
+      progress: yes
+      slideNumber: yes
+    reveal_plugins:
+    - chalkboard
+    - zoom
+    self_contained: no
+    theme: sky
+    transition: convex
+  slidy_presentation:
+    fig_caption: yes
+    footer: Andrew Grogan-Kaylor
+    highlight: haddock
+    theme: default
   html_document:
     code_download: true
     css: styles.css
@@ -24,28 +52,9 @@ output:
     theme: default
   bookdown::gitbook:
     highlight: haddock
-    css: styles.css
-    config:
-      download:
-      - introduction-to-R.pdf
-      - introduction-to-R.epub
-  revealjs::revealjs_presentation:
-    fig_height: 4
+  ioslides_presentation:
     highlight: haddock
-    reveal_options:
-      chalkboard:
-        theme: chalkboard
-        toggleChalkboardButton: yes
-        toggleNotesButton: yes
-      previewLinks: yes
-      progress: yes
-      slideNumber: yes
-    reveal_plugins:
-    - chalkboard
-    - zoom
-    self_contained: no
-    theme: solarized
-    transition: convex
+    incremental: yes
   tint::tintPdf:
     highlight: haddock
     number_sections: yes
@@ -68,19 +77,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
+
+## Background 
+
+> You will need to install some of these packages from CRAN
+
 ```{r, eval = FALSE}
 
-# You will need to install some of these packages from CRAN
 # install.packages(c("bookdown", "radix", "revealjs", "tint", "tufte"))
-
-# You will need to install pagedown from GitHub
-
-# remotes::install_github('rstudio/pagedown')
-
 
 ```
 
-# Background 
+> You will need to install pagedown from GitHub
+
+```{r, eval = FALSE}
+
+# remotes::install_github('rstudio/pagedown')
+
+```
 
 ## R Markdown
 
