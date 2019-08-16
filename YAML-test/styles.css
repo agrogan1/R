@@ -1,7 +1,7 @@
 h1 {
-  color: #375E97;
+  color: red;
   font-family: "Helvetica", "Arial", sans-serif; 
-  font-weight: normal;
+  font-weight: bold;
 }
 h2 {
   color: black;
@@ -18,7 +18,7 @@ p {
   font-size: 110%;
 }
 a:link {
-    color: #375E97;
+    color: red;
 }
 li {
   font-family: "Helvetica", "Arial", sans-serif; 
@@ -27,7 +27,7 @@ li {
 blockquote { 
   font-family: "Helvetica", "Arial", sans-serif; 
   padding: 10px;
-  border-left: 10px solid #375E97;
+  border-left: 10px solid red;
   margin: 10px;
   }
 .list-group-item.active, 
@@ -35,6 +35,6 @@ blockquote {
 .list-group-item.active:hover {
     z-index: 2;
     color: #fff;
-    background-color: #375E97;
-    border-color: #375E97;
+    background-color: red;
+    border-color: red;
 }

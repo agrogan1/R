@@ -3,12 +3,17 @@ title: "RMarkdown YAML Test"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      countIncrementalSlides: no
-      highlightLines: yes
-      highlightStyle: github
+  html_document:
+    code_download: true
+    css: styles.css
+    highlight: haddock
+    number_sections: yes
+    theme: flatly
+    code_folding: hide
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
   revealjs::revealjs_presentation:
     fig_height: 4
     highlight: haddock
@@ -31,17 +36,12 @@ output:
     footer: Andrew Grogan-Kaylor
     highlight: haddock
     theme: default
-  html_document:
-    code_download: true
-    css: styles.css
-    highlight: haddock
-    number_sections: yes
-    theme: yeti
-    code_folding: hide
-    toc: yes
-    toc_float:
-      collapsed: no
-      smooth_scroll: yes
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      countIncrementalSlides: no
+      highlightLines: yes
+      highlightStyle: github
   distill::distill_article:
     highlight: haddock
     toc: yes
