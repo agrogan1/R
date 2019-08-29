@@ -1,0 +1,39 @@
+h1, h2 { 
+    font-family: Georgia;
+    color: black;
+    background-color:black;
+    font-weight: bold;
+    font-size: 500%;
+    text-align: center;
+    text-decoration: /* underline */ overline;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+}
+.reveal h1 {
+    font-family: Georgia;
+    color: black;
+    background-color:black;
+    font-weight: bold;
+    font-size: 300%;
+    text-align: center;
+    text-decoration: /* underline */ overline;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    background: -webkit-linear-gradient(#000, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.reveal h2 {
+    font-family: Georgia; 
+    color: black;
+    background-color:black;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: /* underline */ overline;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+}
+body {
+  background-color: black;
+}
