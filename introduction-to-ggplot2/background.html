@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html >
+
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Introduction to ggplot2</title>
-  <meta name="description" content="Introduction to ggplot2" />
-  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+  <meta name="description" content="Introduction to ggplot2">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
   <meta property="og:title" content="Introduction to ggplot2" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:image" content="Intro-to-ggplot2-Forest.png" />
+  
   
   
 
@@ -19,16 +20,16 @@
   <meta name="twitter:title" content="Introduction to ggplot2" />
   
   
-  <meta name="twitter:image" content="Intro-to-ggplot2-Forest.png" />
+  
 
-<meta name="author" content="Andy Grogan-Kaylor" />
+<meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-07-07" />
+<meta name="date" content="2019-08-29">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
 
@@ -67,7 +68,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -123,7 +124,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background</a></li>
 <li class="chapter" data-level="2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><i class="fa fa-check"></i><b>2</b> ggplot in 3 easy steps (maybe 2 easy steps)</a><ul>
-<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
+<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.-x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
 <li class="chapter" data-level="2.2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#geom-how-you-want-to-graph-it."><i class="fa fa-check"></i><b>2.2</b> <strong>geom</strong>: <em>how</em> you want to graph it.</a></li>
 <li class="chapter" data-level="2.3" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#options-optional-titles-themes-etc."><i class="fa fa-check"></i><b>2.3</b> <strong>options</strong>: <em>optional</em> titles, themes, etc.</a></li>
 </ul></li>
@@ -178,14 +179,13 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="header">
 <h1 class="title">Introduction to ggplot2</h1>
 <p class="author"><em>Andy Grogan-Kaylor</em></p>
-<p class="date"><em>July 07, 2019</em></p>
+<p class="date"><em>August 29, 2019</em></p>
 </div>
 <div id="background" class="section level1">
 <h1><span class="header-section-number">1</span> Background</h1>
 <p><a href="https://www.r-project.org/foundation/">R</a> has a number of graphing libraries, including <em>base</em> graphics that are installed whenever you install R.</p>
 <p><a href="http://ggplot2.org/">ggplot2</a>, is a graphing library in R that makes beautiful graphs. ggplot2 graph syntax can be formidably complex, with a somewhat steep learning curve.</p>
 <p>That being said, learning ggplot2 is worth the effort for a couple of reasons. First, the graphs are beautiful. Second, ggplot2’s syntax, though seemingly arcane at times, forces you to think about the nature of your data, and the ideas that you are graphing. Lastly, a little bit of knowledge about ggplot2 can go a long way, and can build a powerful foundation for future learning.</p>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
             </section>
 

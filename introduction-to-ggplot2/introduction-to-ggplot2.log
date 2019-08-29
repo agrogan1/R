@@ -1,28 +1,26 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  7 JUL 2019 10:37
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6670 64-bit) (preloaded format=xelatex 2018.5.3)  29 AUG 2019 08:34
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**introduction-to-ggplot2.tex
-(./introduction-to-ggplot2.tex
-LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+**./introduction-to-ggplot2.tex
+(introduction-to-ggplot2.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/lmodern.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -56,38 +54,38 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen103
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count88
+\inf@bad=\count87
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count89
-\leftroot@=\count90
+\uproot@=\count88
+\leftroot@=\count89
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count91
-\DOTSCASE@=\count92
+\classnum@=\count90
+\DOTSCASE@=\count91
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -96,15 +94,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen105
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
 \tag@help=\toks16
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
 \andhelp@=\toks17
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -118,12 +116,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fixltx2e.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
 Applying: [2015/01/01] Old fixltx2e package on input line 46.
 
@@ -132,30 +130,30 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                See the latexrelease package for details.
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
-) (/usr/local/texlive/2018/texmf-dist/tex/xelatex/mathspec/mathspec.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\xelatex\mathspec\mathspec.sty"
 Package: mathspec 2016/12/22 v0.2b LaTeX Package (Mathematics font selection fo
 r XeLaTeX)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count100
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/loc
-al/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/t
-exlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+\etb@tempcnta=\count99
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty" ("C:\Program F
+iles\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty" ("C:\Program Files\MiKT
+eX 2.9\tex\latex\l3kernel\expl3.sty"
 Package: expl3 2018/03/05 L3 programming layer (loader) 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
 Package: expl3 2018/03/05 L3 programming layer (code)
-\c_max_int=\count101
-\l_tmpa_int=\count102
-\l_tmpb_int=\count103
-\g_tmpa_int=\count104
-\g_tmpb_int=\count105
-\g__intarray_font_int=\count106
-\g__prg_map_int=\count107
-\c_log_iow=\count108
-\l_iow_line_count_int=\count109
-\l__iow_line_target_int=\count110
-\l__iow_one_indent_int=\count111
-\l__iow_indent_int=\count112
+\c_max_int=\count100
+\l_tmpa_int=\count101
+\l_tmpb_int=\count102
+\g_tmpa_int=\count103
+\g_tmpb_int=\count104
+\g__intarray_font_int=\count105
+\g__prg_map_int=\count106
+\c_log_iow=\count107
+\l_iow_line_count_int=\count108
+\l__iow_line_target_int=\count109
+\l__iow_one_indent_int=\count110
+\l__iow_indent_int=\count111
 \c_zero_dim=\dimen112
 \c_max_dim=\dimen113
 \l_tmpa_dim=\dimen114
@@ -174,72 +172,72 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count113
-\c__fp_leading_shift_int=\count114
-\c__fp_middle_shift_int=\count115
-\c__fp_trailing_shift_int=\count116
-\c__fp_big_leading_shift_int=\count117
-\c__fp_big_middle_shift_int=\count118
-\c__fp_big_trailing_shift_int=\count119
-\c__fp_Bigg_leading_shift_int=\count120
-\c__fp_Bigg_middle_shift_int=\count121
-\c__fp_Bigg_trailing_shift_int=\count122
-\l__sort_length_int=\count123
-\l__sort_min_int=\count124
-\l__sort_top_int=\count125
-\l__sort_max_int=\count126
-\l__sort_true_max_int=\count127
-\l__sort_block_int=\count128
-\l__sort_begin_int=\count129
-\l__sort_end_int=\count130
-\l__sort_A_int=\count131
-\l__sort_B_int=\count132
-\l__sort_C_int=\count133
-\l__tl_build_start_index_int=\count134
-\l__tl_build_index_int=\count135
-\l__tl_analysis_normal_int=\count136
-\l__tl_analysis_index_int=\count137
-\l__tl_analysis_nesting_int=\count138
-\l__tl_analysis_type_int=\count139
-\l__regex_internal_a_int=\count140
-\l__regex_internal_b_int=\count141
-\l__regex_internal_c_int=\count142
-\l__regex_balance_int=\count143
-\l__regex_group_level_int=\count144
-\l__regex_mode_int=\count145
-\c__regex_cs_in_class_mode_int=\count146
-\c__regex_cs_mode_int=\count147
-\l__regex_catcodes_int=\count148
-\l__regex_default_catcodes_int=\count149
-\c__regex_catcode_L_int=\count150
-\c__regex_catcode_O_int=\count151
-\c__regex_catcode_A_int=\count152
-\c__regex_all_catcodes_int=\count153
-\l__regex_show_lines_int=\count154
-\l__regex_min_state_int=\count155
-\l__regex_max_state_int=\count156
-\l__regex_left_state_int=\count157
-\l__regex_right_state_int=\count158
-\l__regex_capturing_group_int=\count159
-\l__regex_min_pos_int=\count160
-\l__regex_max_pos_int=\count161
-\l__regex_curr_pos_int=\count162
-\l__regex_start_pos_int=\count163
-\l__regex_success_pos_int=\count164
-\l__regex_curr_char_int=\count165
-\l__regex_curr_catcode_int=\count166
-\l__regex_last_char_int=\count167
-\l__regex_case_changed_char_int=\count168
-\l__regex_curr_state_int=\count169
-\l__regex_step_int=\count170
-\l__regex_min_active_int=\count171
-\l__regex_max_active_int=\count172
-\l__regex_replacement_csnames_int=\count173
-\l__regex_match_count_int=\count174
-\l__regex_min_submatch_int=\count175
-\l__regex_submatch_int=\count176
-\l__regex_zeroth_submatch_int=\count177
-\g__regex_trace_regex_int=\count178
+\l_keys_choice_int=\count112
+\c__fp_leading_shift_int=\count113
+\c__fp_middle_shift_int=\count114
+\c__fp_trailing_shift_int=\count115
+\c__fp_big_leading_shift_int=\count116
+\c__fp_big_middle_shift_int=\count117
+\c__fp_big_trailing_shift_int=\count118
+\c__fp_Bigg_leading_shift_int=\count119
+\c__fp_Bigg_middle_shift_int=\count120
+\c__fp_Bigg_trailing_shift_int=\count121
+\l__sort_length_int=\count122
+\l__sort_min_int=\count123
+\l__sort_top_int=\count124
+\l__sort_max_int=\count125
+\l__sort_true_max_int=\count126
+\l__sort_block_int=\count127
+\l__sort_begin_int=\count128
+\l__sort_end_int=\count129
+\l__sort_A_int=\count130
+\l__sort_B_int=\count131
+\l__sort_C_int=\count132
+\l__tl_build_start_index_int=\count133
+\l__tl_build_index_int=\count134
+\l__tl_analysis_normal_int=\count135
+\l__tl_analysis_index_int=\count136
+\l__tl_analysis_nesting_int=\count137
+\l__tl_analysis_type_int=\count138
+\l__regex_internal_a_int=\count139
+\l__regex_internal_b_int=\count140
+\l__regex_internal_c_int=\count141
+\l__regex_balance_int=\count142
+\l__regex_group_level_int=\count143
+\l__regex_mode_int=\count144
+\c__regex_cs_in_class_mode_int=\count145
+\c__regex_cs_mode_int=\count146
+\l__regex_catcodes_int=\count147
+\l__regex_default_catcodes_int=\count148
+\c__regex_catcode_L_int=\count149
+\c__regex_catcode_O_int=\count150
+\c__regex_catcode_A_int=\count151
+\c__regex_all_catcodes_int=\count152
+\l__regex_show_lines_int=\count153
+\l__regex_min_state_int=\count154
+\l__regex_max_state_int=\count155
+\l__regex_left_state_int=\count156
+\l__regex_right_state_int=\count157
+\l__regex_capturing_group_int=\count158
+\l__regex_min_pos_int=\count159
+\l__regex_max_pos_int=\count160
+\l__regex_curr_pos_int=\count161
+\l__regex_start_pos_int=\count162
+\l__regex_success_pos_int=\count163
+\l__regex_curr_char_int=\count164
+\l__regex_curr_catcode_int=\count165
+\l__regex_last_char_int=\count166
+\l__regex_case_changed_char_int=\count167
+\l__regex_curr_state_int=\count168
+\l__regex_step_int=\count169
+\l__regex_min_active_int=\count170
+\l__regex_max_active_int=\count171
+\l__regex_replacement_csnames_int=\count172
+\l__regex_match_count_int=\count173
+\l__regex_min_submatch_int=\count174
+\l__regex_submatch_int=\count175
+\l__regex_zeroth_submatch_int=\count176
+\g__regex_trace_regex_int=\count177
 \c_empty_box=\box28
 \l_tmpa_box=\box29
 \l_tmpb_box=\box30
@@ -280,36 +278,36 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen140
 \l__coffin_scaled_total_height_dim=\dimen141
 \l__coffin_scaled_width_dim=\dimen142
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdfmx.def"
 File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
-\g__driver_image_int=\count179
+\g__driver_image_int=\count178
 ))
 Package: xparse 2018/02/21 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count180
-\g__xparse_grabber_int=\count181
-\l__xparse_m_args_int=\count182
-\l__xparse_mandatory_args_int=\count183
-\l__xparse_v_nesting_int=\count184
+\l__xparse_current_arg_int=\count179
+\g__xparse_grabber_int=\count180
+\l__xparse_m_args_int=\count181
+\l__xparse_mandatory_args_int=\count182
+\l__xparse_v_nesting_int=\count183
 )
 Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
-(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty"
 Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count185
-\l__fontspec_language_int=\count186
-\l__fontspec_strnum_int=\count187
-\l__fontspec_tmp_int=\count188
-\l__fontspec_em_int=\count189
-\l__fontspec_emdef_int=\count190
-\l__fontspec_strong_int=\count191
-\l__fontspec_strongdef_int=\count192
+\l__fontspec_script_int=\count184
+\l__fontspec_language_int=\count185
+\l__fontspec_strnum_int=\count186
+\l__fontspec_tmp_int=\count187
+\l__fontspec_em_int=\count188
+\l__fontspec_emdef_int=\count189
+\l__fontspec_strong_int=\count190
+\l__fontspec_strongdef_int=\count191
 \l__fontspec_tmpa_dim=\dimen143
 \l__fontspec_tmpb_dim=\dimen144
 \l__fontspec_tmpc_dim=\dimen145
 \g__file_internal_ior=\read1
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/tuenc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\tuenc.def"
 File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 ))
@@ -483,7 +481,7 @@ LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 . 
 . Defining command \UndeclareComposite with sig. 'mm' on line 3706.
 .................................................
-(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg")
 LaTeX Info: Redefining \itshape on input line 3891.
 LaTeX Info: Redefining \slshape on input line 3896.
 LaTeX Info: Redefining \scshape on input line 3901.
@@ -501,19 +499,19 @@ LaTeX Info: Redefining \- on input line 4015.
 . 
 . Defining command \liningnums with sig. 'm' on line 4114.
 .................................................
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local
-/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex" ("C:\Program Fil
+es\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
 \XKV@toks=\toks20
 \XKV@tempa@toks=\toks21
-(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count193
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex"))
+\XKV@depth=\count192
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@eu@=\count194
-\c@eu@i=\count195
-\c@mkern=\count196
+\c@eu@=\count193
+\c@eu@i=\count194
+\c@mkern=\count195
 )
 .................................................
 . fontspec info: "no-scripts"
@@ -523,28 +521,28 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 .................................................
 . fontspec info: "set-scale"
 . 
-. Tw Cen MT scale = 1.059804580630032.
+. Tw Cen MT scale = 1.069924242424242.
 .................................................
-\g__fontspec_family_TwCenMT_int=\count197
-.................................................
-. fontspec info: "set-scale"
-. 
-. Tw Cen MT scale = 1.059804580630032.
-.................................................
+\g__fontspec_family_TwCenMT_int=\count196
 .................................................
 . fontspec info: "set-scale"
 . 
-. Tw Cen MT/B scale = 1.01956089505458.
+. Tw Cen MT scale = 1.069924242424242.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. Tw Cen MT/I scale = 1.093824021066355.
+. Tw Cen MT/B scale = 1.026380813953488.
 .................................................
 .................................................
 . fontspec info: "set-scale"
 . 
-. Tw Cen MT/BI scale = 1.036255743779292.
+. Tw Cen MT/I scale = 1.101981897627965.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. Tw Cen MT/BI scale = 1.043365839243499.
 .................................................
 .................................................
 . fontspec info: "defining-font"
@@ -554,26 +552,26 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 .  
 .  This font family consists of the following NFSS series/shapes:
 .  
-. - 'normal' (m/n) with NFSS spec.: <->s*[1.059804580630032]"Tw Cen
-. MT/AAT:mapping=tex-text;"
+. - 'normal' (m/n) with NFSS spec.: <->s*[1.069924242424242]"Tw Cen
+. MT/OT:mapping=tex-text;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
-. - 'bold' (bx/n) with NFSS spec.: <->s*[1.01956089505458]"Tw Cen
-. MT/B/AAT:mapping=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.: <->s*[1.026380813953488]"Tw Cen
+. MT/B/OT:mapping=tex-text;"
 . - 'bold small caps'  (bx/sc) with NFSS spec.: 
-. - 'italic' (m/it) with NFSS spec.: <->s*[1.093824021066355]"Tw Cen
-. MT/I/AAT:mapping=tex-text;"
+. - 'italic' (m/it) with NFSS spec.: <->s*[1.101981897627965]"Tw Cen
+. MT/I/OT:mapping=tex-text;"
 . - 'italic small caps'  (m/itsc) with NFSS spec.: 
-. - 'bold italic' (bx/it) with NFSS spec.: <->s*[1.036255743779292]"Tw Cen
-. MT/BI/AAT:mapping=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.: <->s*[1.043365839243499]"Tw Cen
+. MT/BI/OT:mapping=tex-text;"
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
 LaTeX Info: Redefining \rmfamily on input line 16.
 LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
-(Font)              scaled to size 12.71759pt on input line 16.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/upquote/upquote.sty
+(Font)              scaled to size 12.83917pt on input line 16.
+("C:\Program Files\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/textcomp.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -587,7 +585,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -653,32 +651,32 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
 Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks22
-\MT@count=\count198
+\MT@count=\count197
 LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen146
 LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
-\MT@listname@count=\count199
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype-xetex.def
+\MT@listname@count=\count198
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-xetex.def"
 File: microtype-xetex.def 2018/01/14 v2.7a Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 256.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg"
 File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2018/03/24 v5.7 Page Geometry
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count266
-\Gm@cntv=\count267
-\c@Gm@tempcnt=\count268
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
 \Gm@bindingoffset=\dimen147
 \Gm@wd@mp=\dimen148
 \Gm@odd@mp=\dimen149
@@ -688,12 +686,13 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layouthoffset=\dimen153
 \Gm@layoutvoffset=\dimen154
 \Gm@dimlist=\toks23
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg")) ("C:\Prog
+ram Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -730,19 +729,19 @@ Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen155
-\Hy@linkcounter=\count269
-\Hy@pagecounter=\count270
-(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+\Hy@linkcounter=\count268
+\Hy@pagecounter=\count269
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count271
-(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+\Hy@SavedSpaceFactor=\count270
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4509.
@@ -752,14 +751,14 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count272
-(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\c@Hy@tempcnt=\count271
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen156
-\Fld@menulength=\count273
+\Fld@menulength=\count272
 \Field@Width=\dimen157
 \Fld@charsize=\dimen158
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -771,25 +770,25 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count274
-\c@Item=\count275
-\c@Hfootnote=\count276
+\Hy@abspage=\count273
+\c@Item=\count274
+\c@Hfootnote=\count275
 )
 Package hyperref Info: Driver (autodetected): hxetex.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hxetex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
 File: hxetex.def 2018/02/06 v6.86b Hyperref driver for XeTeX
-(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/puenc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
 File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/stringenc.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
 Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box43
-\c@Hy@AnnotLevel=\count277
-\HyField@AnnotCount=\count278
-\Fld@listcount=\count279
-\c@bookmark@seq@number=\count280
-(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+\c@Hy@AnnotLevel=\count276
+\HyField@AnnotCount=\count277
+\Fld@listcount=\count278
+\c@bookmark@seq@number=\count279
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -797,49 +796,49 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 )
 Package hyperref Info: Option `unicode' set `true' on input line 31.
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 31.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\xetex.def"
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.sty"
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count281
+\FV@CodeLineNo=\count280
 \FV@InFile=\read2
 \FV@TabBox=\box44
-\c@FancyVerbLine=\count282
-\FV@StepNumber=\count283
+\c@FancyVerbLine=\count281
+\FV@StepNumber=\count282
 \FV@OutFile=\write3
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/longtable.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip53
 \LTright=\skip54
 \LTpre=\skip55
 \LTpost=\skip56
-\LTchunksize=\count284
+\LTchunksize=\count283
 \LTcapwidth=\dimen159
 \LT@head=\box45
 \LT@firsthead=\box46
 \LT@foot=\box47
 \LT@lastfoot=\box48
-\LT@cols=\count285
-\LT@rows=\count286
-\c@LT@tables=\count287
-\c@LT@chunks=\count288
+\LT@cols=\count284
+\LT@rows=\count285
+\c@LT@tables=\count286
+\c@LT@chunks=\count287
 \LT@p@ftn=\toks24
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2016/04/27 v1.618033 publication quality tables
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen160
 \lightrulewidth=\dimen161
 \cmidrulewidth=\dimen162
@@ -850,40 +849,40 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen167
 \cmidrulekern=\dimen168
 \defaultaddspace=\dimen169
-\@cmidla=\count289
-\@cmidlb=\count290
+\@cmidla=\count288
+\@cmidlb=\count289
 \@aboverulesep=\dimen170
 \@belowrulesep=\dimen171
-\@thisruleclass=\count291
-\@lastruleclass=\count292
+\@thisruleclass=\count290
+\@lastruleclass=\count291
 \@thisrulewidth=\dimen172
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 99.
 )
 \Gin@req@height=\dimen173
 \Gin@req@width=\dimen174
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grffile.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grffile.sty"
 Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
 Package grffile Info: Option `multidot' is set to `true'.
 Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/parskip/parskip.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\parskip\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/titling/titling.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\titling\titling.sty"
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip57
 \thanksmargin=\skip58
 \droptitle=\skip59
-) (./introduction-to-ggplot2.aux)
+) (introduction-to-ggplot2.aux)
 \openout1 = `introduction-to-ggplot2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
@@ -903,7 +902,7 @@ LaTeX Font Info:    ... okay on input line 128.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 128.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 128.
@@ -939,10 +938,9 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                in font encoding `TU' in inheritance list
 (microtype)                `microtype.cfg/375(protrusion)'.
 
-*geometry* driver: auto-detecting
-*geometry* detected driver: xetex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: xetex
+* driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -975,53 +973,52 @@ Package microtype Warning: Unknown slot number of character
 
 \AtBeginShipoutBox=\box49
 Package hyperref Info: Link coloring OFF on input line 128.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count293
+\c@section@level=\count292
 )
 LaTeX Info: Redefining \ref on input line 128.
 LaTeX Info: Redefining \pageref on input line 128.
 LaTeX Info: Redefining \nameref on input line 128.
-(./introduction-to-ggplot2.out) (./introduction-to-ggplot2.out)
+(introduction-to-ggplot2.out) (introduction-to-ggplot2.out)
 \@outlinefile=\write4
 \openout4 = `introduction-to-ggplot2.out'.
 
 LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
-(Font)              scaled to size 26.3678pt on input line 129.
+(Font)              scaled to size 26.61989pt on input line 129.
 LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
-(Font)              scaled to size 15.2611pt on input line 129.
+(Font)              scaled to size 15.407pt on input line 129.
 LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/it' will be
-(Font)              scaled to size 15.75108pt on input line 129.
+(Font)              scaled to size 15.86842pt on input line 129.
 LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
-(Font)              scaled to size 18.31332pt on input line 133.
+(Font)              scaled to size 18.4884pt on input line 133.
 LaTeX Font Info:    Font shape `TU/TwCenMT(0)/bx/n' will be
-(Font)              scaled to size 17.61801pt on input line 133.
-(./introduction-to-ggplot2.toc
+(Font)              scaled to size 17.73589pt on input line 133.
+(introduction-to-ggplot2.toc
 LaTeX Font Info:    Font shape `TU/TwCenMT(0)/bx/n' will be
-(Font)              scaled to size 12.23474pt on input line 1.
+(Font)              scaled to size 12.31659pt on input line 1.
 LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/it' will be
-(Font)              scaled to size 13.12592pt on input line 3.
+(Font)              scaled to size 13.2237pt on input line 3.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-LatinModernRoman.cfg"
 File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
 ern Roman (RS)
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 3.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1031,15 +1028,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
@@ -1051,53 +1048,53 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
 [1
 
 ]
+LaTeX Font Info:    Font shape `TU/TwCenMT(0)/bx/n' will be
+(Font)              scaled to size 14.77989pt on input line 160.
+LaTeX Font Info:    Font shape `TU/TwCenMT(0)/bx/it' will be
+(Font)              scaled to size 15.02444pt on input line 160.
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-1-1.pdf Graphic 
 file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-1-1.pdf>
-LaTeX Font Info:    Font shape `TU/TwCenMT(0)/bx/n' will be
-(Font)              scaled to size 14.68167pt on input line 162.
-LaTeX Font Info:    Font shape `TU/TwCenMT(0)/bx/it' will be
-(Font)              scaled to size 14.92206pt on input line 162.
-File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-2-1.pdf Graphic 
-file (type pdf)
-<use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-2-1.pdf>
 [2]
+File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-3-1.pdf Graphic 
+file (type pdf)
+<use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-3-1.pdf>
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-4-1.pdf Graphic 
 file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-4-1.pdf>
 [3]
-File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf Graphic 
-file (type pdf)
-<use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf>
-[4]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 352.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 350.
+[4]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 375.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 373.
+LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
+(Font)              scaled to size 8.55945pt on input line 387.
+LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
+(Font)              scaled to size 10.69931pt on input line 391.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 391.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 391.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 391.
+LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
+(Font)              scaled to size 7.48952pt on input line 391.
 [5]
-LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
-(Font)              scaled to size 8.4784pt on input line 389.
-LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
-(Font)              scaled to size 10.59799pt on input line 393.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 393.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 393.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 393.
-LaTeX Font Info:    Font shape `TU/TwCenMT(0)/m/n' will be
-(Font)              scaled to size 7.4186pt on input line 393.
-[6]
+File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-7-1.pdf Graphic 
+file (type pdf)
+<use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-7-1.pdf>
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf Graphic 
 file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf>
+[6]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-9-1.pdf Graphic 
 file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-9-1.pdf>
-[7]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-10-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-10-1.pdf>
+[7]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-11-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-11-1.pdf>
@@ -1115,10 +1112,10 @@ File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-14-1.pdf Graphic
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-15-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-15-1.pdf>
-[10]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-16-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-16-1.pdf>
+[10]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-17-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-17-1.pdf>
@@ -1150,61 +1147,58 @@ File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-24-1.pdf Graphic
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-25-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-25-1.pdf>
+[15]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-26-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-26-1.pdf>
-[15]
+[16]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-27-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-27-1.pdf>
-[16]
+[17]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-28-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-28-1.pdf>
-[17]
+[18]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-29-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-29-1.pdf>
-[18]
+[19]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-30-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-30-1.pdf>
-[19]
+[20]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-31-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-31-1.pdf>
-[20]
+[21]
+LaTeX Font Info:    Font shape `TU/TwCenMT(0)/bx/it' will be
+(Font)              scaled to size 12.52039pt on input line 898.
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-32-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-32-1.pdf>
-[21]
-LaTeX Font Info:    Font shape `TU/TwCenMT(0)/bx/it' will be
-(Font)              scaled to size 12.43506pt on input line 900.
+[22]
 File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-33-1.pdf Graphic
  file (type pdf)
 <use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-33-1.pdf>
-[22]
-File: introduction-to-ggplot2_files/figure-latex/unnamed-chunk-34-1.pdf Graphic
- file (type pdf)
-<use introduction-to-ggplot2_files/figure-latex/unnamed-chunk-34-1.pdf>
 [23]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 961.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 959.
 [24]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 961.
-(./introduction-to-ggplot2.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 961.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 961.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 959.
+(introduction-to-ggplot2.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 959.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 959.
 Package rerunfilecheck Info: File `introduction-to-ggplot2.out' has not changed
 .
-(rerunfilecheck)             Checksum: F6F471DFA9B8E5EA39576BBB07F8C0CC.
+(rerunfilecheck)             Checksum: 4246FC34D3A7BDC5886A2A61C1BD8DA6.
  ) 
 Here is how much of TeX's memory you used:
- 22706 strings out of 492970
- 430131 string characters out of 6133938
- 552316 words of memory out of 5000000
- 26442 multiletter control sequences out of 15000+600000
- 555139 words of font info for 81 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 46i,8n,116p,10464b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 22712 strings out of 427836
+ 424470 string characters out of 3152480
+ 550131 words of memory out of 3000000
+ 26423 multiletter control sequences out of 15000+200000
+ 555139 words of font info for 81 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 46i,8n,116p,10466b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on introduction-to-ggplot2.pdf (24 pages).

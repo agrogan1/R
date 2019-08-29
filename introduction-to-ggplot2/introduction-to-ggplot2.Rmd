@@ -3,13 +3,6 @@ title: "Introduction to ggplot2"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  pdf_document:
-    fig_height: 2
-    highlight: haddock
-    latex_engine: xelatex
-    number_sections: yes
-    toc: yes
-    toc_depth: 3
   bookdown::gitbook:
     config:
       download:
@@ -18,6 +11,13 @@ output:
     highlight: haddock
     css: styles.css
   bookdown::epub_book: default
+  pdf_document:
+    fig_height: 2
+    highlight: haddock
+    latex_engine: xelatex
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
   html_document:
     code_folding: hide
     css: styles.css
@@ -34,7 +34,6 @@ geometry: margin=1.0in
 mainfont: Tw Cen MT
 fontsize: 12pt
 site: bookdown::bookdown_site
-cover-image: Intro-to-ggplot2-Forest.png
 ---
 
 ```{r global_options, echo=FALSE}
@@ -52,18 +51,6 @@ knitr::opts_chunk$set(echo=TRUE,
 [ggplot2](http://ggplot2.org/), is a graphing library in R that makes beautiful graphs.  ggplot2 graph syntax can be formidably complex, with a somewhat steep learning curve.
 
 That being said, learning ggplot2 is worth the effort for a couple of reasons. First, the graphs are beautiful. Second, ggplot2's syntax, though seemingly arcane at times, forces you to think about the nature of your data, and the ideas that you are graphing.  Lastly, a little bit of knowledge about ggplot2 can go a long way, and can build a powerful foundation for future learning.
-
-```{r, eval = TRUE, echo = FALSE, fig.height = 3.0}
-
-library(png)
-
-library(grid)
-
-cover <- readPNG("Intro-to-ggplot2-Forest.png")
-
-grid.raster(cover)
-
-```
 
 # ggplot in 3 easy steps (maybe 2 easy steps)
 

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html >
+
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>7 Examples | Introduction to ggplot2</title>
-  <meta name="description" content="7 Examples | Introduction to ggplot2" />
-  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+  <meta name="description" content="7 Examples | Introduction to ggplot2">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
   <meta property="og:title" content="7 Examples | Introduction to ggplot2" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:image" content="Intro-to-ggplot2-Forest.png" />
+  
   
   
 
@@ -19,16 +20,16 @@
   <meta name="twitter:title" content="7 Examples | Introduction to ggplot2" />
   
   
-  <meta name="twitter:image" content="Intro-to-ggplot2-Forest.png" />
+  
 
-<meta name="author" content="Andy Grogan-Kaylor" />
+<meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-07-07" />
+<meta name="date" content="2019-08-29">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
 <link rel="prev" href="the-essential-idea-of-ggplot2-is-simple-.html">
@@ -67,7 +68,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -123,7 +124,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background</a></li>
 <li class="chapter" data-level="2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><i class="fa fa-check"></i><b>2</b> ggplot in 3 easy steps (maybe 2 easy steps)</a><ul>
-<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
+<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.-x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
 <li class="chapter" data-level="2.2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#geom-how-you-want-to-graph-it."><i class="fa fa-check"></i><b>2.2</b> <strong>geom</strong>: <em>how</em> you want to graph it.</a></li>
 <li class="chapter" data-level="2.3" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#options-optional-titles-themes-etc."><i class="fa fa-check"></i><b>2.3</b> <strong>options</strong>: <em>optional</em> titles, themes, etc.</a></li>
 </ul></li>
@@ -187,7 +188,7 @@ p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mydata,
              <span class="kw">aes</span>(<span class="dt">x =</span> predictor)) </code></pre>
 <pre class="sourceCode r"><code class="sourceCode r">p1 <span class="op">+</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_dotplot</span>(<span class="dt">dotsize =</span> <span class="fl">.15</span>) <span class="co"># add dotplot geom</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 </div>
 <div id="add-some-options" class="section level3">
 <h3><span class="header-section-number">7.1.2</span> Add Some Options</h3>
@@ -195,7 +196,7 @@ p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mydata,
 <span class="st">  </span><span class="kw">geom_dotplot</span>(<span class="dt">dotsize =</span> <span class="fl">.15</span>, 
                <span class="dt">fill=</span><span class="st">&quot;red&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add dotplot geom in red</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Dotplot of predictor&quot;</span>) <span class="co"># Add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
 <div id="different-geoms" class="section level3">
 <h3><span class="header-section-number">7.1.3</span> Different Geoms</h3>
@@ -204,13 +205,13 @@ p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mydata,
 <pre class="sourceCode r"><code class="sourceCode r">p1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;blue&quot;</span>, 
                     <span class="dt">color=</span><span class="st">&quot;black&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add histogram geom in blue</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Histogram of predictor&quot;</span>) <span class="co"># Add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 </div>
 <div id="density" class="section level4">
 <h4><span class="header-section-number">7.1.3.2</span> Density</h4>
 <pre class="sourceCode r"><code class="sourceCode r">p1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_density</span>(<span class="dt">fill =</span> <span class="st">&quot;gold&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add density geom in gold</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Density of predictor&quot;</span>) <span class="co"># Add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 </div>
 <div id="violin-plot" class="section level4">
 <h4><span class="header-section-number">7.1.3.3</span> Violin Plot</h4>
@@ -220,7 +221,7 @@ p1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mydata,
 
 p2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_violin</span>(<span class="dt">fill =</span> <span class="st">&quot;purple&quot;</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Violin Plot of predictor&quot;</span>) <span class="co"># Add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
 <div id="beeswarm" class="section level4">
 <h4><span class="header-section-number">7.1.3.4</span> Beeswarm</h4>
@@ -233,7 +234,7 @@ p3 <span class="op">+</span><span class="st"> </span><span class="kw">geom_beesw
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Beeswarm Plot of predictor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># Add title</span>
 <span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(), 
         <span class="dt">axis.text.y =</span> <span class="kw">element_blank</span>()) <span class="co"># tweak y axis</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 </div>
 </div>
 </div>
@@ -248,7 +249,7 @@ p3 <span class="op">+</span><span class="st"> </span><span class="kw">geom_beesw
 <span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">fill =</span> <span class="st">&quot;red&quot;</span>) 
 
 p_barchart</code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <blockquote>
 <p>Changing the <em>aesthetic</em> slightly results in a <em>stacked</em> bar chart. Since all groups are stacked in 1 bar, we have to add information about the colors that we want to use to distinguish the groups.</p>
 </blockquote>
@@ -259,7 +260,7 @@ p_barchart</code></pre>
 <span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>))
 
 p_stacked_barchart</code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 </div>
 <div id="a-categorical-variable-and-a-continuous-variable" class="section level2">
 <h2><span class="header-section-number">7.3</span> A Categorical Variable and A Continuous Variable</h2>
@@ -276,7 +277,7 @@ p_stacked_barchart</code></pre>
                <span class="dt">geom =</span> <span class="st">&quot;bar&quot;</span>) <span class="co"># we want to summarize data with bars</span>
 
 p_barchart_of_mean</code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 </div>
 </div>
 <div id="two-continuous-variables-at-a-time" class="section level2">
@@ -290,21 +291,21 @@ p4 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(mydata,
                  <span class="dt">y =</span> outcome)) <span class="co"># set up aesthetic</span>
 
 p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>() <span class="co"># add point geom (scatterplot)</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 </div>
 <div id="add-some-options-1" class="section level3">
 <h3><span class="header-section-number">7.4.2</span> Add Some Options</h3>
 <pre class="sourceCode r"><code class="sourceCode r">p4 <span class="op">+</span><span class="st"> </span><span class="co"># start with basic plot that has only an aesthetic</span>
 <span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add point geom in blue</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot of Outcome by Predictor&quot;</span>) <span class="co"># add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 </div>
 <div id="try-a-smoother" class="section level3">
 <h3><span class="header-section-number">7.4.3</span> Try A Smoother</h3>
 <pre class="sourceCode r"><code class="sourceCode r">p4 <span class="op">+</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_smooth</span>() <span class="op">+</span><span class="st"> </span><span class="co"># add smooth geom</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Smoother of Outcome by Predictor&quot;</span>) <span class="co"># add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 </div>
 <div id="try-a-density-plot" class="section level3">
 <h3><span class="header-section-number">7.4.4</span> Try A Density Plot</h3>
@@ -313,7 +314,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <pre class="sourceCode r"><code class="sourceCode r">p4 <span class="op">+</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_density2d</span>(<span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add density geom </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Density Plot of Outcome by Predictor&quot;</span>) <span class="co"># add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 </div>
 <div id="filled-density" class="section level4">
 <h4><span class="header-section-number">7.4.4.2</span> Filled Density</h4>
@@ -326,7 +327,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">scale_fill_gradient</span>(<span class="dt">low =</span> <span class="st">&quot;blue&quot;</span>,
                       <span class="dt">high =</span> <span class="st">&quot;red&quot;</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Density Plot of Outcome by Predictor&quot;</span>) <span class="co"># add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 </div>
 <div id="add-points" class="section level4">
 <h4><span class="header-section-number">7.4.4.3</span> Add Points</h4>
@@ -337,7 +338,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">    </span><span class="kw">scale_fill_gradient</span>(<span class="dt">low =</span> <span class="st">&quot;blue&quot;</span>,
                       <span class="dt">high =</span> <span class="st">&quot;red&quot;</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Density Plot of Outcome by Predictor&quot;</span>) <span class="co"># add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
 </div>
 <div id="use-a-raster-geom-instead" class="section level4">
 <h4><span class="header-section-number">7.4.4.4</span> Use a Raster Geom Instead</h4>
@@ -348,7 +349,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">scale_fill_gradient</span>(<span class="dt">low =</span> <span class="st">&quot;blue&quot;</span>,
                       <span class="dt">high =</span> <span class="st">&quot;red&quot;</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Density Plot (Raster) of Outcome by Predictor&quot;</span>) <span class="co"># add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 </div>
 </div>
 <div id="try-a-hexagon-geom" class="section level3">
@@ -359,7 +360,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">   </span><span class="kw">scale_fill_gradient</span>(<span class="dt">low =</span> <span class="st">&quot;blue&quot;</span>,
                       <span class="dt">high =</span> <span class="st">&quot;red&quot;</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Hexagon Plot of Outcome by Predictor&quot;</span>) <span class="co"># add title</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
 </div>
 <div id="combine-points-and-smoother-and-add-some-themes" class="section level3">
 <h3><span class="header-section-number">7.4.6</span> Combine Points and Smoother And Add Some Themes</h3>
@@ -373,7 +374,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome&quot;</span>, 
        <span class="dt">subtitle =</span> <span class="st">&quot;nby Predictor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add title</span>
 <span class="st">  </span><span class="kw">theme_grey</span>() <span class="co"># default theme</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 </div>
 <div id="the-minimal-theme" class="section level5">
 <h5><span class="header-section-number">7.4.6.1.2</span> The “minimal” theme</h5>
@@ -382,7 +383,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">geom_smooth</span>() <span class="op">+</span><span class="st"> </span><span class="co"># add smooth geom</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add title</span>
 <span class="st">  </span><span class="kw">theme_minimal</span>() <span class="co"># default theme</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 </div>
 </div>
 <div id="themes-requiring-ggthemes" class="section level4">
@@ -398,7 +399,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add title</span>
 <span class="st">  </span><span class="kw">theme_fivethirtyeight</span>() <span class="op">+</span><span class="st"> </span><span class="co"># &quot;538&quot;-like theme</span>
 <span class="st">  </span><span class="kw">scale_color_fivethirtyeight</span>() <span class="co"># &quot;538&quot;-like colors</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 </div>
 <div id="solarized-theme" class="section level5">
 <h5><span class="header-section-number">7.4.6.2.2</span> “Solarized Theme”</h5>
@@ -408,7 +409,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add title</span>
 <span class="st">  </span><span class="kw">theme_solarized</span>() <span class="op">+</span><span class="st"> </span><span class="co"># Google Docs theme</span>
 <span class="st">  </span><span class="kw">scale_colour_solarized</span>() <span class="co"># Google Docs colors</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
 </div>
 <div id="solarized-dark-theme" class="section level5">
 <h5><span class="header-section-number">7.4.6.2.3</span> “Solarized Dark” Theme</h5>
@@ -418,7 +419,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add title</span>
 <span class="st">  </span><span class="kw">theme_solarized</span>(<span class="dt">light =</span> <span class="ot">FALSE</span>) <span class="op">+</span><span class="st"> </span><span class="co"># solarized dark theme</span>
 <span class="st">  </span><span class="kw">scale_colour_solarized</span>(<span class="st">&quot;blue&quot;</span>) <span class="co"># solarized dark color palette</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
 </div>
 <div id="economist-theme" class="section level5">
 <h5><span class="header-section-number">7.4.6.2.4</span> “Economist” Theme</h5>
@@ -428,7 +429,7 @@ p4 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add title</span>
 <span class="st">  </span><span class="kw">theme_economist</span>() <span class="op">+</span><span class="st"> </span><span class="co"># Economist magazine theme</span>
 <span class="st">  </span><span class="kw">scale_colour_economist</span>() <span class="co"># Economist magazine colors</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 </div>
 <div id="tufte-theme" class="section level5">
 <h5><span class="header-section-number">7.4.6.2.5</span> “Tufte” Theme</h5>
@@ -439,7 +440,7 @@ p4 <span class="op">+</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">color =</span> <span class="st">&quot;red&quot;</span>) <span class="op">+</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">theme_tufte</span>() <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>)</code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
 </div>
 <div id="google-docs-theme" class="section level5">
 <h5><span class="header-section-number">7.4.6.2.6</span> “Google Docs Theme”</h5>
@@ -449,7 +450,7 @@ p4 <span class="op">+</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="co"># add title</span>
 <span class="st">  </span><span class="kw">theme_gdocs</span>() <span class="op">+</span><span class="st"> </span><span class="co"># Google Docs theme</span>
 <span class="st">  </span><span class="kw">scale_colour_gdocs</span>() <span class="co"># Google Docs colors</span></code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
 </div>
 </div>
 </div>
@@ -467,7 +468,7 @@ p5 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">theme_economist</span>() <span class="op">+</span>
 <span class="st">  </span><span class="kw">scale_color_economist</span>() <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>)</code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
 </div>
 <div id="add-facets-or-small-multiples-by-group" class="section level3">
 <h3><span class="header-section-number">7.5.2</span> Add facets or “small multiples” by group</h3>
@@ -478,7 +479,7 @@ p5 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point
 <span class="st">  </span><span class="kw">theme_economist</span>() <span class="op">+</span>
 <span class="st">  </span><span class="kw">scale_color_economist</span>() <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span><span class="st">&quot;Scatterplot And Smoother of Outcome </span><span class="ch">\n</span><span class="st">by Predictor&quot;</span>)</code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
 </div>
 </div>
 </div>

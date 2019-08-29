@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html >
+
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>3 A Simple Quick Example | Introduction to ggplot2</title>
-  <meta name="description" content="3 A Simple Quick Example | Introduction to ggplot2" />
-  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+  <meta name="description" content="3 A Simple Quick Example | Introduction to ggplot2">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
   <meta property="og:title" content="3 A Simple Quick Example | Introduction to ggplot2" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:image" content="Intro-to-ggplot2-Forest.png" />
+  
   
   
 
@@ -19,16 +20,16 @@
   <meta name="twitter:title" content="3 A Simple Quick Example | Introduction to ggplot2" />
   
   
-  <meta name="twitter:image" content="Intro-to-ggplot2-Forest.png" />
+  
 
-<meta name="author" content="Andy Grogan-Kaylor" />
+<meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-07-07" />
+<meta name="date" content="2019-08-29">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
 <link rel="prev" href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html">
@@ -67,7 +68,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -123,7 +124,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background</a></li>
 <li class="chapter" data-level="2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><i class="fa fa-check"></i><b>2</b> ggplot in 3 easy steps (maybe 2 easy steps)</a><ul>
-<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
+<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.-x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
 <li class="chapter" data-level="2.2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#geom-how-you-want-to-graph-it."><i class="fa fa-check"></i><b>2.2</b> <strong>geom</strong>: <em>how</em> you want to graph it.</a></li>
 <li class="chapter" data-level="2.3" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#options-optional-titles-themes-etc."><i class="fa fa-check"></i><b>2.3</b> <strong>options</strong>: <em>optional</em> titles, themes, etc.</a></li>
 </ul></li>
@@ -192,7 +193,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
        <span class="kw">aes</span>(<span class="dt">x =</span> my_outcome)) <span class="op">+</span><span class="st"> </span><span class="co"># aesthetic: what I am graphing</span>
 <span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;red&quot;</span>, <span class="co"># geom: how I am graphing it</span>
                  <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) </code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>And now, with labels…</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(my_demo_data, <span class="co"># the data that I am using</span>
        <span class="kw">aes</span>(<span class="dt">x =</span> my_outcome)) <span class="op">+</span><span class="st"> </span><span class="co"># aesthetic: what I am graphing</span>
@@ -203,7 +204,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
        <span class="dt">caption =</span> <span class="st">&quot;A Caption, If You Want One&quot;</span>,
        <span class="dt">x =</span> <span class="st">&quot;my outcome&quot;</span>,
        <span class="dt">y =</span> <span class="st">&quot;count&quot;</span>)</code></pre>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>This document is a <em>very brief</em> introduction to the <em>basic</em> ideas of ggplot2. More information about ggplot can be found <a href="http://ggplot2.org/">here</a>. More ggplot2 examples can be found <a href="http://www-personal.umich.edu/~agrogan/how_to_choose_a_chart/how_to_choose_a_chart_v3.html">here</a>.</p>
 </div>
             </section>

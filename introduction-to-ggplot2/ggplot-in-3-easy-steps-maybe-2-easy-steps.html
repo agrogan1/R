@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html >
+
 <head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>2 ggplot in 3 easy steps (maybe 2 easy steps) | Introduction to ggplot2</title>
-  <meta name="description" content="2 ggplot in 3 easy steps (maybe 2 easy steps) | Introduction to ggplot2" />
-  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+  <meta name="description" content="2 ggplot in 3 easy steps (maybe 2 easy steps) | Introduction to ggplot2">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
   <meta property="og:title" content="2 ggplot in 3 easy steps (maybe 2 easy steps) | Introduction to ggplot2" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:image" content="Intro-to-ggplot2-Forest.png" />
+  
   
   
 
@@ -19,16 +20,16 @@
   <meta name="twitter:title" content="2 ggplot in 3 easy steps (maybe 2 easy steps) | Introduction to ggplot2" />
   
   
-  <meta name="twitter:image" content="Intro-to-ggplot2-Forest.png" />
+  
 
-<meta name="author" content="Andy Grogan-Kaylor" />
+<meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-07-07" />
+<meta name="date" content="2019-08-29">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
 <link rel="prev" href="background.html">
@@ -67,7 +68,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -123,7 +124,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background</a></li>
 <li class="chapter" data-level="2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><i class="fa fa-check"></i><b>2</b> ggplot in 3 easy steps (maybe 2 easy steps)</a><ul>
-<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
+<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.-x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
 <li class="chapter" data-level="2.2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#geom-how-you-want-to-graph-it."><i class="fa fa-check"></i><b>2.2</b> <strong>geom</strong>: <em>how</em> you want to graph it.</a></li>
 <li class="chapter" data-level="2.3" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#options-optional-titles-themes-etc."><i class="fa fa-check"></i><b>2.3</b> <strong>options</strong>: <em>optional</em> titles, themes, etc.</a></li>
 </ul></li>
@@ -177,12 +178,12 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
             <section class="normal" id="section-">
 <div id="ggplot-in-3-easy-steps-maybe-2-easy-steps" class="section level1">
 <h1><span class="header-section-number">2</span> ggplot in 3 easy steps (maybe 2 easy steps)</h1>
-<div id="aesthetic-what-you-want-to-graph-e.g.x-y-z." class="section level2">
+<div id="aesthetic-what-you-want-to-graph-e.g.-x-y-z." class="section level2">
 <h2><span class="header-section-number">2.1</span> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</h2>
 </div>
 <div id="geom-how-you-want-to-graph-it." class="section level2">
 <h2><span class="header-section-number">2.2</span> <strong>geom</strong>: <em>how</em> you want to graph it.</h2>
-<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
 <div id="options-optional-titles-themes-etc." class="section level2">
 <h2><span class="header-section-number">2.3</span> <strong>options</strong>: <em>optional</em> titles, themes, etc.</h2>
