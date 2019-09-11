@@ -5,6 +5,13 @@ date: "`r Sys.Date()`"
 output: revealjs::revealjs_presentation
 ---
 
+## Questions
+
+1. Causal (risk) story A -> B
+2. Do you believe it?
+3. Do you need more information?
+4. How message it?
+
 ## Foster Care
 
 <small>A recently conducted study examined the welfare of foster children who turned 18 and “aged out” of the foster care system into independent living.  This study found a number of disturbing outcomes.  For example, former foster youth are less likely than the average person of their age to have successful labor market experiences, and when former foster youth do obtain jobs, their earnings are very low.  Further, former foster youth are very likely to experience an episode of homelessness within the first year after their discharge from the child welfare system.  Former foster children are also likely to be the victims of sexual or physical aggression.  A state administrator reads about this study in the paper and decides that it indicates that the foster care system is a failure because it fails to adequately prepare children for independent living.  He writes an impassioned editorial in which he cites the study as simply one more piece of evidence that the child welfare system is a shambles.  Is there evidence to support the administrator’s contention?</small>
