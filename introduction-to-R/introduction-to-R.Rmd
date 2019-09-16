@@ -5,6 +5,11 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
+  bookdown::epub_book: default  
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   bookdown::gitbook:
     highlight: haddock
     css: styles.css
@@ -12,11 +17,6 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
-  bookdown::epub_book: default  
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   html_document:
     css: styles.css
     fig_height: 3
@@ -331,7 +331,7 @@ library(haven) # new library for importing from stats software
 
 dataset <- read_sav("mySPSSfile.sav") # SPSS
 
-dataset <- read_stata("myStatafile.dta") # Stata
+dataset <- read_dta("myStatafile.dta") # Stata
 
 ```
 
@@ -527,10 +527,10 @@ table(mydata$x, mydata$y) # simple table of counts
 
 prop.table(table(mydata$x, mydata$y)) # table of cell proportions
 
-prop.table(table(mydata$x, mydata$y)
+prop.table(table(mydata$x, mydata$y),
            margin = 1) # row margins: row proportions
 
-prop.table(table(mydata$x, mydata$y)
+prop.table(table(mydata$x, mydata$y),
            margin = 2) # column margins: column proportions
 
 ```
@@ -546,14 +546,18 @@ chisq.test(table(mydata$x, mydata$y))
 will give you a chi-square test of the relationship of `x` and `y`.
 
 ## Correlation
+
+The easiest way to test a correlation in R seems to be to create a subset of the data that contains the variables for which you are interested in testing the correlation.
  
 ```{r, eval=FALSE, echo = TRUE}
 
-cor(mydata[,c("x","y")], use="complete.obs")
+mydatasubset <- subset(mydata,
+                       select = c(x,y))
+
+cor(mydatasubset) # estimate correlation on subset
 
 ``` 
 
-will give you the correlation of continuous variables `x` and `y`[^notintuitive].
 
 ```{r, eval=FALSE, echo = TRUE}
 
@@ -752,7 +756,7 @@ Comments, questions and corrections most welcome and may be sent to:  Andrew Gro
 [^two_page_Stata]: This document is inspired by my longstanding "Two Page Stata" document: [(PDF)](http://www-personal.umich.edu/~agrogan/stata/TwoPageStata.pdf) [(HTML)](http://www-personal.umich.edu/~agrogan/stata/TwoPageStata.html).
 
 [^directory]:  These instructions assume you have `setwd()` appropriately, or alternatively are specifying a full pathname and filename.
-[^notintuitive]:  Here is an example where R turns a simple issue into a difficult one, and the syntax is frankly less than elegant, and not intuitive.  I don't have this syntax memorized.  I use `library(Rcmdr)` if I need to test, or create a script for, a correlation.
+
 
 ```{r, eval=FALSE, echo=FALSE}
 
