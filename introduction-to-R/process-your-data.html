@@ -25,7 +25,7 @@
 <meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-09-16">
+<meta name="date" content="2019-09-23">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -145,7 +145,8 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <li class="chapter" data-level="10.4" data-path="process-your-data.html"><a href="process-your-data.html#renaming-variables"><i class="fa fa-check"></i><b>10.4</b> Renaming Variables</a></li>
 <li class="chapter" data-level="10.5" data-path="process-your-data.html"><a href="process-your-data.html#sorting-data"><i class="fa fa-check"></i><b>10.5</b> Sorting Data</a></li>
 <li class="chapter" data-level="10.6" data-path="process-your-data.html"><a href="process-your-data.html#creating-new-variables"><i class="fa fa-check"></i><b>10.6</b> Creating New Variables</a></li>
-<li class="chapter" data-level="10.7" data-path="process-your-data.html"><a href="process-your-data.html#scales-or-measures"><i class="fa fa-check"></i><b>10.7</b> Scales or Measures</a></li>
+<li class="chapter" data-level="10.7" data-path="process-your-data.html"><a href="process-your-data.html#recoding-variables"><i class="fa fa-check"></i><b>10.7</b> Recoding Variables</a></li>
+<li class="chapter" data-level="10.8" data-path="process-your-data.html"><a href="process-your-data.html#scales-or-measures"><i class="fa fa-check"></i><b>10.8</b> Scales or Measures</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a></li>
 <li class="chapter" data-level="12" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a><ul>
@@ -235,8 +236,27 @@ mydata<span class="op">$</span>gender &lt;-<span class="st"> </span>mydata<span 
 <p>You can easily create new variables in R. For example, a change score between a measure collected at two time-points, like a pre-test, and a post-test, would be:</p>
 <pre class="sourceCode r"><code class="sourceCode r">mydata<span class="op">$</span>change_x &lt;-<span class="st"> </span>mydata<span class="op">$</span>xTime2 <span class="op">-</span><span class="st"> </span>mydata<span class="op">$</span>xTime1</code></pre>
 </div>
+<div id="recoding-variables" class="section level2">
+<h2><span class="header-section-number">10.7</span> Recoding Variables</h2>
+<p>We can recode variables in R using R’s <em>conditional</em> syntax: <code>dataset$variable[is condition satisfied] &lt;- value</code> as in the example below.</p>
+<p>Below we create a new variable <code>ynew</code> based upon the value of <code>y</code>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># initialize ynew to 0 (or some other value)</span>
+
+mydata<span class="op">$</span>ynew &lt;-<span class="st"> </span><span class="dv">0</span> 
+
+<span class="co"># change values of ynew based upon values of y</span>
+
+<span class="co"># in this example, ynew becomes 1 when y &gt; 0</span>
+
+mydata<span class="op">$</span>ynew[mydata<span class="op">$</span>y <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>] &lt;-<span class="st"> </span><span class="dv">1</span>
+
+<span class="co"># tabulate the 2 variables against each other</span>
+<span class="co"># to double check the recode</span>
+
+<span class="kw">table</span>(mydata<span class="op">$</span>y, mydata<span class="op">$</span>ynew)</code></pre>
+</div>
 <div id="scales-or-measures" class="section level2">
-<h2><span class="header-section-number">10.7</span> Scales or Measures</h2>
+<h2><span class="header-section-number">10.8</span> Scales or Measures</h2>
 <p>Similarly, you can sum the items of a scale into a scale as follows:</p>
 <pre class="sourceCode r"><code class="sourceCode r">mydata<span class="op">$</span>myscale &lt;-<span class="st"> </span>mydata<span class="op">$</span>x1 <span class="op">+</span><span class="st"> </span>mydata<span class="op">$</span>x2 <span class="op">+</span><span class="st"> </span>mydata<span class="op">$</span>x3</code></pre>
 <p>You can test the alpha reliability of this scale with the following syntax:</p>

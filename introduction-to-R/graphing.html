@@ -25,7 +25,7 @@
 <meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-09-16">
+<meta name="date" content="2019-09-23">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -145,7 +145,8 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <li class="chapter" data-level="10.4" data-path="process-your-data.html"><a href="process-your-data.html#renaming-variables"><i class="fa fa-check"></i><b>10.4</b> Renaming Variables</a></li>
 <li class="chapter" data-level="10.5" data-path="process-your-data.html"><a href="process-your-data.html#sorting-data"><i class="fa fa-check"></i><b>10.5</b> Sorting Data</a></li>
 <li class="chapter" data-level="10.6" data-path="process-your-data.html"><a href="process-your-data.html#creating-new-variables"><i class="fa fa-check"></i><b>10.6</b> Creating New Variables</a></li>
-<li class="chapter" data-level="10.7" data-path="process-your-data.html"><a href="process-your-data.html#scales-or-measures"><i class="fa fa-check"></i><b>10.7</b> Scales or Measures</a></li>
+<li class="chapter" data-level="10.7" data-path="process-your-data.html"><a href="process-your-data.html#recoding-variables"><i class="fa fa-check"></i><b>10.7</b> Recoding Variables</a></li>
+<li class="chapter" data-level="10.8" data-path="process-your-data.html"><a href="process-your-data.html#scales-or-measures"><i class="fa fa-check"></i><b>10.8</b> Scales or Measures</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a></li>
 <li class="chapter" data-level="12" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a><ul>
@@ -177,8 +178,8 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="graphing" class="section level1">
 <h1><span class="header-section-number">14</span> Graphing</h1>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(mydata<span class="op">$</span>x)</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-40"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-40-1.png" alt="histogram of x" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-41"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-41-1.png" alt="histogram of x" width="672" />
 <p class="caption">
 Figure 14.1: histogram of x
 </p>
@@ -188,8 +189,8 @@ Figure 14.1: histogram of x
 <p>gives a nicer looking graph.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">barplot</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x))</code></pre>
 <p>gives similar results when x is a <em>factor variable</em>.</p>
-<div class="figure"><span id="fig:unnamed-chunk-43"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-43-1.png" alt="barplot of y" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-44"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-44-1.png" alt="barplot of y" width="672" />
 <p class="caption">
 Figure 14.2: barplot of y
 </p>
@@ -203,8 +204,8 @@ Figure 14.2: barplot of y
      <span class="dt">ylab=</span> <span class="st">&quot;...&quot;</span>) </code></pre>
 <p><code>abline(lm(mydata$y~mydata$x))</code> will add a linear fit line to a scatterplot that you have already constructed.</p>
 <p><code>abline(lm(mydata$y~mydata$x), col="gold", lwd=5)</code> will be a nicer looking fit line.</p>
-<div class="figure"><span id="fig:unnamed-chunk-46"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-46-1.png" alt="scatterplot of y against x" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-47"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-47-1.png" alt="scatterplot of y against x" width="672" />
 <p class="caption">
 Figure 14.3: scatterplot of y against x
 </p>

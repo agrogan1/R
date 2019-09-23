@@ -5,11 +5,6 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  bookdown::epub_book: default  
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   bookdown::gitbook:
     highlight: haddock
     css: styles.css
@@ -17,6 +12,11 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
+  bookdown::epub_book: default  
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   html_document:
     css: styles.css
     fig_height: 3
@@ -474,6 +474,32 @@ You can easily create new variables in R. For example, a change score between a 
 mydata$change_x <- mydata$xTime2 - mydata$xTime1
 
 ```
+
+## Recoding Variables
+
+We can recode variables in R using R's *conditional* syntax: `dataset$variable[is condition satisfied] <- value` as in the example below.
+
+Below we create a new variable `ynew` based upon the value of `y`.
+
+```{r, eval=FALSE, echo=TRUE}
+
+# initialize ynew to 0 (or some other value)
+
+mydata$ynew <- 0 
+
+# change values of ynew based upon values of y
+
+# in this example, ynew becomes 1 when y > 0
+
+mydata$ynew[mydata$y > 0] <- 1
+
+# tabulate the 2 variables against each other
+# to double check the recode
+
+table(mydata$y, mydata$ynew)
+
+```
+
 
 ## Scales or Measures
 
