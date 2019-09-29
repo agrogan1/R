@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6670 64-bit) (preloaded format=pdflatex 2018.5.1)  23 SEP 2019 12:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6670 64-bit) (preloaded format=pdflatex 2018.5.1)  27 SEP 2019 13:29
 entering extended mode
 **./introduction-to-R.tex
 (introduction-to-R.tex
@@ -1251,11 +1251,14 @@ LaTeX Warning: Marginpar on page 6 moved.
 LaTeX Warning: Marginpar on page 7 moved.
 
 [7]
-Overfull \hbox (16.2612pt too wide) in paragraph at lines 767--770
+Overfull \hbox (58.25095pt too wide) in paragraph at lines 767--773
 \T1/RobotoCondensed-LF/m/n/10 We can re-code vari-ables in R us-ing R's \T1/Rob
 otoCondensed-LF/m/it/10 con-di-tional \T1/RobotoCondensed-LF/m/n/10 syn-tax: \T
-1/cmtt/m/n/10 dataset$variable[is 
+1/cmtt/m/n/10 dataset$variable[condition] 
  []
+
+
+LaTeX Warning: Marginpar on page 8 moved.
 
 [8] [9] [10]
 <introduction-to-R_files/figure-latex/unnamed-chunk-41-1.pdf, id=259, 289.08pt 
@@ -1264,7 +1267,7 @@ File: introduction-to-R_files/figure-latex/unnamed-chunk-41-1.pdf Graphic file
 (type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-41-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-41-
-1.pdf  used on input line 968.
+1.pdf  used on input line 971.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
 LaTeX Warning: Marginpar on page 11 moved.
@@ -1275,7 +1278,7 @@ File: introduction-to-R_files/figure-latex/unnamed-chunk-44-1.pdf Graphic file
 (type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-44-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-44-
-1.pdf  used on input line 990.
+1.pdf  used on input line 993.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
 LaTeX Warning: Marginpar on page 11 moved.
@@ -1286,25 +1289,25 @@ File: introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file
 (type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-47-
-1.pdf  used on input line 1019.
+1.pdf  used on input line 1022.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1034.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1037.
 [11 <./introduction-to-R_files/figure-latex/unnamed-chunk-41-1.pdf> <./introduc
 tion-to-R_files/figure-latex/unnamed-chunk-44-1.pdf> <./introduction-to-R_files
 /figure-latex/unnamed-chunk-47-1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1034.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1037.
 (introduction-to-R.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1034.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1034.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1037.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1037.
 
 Package rerunfilecheck Info: File `introduction-to-R.out' has not changed.
 (rerunfilecheck)             Checksum: 5C68EF03E513A54448F2A2EC576BB1FD;2249.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1034.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1037.
  ) 
 Here is how much of TeX's memory you used:
  14512 strings out of 493305
@@ -1327,7 +1330,7 @@ onts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 cm-super/sftt0900.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/
 sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.
 pfb>
-Output written on introduction-to-R.pdf (11 pages, 708636 bytes).
+Output written on introduction-to-R.pdf (11 pages, 709979 bytes).
 PDF statistics:
  342 PDF objects out of 1000 (max. 8388607)
  78 named destinations out of 1000 (max. 500000)

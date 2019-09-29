@@ -25,7 +25,7 @@
 <meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-09-23">
+<meta name="date" content="2019-09-27">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -238,7 +238,7 @@ mydata<span class="op">$</span>gender &lt;-<span class="st"> </span>mydata<span 
 </div>
 <div id="recoding-variables" class="section level2">
 <h2><span class="header-section-number">10.7</span> Recoding Variables</h2>
-<p>We can recode variables in R using R’s <em>conditional</em> syntax: <code>dataset$variable[is condition satisfied] &lt;- value</code> as in the example below.</p>
+<p>We can recode variables in R using R’s <em>conditional</em> syntax: <code>dataset$variable[condition] &lt;- value</code><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> as in the example below.</p>
 <p>Below we create a new variable <code>ynew</code> based upon the value of <code>y</code>.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># initialize ynew to 0 (or some other value)</span>
 
@@ -272,6 +272,7 @@ mydata<span class="op">$</span>ynew[mydata<span class="op">$</span>y <span class
 <hr />
 <ol start="4">
 <li id="fn4"><p>In many cases, this is very helpful in that R recognizes that the type of variable calls for a certain kind of statistic or graph, or vice versa. In other cases, this may be the source of an <em>error message</em>.<a href="process-your-data.html#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>Remember that while <code>&gt;</code> is used to test whether <code>x &gt; y</code>, <code>&lt;</code> is used to test whether <code>x &lt; y</code>, <code>==</code> is required to test equality: <code>x == y</code>.<a href="process-your-data.html#fnref5" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
