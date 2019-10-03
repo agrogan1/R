@@ -25,7 +25,7 @@
 <meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-09-27">
+<meta name="date" content="2019-10-03">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -190,13 +190,13 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </div>
 <div id="numeric-and-factor-variables" class="section level2">
 <h2><span class="header-section-number">10.2</span> Numeric and Factor Variables</h2>
-<p>R recognizes two basic kinds of variables: <em>continuous variables</em> (which R calls <em>“numeric” variables</em>) which are often scales like income, mental health, or neighborhood quality; and <em>categorical variables</em> (which R calls <em>“factor variables”</em>) like race, gender or religion.</p>
+<p>R recognizes two basic kinds of variables: <em>continuous variables</em> (which R calls <em>numeric variables</em>) which are often scales like income, mental health, or neighborhood quality; and <em>categorical variables</em> (which R calls <em>factor variables</em>) like race, gender or religion.</p>
 <p>R seems to make a stronger distinction between these two types of variables than some other statistical software.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> It can thus sometimes be useful to change variables from one type to another:</p>
 <pre class="sourceCode r"><code class="sourceCode r">mydata<span class="op">$</span>x &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(mydata<span class="op">$</span>y)
 
-mydata<span class="op">$</span>x &lt;-<span class="st"> </span><span class="kw">as.factor</span>(mydata<span class="op">$</span>y) <span class="co"># shorter syntax</span>
-
-<span class="co"># longer, more complete syntax</span>
+mydata<span class="op">$</span>x &lt;-<span class="st"> </span><span class="kw">as.factor</span>(mydata<span class="op">$</span>y) <span class="co"># shorter syntax</span></code></pre>
+<p>If a factor variable has labels for the different levels, we can add those as well.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># longer, more complete syntax</span>
 
 mydata<span class="op">$</span>w &lt;-<span class="st"> </span><span class="kw">factor</span>(mydata<span class="op">$</span>z, <span class="co"># original numeric variable</span>
                    <span class="dt">levels =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>), <span class="co"># levels of numeric variable</span>

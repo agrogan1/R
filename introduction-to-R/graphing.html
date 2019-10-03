@@ -25,7 +25,7 @@
 <meta name="author" content="Andy Grogan-Kaylor">
 
 
-<meta name="date" content="2019-09-27">
+<meta name="date" content="2019-10-03">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -178,8 +178,8 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="graphing" class="section level1">
 <h1><span class="header-section-number">14</span> Graphing</h1>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(mydata<span class="op">$</span>x)</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-41"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-41-1.png" alt="histogram of x" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-42"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-42-1.png" alt="histogram of x" width="672" />
 <p class="caption">
 Figure 14.1: histogram of x
 </p>
@@ -189,8 +189,8 @@ Figure 14.1: histogram of x
 <p>gives a nicer looking graph.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">barplot</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x))</code></pre>
 <p>gives similar results when x is a <em>factor variable</em>.</p>
-<div class="figure"><span id="fig:unnamed-chunk-44"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-44-1.png" alt="barplot of y" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-45"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-45-1.png" alt="barplot of y" width="672" />
 <p class="caption">
 Figure 14.2: barplot of y
 </p>
@@ -204,8 +204,8 @@ Figure 14.2: barplot of y
      <span class="dt">ylab=</span> <span class="st">&quot;...&quot;</span>) </code></pre>
 <p><code>abline(lm(mydata$y~mydata$x))</code> will add a linear fit line to a scatterplot that you have already constructed.</p>
 <p><code>abline(lm(mydata$y~mydata$x), col="gold", lwd=5)</code> will be a nicer looking fit line.</p>
-<div class="figure"><span id="fig:unnamed-chunk-47"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-47-1.png" alt="scatterplot of y against x" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-48"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-48-1.png" alt="scatterplot of y against x" width="672" />
 <p class="caption">
 Figure 14.3: scatterplot of y against x
 </p>

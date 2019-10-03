@@ -5,6 +5,18 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
+  bookdown::epub_book: default  
+  bookdown::gitbook:
+    highlight: haddock
+    css: styles.css
+    config:
+      download:
+      - introduction-to-R.pdf
+      - introduction-to-R.epub
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   html_document:
     css: styles.css
     fig_height: 3
@@ -16,18 +28,6 @@ output:
     toc_float:
       collapsed: yes
       smooth_scroll: yes
-  bookdown::gitbook:
-    highlight: haddock
-    css: styles.css
-    config:
-      download:
-      - introduction-to-R.pdf
-      - introduction-to-R.epub
-  bookdown::epub_book: default  
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
 fontsize: 12pt
 geometry: margin=1.0in
 mainfont: Tw Cen MT
@@ -394,7 +394,7 @@ save(mydata_subset, file = "mydata_subset.RData")
 
 ## Numeric and Factor Variables
 
-R recognizes two basic kinds of variables:  *continuous variables* (which R calls *"numeric" variables*) which are often scales like income, mental health, or neighborhood quality; and *categorical variables* (which R calls *"factor variables"*) like race, gender or religion.  
+R recognizes two basic kinds of variables:  *continuous variables* (which R calls *numeric variables*) which are often scales like income, mental health, or neighborhood quality; and *categorical variables* (which R calls *factor variables*) like race, gender or religion.  
 
 R seems to make a stronger distinction between these two types of variables than some other statistical software.[^variable_type]  It can thus sometimes be useful to change variables from one type to another:  
 
@@ -405,6 +405,12 @@ R seems to make a stronger distinction between these two types of variables than
 mydata$x <- as.numeric(mydata$y)
 
 mydata$x <- as.factor(mydata$y) # shorter syntax
+
+```
+
+If a factor variable has labels for the different levels, we can add those as well.
+
+```{r, eval=FALSE, echo=TRUE}
 
 # longer, more complete syntax
 
