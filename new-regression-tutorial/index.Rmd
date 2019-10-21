@@ -21,6 +21,8 @@ library(tint)
 # invalidate cache when the package version changes
 
 knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
                       tidy = FALSE, 
                       cache.extra = packageVersion('tint'))
 
@@ -86,7 +88,7 @@ $miles = 6 * hours$
 
 $y = 6* x$
 
-In this case, the runner’s speed (6 miles per hour) is what we call the slope of the line. The <font color="orange">orange</font> runner is getting 6 miles of distance for every hour spent running.  Economists sometimes talk about this idea as the “rate of return”:  For every hour of running, the <font color="orange">orange</font> runner gets 6 miles of distance.  
+In this case, the runner’s speed (6 miles per hour) is what we call the *slope* of the line. The <font color="orange">orange</font> runner is getting 6 miles of distance for every hour spent running.  Economists sometimes talk about this idea as the “rate of return”:  For every hour of running, the <font color="orange">orange</font> runner gets 6 miles of distance.  
 
 # Imagine Two Additional Runners
 
@@ -129,9 +131,9 @@ p2 # replay graph
 ```
 
 
-The <font color="red">red</font> runner starts at the same place as the <font color="orange">orange</font> runner, but runs at a slower 3 mile per hour pace.  We can say that the slope of the <font color="red">red</font> runner’s line is flatter than the line for the orange runner.  In fact, this slope is 3 miles per hour.
+The <font color="red">red</font> runner starts at the same place as the <font color="orange">orange</font> runner, but runs at a slower 3 mile per hour pace.  We can say that the *slope* of the <font color="red">red</font> runner’s line is flatter than the line for the orange runner.  In fact, this *slope* is 3 miles per hour.
 
-The <font color="blue">blue</font> runner’s situation is somewhat different.  The <font color="blue">blue</font> runner runs at the same speed as the <font color="orange">orange</font> runner. We can say that their lines on the graph have the same slope. 
+The <font color="blue">blue</font> runner’s situation is somewhat different.  The <font color="blue">blue</font> runner runs at the same speed as the <font color="orange">orange</font> runner. We can say that their lines on the graph have the same *slope*. 
 
 But after two hours of running, the <font color="blue">blue</font> runner is further along because the <font color="blue">blue</font> runner started 2 miles ahead of the <font color="orange">orange</font> runner.  We need a new term to describe this idea.  In graphing, and in statistics, we say that the <font color="blue">blue</font> runner’s line intercepts the y axis at a higher point than the line for the <font color="orange">orange</font> runner.  Put another way, the <font color="blue">blue</font> runner has a higher y-intercept than the <font color="orange">orange</font> runner.  
 
@@ -184,5 +186,5 @@ p3 +
 
 My guess is drawn as a <font color="blue">blue</font> line.
 
-I could even make a guess about the slope which represents the average speed:  How far does the distance go up for every mile that is run, on average?  
+I could even make a guess about the *slope* which represents the average speed:  How far does the distance go up for every mile that is run, on average?  
 

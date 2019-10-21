@@ -5,6 +5,10 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   bookdown::epub_book: default  
   bookdown::gitbook:
     highlight: haddock
@@ -13,10 +17,6 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   html_document:
     css: styles.css
     fig_height: 3
@@ -363,6 +363,20 @@ save(clients, # a first data frame, about clients
 Use the Script Editor to save R commands that you want to use again, or to modify for the next project, as well as to create an "audit trail" of your work so that your workflow is documented and replicable. R commands are saved in a *.R* file, e.g. **myscript.R**.
 
 # Process Your Data
+
+## Random Sample
+
+Working with a *random sample* of your data can often be helpful.
+
+The exact syntax of the R sample command is notably *non-intuitive*.
+
+```{r, eval=FALSE, echo=TRUE}
+
+# sample 10 observations from mydata 
+
+mydata_sample <- mydata[sample(nrow(mydata),10),]
+
+```
 
 ## Data Subsets {#subsets}
 
