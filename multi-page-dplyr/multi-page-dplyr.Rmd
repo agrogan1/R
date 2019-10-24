@@ -1,13 +1,13 @@
 ---
-title: "Five Page dplyr"
+title: "Multi-Page dplyr"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output: 
-  tint::tintHtml:
+  tint::tintPdf:
     number_sections: yes
     toc: yes
     highlight: haddock
-  tint::tintPdf:
+  tint::tintHtml:
     number_sections: yes
     toc: yes
     highlight: haddock

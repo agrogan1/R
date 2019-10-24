@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  30 JUN 2019 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 OCT 2019 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**five-page-dplyr.tex
-(./five-page-dplyr.tex
+**multi-page-dplyr.tex
+(./multi-page-dplyr.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tufte-latex/tufte-handout.cls
@@ -304,7 +304,7 @@ LaTeX Info: Redefining \cite on input line 694.
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
-No file five-page-dplyr.bbl.
+No file multi-page-dplyr.bbl.
 \c@@tufte@num@bibkeys=\count110
 (/usr/local/texlive/2018/texmf-dist/tex/latex/sauerj/optparams.sty
 Package: optparams 2004/08/14 v0.9 multiple optional parameters in macros
@@ -737,8 +737,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 123.
 LaTeX Warning: Unused global option(s):
     [12pt].
 
-(./five-page-dplyr.aux)
-\openout1 = `five-page-dplyr.aux'.
+(./multi-page-dplyr.aux)
+\openout1 = `multi-page-dplyr.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 245.
 LaTeX Font Info:    ... okay on input line 245.
@@ -783,9 +783,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 245.
 LaTeX Info: Redefining \pageref on input line 245.
 LaTeX Info: Redefining \nameref on input line 245.
-(./five-page-dplyr.out) (./five-page-dplyr.out)
+(./multi-page-dplyr.out) (./multi-page-dplyr.out)
 \@outlinefile=\write4
-\openout4 = `five-page-dplyr.out'.
+\openout4 = `multi-page-dplyr.out'.
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 245.
@@ -864,7 +864,7 @@ LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/l/n' will be
 (Font)              scaled to size 12.0pt on input line 247.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 253.
-(./five-page-dplyr.toc
+(./multi-page-dplyr.toc
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 4.
@@ -881,7 +881,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 9.30756pt on input line 9.
 )
 \tf@toc=\write5
-\openout5 = `five-page-dplyr.toc'.
+\openout5 = `multi-page-dplyr.toc'.
 
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 262
 .
@@ -961,13 +961,13 @@ y cre-ate the new data set \T1/fvm/m/n/10 mynewdata\T1/RobotoCondensed-LF/m/n/1
 0 . 
  []
 
-<five-page-dplyr_files/figure-latex/unnamed-chunk-22-1.pdf, id=129, 279.0425pt 
-x 170.6375pt>
-File: five-page-dplyr_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (t
-ype pdf)
-<use five-page-dplyr_files/figure-latex/unnamed-chunk-22-1.pdf>
-Package pdftex.def Info: five-page-dplyr_files/figure-latex/unnamed-chunk-22-1.
-pdf  used on input line 983.
+<multi-page-dplyr_files/figure-latex/unnamed-chunk-22-1.pdf, id=129, 279.0425pt
+ x 170.6375pt>
+File: multi-page-dplyr_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (
+type pdf)
+<use multi-page-dplyr_files/figure-latex/unnamed-chunk-22-1.pdf>
+Package pdftex.def Info: multi-page-dplyr_files/figure-latex/unnamed-chunk-22-1
+.pdf  used on input line 983.
 (pdftex.def)             Requested size: 144.00441pt x 88.06024pt.
 
 Package bibentry Warning: You have used \nobibliography* 
@@ -975,23 +975,23 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                You may not be able to run BibTeX.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 987.
-[5 <./five-page-dplyr_files/figure-latex/unnamed-chunk-22-1.pdf>]
+[5 <./multi-page-dplyr_files/figure-latex/unnamed-chunk-22-1.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 987.
-(./five-page-dplyr.aux)
+(./multi-page-dplyr.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 987.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 987.
-Package rerunfilecheck Info: File `five-page-dplyr.out' has not changed.
+Package rerunfilecheck Info: File `multi-page-dplyr.out' has not changed.
 (rerunfilecheck)             Checksum: 708004C38C26CFE0A54944DAB041A2BD;2194.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 987.
  ) 
 Here is how much of TeX's memory you used:
  14280 strings out of 492649
- 205733 string characters out of 6129622
- 311779 words of memory out of 5000000
+ 205753 string characters out of 6129622
+ 311789 words of memory out of 5000000
  17816 multiletter control sequences out of 15000+600000
  101435 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,11n,45p,323b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,11n,45p,324b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2018/texmf-dist/fonts/enc/dvips/roboto/rbto_v5svcm.enc}{/usr/local/texli
 ve/2018/texmf-dist/fonts/enc/dvips/roboto/rbto_idpkzy.enc}</usr/local/texlive/2
@@ -1002,7 +1002,7 @@ t.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/google/roboto/RobotoConde
 nsed-Regular.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/bera/fv
 mb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb
 >
-Output written on five-page-dplyr.pdf (5 pages, 102436 bytes).
+Output written on multi-page-dplyr.pdf (5 pages, 101791 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
