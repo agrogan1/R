@@ -36,6 +36,8 @@ library(ggplot2) # beautiful graphs
 
 library(gganimate) # animated beautiful graphs
 
+library(pander) # beautiful tables
+
 ```
 
 # Introduction
@@ -57,9 +59,9 @@ y1 <- 6 * x1
 mydata <- data.frame(x1,y1)
 
 p1 <- ggplot(data = mydata,
-            aes(x = x1,
-                y = y1,
-                group = 1)) +
+             aes(x = x1,
+                 y = y1,
+                 group = 1)) +
   geom_point(color = "orange",
              size = 10) + 
   geom_line(color = "orange",
@@ -72,6 +74,7 @@ p1 <- ggplot(data = mydata,
   labs(title = "Distance as a Function of Time",
        x = "Hours",
        y = "Distance") +
+  theme_minimal() +
   theme(title = element_text(size = rel(2)),
         axis.text = element_text(size = rel(2))) +
   transition_reveal(x1)
@@ -121,6 +124,7 @@ p2 <- ggplot(data = mydata2,
   scale_color_manual(values = c("blue",
                                 "orange",
                                 "red")) +
+  theme_minimal() +
   theme(title = element_text(size = rel(2)),
         axis.text = element_text(size = rel(2))) +
   transition_reveal(x2)
@@ -130,7 +134,7 @@ p2 # replay graph
 
 ```
 
-The <font color="red">red</font> runner starts at the same place as the <font color="orange">orange</font> runner, but runs at a slower 3 mile per hour pace.  We can say that the *slope* of the <font color="red">red</font> runner’s line is flatter than the line for the orange runner.  In fact, this *slope* is 3 miles per hour.
+The <font color="red">red</font> runner starts at the same place as the <font color="orange">orange</font> runner, but runs at a slower 3 mile per hour pace.  We can say that the *slope* of the <font color="red">red</font> runner’s line is flatter than the line for the <font color="orange">orange</font> runner.  In fact, this *slope* is 3 miles per hour.
 
 The <font color="blue">blue</font> runner’s situation is somewhat different.  The <font color="blue">blue</font> runner runs at the same speed as the <font color="orange">orange</font> runner. We can say that their lines on the graph have the same *slope*. 
 
@@ -139,8 +143,6 @@ But after two hours of running, the <font color="blue">blue</font> runner is fur
 These two concepts of the *slope* and the *y-intercept* are the foundations of the idea of regression.
 
 # A New Example With More Runners
-
-Let’s stick with the hypothetical example of runners, but now let’s imagine a slightly different situation.  Imagine  that we have data on how far several different runners have run, and we want to find the average speed of these runners. (you could also think this as the average rate of change of distance over time.)
 
 ```{r, fig.margin = TRUE}
 
@@ -159,18 +161,23 @@ p3 <- ggplot(runners,
                  y = miles)) +
   geom_point(aes(color = runner),
              size = 10) +
+  xlim(0,3) +
+  ylim(0,15) +
   labs(title = "Distance Run by Time Spent Running",
        x = "Hours",
-       y = "Distance") +
-  theme(title = element_text(size = rel(1.5)),
-        axis.text = element_text(size = rel(1.5)))  
+       y = "Distance") + 
+  theme_minimal() +
+  theme(title = element_text(size = rel(2)),
+        axis.text = element_text(size = rel(2)))  
 
 p3 # + 
   # transition_manual(hours, cumulative = TRUE)
 
 ```
 
-I want to draw the line that best fits these data to get a sense of on average, how fast runners run.
+Let’s stick with the hypothetical example of runners, but now let’s imagine a slightly different situation.  Imagine  that we have data on how far several different runners have run, and we want to find the average speed of these runners. (you could also think this as the average rate of change of distance over time.)
+
+I want to draw the line that *best fits* these data to get a sense of *on average*, how fast runners run.
 
 ```{r, fig.margin = TRUE}
 
@@ -186,11 +193,23 @@ My guess is drawn as a <font color="blue">blue</font> line.
 
 I could even make a guess about the *slope* which represents the average speed:  How far does the distance go up for every mile that is run, on average?  
 
-My best guess about the slope is drawn as a purple line.   It looks like for every hour run, on average, runners run just under 5 miles, so let’s say 4.9 miles per hour.
+My best guess about the slope is drawn as a <font color="purple">purple</font> line. It looks like for every hour run, on average, runners run just under 5 miles, so let’s say 4.9 miles per hour.
 
-I also need to think about where the line crosses, or intercepts, the y-axis.
+```{r, fig.margin = TRUE}
 
-I’ve extended the line in green and marked my estimate of the y-intercept.
+p3 + 
+  geom_abline(intercept = 0, 
+              slope = 4.9,
+              size = 2,
+              color = "purple") +
+  geom_label(aes(x = 2.5,
+                 y = 10,
+                 label = "4.9 miles per hour")) 
+
+```
+
+
+I also need to think about where the line crosses, or *intercepts*, the y-axis.
 
 It looks like my best guess is that all of the runners started the race at 0.  That is to say, none of the runners had a head start, like they did in my first example.
 
@@ -198,7 +217,7 @@ So now, I could think about writing an equation for my line.
 
 I know that the equation for my line is:
 
-distance = starting place + speed * hours
+$$\text{distance} = \text{starting place} + \text{speed} * \text{hours}$$
 
 In this particular case my best guess is…
 
@@ -208,36 +227,44 @@ Expressed in more intuitive language:  “for every 1 hour that a runner runs, o
 
 We need to think about a few more issues.
 
-In general, we call the starting place by a few different names:
+In general, we call the *starting place* by a few different names:
 
-the y-intercept
-β0
+* the *y-intercept*
+* $\beta_0$
 
-We call the rate of change by a few different names as well:
+We call the *rate of change* by a few different names as well:
 
-the slope
-β1
+* the *slope*
+* $\beta_1$
 
 So now we can talk about a more general form for our equation.  A more general way of writing:
 
-miles = 0 + 4.9 hours
+$miles = 0 + 4.9 hours$
 
 Would be to say
 
-miles = β0 + β1hours
-y = intercept + slope * x
-y = β0 + β1x
+* $miles = \beta_0 + \beta_1 hours$
+* $y = intercept + slope * x$
+* $y = \beta_0 + \beta_1 x$
 
+# Getting Estimates From Computer Software
 
 The last thing that I want to do in this tutorial is to ask the computer to make a best guess about the slope and the y-intercept.  We’ll learn something about how those estimates are made in other readings, and in lecture.
 
+```{r}
+
+fit <- lm(miles ~ hours, data = runners)
+
+pander(summary(fit))
+
+```
+
 As always, when looking at statistical output, there is probably more information than we want, so it makes sense to identify the crucial quantities.
 
-It turns out our estimate of slope (4.9) was pretty close to what the computer finds (4.71) , while our estimate that the intercept was 0 is a little bit different from the computer’s estimate (.714).  According to the computer, the best guess is that the average runner had a little bit of a head start.
-
+It turns out our estimate of slope *(4.9)* was pretty close to what the computer finds `r round(fit$coefficients[2], digits = 2)` , while our estimate that the intercept was *0* is a little bit different from the computer’s estimate `r round(fit$coefficients[1], digits = 2)`.  According to the computer, the best guess is that the average runner had a little bit of a head start.
 
 We’ll talk through some of the implications of these ideas in class. 
 
-(written by Andy Grogan-Kaylor.  Comments and questions welcome and should be directed to agrogan@umich.edu) 
+(written by [Andy Grogan-Kaylor](https://agrogan1.github.io/).  Comments and questions welcome and should be directed to [agrogan@umich.edu](agrogan@umich.edu)) 
 
 
