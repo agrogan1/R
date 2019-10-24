@@ -130,7 +130,6 @@ p2 # replay graph
 
 ```
 
-
 The <font color="red">red</font> runner starts at the same place as the <font color="orange">orange</font> runner, but runs at a slower 3 mile per hour pace.  We can say that the *slope* of the <font color="red">red</font> runner’s line is flatter than the line for the orange runner.  In fact, this *slope* is 3 miles per hour.
 
 The <font color="blue">blue</font> runner’s situation is somewhat different.  The <font color="blue">blue</font> runner runs at the same speed as the <font color="orange">orange</font> runner. We can say that their lines on the graph have the same *slope*. 
@@ -183,8 +182,62 @@ p3 +
 
 ```
 
-
 My guess is drawn as a <font color="blue">blue</font> line.
 
 I could even make a guess about the *slope* which represents the average speed:  How far does the distance go up for every mile that is run, on average?  
+
+My best guess about the slope is drawn as a purple line.   It looks like for every hour run, on average, runners run just under 5 miles, so let’s say 4.9 miles per hour.
+
+I also need to think about where the line crosses, or intercepts, the y-axis.
+
+I’ve extended the line in green and marked my estimate of the y-intercept.
+
+It looks like my best guess is that all of the runners started the race at 0.  That is to say, none of the runners had a head start, like they did in my first example.
+
+So now, I could think about writing an equation for my line.
+
+I know that the equation for my line is:
+
+distance = starting place + speed * hours
+
+In this particular case my best guess is…
+
+$$miles = 0 + 4.9 * hours$$
+
+Expressed in more intuitive language:  “for every 1 hour that a runner runs, on average, runners get 4.9 miles of distance.”
+
+We need to think about a few more issues.
+
+In general, we call the starting place by a few different names:
+
+the y-intercept
+β0
+
+We call the rate of change by a few different names as well:
+
+the slope
+β1
+
+So now we can talk about a more general form for our equation.  A more general way of writing:
+
+miles = 0 + 4.9 hours
+
+Would be to say
+
+miles = β0 + β1hours
+y = intercept + slope * x
+y = β0 + β1x
+
+
+The last thing that I want to do in this tutorial is to ask the computer to make a best guess about the slope and the y-intercept.  We’ll learn something about how those estimates are made in other readings, and in lecture.
+
+As always, when looking at statistical output, there is probably more information than we want, so it makes sense to identify the crucial quantities.
+
+It turns out our estimate of slope (4.9) was pretty close to what the computer finds (4.71) , while our estimate that the intercept was 0 is a little bit different from the computer’s estimate (.714).  According to the computer, the best guess is that the average runner had a little bit of a head start.
+
+
+We’ll talk through some of the implications of these ideas in class. 
+
+(written by Andy Grogan-Kaylor.  Comments and questions welcome and should be directed to agrogan@umich.edu) 
+
 
