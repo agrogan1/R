@@ -65,7 +65,8 @@ p1 <- ggplot(data = mydata,
                  y = y1,
                  group = 1)) +
   geom_point(color = "orange",
-             size = 10) + 
+             size = 10,
+             alpha = .7) + 
   geom_line(color = "orange",
             size = 2) + 
   # geom_label(aes(label = paste("hours", 
@@ -78,7 +79,8 @@ p1 <- ggplot(data = mydata,
        y = "Distance") +
   theme_minimal() +
   theme(title = element_text(size = rel(2)),
-        axis.text = element_text(size = rel(2))) +
+        axis.text = element_text(size = rel(2)),
+        legend.text = element_text(size = rel(2))) +
   transition_reveal(x1)
 
 p1 # replay graph
@@ -118,8 +120,10 @@ p2 <- ggplot(data = mydata2,
                 y = y2,
                 color = runner,
                 group = runner)) +
-  geom_point(size = 10) + 
-  geom_line(size = 2) + 
+  geom_point(size = 10, 
+             alpha = .7) + 
+  geom_line(size = 2,
+            show.legend = FALSE) + 
   labs(title = "Distance as a Function of Time",
        x = "Hours",
        y = "Distance") +
@@ -128,7 +132,8 @@ p2 <- ggplot(data = mydata2,
                                 "red")) +
   theme_minimal() +
   theme(title = element_text(size = rel(2)),
-        axis.text = element_text(size = rel(2))) +
+        axis.text = element_text(size = rel(2)),
+        legend.text = element_text(size = rel(2))) +
   transition_reveal(x2)
 
 p2 # replay graph
@@ -168,13 +173,14 @@ p3 <- ggplot(runners,
   geom_point(aes(color = runner),
              size = 10) +
   xlim(0,3) +
-  ylim(0,15) +
+  ylim(0,16) +
   labs(title = "Distance Run by Time Spent Running",
        x = "Hours",
        y = "Distance") + 
   theme_minimal() +
   theme(title = element_text(size = rel(2)),
-        axis.text = element_text(size = rel(2)))  
+        axis.text = element_text(size = rel(2)),
+        legend.text = element_text(size = rel(2)))  
 
 p3 # + 
   # transition_manual(hours, cumulative = TRUE)
