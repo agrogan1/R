@@ -44,6 +44,8 @@ library(pander) # beautiful tables
 
 Somewhere along the way in a math class in elementary, middle or high school, you may have encountered the idea of graphing lines and thinking about the equations that represent those lines.  
 
+> We are going to try to illustrate the idea of *regression analysis* using some hypothetical data on *runners*.
+
 # Imagine A Single Runner
 
 Let’s think about this idea using the hypothetical example of several runners.
@@ -85,11 +87,11 @@ p1 # replay graph
 
 We can write an equation that represents the distance run in several equivalent ways:
 
-$distance = 6 * time$
+* $distance = 6 * time$
 
-$miles = 6 * hours$
+* $miles = 6 * hours$
 
-$y = 6* x$
+* $y = 6* x$
 
 In this case, the runner’s speed (6 miles per hour) is what we call the *slope* of the line. The <font color="orange">orange</font> runner is getting 6 miles of distance for every hour spent running.  Economists sometimes talk about this idea as the “rate of return”:  For every hour of running, the <font color="orange">orange</font> runner gets 6 miles of distance.  
 
@@ -144,7 +146,7 @@ These two concepts of the *slope* and the *y-intercept* are the foundations of t
 
 # A New Example With More Runners
 
-```{r, fig.margin = TRUE}
+```{r}
 
 library(haven)
 
@@ -155,6 +157,10 @@ runners$runner <- factor(runners$runner)
 fit <- lm(miles ~ hours, data = runners)
 
 runners$yhat <- fitted.values(fit)
+
+```
+
+```{r, fig.margin = TRUE}
 
 p3 <- ggplot(runners,
              aes(x = hours,
@@ -239,7 +245,7 @@ We call the *rate of change* by a few different names as well:
 
 So now we can talk about a more general form for our equation.  A more general way of writing:
 
-$miles = 0 + 4.9 hours$
+$$miles = 0 + 4.9 hours$$
 
 Would be to say
 
@@ -261,7 +267,9 @@ pander(summary(fit))
 
 As always, when looking at statistical output, there is probably more information than we want, so it makes sense to identify the crucial quantities.
 
-It turns out our estimate of slope *(4.9)* was pretty close to what the computer finds `r round(fit$coefficients[2], digits = 2)` , while our estimate that the intercept was *0* is a little bit different from the computer’s estimate `r round(fit$coefficients[1], digits = 2)`.  According to the computer, the best guess is that the average runner had a little bit of a head start.
+It turns out our estimate of slope *(4.9)* was pretty close to what the computer finds `r round(fit$coefficients[2], digits = 3)` , while our estimate that the intercept was *0* is a little bit different from the computer’s estimate `r round(fit$coefficients[1], digits = 3)`.  According to the computer, the best guess is that the average runner had a little bit of a head start.
+
+Lastly, the $R^2$ value indicates that `r round(summary(fit)$r.squared, digits = 3)` of the variation in our *dependent variable*, *miles*, is explained by the variation in our *independent variable*, *hours*.
 
 We’ll talk through some of the implications of these ideas in class. 
 
