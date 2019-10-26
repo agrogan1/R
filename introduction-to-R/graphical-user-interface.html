@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6 Graphical User Interface | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6 Graphical User Interface | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,15 +24,15 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-10-21" />
+<meta name="date" content="2019-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="writing-r-code-or-script.html"/>
-<link rel="next" href="get-your-data.html"/>
+<link rel="prev" href="writing-r-code-or-script.html">
+<link rel="next" href="get-your-data.html">
 <script src="libs/jquery/jquery.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
@@ -40,9 +40,6 @@
 <link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
-
-
 
 
 
@@ -58,6 +55,7 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -69,7 +67,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -150,7 +148,10 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <li class="chapter" data-level="10.8" data-path="process-your-data.html"><a href="process-your-data.html#recoding-variables"><i class="fa fa-check"></i><b>10.8</b> Recoding Variables</a></li>
 <li class="chapter" data-level="10.9" data-path="process-your-data.html"><a href="process-your-data.html#scales-or-measures"><i class="fa fa-check"></i><b>10.9</b> Scales or Measures</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a><ul>
+<li class="chapter" data-level="11.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#continuous-variables"><i class="fa fa-check"></i><b>11.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="11.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#categorical-variables"><i class="fa fa-check"></i><b>11.2</b> Categorical Variables</a></li>
+</ul></li>
 <li class="chapter" data-level="12" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a><ul>
 <li class="chapter" data-level="12.1" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#crosstabulation"><i class="fa fa-check"></i><b>12.1</b> Crosstabulation</a></li>
 <li class="chapter" data-level="12.2" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#correlation"><i class="fa fa-check"></i><b>12.2</b> Correlation</a></li>
@@ -180,7 +181,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="graphical-user-interface" class="section level1">
 <h1><span class="header-section-number">6</span> Graphical User Interface</h1>
 <p>A good <strong>Graphical User Interface</strong> (GUI) can make some of the base functionality of R available without the use of syntax. <a href="http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/"><strong>RCommander</strong></a> is the best GUI, and can be installed from the command line by typing:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;Rcmdr&quot;</span>, <span class="dt">dependencies=</span><span class="ot">TRUE</span>)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;Rcmdr&quot;</span>, <span class="dt">dependencies=</span><span class="ot">TRUE</span>)</code></pre>
 <p><strong>RCommander</strong> can make some tasks easier, but the syntax that it produces can sometimes be non-intuitive. Often it is easiest (and more in the interests of replicable research) just to learn how to write the <code>R code</code> that accomplishes a particular task. Further, your learning may go quicker if you bypass <strong>RCommander</strong> altogether and simply learn how to write R code.</p>
 <div class="figure"><span id="fig:unnamed-chunk-10"></span>
 <img src="introduction-to-R_files/figure-html/unnamed-chunk-10-1.png" alt="screenshot of RCommander" width="672" />
@@ -207,13 +208,11 @@ Figure 6.2: screenshot of RStudio
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>
 <script src="libs/gitbook/js/lunr.js"></script>
-<script src="libs/gitbook/js/clipboard.min.js"></script>
 <script src="libs/gitbook/js/plugin-search.js"></script>
 <script src="libs/gitbook/js/plugin-sharing.js"></script>
 <script src="libs/gitbook/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook/js/jquery.highlight.js"></script>
-<script src="libs/gitbook/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -257,9 +256,8 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

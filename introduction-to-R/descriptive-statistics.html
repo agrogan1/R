@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>11 Descriptive Statistics | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
   <meta property="og:title" content="11 Descriptive Statistics | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,15 +24,15 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-10-21" />
+<meta name="date" content="2019-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="process-your-data.html"/>
-<link rel="next" href="bivariate-statistics.html"/>
+<link rel="prev" href="process-your-data.html">
+<link rel="next" href="bivariate-statistics.html">
 <script src="libs/jquery/jquery.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
@@ -40,9 +40,6 @@
 <link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
-
-
 
 
 
@@ -58,6 +55,7 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -69,7 +67,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -150,7 +148,10 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <li class="chapter" data-level="10.8" data-path="process-your-data.html"><a href="process-your-data.html#recoding-variables"><i class="fa fa-check"></i><b>10.8</b> Recoding Variables</a></li>
 <li class="chapter" data-level="10.9" data-path="process-your-data.html"><a href="process-your-data.html#scales-or-measures"><i class="fa fa-check"></i><b>10.9</b> Scales or Measures</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a><ul>
+<li class="chapter" data-level="11.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#continuous-variables"><i class="fa fa-check"></i><b>11.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="11.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#categorical-variables"><i class="fa fa-check"></i><b>11.2</b> Categorical Variables</a></li>
+</ul></li>
 <li class="chapter" data-level="12" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a><ul>
 <li class="chapter" data-level="12.1" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#crosstabulation"><i class="fa fa-check"></i><b>12.1</b> Crosstabulation</a></li>
 <li class="chapter" data-level="12.2" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#correlation"><i class="fa fa-check"></i><b>12.2</b> Correlation</a></li>
@@ -179,12 +180,20 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
             <section class="normal" id="section-">
 <div id="descriptive-statistics" class="section level1">
 <h1><span class="header-section-number">11</span> Descriptive Statistics</h1>
+<div id="continuous-variables" class="section level2">
+<h2><span class="header-section-number">11.1</span> Continuous Variables</h2>
 <p><code>summary(mydata$x)</code> gives you basic descriptive statistics for a variable, such as the mean (average). Especially useful for continuous variables. Use <code>summary(mydata)</code> to summarize every variable in your data.</p>
-<p><code>skim(mydata)</code> from <code>library(skimr)</code> or <code>describe(mydata)</code> from <code>library(psych)</code> will often give you a nicer summary of your variables that is closer to what you want for an academic paper or agency report.</p>
+<p><code>skim(mydata)</code> from <code>library(skimr)</code> or <code>describe(mydata)</code> from <code>library(psych)</code> will often give you a nicer summary of your variables that is closer to what you want for an academic paper or agency report. <code>describe(mydata)</code> is often especially useful when you want to show both the mean and standard deviation for several variables.</p>
+</div>
+<div id="categorical-variables" class="section level2">
+<h2><span class="header-section-number">11.2</span> Categorical Variables</h2>
+<p><code>table(mydata$x)</code> gives you a frequency distribution for your variable. Especially useful for <em>factor variables</em>.</p>
+<p><code>prop.table(table(mydata$x))</code> will give you a table of proportions.</p>
+<p>Calling up <code>library(descr)</code> and then using <code>freq(mydata$x)</code> will give you a more nicely formatted frequency distribution.</p>
 <blockquote>
 <p>You may only want to look at descriptive statistics for a subset of your data. Creating a <a href="process-your-data.html#subsets">subset</a> and then running descriptive statistics on that subset may be helpful.</p>
 </blockquote>
-<p><code>table(mydata$x)</code> gives you a frequency distribution for your variable. Especially useful for <em>factor variables</em>. <code>prop.table(table(mydata$x))</code> will give you a table of proportions. Calling up <code>library(descr)</code> and then using <code>freq(mydata$x)</code> will give you a more nicely formatted frequency distribution.</p>
+</div>
 </div>
             </section>
 
@@ -197,13 +206,11 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>
 <script src="libs/gitbook/js/lunr.js"></script>
-<script src="libs/gitbook/js/clipboard.min.js"></script>
 <script src="libs/gitbook/js/plugin-search.js"></script>
 <script src="libs/gitbook/js/plugin-sharing.js"></script>
 <script src="libs/gitbook/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook/js/jquery.highlight.js"></script>
-<script src="libs/gitbook/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -247,9 +254,8 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

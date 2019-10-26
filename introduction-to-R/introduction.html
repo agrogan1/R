@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Introduction | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Introduction | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,15 +24,15 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-10-21" />
+<meta name="date" content="2019-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="background.html"/>
-<link rel="next" href="base-r-and-libraries.html"/>
+<link rel="prev" href="background.html">
+<link rel="next" href="base-r-and-libraries.html">
 <script src="libs/jquery/jquery.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
@@ -40,9 +40,6 @@
 <link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
-
-
 
 
 
@@ -58,6 +55,7 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -69,7 +67,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -150,7 +148,10 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <li class="chapter" data-level="10.8" data-path="process-your-data.html"><a href="process-your-data.html#recoding-variables"><i class="fa fa-check"></i><b>10.8</b> Recoding Variables</a></li>
 <li class="chapter" data-level="10.9" data-path="process-your-data.html"><a href="process-your-data.html#scales-or-measures"><i class="fa fa-check"></i><b>10.9</b> Scales or Measures</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a><ul>
+<li class="chapter" data-level="11.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#continuous-variables"><i class="fa fa-check"></i><b>11.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="11.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#categorical-variables"><i class="fa fa-check"></i><b>11.2</b> Categorical Variables</a></li>
+</ul></li>
 <li class="chapter" data-level="12" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a><ul>
 <li class="chapter" data-level="12.1" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#crosstabulation"><i class="fa fa-check"></i><b>12.1</b> Crosstabulation</a></li>
 <li class="chapter" data-level="12.2" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#correlation"><i class="fa fa-check"></i><b>12.2</b> Correlation</a></li>
@@ -184,10 +185,10 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </blockquote>
 <p>This document is a brief introduction to R<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Commands that you actually type into R are represented in <code>courier font</code>. <code>mydata</code> is the name of your data set. <code>x</code> and <code>y</code> and <code>z</code> refer to variables in your data. More documentation on any command is usually available via <code>help(command)</code> or <code>??command</code>. The R interface makes it extremely easy to do rapid interactive data analysis. Hit <strong>“Up-Arrow”</strong> to recall the most recent command, which you can then quickly edit and resubmit. Remember also that one often submits a command or set of commands from a script window.</p>
 <p>The general idea of many R commands is:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">command</span>(<span class="dt">data =</span> mydata, ...variables..., options)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">command</span>(<span class="dt">data =</span> mydata, ...variables..., options)</code></pre>
 <p>or</p>
 <p><a id="dollarsign"></a></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">command</span>(mydata<span class="op">$</span>xvar, options)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">command</span>(mydata<span class="op">$</span>xvar, options)</code></pre>
 <div class="figure"><span id="fig:unnamed-chunk-4"></span>
 <img src="introduction-to-R_files/figure-html/unnamed-chunk-4-1.png" alt="Graphical Possibilities in Base R" width="672" />
 <p class="caption">
@@ -198,7 +199,7 @@ Figure 2.1: Graphical Possibilities in Base R
 <p>The <code>$</code> sign is a kind of “connector”. <code>mydata$x</code> means: “The variable <code>x</code> in the dataset called <code>mydata</code>”.</p>
 </blockquote>
 <p>Sometimes, it is not necessary to use any options since some authors of R have done a good job of thinking about the defaults. R can make use of long pathnames to files like:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">C<span class="op">:</span><span class="er">/</span>Users<span class="op">/</span>user1<span class="op">/</span>Desktop<span class="op">/</span>mydata.sav</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">C<span class="op">:</span><span class="er">/</span>Users<span class="op">/</span>user1<span class="op">/</span>Desktop<span class="op">/</span>mydata.sav</code></pre>
 <blockquote>
 <p>Note that R uses forward slashes <code>/</code> instead of backslashes for directories. R uses <code>~</code> to refer to the user’s (usually your) home directory.</p>
 </blockquote>
@@ -220,13 +221,11 @@ Figure 2.1: Graphical Possibilities in Base R
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>
 <script src="libs/gitbook/js/lunr.js"></script>
-<script src="libs/gitbook/js/clipboard.min.js"></script>
 <script src="libs/gitbook/js/plugin-search.js"></script>
 <script src="libs/gitbook/js/plugin-sharing.js"></script>
 <script src="libs/gitbook/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook/js/jquery.highlight.js"></script>
-<script src="libs/gitbook/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -270,9 +269,8 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

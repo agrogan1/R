@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>12 Bivariate Statistics | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
 
   <meta property="og:title" content="12 Bivariate Statistics | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,15 +24,15 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-10-21" />
+<meta name="date" content="2019-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="descriptive-statistics.html"/>
-<link rel="next" href="multivariate-statistics.html"/>
+<link rel="prev" href="descriptive-statistics.html">
+<link rel="next" href="multivariate-statistics.html">
 <script src="libs/jquery/jquery.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
@@ -40,9 +40,6 @@
 <link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
-
-
 
 
 
@@ -58,6 +55,7 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -69,7 +67,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -150,7 +148,10 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <li class="chapter" data-level="10.8" data-path="process-your-data.html"><a href="process-your-data.html#recoding-variables"><i class="fa fa-check"></i><b>10.8</b> Recoding Variables</a></li>
 <li class="chapter" data-level="10.9" data-path="process-your-data.html"><a href="process-your-data.html#scales-or-measures"><i class="fa fa-check"></i><b>10.9</b> Scales or Measures</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a><ul>
+<li class="chapter" data-level="11.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#continuous-variables"><i class="fa fa-check"></i><b>11.1</b> Continuous Variables</a></li>
+<li class="chapter" data-level="11.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#categorical-variables"><i class="fa fa-check"></i><b>11.2</b> Categorical Variables</a></li>
+</ul></li>
 <li class="chapter" data-level="12" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a><ul>
 <li class="chapter" data-level="12.1" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#crosstabulation"><i class="fa fa-check"></i><b>12.1</b> Crosstabulation</a></li>
 <li class="chapter" data-level="12.2" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#correlation"><i class="fa fa-check"></i><b>12.2</b> Correlation</a></li>
@@ -182,41 +183,41 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="crosstabulation" class="section level2">
 <h2><span class="header-section-number">12.1</span> Crosstabulation</h2>
 <p>Tabulating two categorical variables (<em>factor variables</em>) together gives you a cross-tabulation of those variables, e.g:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" title="1"><span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y) <span class="co"># simple table of counts</span></a>
-<a class="sourceLine" id="cb30-2" title="2"></a>
-<a class="sourceLine" id="cb30-3" title="3"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y)) <span class="co"># table of cell proportions</span></a>
-<a class="sourceLine" id="cb30-4" title="4"></a>
-<a class="sourceLine" id="cb30-5" title="5"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y),</a>
-<a class="sourceLine" id="cb30-6" title="6">           <span class="dt">margin =</span> <span class="dv">1</span>) <span class="co"># row margins: row proportions</span></a>
-<a class="sourceLine" id="cb30-7" title="7"></a>
-<a class="sourceLine" id="cb30-8" title="8"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y),</a>
-<a class="sourceLine" id="cb30-9" title="9">           <span class="dt">margin =</span> <span class="dv">2</span>) <span class="co"># column margins: column proportions</span></a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y) <span class="co"># simple table of counts</span>
+
+<span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y)) <span class="co"># table of cell proportions</span>
+
+<span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y),
+           <span class="dt">margin =</span> <span class="dv">1</span>) <span class="co"># row margins: row proportions</span>
+
+<span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y),
+           <span class="dt">margin =</span> <span class="dv">2</span>) <span class="co"># column margins: column proportions</span></code></pre>
 <p>then</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">chisq.test</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y))</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y))</code></pre>
 <p>will give you a chi-square test of the relationship of <code>x</code> and <code>y</code>.</p>
 </div>
 <div id="correlation" class="section level2">
 <h2><span class="header-section-number">12.2</span> Correlation</h2>
 <p>The easiest way to test a correlation in R seems to be to create a subset of the data that contains the variables for which you are interested in testing the correlation.</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1">mydatasubset &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata,</a>
-<a class="sourceLine" id="cb32-2" title="2">                       <span class="dt">select =</span> <span class="kw">c</span>(x,y))</a>
-<a class="sourceLine" id="cb32-3" title="3"></a>
-<a class="sourceLine" id="cb32-4" title="4"><span class="kw">cor</span>(mydatasubset) <span class="co"># estimate correlation on subset</span></a></code></pre></div>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">cor.test</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y, </a>
-<a class="sourceLine" id="cb33-2" title="2">         <span class="dt">alternative=</span><span class="st">&quot;two.sided&quot;</span>, </a>
-<a class="sourceLine" id="cb33-3" title="3">         <span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">mydatasubset &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata,
+                       <span class="dt">select =</span> <span class="kw">c</span>(x,y))
+
+<span class="kw">cor</span>(mydatasubset) <span class="co"># estimate correlation on subset</span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y, 
+         <span class="dt">alternative=</span><span class="st">&quot;two.sided&quot;</span>, 
+         <span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)</code></pre>
 <p>will test the statistical significance of this correlation.</p>
 </div>
 <div id="t-test" class="section level2">
 <h2><span class="header-section-number">12.3</span> t Test</h2>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" title="1"><span class="kw">numSummary</span>(mydata<span class="op">$</span>x, <span class="dt">groups=</span>mydata<span class="op">$</span>z)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">numSummary</span>(mydata<span class="op">$</span>x, <span class="dt">groups=</span>mydata<span class="op">$</span>z)</code></pre>
 <p>gives you a summary of continuous variable <code>x</code> by <em>factor variable</em> <code>z</code>.</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">t.test</span>(mydata<span class="op">$</span>x<span class="op">~</span>mydata<span class="op">$</span>z)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">t.test</span>(mydata<span class="op">$</span>x<span class="op">~</span>mydata<span class="op">$</span>z)</code></pre>
 <p>runs a t-test of continuous variable <code>x</code> over <em>factor variable</em> <code>z</code>.</p>
 </div>
 <div id="anova" class="section level2">
 <h2><span class="header-section-number">12.4</span> ANOVA</h2>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1"><span class="kw">aov</span>(x <span class="op">~</span><span class="st"> </span>z, <span class="dt">data=</span>mydata)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">aov</span>(x <span class="op">~</span><span class="st"> </span>z, <span class="dt">data=</span>mydata)</code></pre>
 <p>runs the corresponding ANOVA of continuous variable <code>x</code> across <em>factor variable</em> <code>z</code>.</p>
 </div>
 </div>
@@ -231,13 +232,11 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>
 <script src="libs/gitbook/js/lunr.js"></script>
-<script src="libs/gitbook/js/clipboard.min.js"></script>
 <script src="libs/gitbook/js/plugin-search.js"></script>
 <script src="libs/gitbook/js/plugin-sharing.js"></script>
 <script src="libs/gitbook/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook/js/jquery.highlight.js"></script>
-<script src="libs/gitbook/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -281,9 +280,8 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

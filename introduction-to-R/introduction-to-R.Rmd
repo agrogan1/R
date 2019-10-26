@@ -555,13 +555,21 @@ alpha(myscale_data)
 
 # Descriptive Statistics
 
+## Continuous Variables
+
 `summary(mydata$x)` gives you basic descriptive statistics for a variable, such as the mean (average).  Especially useful for continuous variables.  Use `summary(mydata)` to summarize every variable in your data.
 
-`skim(mydata)` from `library(skimr)` or `describe(mydata)` from `library(psych)` will often give you a nicer summary of your variables that is closer to what you want for an academic paper or agency report.
+`skim(mydata)` from `library(skimr)` or `describe(mydata)` from `library(psych)` will often give you a nicer summary of your variables that is closer to what you want for an academic paper or agency report. `describe(mydata)` is often especially useful when you want to show both the mean and standard deviation for several variables.
+
+## Categorical Variables
+
+`table(mydata$x)` gives you a frequency distribution for your variable.  Especially useful for *factor variables*.
+
+`prop.table(table(mydata$x))` will give you a table of proportions.
+
+Calling up `library(descr)` and then using `freq(mydata$x)` will give you a more nicely formatted frequency distribution.
 
 > You may only want to look at descriptive statistics for a subset of your data. Creating a [subset](#subsets) and then running descriptive statistics on that subset may be helpful.
-
-`table(mydata$x)` gives you a frequency distribution for your variable.  Especially useful for *factor variables*. `prop.table(table(mydata$x))` will give you a table of proportions.  Calling up `library(descr)` and then using `freq(mydata$x)` will give you a more nicely formatted frequency distribution.
 
 # Bivariate Statistics
 
