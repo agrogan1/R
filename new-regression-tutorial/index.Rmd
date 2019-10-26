@@ -1,6 +1,6 @@
 ---
 title: "The Idea of Regression"
-subtitle: "New Regression Tutorial"
+subtitle: "New Regression Tutorial (A Hypothetical Example With Runners)"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output: 
