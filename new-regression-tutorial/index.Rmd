@@ -273,6 +273,17 @@ pander(summary(fit))
 
 As always, when looking at statistical output, there is probably more information than we want, so it makes sense to identify the crucial quantities.
 
+```{r, fig.margin = TRUE}
+
+p3 + geom_smooth(method = "lm",
+                 color = "red", # color
+                 size = 2, # size
+                 fullrange = TRUE) + # use full range
+  labs(subtitle = "Fitted Regression Line") + 
+  theme(plot.subtitle = element_text(color = "red"))
+
+```
+
 It turns out our estimate of slope *(4.9)* was pretty close to what the computer finds `r round(fit$coefficients[2], digits = 3)` , while our estimate that the intercept was *0* is a little bit different from the computer’s estimate `r round(fit$coefficients[1], digits = 3)`.  According to the computer, the best guess is that the average runner had a little bit of a head start.
 
 Lastly, the $R^2$ value indicates that `r round(summary(fit)$r.squared, digits = 3)` of the variation in our *dependent variable*, *miles*, is explained by the variation in our *independent variable*, *hours*.
