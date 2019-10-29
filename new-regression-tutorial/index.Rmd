@@ -275,10 +275,11 @@ As always, when looking at statistical output, there is probably more informatio
 
 ```{r, fig.margin = TRUE}
 
-p3 + geom_smooth(method = "lm",
-                 color = "red", # color
-                 size = 2, # size
-                 fullrange = TRUE) + # use full range
+p3 + 
+  geom_smooth(method = "lm",
+              color = "red",
+              size = 2,
+              fullrange = TRUE) +
   labs(subtitle = "Fitted Regression Line") + 
   theme(plot.subtitle = element_text(color = "red"))
 
