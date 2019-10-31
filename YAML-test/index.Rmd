@@ -3,6 +3,17 @@ title: "RMarkdown YAML Test"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output:
+  html_document:
+    code_download: true
+    css: styles.css
+    highlight: haddock
+    number_sections: yes
+    theme: flatly
+    code_folding: hide
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
   xaringan::moon_reader:
     lib_dir: libs
     nature:
@@ -17,6 +28,16 @@ output:
   ioslides_presentation:
     highlight: haddock
     incremental: yes
+  distill::distill_article:
+    highlight: haddock
+    toc: yes
+  pagedown::html_paged: 
+    highlight: haddock
+    toc: yes
+    number_sections: yes
+    theme: default
+  bookdown::gitbook:
+    highlight: haddock
   revealjs::revealjs_presentation:
     fig_height: 4
     highlight: haddock
@@ -34,27 +55,6 @@ output:
     self_contained: no
     theme: night
     transition: convex
-  distill::distill_article:
-    highlight: haddock
-    toc: yes
-  pagedown::html_paged: 
-    highlight: haddock
-    toc: yes
-    number_sections: yes
-    theme: default
-  bookdown::gitbook:
-    highlight: haddock
-  html_document:
-    code_download: true
-    css: styles.css
-    highlight: haddock
-    number_sections: yes
-    theme: flatly
-    code_folding: hide
-    toc: yes
-    toc_float:
-      collapsed: no
-      smooth_scroll: yes
   tint::tintPdf:
     highlight: haddock
     number_sections: yes
