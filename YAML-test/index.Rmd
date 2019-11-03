@@ -3,28 +3,21 @@ title: "RMarkdown YAML Test"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output:
-  html_document:
-    code_download: true
-    css: styles.css
-    highlight: haddock
-    number_sections: yes
-    theme: flatly
-    code_folding: hide
-    toc: yes
-    toc_float:
-      collapsed: no
-      smooth_scroll: yes
   xaringan::moon_reader:
     lib_dir: libs
     nature:
       countIncrementalSlides: no
       highlightLines: yes
       highlightStyle: github
-  slidy_presentation:
+  slidy_presentation: 
     fig_caption: yes
     footer: Andrew Grogan-Kaylor
     highlight: haddock
     theme: default
+  tint::tintHtml:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   ioslides_presentation:
     highlight: haddock
     incremental: yes
@@ -38,6 +31,22 @@ output:
     theme: default
   bookdown::gitbook:
     highlight: haddock
+  html_document:
+    code_download: true
+    css: styles.css
+    highlight: haddock
+    number_sections: yes
+    theme: flatly
+    code_folding: hide
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
+  bookdown::epub_book: default  
   revealjs::revealjs_presentation:
     fig_height: 4
     highlight: haddock
@@ -53,17 +62,8 @@ output:
     - chalkboard
     - zoom
     self_contained: no
-    theme: night
+    theme: sky
     transition: convex
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
-  bookdown::epub_book: default  
-  tint::tintHtml:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   tufte::tufte_handout:
     fig_height: 2.5
     toc: yes
@@ -84,7 +84,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r, eval = FALSE}
 
-# install.packages(c("bookdown", "radix", "revealjs", "tint", "tufte"))
+# install.packages(c("bookdown", "distill", "revealjs", "tint", "tufte"))
 
 ```
 
