@@ -62,6 +62,7 @@ library(foreign) # exporting to Stata
 mydata <- WDI(country="all", 
               indicator=c("SI.POV.GINI", # Gini
                           "NY.GDP.PCAP.CD", # GDP
+                          "SE.ADT.LITR.ZS", # adult literacy
                           "SP.DYN.LE00.IN", # life expectancy
                           "SP.POP.TOTL", # population
                           "SN.ITK.DEFC.ZS"), # undernourishment
@@ -85,6 +86,7 @@ save(mydata, file="WorldBankData.RData")
 
 mydata <- dplyr::rename(mydata, 
                         GDP = NY.GDP.PCAP.CD,
+                        adult_literacy = SE.ADT.LITR.ZS,
                         life_expectancy = SP.DYN.LE00.IN, 
                         population = SP.POP.TOTL,
                         Gini = SI.POV.GINI,
@@ -125,6 +127,7 @@ mydata %>%
          region,
          year,
          GDP, 
+         adult_literacy,
          life_expectancy, 
          population, 
          Gini,
