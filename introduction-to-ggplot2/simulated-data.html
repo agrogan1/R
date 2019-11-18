@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Simulated Data | Introduction to ggplot2</title>
-  <meta name="description" content="5 Simulated Data | Introduction to ggplot2">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="5 Simulated Data | Introduction to ggplot2" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Simulated Data | Introduction to ggplot2" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   
   
 
-<meta name="author" content="Andy Grogan-Kaylor">
+<meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-08-29">
+<meta name="date" content="2019-11-18" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="call-the-relevant-libraries.html">
-<link rel="next" href="the-essential-idea-of-ggplot2-is-simple-.html">
+<link rel="prev" href="call-the-relevant-libraries.html"/>
+<link rel="next" href="the-essential-idea-of-ggplot2-is-simple-.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -41,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -56,7 +58,6 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -195,54 +196,54 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center">141.6</td>
-<td align="center">151.3</td>
-<td align="center">0</td>
+<td align="center">109.1</td>
+<td align="center">111.7</td>
+<td align="center">1</td>
 </tr>
 <tr class="even">
-<td align="center">97.26</td>
-<td align="center">106.2</td>
-<td align="center">0</td>
-</tr>
-<tr class="odd">
-<td align="center">109.4</td>
-<td align="center">123.2</td>
-<td align="center">0</td>
-</tr>
-<tr class="even">
-<td align="center">78.19</td>
-<td align="center">56.38</td>
+<td align="center">93.58</td>
+<td align="center">100.1</td>
 <td align="center">0</td>
 </tr>
 <tr class="odd">
-<td align="center">117.9</td>
-<td align="center">105.6</td>
-<td align="center">1</td>
-</tr>
-<tr class="even">
-<td align="center">91</td>
-<td align="center">115.8</td>
-<td align="center">1</td>
-</tr>
-<tr class="odd">
-<td align="center">105.1</td>
-<td align="center">114.4</td>
+<td align="center">115.5</td>
+<td align="center">101.1</td>
 <td align="center">0</td>
 </tr>
 <tr class="even">
-<td align="center">108.4</td>
-<td align="center">104.3</td>
+<td align="center">97.66</td>
+<td align="center">103.8</td>
 <td align="center">1</td>
 </tr>
 <tr class="odd">
-<td align="center">74.46</td>
-<td align="center">113.3</td>
+<td align="center">152.9</td>
+<td align="center">161.5</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">85.25</td>
+<td align="center">86.53</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">121.2</td>
+<td align="center">144.4</td>
 <td align="center">1</td>
 </tr>
 <tr class="even">
-<td align="center">85.09</td>
-<td align="center">86.07</td>
+<td align="center">104.7</td>
+<td align="center">91.03</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">92.79</td>
+<td align="center">121.3</td>
 <td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">77</td>
+<td align="center">45.01</td>
+<td align="center">0</td>
 </tr>
 </tbody>
 </table>
@@ -258,11 +259,13 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({

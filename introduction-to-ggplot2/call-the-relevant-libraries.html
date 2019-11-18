@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4 Call The Relevant Libraries | Introduction to ggplot2</title>
-  <meta name="description" content="4 Call The Relevant Libraries | Introduction to ggplot2">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="4 Call The Relevant Libraries | Introduction to ggplot2" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4 Call The Relevant Libraries | Introduction to ggplot2" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   
   
 
-<meta name="author" content="Andy Grogan-Kaylor">
+<meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-08-29">
+<meta name="date" content="2019-11-18" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="a-simple-quick-example.html">
-<link rel="next" href="simulated-data.html">
+<link rel="prev" href="a-simple-quick-example.html"/>
+<link rel="next" href="simulated-data.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -41,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -56,7 +58,6 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -179,17 +180,17 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="call-the-relevant-libraries" class="section level1">
 <h1><span class="header-section-number">4</span> Call The Relevant Libraries</h1>
 <p>You will need a few <a href="http://www-personal.umich.edu/~agrogan/R/introduction-to-R.html#2_base_r_and_libraries">R libraries</a> to work in ggplot. You may <em>only</em> need <code>library(ggplot2)</code>, but some of these other libraries may also be helpful.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2) <span class="co"># beautiful graphs</span>
-
-<span class="kw">library</span>(ggthemes) <span class="co"># nice themes for ggplot2</span>
-
-<span class="kw">library</span>(ggbeeswarm) <span class="co"># &quot;beeswarm&quot; plots</span>
-
-<span class="kw">library</span>(cowplot) <span class="co"># arrrange graphs</span>
-
-<span class="kw">library</span>(pander) <span class="co"># nice tables</span>
-
-<span class="kw">library</span>(psych) <span class="co"># nice table of descriptive statistics</span></code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(ggplot2) <span class="co"># beautiful graphs</span></a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">library</span>(ggthemes) <span class="co"># nice themes for ggplot2</span></a>
+<a class="sourceLine" id="cb3-4" title="4"></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="kw">library</span>(ggbeeswarm) <span class="co"># &quot;beeswarm&quot; plots</span></a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="kw">library</span>(cowplot) <span class="co"># arrrange graphs</span></a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="kw">library</span>(pander) <span class="co"># nice tables</span></a>
+<a class="sourceLine" id="cb3-10" title="10"></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="kw">library</span>(psych) <span class="co"># nice table of descriptive statistics</span></a></code></pre></div>
 </div>
             </section>
 
@@ -202,11 +203,13 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({

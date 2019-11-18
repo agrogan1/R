@@ -10,7 +10,6 @@ output:
       - introduction-to-ggplot2.epub
     highlight: haddock
     css: styles.css
-  bookdown::epub_book: default
   pdf_document:
     fig_height: 2
     highlight: haddock
@@ -18,6 +17,7 @@ output:
     number_sections: yes
     toc: yes
     toc_depth: 3
+  bookdown::epub_book: default
   html_document:
     code_folding: hide
     css: styles.css
@@ -582,7 +582,8 @@ p4 +
 ```{r, fig.height=4}
 
 p5 <- ggplot(mydata, 
-             aes(x = predictor, y = outcome, 
+             aes(x = predictor, 
+                 y = outcome, 
                  color = group)) # aesthetic includes color by group
 
 p5 + geom_point() + 

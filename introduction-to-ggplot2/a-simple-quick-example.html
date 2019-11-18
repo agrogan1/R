@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 A Simple Quick Example | Introduction to ggplot2</title>
-  <meta name="description" content="3 A Simple Quick Example | Introduction to ggplot2">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="3 A Simple Quick Example | Introduction to ggplot2" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 A Simple Quick Example | Introduction to ggplot2" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   
   
 
-<meta name="author" content="Andy Grogan-Kaylor">
+<meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-08-29">
+<meta name="date" content="2019-11-18" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html">
-<link rel="next" href="call-the-relevant-libraries.html">
+<link rel="prev" href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"/>
+<link rel="next" href="call-the-relevant-libraries.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -41,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -56,7 +58,6 @@ a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -187,23 +188,23 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <p>an <code>aesthetic</code> + <code>a geom or two</code> + <code>other optional elements like titles and themes</code>.</p>
 </blockquote>
 <p>So, as a quick and simple example…</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
-
-<span class="kw">ggplot</span>(my_demo_data, <span class="co"># the data that I am using</span>
-       <span class="kw">aes</span>(<span class="dt">x =</span> my_outcome)) <span class="op">+</span><span class="st"> </span><span class="co"># aesthetic: what I am graphing</span>
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;red&quot;</span>, <span class="co"># geom: how I am graphing it</span>
-                 <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) </code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">ggplot</span>(my_demo_data, <span class="co"># the data that I am using</span></a>
+<a class="sourceLine" id="cb1-4" title="4">       <span class="kw">aes</span>(<span class="dt">x =</span> my_outcome)) <span class="op">+</span><span class="st"> </span><span class="co"># aesthetic: what I am graphing</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;red&quot;</span>, <span class="co"># geom: how I am graphing it</span></a>
+<a class="sourceLine" id="cb1-6" title="6">                 <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) </a></code></pre></div>
 <p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>And now, with labels…</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(my_demo_data, <span class="co"># the data that I am using</span>
-       <span class="kw">aes</span>(<span class="dt">x =</span> my_outcome)) <span class="op">+</span><span class="st"> </span><span class="co"># aesthetic: what I am graphing</span>
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;red&quot;</span>, <span class="co"># geom: how I am graphing it</span>
-                 <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span>
-<span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Your Title Here&quot;</span>,
-       <span class="dt">subtitle =</span> <span class="st">&quot;Your Subtitle Here&quot;</span>,
-       <span class="dt">caption =</span> <span class="st">&quot;A Caption, If You Want One&quot;</span>,
-       <span class="dt">x =</span> <span class="st">&quot;my outcome&quot;</span>,
-       <span class="dt">y =</span> <span class="st">&quot;count&quot;</span>)</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">ggplot</span>(my_demo_data, <span class="co"># the data that I am using</span></a>
+<a class="sourceLine" id="cb2-2" title="2">       <span class="kw">aes</span>(<span class="dt">x =</span> my_outcome)) <span class="op">+</span><span class="st"> </span><span class="co"># aesthetic: what I am graphing</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;red&quot;</span>, <span class="co"># geom: how I am graphing it</span></a>
+<a class="sourceLine" id="cb2-4" title="4">                 <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Your Title Here&quot;</span>,</a>
+<a class="sourceLine" id="cb2-6" title="6">       <span class="dt">subtitle =</span> <span class="st">&quot;Your Subtitle Here&quot;</span>,</a>
+<a class="sourceLine" id="cb2-7" title="7">       <span class="dt">caption =</span> <span class="st">&quot;A Caption, If You Want One&quot;</span>,</a>
+<a class="sourceLine" id="cb2-8" title="8">       <span class="dt">x =</span> <span class="st">&quot;my outcome&quot;</span>,</a>
+<a class="sourceLine" id="cb2-9" title="9">       <span class="dt">y =</span> <span class="st">&quot;count&quot;</span>)</a></code></pre></div>
 <p><img src="introduction-to-ggplot2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>This document is a <em>very brief</em> introduction to the <em>basic</em> ideas of ggplot2. More information about ggplot can be found <a href="http://ggplot2.org/">here</a>. More ggplot2 examples can be found <a href="http://www-personal.umich.edu/~agrogan/how_to_choose_a_chart/how_to_choose_a_chart_v3.html">here</a>.</p>
 </div>
@@ -218,11 +219,13 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
