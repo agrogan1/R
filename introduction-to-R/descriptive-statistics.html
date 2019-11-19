@@ -24,7 +24,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-11-18" />
+<meta name="date" content="2019-11-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -153,6 +153,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a><ul>
 <li class="chapter" data-level="11.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#continuous-variables"><i class="fa fa-check"></i><b>11.1</b> Continuous Variables</a></li>
 <li class="chapter" data-level="11.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#categorical-variables"><i class="fa fa-check"></i><b>11.2</b> Categorical Variables</a></li>
+<li class="chapter" data-level="11.3" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#scientific-notation"><i class="fa fa-check"></i><b>11.3</b> Scientific Notation</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a><ul>
 <li class="chapter" data-level="12.1" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#crosstabulation"><i class="fa fa-check"></i><b>12.1</b> Crosstabulation</a></li>
@@ -195,6 +196,15 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <blockquote>
 <p>You may only want to look at descriptive statistics for a subset of your data. Creating a <a href="process-your-data.html#subsets">subset</a> and then running descriptive statistics on that subset may be helpful.</p>
 </blockquote>
+</div>
+<div id="scientific-notation" class="section level2">
+<h2><span class="header-section-number">11.3</span> Scientific Notation</h2>
+<p>R will, by default, often make use of <em>scientific notation</em> to express very large, or very small numbers, e.g. <span class="math inline">\(1.03 \times 10^7\)</span> instead of <span class="math inline">\(1,030,000\)</span>, or <span class="math inline">\(1.03 \times 10^{-7}\)</span> to express <span class="math inline">\(.000000103\)</span>.</p>
+<p>Sometimes you will want to <em>turn off</em> this use of <em>scientific notation</em>.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" title="1"><span class="co"># heavily penalize the use of scientific notation</span></a>
+<a class="sourceLine" id="cb30-2" title="2"><span class="co"># i.e. turn off scientific notation</span></a>
+<a class="sourceLine" id="cb30-3" title="3"></a>
+<a class="sourceLine" id="cb30-4" title="4"><span class="kw">options</span>(<span class="dt">scipen=</span><span class="dv">999</span>) </a></code></pre></div>
 </div>
 </div>
             </section>

@@ -24,7 +24,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-11-18" />
+<meta name="date" content="2019-11-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -153,6 +153,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <li class="chapter" data-level="11" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a><ul>
 <li class="chapter" data-level="11.1" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#continuous-variables"><i class="fa fa-check"></i><b>11.1</b> Continuous Variables</a></li>
 <li class="chapter" data-level="11.2" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#categorical-variables"><i class="fa fa-check"></i><b>11.2</b> Categorical Variables</a></li>
+<li class="chapter" data-level="11.3" data-path="descriptive-statistics.html"><a href="descriptive-statistics.html#scientific-notation"><i class="fa fa-check"></i><b>11.3</b> Scientific Notation</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a><ul>
 <li class="chapter" data-level="12.1" data-path="bivariate-statistics.html"><a href="bivariate-statistics.html#crosstabulation"><i class="fa fa-check"></i><b>12.1</b> Crosstabulation</a></li>
@@ -182,35 +183,35 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
             <section class="normal" id="section-">
 <div id="graphing" class="section level1">
 <h1><span class="header-section-number">14</span> Graphing</h1>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" title="1"><span class="kw">hist</span>(mydata<span class="op">$</span>x)</a></code></pre></div>
-<div class="figure"><span id="fig:unnamed-chunk-43"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-43-1.png" alt="histogram of x" width="672" />
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">hist</span>(mydata<span class="op">$</span>x)</a></code></pre></div>
+<div class="figure"><span id="fig:unnamed-chunk-44"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-44-1.png" alt="histogram of x" width="672" />
 <p class="caption">
 Figure 14.1: histogram of x
 </p>
 </div>
 <p>will give you a nice display of one continuous variable.</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">hist</span>(mydata<span class="op">$</span>x, <span class="dt">main=</span><span class="st">&quot;...&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;...&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">hist</span>(mydata<span class="op">$</span>x, <span class="dt">main=</span><span class="st">&quot;...&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;...&quot;</span>)</a></code></pre></div>
 <p>gives a nicer looking graph.</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">barplot</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x))</a></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">barplot</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x))</a></code></pre></div>
 <p>gives similar results when x is a <em>factor variable</em>.</p>
-<div class="figure"><span id="fig:unnamed-chunk-46"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-46-1.png" alt="barplot of y" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-47"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-47-1.png" alt="barplot of y" width="672" />
 <p class="caption">
 Figure 14.2: barplot of y
 </p>
 </div>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">plot</span>(mydata<span class="op">$</span>y, mydata<span class="op">$</span>x)</a></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">plot</span>(mydata<span class="op">$</span>y, mydata<span class="op">$</span>x)</a></code></pre></div>
 <p>gives you a twoway scatterplot of your data</p>
 <p>A more nicely labelled graph can be obtained with:</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">plot</span>(y, x, </a>
-<a class="sourceLine" id="cb42-2" title="2">     <span class="dt">main=</span> <span class="st">&quot;...&quot;</span>, </a>
-<a class="sourceLine" id="cb42-3" title="3">     <span class="dt">xlab=</span> <span class="st">&quot;...&quot;</span>, </a>
-<a class="sourceLine" id="cb42-4" title="4">     <span class="dt">ylab=</span> <span class="st">&quot;...&quot;</span>) </a></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">plot</span>(y, x, </a>
+<a class="sourceLine" id="cb43-2" title="2">     <span class="dt">main=</span> <span class="st">&quot;...&quot;</span>, </a>
+<a class="sourceLine" id="cb43-3" title="3">     <span class="dt">xlab=</span> <span class="st">&quot;...&quot;</span>, </a>
+<a class="sourceLine" id="cb43-4" title="4">     <span class="dt">ylab=</span> <span class="st">&quot;...&quot;</span>) </a></code></pre></div>
 <p><code>abline(lm(mydata$y~mydata$x))</code> will add a linear fit line to a scatterplot that you have already constructed.</p>
 <p><code>abline(lm(mydata$y~mydata$x), col="gold", lwd=5)</code> will be a nicer looking fit line.</p>
-<div class="figure"><span id="fig:unnamed-chunk-49"></span>
-<img src="introduction-to-R_files/figure-html/unnamed-chunk-49-1.png" alt="scatterplot of y against x" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-50"></span>
+<img src="introduction-to-R_files/figure-html/unnamed-chunk-50-1.png" alt="scatterplot of y against x" width="672" />
 <p class="caption">
 Figure 14.3: scatterplot of y against x
 </p>

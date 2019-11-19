@@ -5,6 +5,7 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
+  bookdown::epub_book: default  
   bookdown::gitbook:
     highlight: haddock
     css: styles.css
@@ -16,7 +17,6 @@ output:
     highlight: haddock
     number_sections: yes
     toc: yes
-  bookdown::epub_book: default  
   html_document:
     css: styles.css
     fig_height: 3
@@ -570,6 +570,21 @@ alpha(myscale_data)
 Calling up `library(descr)` and then using `freq(mydata$x)` will give you a more nicely formatted frequency distribution.
 
 > You may only want to look at descriptive statistics for a subset of your data. Creating a [subset](#subsets) and then running descriptive statistics on that subset may be helpful.
+
+## Scientific Notation
+
+R will, by default, often make use of *scientific notation* to express very large, or very small numbers, e.g. $1.03 \times 10^7$ instead of $1,030,000$, or $1.03 \times 10^{-7}$ to express $.000000103$.
+
+Sometimes you will want to *turn off* this use of *scientific notation*.
+
+```{r, echo=TRUE}
+
+# heavily penalize the use of scientific notation
+# i.e. turn off scientific notation
+
+options(scipen=999) 
+
+```
 
 # Bivariate Statistics
 
