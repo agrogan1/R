@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 .book .book-summary ul.summary {
   background-color: #474747;
 }
@@ -6,17 +7,17 @@
 }
 h1 {
   color: red;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  font-family: "Yanone Kaffeesatz", "Helvetica", "Arial", sans-serif; 
   font-weight: bold;
 }
 h2 {
   color: red;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  font-family: "Yanone Kaffeesatz", "Helvetica", "Arial", sans-serif; 
   font-weight: normal;
 }
 h3 {
   color: black;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  font-family: "Yanone Kaffeesatz", "Helvetica", "Arial", sans-serif; 
   font-weight: normal;
 }
 p {
