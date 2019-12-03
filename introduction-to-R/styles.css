@@ -1,22 +1,22 @@
 .book .book-summary ul.summary {
-  background-color: #474747;
+  background-color: darkslategrey;
 }
 .book .book-summary ul.summary li a{
   color: white;
 }
 h1 {
   color: red;
-  font-family: "Helvetica", "Arial", sans-serif; 
+font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   font-weight: bold;
 }
 h2 {
   color: red;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   font-weight: normal;
 }
 h3 {
   color: black;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   font-weight: normal;
 }
 p {
