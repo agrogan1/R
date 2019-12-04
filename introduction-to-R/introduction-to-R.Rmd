@@ -5,11 +5,6 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
-  bookdown::epub_book: default  
   bookdown::gitbook:
     highlight: haddock
     css: styles.css
@@ -17,6 +12,11 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
+  bookdown::epub_book: default  
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   html_document:
     css: styles.css
     fig_height: 3
@@ -410,9 +410,40 @@ save(mydata_subset, file = "mydata_subset.RData")
 
 R recognizes two basic kinds of variables:  *continuous variables* (which R calls *numeric variables*) which are often scales like income, mental health, or neighborhood quality; and *categorical variables* (which R calls *factor variables*) like race, gender or religion.  
 
-R seems to make a stronger distinction between these two types of variables than some other statistical software.[^variable_type]  It can thus sometimes be useful to change variables from one type to another:  
+R seems to make a stronger distinction between these two types of variables than some other statistical software.[^variable_type]  
+
+Before changing your variables use `summary` to check their variable type.
+
+```{r,echo=FALSE, eval=TRUE}
+
+x1 <- rnorm(100, 100, 10)
+
+x2 <- rbinom(100, 1, .25)
+
+x2 <- factor(x2) # make a factor
+
+```
+
+> x1 is numeric.
+
+```{r, echo=TRUE, eval=TRUE}
+
+summary(x1) 
+
+```
+
+> x2 is a factor.
+
+```{r, echo=TRUE, eval=TRUE}
+
+summary(x2)
+
+```
+
 
 [^variable_type]:  In many cases, this is very helpful in that R recognizes that the type of variable calls for a certain kind of statistic or graph, or vice versa.  In other cases, this may be the source of an *error message*.  
+
+It can sometimes be useful to change variables from one type to another.
 
 ```{r, eval=FALSE, echo=TRUE}
 
@@ -670,15 +701,15 @@ runs the corresponding ANOVA of continuous variable `x` across *factor variable*
 
 # Multivariate Statistics
 
+Run a regression (linear model) of `y` on `x` and `z`. 
+
 ```{r, eval=FALSE, echo = TRUE}
 
-mymodel <- lm(y ~ x + z, data=mydata)
+mymodel <- lm(y ~ x + z, data = mydata) # fit a linear model
+
+summary(mymodel) # get a summary of the model
 
 ```
-
-runs a regression (linear model) of `y` on `x` and `z`. 
-
-Type `summary(mymodel)` to display the results.
 
 # Graphing
 
