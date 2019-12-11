@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>12 Bivariate Statistics | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content="12 Bivariate Statistics | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-12-04" />
+<meta name="date" content="2019-12-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,7 +69,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -110,7 +110,7 @@ code span.vs { color: #008080; } /* VerbatimString */
 code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </style>
 
-<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="UM.css" type="text/css" />
 </head>
 
 <body>
@@ -186,41 +186,41 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="crosstabulation" class="section level2">
 <h2><span class="header-section-number">12.1</span> Crosstabulation</h2>
 <p>Tabulating two categorical variables (<em>factor variables</em>) together gives you a cross-tabulation of those variables, e.g:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" data-line-number="1"><span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y) <span class="co"># simple table of counts</span></a>
-<a class="sourceLine" id="cb35-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb35-3" data-line-number="3"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y)) <span class="co"># table of cell proportions</span></a>
-<a class="sourceLine" id="cb35-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb35-5" data-line-number="5"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y),</a>
-<a class="sourceLine" id="cb35-6" data-line-number="6">           <span class="dt">margin =</span> <span class="dv">1</span>) <span class="co"># row margins: row proportions</span></a>
-<a class="sourceLine" id="cb35-7" data-line-number="7"></a>
-<a class="sourceLine" id="cb35-8" data-line-number="8"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y),</a>
-<a class="sourceLine" id="cb35-9" data-line-number="9">           <span class="dt">margin =</span> <span class="dv">2</span>) <span class="co"># column margins: column proportions</span></a></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y) <span class="co"># simple table of counts</span></a>
+<a class="sourceLine" id="cb35-2" title="2"></a>
+<a class="sourceLine" id="cb35-3" title="3"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y)) <span class="co"># table of cell proportions</span></a>
+<a class="sourceLine" id="cb35-4" title="4"></a>
+<a class="sourceLine" id="cb35-5" title="5"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y),</a>
+<a class="sourceLine" id="cb35-6" title="6">           <span class="dt">margin =</span> <span class="dv">1</span>) <span class="co"># row margins: row proportions</span></a>
+<a class="sourceLine" id="cb35-7" title="7"></a>
+<a class="sourceLine" id="cb35-8" title="8"><span class="kw">prop.table</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y),</a>
+<a class="sourceLine" id="cb35-9" title="9">           <span class="dt">margin =</span> <span class="dv">2</span>) <span class="co"># column margins: column proportions</span></a></code></pre></div>
 <p>then</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" data-line-number="1"><span class="kw">chisq.test</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y))</a></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1"><span class="kw">chisq.test</span>(<span class="kw">table</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y))</a></code></pre></div>
 <p>will give you a chi-square test of the relationship of <code>x</code> and <code>y</code>.</p>
 </div>
 <div id="correlation" class="section level2">
 <h2><span class="header-section-number">12.2</span> Correlation</h2>
 <p>The easiest way to test a correlation in R seems to be to create a subset of the data that contains the variables for which you are interested in testing the correlation.</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" data-line-number="1">mydatasubset &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata,</a>
-<a class="sourceLine" id="cb37-2" data-line-number="2">                       <span class="dt">select =</span> <span class="kw">c</span>(x,y))</a>
-<a class="sourceLine" id="cb37-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb37-4" data-line-number="4"><span class="kw">cor</span>(mydatasubset) <span class="co"># estimate correlation on subset</span></a></code></pre></div>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" data-line-number="1"><span class="kw">cor.test</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y, </a>
-<a class="sourceLine" id="cb38-2" data-line-number="2">         <span class="dt">alternative=</span><span class="st">&quot;two.sided&quot;</span>, </a>
-<a class="sourceLine" id="cb38-3" data-line-number="3">         <span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" title="1">mydatasubset &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata,</a>
+<a class="sourceLine" id="cb37-2" title="2">                       <span class="dt">select =</span> <span class="kw">c</span>(x,y))</a>
+<a class="sourceLine" id="cb37-3" title="3"></a>
+<a class="sourceLine" id="cb37-4" title="4"><span class="kw">cor</span>(mydatasubset) <span class="co"># estimate correlation on subset</span></a></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" title="1"><span class="kw">cor.test</span>(mydata<span class="op">$</span>x, mydata<span class="op">$</span>y, </a>
+<a class="sourceLine" id="cb38-2" title="2">         <span class="dt">alternative=</span><span class="st">&quot;two.sided&quot;</span>, </a>
+<a class="sourceLine" id="cb38-3" title="3">         <span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)</a></code></pre></div>
 <p>will test the statistical significance of this correlation.</p>
 </div>
 <div id="t-test" class="section level2">
 <h2><span class="header-section-number">12.3</span> t Test</h2>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" data-line-number="1"><span class="kw">numSummary</span>(mydata<span class="op">$</span>x, <span class="dt">groups=</span>mydata<span class="op">$</span>z)</a></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">numSummary</span>(mydata<span class="op">$</span>x, <span class="dt">groups=</span>mydata<span class="op">$</span>z)</a></code></pre></div>
 <p>gives you a summary of continuous variable <code>x</code> by <em>factor variable</em> <code>z</code>.</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" data-line-number="1"><span class="kw">t.test</span>(mydata<span class="op">$</span>x<span class="op">~</span>mydata<span class="op">$</span>z)</a></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">t.test</span>(mydata<span class="op">$</span>x<span class="op">~</span>mydata<span class="op">$</span>z)</a></code></pre></div>
 <p>runs a t-test of continuous variable <code>x</code> over <em>factor variable</em> <code>z</code>.</p>
 </div>
 <div id="anova" class="section level2">
 <h2><span class="header-section-number">12.4</span> ANOVA</h2>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" data-line-number="1"><span class="kw">aov</span>(x <span class="op">~</span><span class="st"> </span>z, <span class="dt">data=</span>mydata)</a></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">aov</span>(x <span class="op">~</span><span class="st"> </span>z, <span class="dt">data=</span>mydata)</a></code></pre></div>
 <p>runs the corresponding ANOVA of continuous variable <code>x</code> across <em>factor variable</em> <code>z</code>.</p>
 </div>
 </div>
@@ -249,11 +249,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
+"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -265,10 +266,6 @@ gitbook.start({
 "text": null
 },
 "history": {
-"link": null,
-"text": null
-},
-"view": {
 "link": null,
 "text": null
 },

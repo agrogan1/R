@@ -7,7 +7,7 @@ date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
   bookdown::gitbook:
     highlight: haddock
-    css: styles.css
+    css: UM.css
     config:
       download:
       - introduction-to-R.pdf
@@ -18,7 +18,7 @@ output:
     number_sections: yes
     toc: yes
   html_document:
-    css: styles.css
+    css: UM.css
     fig_height: 3
     highlight: haddock
     keep_md: no
