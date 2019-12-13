@@ -5,6 +5,11 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
+  bookdown::epub_book: default  
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   bookdown::gitbook:
     highlight: haddock
     css: UM.css
@@ -12,11 +17,6 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
-  bookdown::epub_book: default  
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   html_document:
     css: UM.css
     fig_height: 3
