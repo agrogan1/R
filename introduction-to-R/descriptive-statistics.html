@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>11 Descriptive Statistics | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="11 Descriptive Statistics | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-12-13" />
+<meta name="date" content="2019-12-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,7 +69,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -199,12 +199,12 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </div>
 <div id="scientific-notation" class="section level2">
 <h2><span class="header-section-number">11.3</span> Scientific Notation</h2>
-<p>R will, by default, often make use of <em>scientific notation</em> to express very large, or very small numbers, e.g. <span class="math inline">\(1.03 \times 10^7\)</span> instead of <span class="math inline">\(1,030,000\)</span>, or <span class="math inline">\(1.03 \times 10^{-7}\)</span> to express <span class="math inline">\(.000000103\)</span>.</p>
+<p>R will, by default, often make use of <em>scientific notation</em> to express very large, or very small numbers, e.g. <span class="math inline">\(1.03 \times 10^7\)</span> instead of <span class="math inline">\(1,030,000\)</span>, or <span class="math inline">\(1.03 \times 10^{-7}\)</span> to express <span class="math inline">\(.000000103\)</span>.</p>
 <p>Sometimes you will want to <em>turn off</em> this use of <em>scientific notation</em>.</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" title="1"><span class="co"># heavily penalize the use of scientific notation</span></a>
-<a class="sourceLine" id="cb34-2" title="2"><span class="co"># i.e. turn off scientific notation</span></a>
-<a class="sourceLine" id="cb34-3" title="3"></a>
-<a class="sourceLine" id="cb34-4" title="4"><span class="kw">options</span>(<span class="dt">scipen=</span><span class="dv">999</span>) </a></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" data-line-number="1"><span class="co"># heavily penalize the use of scientific notation</span></a>
+<a class="sourceLine" id="cb34-2" data-line-number="2"><span class="co"># i.e. turn off scientific notation</span></a>
+<a class="sourceLine" id="cb34-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb34-4" data-line-number="4"><span class="kw">options</span>(<span class="dt">scipen=</span><span class="dv">999</span>) </a></code></pre></div>
 </div>
 </div>
             </section>
@@ -232,12 +232,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -249,6 +248,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

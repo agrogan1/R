@@ -21,17 +21,17 @@
 }
 h1 {
   color: #00274c;
-font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: bold;
 }
 h2 {
   color: #00274c;
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: bold;
 }
 h3 {
   color: black;
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: normal;
 }
 p {

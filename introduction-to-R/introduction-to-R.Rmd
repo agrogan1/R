@@ -5,11 +5,6 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  bookdown::epub_book: default  
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   bookdown::gitbook:
     highlight: haddock
     css: UM.css
@@ -17,6 +12,11 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
+  bookdown::epub_book: default  
   html_document:
     css: UM.css
     fig_height: 3
@@ -170,7 +170,7 @@ C:/Users/user1/Desktop/mydata.sav
 
 ```
 
-> Note that R uses forward slashes `/` instead of backslashes for directories. R uses `~` to refer to the user's (usually your) home directory.
+> Note that R uses forward slashes `/` instead of backslashes `\` for directories. R uses `~` to refer to the user's (usually your) home directory.
 
 # Base R and Libraries
 
@@ -212,7 +212,7 @@ setwd("C:/Users/user1/Desktop/") # set your working directory
 
 ```
 
-> Note that R uses a forward slash `/` to specify directory paths. R does not understand the use of a backward slash $\backslash$ to specify directories. R uses `~` to refer to the user's (usually your) home directory.
+> Note that R uses a forward slash `/` to specify directory paths. R does not understand the use of a backward slash `\` to specify directories. R uses `~` to refer to the user's (usually your) home directory.
 
 # Writing R Code or Script
 
@@ -852,10 +852,11 @@ dev.off()
 ```
 
 # Comments, Questions and Corrections
+
 Comments, questions and corrections most welcome and may be sent to:  Andrew Grogan-Kaylor @ [http://www.umich.edu/~agrogan](http://www.umich.edu/~agrogan) & @  [agrogan@umich.edu](agrogan@umich.edu).  
 
 
-[^two_page_Stata]: This document is inspired by my longstanding "Two Page Stata" document: [(PDF)](http://www-personal.umich.edu/~agrogan/stata/TwoPageStata.pdf) [(HTML)](http://www-personal.umich.edu/~agrogan/stata/TwoPageStata.html).
+[^two_page_Stata]: This document is inspired by my longstanding "Two Page Stata" document: [(PDF)](https://agrogan1.github.io/Stata/two-page-stata/TwoPageStata.pdf) [(HTML)](https://agrogan1.github.io/Stata/two-page-stata/TwoPageStata.html).
 
 [^directory]:  These instructions assume you have `setwd()` appropriately, or alternatively are specifying a full pathname and filename.
 

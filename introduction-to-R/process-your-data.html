@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>10 Process Your Data | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="10 Process Your Data | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-12-13" />
+<meta name="date" content="2019-12-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,7 +69,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -187,20 +187,20 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <h2><span class="header-section-number">10.1</span> Random Sample</h2>
 <p>Working with a <em>random sample</em> of your data can often be helpful.</p>
 <p>The exact syntax of the R sample command is notably <em>non-intuitive</em>.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1"><span class="co"># sample 10 observations from mydata </span></a>
-<a class="sourceLine" id="cb15-2" title="2"></a>
-<a class="sourceLine" id="cb15-3" title="3">mydata_sample &lt;-<span class="st"> </span>mydata[<span class="kw">sample</span>(<span class="kw">nrow</span>(mydata),<span class="dv">10</span>),]</a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="co"># sample 10 observations from mydata </span></a>
+<a class="sourceLine" id="cb15-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb15-3" data-line-number="3">mydata_sample &lt;-<span class="st"> </span>mydata[<span class="kw">sample</span>(<span class="kw">nrow</span>(mydata),<span class="dv">10</span>),]</a></code></pre></div>
 </div>
 <div id="subsets" class="section level2">
 <h2><span class="header-section-number">10.2</span> Data Subsets</h2>
 <p>Working with a <em>subset</em> of your data (i.e. fewer variables rather than many many variables) is often helpful. The subset function can be especially helpful.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" title="1">mydata_subset &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata, <span class="co"># name of data</span></a>
-<a class="sourceLine" id="cb16-2" title="2">                        age <span class="op">&gt;</span><span class="st"> </span><span class="dv">18</span>, <span class="co"># condition(s)</span></a>
-<a class="sourceLine" id="cb16-3" title="3">                        <span class="dt">select =</span> <span class="kw">c</span>(id, sex, income)) <span class="co"># variables</span></a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">mydata_subset &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata, <span class="co"># name of data</span></a>
+<a class="sourceLine" id="cb16-2" data-line-number="2">                        age <span class="op">&gt;</span><span class="st"> </span><span class="dv">18</span>, <span class="co"># condition(s)</span></a>
+<a class="sourceLine" id="cb16-3" data-line-number="3">                        <span class="dt">select =</span> <span class="kw">c</span>(id, sex, income)) <span class="co"># variables</span></a></code></pre></div>
 <p>You can then run functions like <code>summary()</code> on a <em>subset</em> of your data.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">summary</span>(mydata_subset)</a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1"><span class="kw">summary</span>(mydata_subset)</a></code></pre></div>
 <p>You can also save this subset for future use.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">save</span>(mydata_subset, <span class="dt">file =</span> <span class="st">&quot;mydata_subset.RData&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="kw">save</span>(mydata_subset, <span class="dt">file =</span> <span class="st">&quot;mydata_subset.RData&quot;</span>)</a></code></pre></div>
 </div>
 <div id="numeric-and-factor-variables" class="section level2">
 <h2><span class="header-section-number">10.3</span> Numeric and Factor Variables</h2>
@@ -210,50 +210,50 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <blockquote>
 <p>x1 is numeric.</p>
 </blockquote>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">summary</span>(x1) </a></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1"><span class="kw">summary</span>(x1) </a></code></pre></div>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-##   69.54   90.17   99.41   98.20  104.53  129.18</code></pre>
+##   75.20   92.60   98.70   98.94  105.11  125.70</code></pre>
 <blockquote>
 <p>x2 is a factor.</p>
 </blockquote>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">summary</span>(x2)</a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1"><span class="kw">summary</span>(x2)</a></code></pre></div>
 <pre><code>##  0  1 
-## 72 28</code></pre>
+## 79 21</code></pre>
 <p>It can sometimes be useful to change variables from one type to another.</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" title="1">mydata<span class="op">$</span>x &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(mydata<span class="op">$</span>y)</a>
-<a class="sourceLine" id="cb23-2" title="2"></a>
-<a class="sourceLine" id="cb23-3" title="3">mydata<span class="op">$</span>x &lt;-<span class="st"> </span><span class="kw">as.factor</span>(mydata<span class="op">$</span>y) <span class="co"># shorter syntax</span></a></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1">mydata<span class="op">$</span>x &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(mydata<span class="op">$</span>y)</a>
+<a class="sourceLine" id="cb23-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb23-3" data-line-number="3">mydata<span class="op">$</span>x &lt;-<span class="st"> </span><span class="kw">as.factor</span>(mydata<span class="op">$</span>y) <span class="co"># shorter syntax</span></a></code></pre></div>
 <p>If a factor variable has labels for the different levels, we can add those as well.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" title="1"><span class="co"># longer, more complete syntax</span></a>
-<a class="sourceLine" id="cb24-2" title="2"></a>
-<a class="sourceLine" id="cb24-3" title="3">mydata<span class="op">$</span>w &lt;-<span class="st"> </span><span class="kw">factor</span>(mydata<span class="op">$</span>z, <span class="co"># original numeric variable</span></a>
-<a class="sourceLine" id="cb24-4" title="4">                   <span class="dt">levels =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>), <span class="co"># levels of numeric variable</span></a>
-<a class="sourceLine" id="cb24-5" title="5">                   <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;Group A&quot;</span>, <span class="co"># labels</span></a>
-<a class="sourceLine" id="cb24-6" title="6">                              <span class="st">&quot;Group B&quot;</span>,</a>
-<a class="sourceLine" id="cb24-7" title="7">                              <span class="st">&quot;Group C&quot;</span>),</a>
-<a class="sourceLine" id="cb24-8" title="8">                   <span class="dt">ordered =</span> <span class="ot">TRUE</span>) <span class="co"># often useful to order the levels</span></a></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1"><span class="co"># longer, more complete syntax</span></a>
+<a class="sourceLine" id="cb24-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb24-3" data-line-number="3">mydata<span class="op">$</span>w &lt;-<span class="st"> </span><span class="kw">factor</span>(mydata<span class="op">$</span>z, <span class="co"># original numeric variable</span></a>
+<a class="sourceLine" id="cb24-4" data-line-number="4">                   <span class="dt">levels =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>), <span class="co"># levels of numeric variable</span></a>
+<a class="sourceLine" id="cb24-5" data-line-number="5">                   <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;Group A&quot;</span>, <span class="co"># labels</span></a>
+<a class="sourceLine" id="cb24-6" data-line-number="6">                              <span class="st">&quot;Group B&quot;</span>,</a>
+<a class="sourceLine" id="cb24-7" data-line-number="7">                              <span class="st">&quot;Group C&quot;</span>),</a>
+<a class="sourceLine" id="cb24-8" data-line-number="8">                   <span class="dt">ordered =</span> <span class="ot">TRUE</span>) <span class="co"># often useful to order the levels</span></a></code></pre></div>
 </div>
 <div id="missing-values" class="section level2">
 <h2><span class="header-section-number">10.4</span> Missing Values</h2>
-<p>Data with missing values, often represented as negative numbers (e.g. -99, -9, -8) need to be recoded so that the missing values are represented as a missing value character (“NA”) that R knows to exclude from calculations.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" title="1">mydata<span class="op">$</span>x[mydata<span class="op">$</span>x <span class="op">==</span><span class="st"> </span><span class="dv">-9</span>] &lt;-<span class="ot">NA</span> <span class="co"># Example 1</span></a>
-<a class="sourceLine" id="cb25-2" title="2"></a>
-<a class="sourceLine" id="cb25-3" title="3">mydata<span class="op">$</span>x[mydata<span class="op">$</span>x <span class="op">==</span><span class="st"> </span><span class="dv">-8</span>] &lt;-<span class="ot">NA</span> <span class="co"># Example 2</span></a></code></pre></div>
+<p>Data with missing values, often represented as negative numbers (e.g. -99, -9, -8) need to be recoded so that the missing values are represented as a missing value character (“NA”) that R knows to exclude from calculations.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1">mydata<span class="op">$</span>x[mydata<span class="op">$</span>x <span class="op">==</span><span class="st"> </span><span class="dv">-9</span>] &lt;-<span class="ot">NA</span> <span class="co"># Example 1</span></a>
+<a class="sourceLine" id="cb25-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb25-3" data-line-number="3">mydata<span class="op">$</span>x[mydata<span class="op">$</span>x <span class="op">==</span><span class="st"> </span><span class="dv">-8</span>] &lt;-<span class="ot">NA</span> <span class="co"># Example 2</span></a></code></pre></div>
 <p>Sometimes you want to drop rows of data that contain missing values. This can be accomplished with <code>na.omit()</code>.</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" title="1">mydata2 &lt;-<span class="st"> </span><span class="kw">na.omit</span>(mydata)</a></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" data-line-number="1">mydata2 &lt;-<span class="st"> </span><span class="kw">na.omit</span>(mydata)</a></code></pre></div>
 <p><code>na.omit()</code> removes a row of data where <em>any</em> value is missing, so sometimes you want to work with a subset of your data before applying <code>na.omit()</code>.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" title="1">mydata_subset &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata, <span class="co"># name of data</span></a>
-<a class="sourceLine" id="cb27-2" title="2">                        age <span class="op">&gt;</span><span class="st"> </span><span class="dv">18</span>, <span class="co"># condition(s)</span></a>
-<a class="sourceLine" id="cb27-3" title="3">                        <span class="dt">select =</span> <span class="kw">c</span>(id, sex, income)) <span class="co"># variables</span></a>
-<a class="sourceLine" id="cb27-4" title="4"></a>
-<a class="sourceLine" id="cb27-5" title="5">mydata_subset2 &lt;-<span class="st"> </span><span class="kw">na.omit</span>(mydata_subset)</a></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" data-line-number="1">mydata_subset &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata, <span class="co"># name of data</span></a>
+<a class="sourceLine" id="cb27-2" data-line-number="2">                        age <span class="op">&gt;</span><span class="st"> </span><span class="dv">18</span>, <span class="co"># condition(s)</span></a>
+<a class="sourceLine" id="cb27-3" data-line-number="3">                        <span class="dt">select =</span> <span class="kw">c</span>(id, sex, income)) <span class="co"># variables</span></a>
+<a class="sourceLine" id="cb27-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb27-5" data-line-number="5">mydata_subset2 &lt;-<span class="st"> </span><span class="kw">na.omit</span>(mydata_subset)</a></code></pre></div>
 </div>
 <div id="renaming-variables" class="section level2">
 <h2><span class="header-section-number">10.5</span> Renaming Variables</h2>
-<p>It is often convenient to rename your data so that the variables have more intuitively understandable names e.g. </p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" title="1">mydata<span class="op">$</span>age &lt;-<span class="st"> </span>mydata<span class="op">$</span>var123</a>
-<a class="sourceLine" id="cb28-2" title="2"></a>
-<a class="sourceLine" id="cb28-3" title="3">mydata<span class="op">$</span>gender &lt;-<span class="st"> </span>mydata<span class="op">$</span>var456</a></code></pre></div>
+<p>It is often convenient to rename your data so that the variables have more intuitively understandable names e.g.</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" data-line-number="1">mydata<span class="op">$</span>age &lt;-<span class="st"> </span>mydata<span class="op">$</span>var123</a>
+<a class="sourceLine" id="cb28-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb28-3" data-line-number="3">mydata<span class="op">$</span>gender &lt;-<span class="st"> </span>mydata<span class="op">$</span>var456</a></code></pre></div>
 </div>
 <div id="sorting-data" class="section level2">
 <h2><span class="header-section-number">10.6</span> Sorting Data</h2>
@@ -262,38 +262,38 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="creating-new-variables" class="section level2">
 <h2><span class="header-section-number">10.7</span> Creating New Variables</h2>
 <p>You can easily create new variables in R. For example, a change score between a measure collected at two time-points, like a pre-test, and a post-test, would be:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" title="1">mydata<span class="op">$</span>change_x &lt;-<span class="st"> </span>mydata<span class="op">$</span>xTime2 <span class="op">-</span><span class="st"> </span>mydata<span class="op">$</span>xTime1</a></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" data-line-number="1">mydata<span class="op">$</span>change_x &lt;-<span class="st"> </span>mydata<span class="op">$</span>xTime2 <span class="op">-</span><span class="st"> </span>mydata<span class="op">$</span>xTime1</a></code></pre></div>
 </div>
 <div id="recoding-variables" class="section level2">
 <h2><span class="header-section-number">10.8</span> Recoding Variables</h2>
 <p>We can recode variables in R using R’s <em>conditional</em> syntax: <code>dataset$variable[condition] &lt;- value</code><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> as in the example below.</p>
 <p>Below we create a new variable <code>ynew</code> based upon the value of <code>y</code>.</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" title="1"><span class="co"># initialize ynew to 0 (or some other value)</span></a>
-<a class="sourceLine" id="cb30-2" title="2"></a>
-<a class="sourceLine" id="cb30-3" title="3">mydata<span class="op">$</span>ynew &lt;-<span class="st"> </span><span class="dv">0</span> </a>
-<a class="sourceLine" id="cb30-4" title="4"></a>
-<a class="sourceLine" id="cb30-5" title="5"><span class="co"># change values of ynew based upon values of y</span></a>
-<a class="sourceLine" id="cb30-6" title="6"></a>
-<a class="sourceLine" id="cb30-7" title="7"><span class="co"># in this example, ynew becomes 1 when y &gt; 0</span></a>
-<a class="sourceLine" id="cb30-8" title="8"></a>
-<a class="sourceLine" id="cb30-9" title="9">mydata<span class="op">$</span>ynew[mydata<span class="op">$</span>y <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>] &lt;-<span class="st"> </span><span class="dv">1</span></a>
-<a class="sourceLine" id="cb30-10" title="10"></a>
-<a class="sourceLine" id="cb30-11" title="11"><span class="co"># tabulate the 2 variables against each other</span></a>
-<a class="sourceLine" id="cb30-12" title="12"><span class="co"># to double check the recode</span></a>
-<a class="sourceLine" id="cb30-13" title="13"></a>
-<a class="sourceLine" id="cb30-14" title="14"><span class="kw">table</span>(mydata<span class="op">$</span>y, mydata<span class="op">$</span>ynew)</a></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" data-line-number="1"><span class="co"># initialize ynew to 0 (or some other value)</span></a>
+<a class="sourceLine" id="cb30-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb30-3" data-line-number="3">mydata<span class="op">$</span>ynew &lt;-<span class="st"> </span><span class="dv">0</span> </a>
+<a class="sourceLine" id="cb30-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb30-5" data-line-number="5"><span class="co"># change values of ynew based upon values of y</span></a>
+<a class="sourceLine" id="cb30-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb30-7" data-line-number="7"><span class="co"># in this example, ynew becomes 1 when y &gt; 0</span></a>
+<a class="sourceLine" id="cb30-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb30-9" data-line-number="9">mydata<span class="op">$</span>ynew[mydata<span class="op">$</span>y <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>] &lt;-<span class="st"> </span><span class="dv">1</span></a>
+<a class="sourceLine" id="cb30-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb30-11" data-line-number="11"><span class="co"># tabulate the 2 variables against each other</span></a>
+<a class="sourceLine" id="cb30-12" data-line-number="12"><span class="co"># to double check the recode</span></a>
+<a class="sourceLine" id="cb30-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb30-14" data-line-number="14"><span class="kw">table</span>(mydata<span class="op">$</span>y, mydata<span class="op">$</span>ynew)</a></code></pre></div>
 </div>
 <div id="scales-or-measures" class="section level2">
 <h2><span class="header-section-number">10.9</span> Scales or Measures</h2>
 <p>Similarly, you can sum the items of a scale into a scale as follows:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" title="1">mydata<span class="op">$</span>myscale &lt;-<span class="st"> </span>mydata<span class="op">$</span>x1 <span class="op">+</span><span class="st"> </span>mydata<span class="op">$</span>x2 <span class="op">+</span><span class="st"> </span>mydata<span class="op">$</span>x3</a></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1">mydata<span class="op">$</span>myscale &lt;-<span class="st"> </span>mydata<span class="op">$</span>x1 <span class="op">+</span><span class="st"> </span>mydata<span class="op">$</span>x2 <span class="op">+</span><span class="st"> </span>mydata<span class="op">$</span>x3</a></code></pre></div>
 <p>You can test the alpha reliability of this scale with the following syntax:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1">myscale_data &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata, <span class="dt">select =</span> <span class="kw">c</span>(x1, x2, x3))</a></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" data-line-number="1">myscale_data &lt;-<span class="st"> </span><span class="kw">subset</span>(mydata, <span class="dt">select =</span> <span class="kw">c</span>(x1, x2, x3))</a></code></pre></div>
 <p>The syntax above create a dataframe of only the scale items.</p>
 <p>Then,</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">library</span>(psych)</a>
-<a class="sourceLine" id="cb33-2" title="2"></a>
-<a class="sourceLine" id="cb33-3" title="3"><span class="kw">alpha</span>(myscale_data)</a></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" data-line-number="1"><span class="kw">library</span>(psych)</a>
+<a class="sourceLine" id="cb33-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb33-3" data-line-number="3"><span class="kw">alpha</span>(myscale_data)</a></code></pre></div>
 </div>
 </div>
 <div class="footnotes">
@@ -328,12 +328,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -345,6 +344,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
