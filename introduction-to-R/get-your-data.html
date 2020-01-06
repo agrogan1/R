@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7 Get Your Data | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7 Get Your Data | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2019-12-20" />
+<meta name="date" content="2020-01-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,7 +69,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -189,9 +189,9 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="r-format-.rdata" class="section level2">
 <h2><span class="header-section-number">7.1</span> R format (*.RData)</h2>
 <p>R most easily makes use of data in R format. Data can be loaded with the <code>load()</code> command.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">load</span>(<span class="st">&quot;the/path/to/myRfile.RData&quot;</span>) <span class="co"># specific directory path and file</span></a>
-<a class="sourceLine" id="cb8-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="kw">load</span>(<span class="st">&quot;myRfile.RData&quot;</span>) <span class="co"># no path indicated; file needs to be in working directory</span></a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">load</span>(<span class="st">&quot;the/path/to/myRfile.RData&quot;</span>) <span class="co"># specific directory path and file</span></a>
+<a class="sourceLine" id="cb8-2" title="2"></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="kw">load</span>(<span class="st">&quot;myRfile.RData&quot;</span>) <span class="co"># no path indicated; file needs to be in working directory</span></a></code></pre></div>
 <blockquote>
 <p>Note–as we discuss in a little more detail below–that a single data file can contain multiple data frames.</p>
 </blockquote>
@@ -208,9 +208,9 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="comma-separated-values-.csv" class="section level2">
 <h2><span class="header-section-number">7.2</span> Comma Separated Values (*.csv)</h2>
 <p>R can also read <em>comma separated values (csv)</em>.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">library</span>(readr) <span class="co"># to read csv</span></a>
-<a class="sourceLine" id="cb9-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb9-3" data-line-number="3">mydata &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;myCSVfile.csv&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">library</span>(readr) <span class="co"># to read csv</span></a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3">mydata &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;myCSVfile.csv&quot;</span>)</a></code></pre></div>
 </div>
 <div id="statistical-packages-and-excel" class="section level2">
 <h2><span class="header-section-number">7.3</span> Statistical Packages and Excel</h2>
@@ -218,26 +218,26 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </div>
 <div id="foreign" class="section level2">
 <h2><span class="header-section-number">7.4</span> <code>foreign</code></h2>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">library</span>(foreign) <span class="co"># library for importing from stats software</span></a>
-<a class="sourceLine" id="cb10-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb10-3" data-line-number="3">mydata &lt;-<span class="st"> </span><span class="kw">read.spss</span>(<span class="st">&quot;mySPSSfile.sav&quot;</span>) <span class="co"># SPSS</span></a>
-<a class="sourceLine" id="cb10-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb10-5" data-line-number="5">mydata &lt;-<span class="st"> </span><span class="kw">read.dta</span>(<span class="st">&quot;myStatafile.dta&quot;</span>) <span class="co"># Stata</span></a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">library</span>(foreign) <span class="co"># library for importing from stats software</span></a>
+<a class="sourceLine" id="cb10-2" title="2"></a>
+<a class="sourceLine" id="cb10-3" title="3">mydata &lt;-<span class="st"> </span><span class="kw">read.spss</span>(<span class="st">&quot;mySPSSfile.sav&quot;</span>) <span class="co"># SPSS</span></a>
+<a class="sourceLine" id="cb10-4" title="4"></a>
+<a class="sourceLine" id="cb10-5" title="5">mydata &lt;-<span class="st"> </span><span class="kw">read.dta</span>(<span class="st">&quot;myStatafile.dta&quot;</span>) <span class="co"># Stata</span></a></code></pre></div>
 </div>
 <div id="readxl" class="section level2">
 <h2><span class="header-section-number">7.5</span> <code>readxl</code></h2>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">library</span>(readxl) <span class="co"># library for importing Excel files</span></a>
-<a class="sourceLine" id="cb11-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb11-3" data-line-number="3">mydata &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;mySpreadsheet.xls&quot;</span>) <span class="co"># Excel</span></a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">library</span>(readxl) <span class="co"># library for importing Excel files</span></a>
+<a class="sourceLine" id="cb11-2" title="2"></a>
+<a class="sourceLine" id="cb11-3" title="3">mydata &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;mySpreadsheet.xls&quot;</span>) <span class="co"># Excel</span></a></code></pre></div>
 </div>
 <div id="haven" class="section level2">
 <h2><span class="header-section-number">7.6</span> <code>haven</code></h2>
 <p><code>haven</code> is a new library for reading in data from statistical packages that may work better.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="kw">library</span>(haven) <span class="co"># new library for importing from stats software</span></a>
-<a class="sourceLine" id="cb12-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb12-3" data-line-number="3">dataset &lt;-<span class="st"> </span><span class="kw">read_sav</span>(<span class="st">&quot;mySPSSfile.sav&quot;</span>) <span class="co"># SPSS</span></a>
-<a class="sourceLine" id="cb12-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb12-5" data-line-number="5">dataset &lt;-<span class="st"> </span><span class="kw">read_dta</span>(<span class="st">&quot;myStatafile.dta&quot;</span>) <span class="co"># Stata</span></a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">library</span>(haven) <span class="co"># new library for importing from stats software</span></a>
+<a class="sourceLine" id="cb12-2" title="2"></a>
+<a class="sourceLine" id="cb12-3" title="3">dataset &lt;-<span class="st"> </span><span class="kw">read_sav</span>(<span class="st">&quot;mySPSSfile.sav&quot;</span>) <span class="co"># SPSS</span></a>
+<a class="sourceLine" id="cb12-4" title="4"></a>
+<a class="sourceLine" id="cb12-5" title="5">dataset &lt;-<span class="st"> </span><span class="kw">read_dta</span>(<span class="st">&quot;myStatafile.dta&quot;</span>) <span class="co"># Stata</span></a></code></pre></div>
 </div>
 </div>
 <div class="footnotes">
@@ -271,11 +271,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
+"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -287,10 +288,6 @@ gitbook.start({
 "text": null
 },
 "history": {
-"link": null,
-"text": null
-},
-"view": {
 "link": null,
 "text": null
 },
