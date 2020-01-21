@@ -132,6 +132,7 @@ mydata %>%
          population, 
          Gini,
          undernourishment) %>%
+  filter(region != "Aggregates") %>% # remove Aggregates
   datatable(rownames = FALSE,
             filter = 'top', 
             extensions = 'Buttons', 
