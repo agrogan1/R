@@ -3,13 +3,7 @@ title: "Introduction to ggplot2"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  pdf_document:
-    fig_height: 2
-    highlight: haddock
-    latex_engine: xelatex
-    number_sections: yes
-    toc: yes
-    toc_depth: 3
+  bookdown::epub_book: default
   html_document:
     code_folding: hide
     fig_height: 3
@@ -28,7 +22,13 @@ output:
       - introduction-to-ggplot2.epub
     highlight: haddock
     css: UM.css
-  bookdown::epub_book: default
+  pdf_document:
+    fig_height: 2
+    highlight: haddock
+    latex_engine: xelatex
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
 geometry: margin=1.0in
 mainfont: Tw Cen MT
 fontsize: 12pt
@@ -160,7 +160,7 @@ predictor <- rnorm(n = N,
 
 group <- rbinom(n = N, 
                 1, 
-                .5) # n, number of trials, probability
+                .25) # n, number of trials, probability
 
 outcome <- predictor + 
   10 * group +
@@ -645,7 +645,7 @@ banner <- plot_grid(p1 +
                     nrow = 1)
 
 save_plot("banner.png", banner,
-          ncol = 3,
+          ncol = 4,
           nrow = 1)
 ```
 

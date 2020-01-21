@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6670 64-bit) (preloaded format=xelatex 2018.5.3)  13 DEC 2019 16:18
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6670 64-bit) (preloaded format=xelatex 2018.5.3)  21 JAN 2020 14:56
 entering extended mode
 **./introduction-to-ggplot2.tex
 (introduction-to-ggplot2.tex
@@ -1195,7 +1195,7 @@ Package rerunfilecheck Info: File `introduction-to-ggplot2.out' has not changed
 Here is how much of TeX's memory you used:
  22712 strings out of 427836
  424470 string characters out of 3152480
- 550135 words of memory out of 3000000
+ 550133 words of memory out of 3000000
  26423 multiletter control sequences out of 15000+200000
  555139 words of font info for 81 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
