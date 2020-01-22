@@ -3,7 +3,13 @@ title: "Introduction to ggplot2"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  bookdown::epub_book: default
+  pdf_document:
+    fig_height: 2
+    highlight: haddock
+    latex_engine: xelatex
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
   html_document:
     code_folding: hide
     fig_height: 3
@@ -22,13 +28,7 @@ output:
       - introduction-to-ggplot2.epub
     highlight: haddock
     css: UM.css
-  pdf_document:
-    fig_height: 2
-    highlight: haddock
-    latex_engine: xelatex
-    number_sections: yes
-    toc: yes
-    toc_depth: 3
+  bookdown::epub_book: default
 geometry: margin=1.0in
 mainfont: Tw Cen MT
 fontsize: 12pt
@@ -100,7 +100,7 @@ library(ggplot2)
 ggplot(my_demo_data, # the data that I am using
        aes(x = my_outcome)) + # aesthetic: what I am graphing
   geom_histogram(fill = "red", # geom: how I am graphing it
-                 color = "black") 
+                 color = "black") # options: fill = "red"; color = "black"
 
 ```
 
