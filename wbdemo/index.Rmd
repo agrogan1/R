@@ -114,6 +114,10 @@ write.csv(mydata,
 
 load("WorldBankData.RData")
 
+mydata <- mydata %>% 
+  filter(region != "Aggregates") # remove Aggregates
+
+
 ```
 
 # Take a Quick Look at the Data
@@ -132,7 +136,6 @@ mydata %>%
          population, 
          Gini,
          undernourishment) %>%
-  filter(region != "Aggregates") %>% # remove Aggregates
   datatable(rownames = FALSE,
             filter = 'top', 
             extensions = 'Buttons', 
