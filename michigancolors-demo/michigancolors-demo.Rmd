@@ -24,6 +24,31 @@ library(icon)
 
 ```
 
+<style>
+h1, h2 {
+  color: navy;
+  font-family: "Helvetica", "Arial", sans-serif; 
+  font-weight: normal;
+}
+.list-group-item.active, 
+.list-group-item.active:focus, 
+.list-group-item.active:hover {
+    z-index: 2;
+    color: gold;
+    background-color: navy;
+    border-color: blue;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+    color: gold;
+    background-color: navy;
+}
+.nav-pills > li.active > a:hover {
+    color: gold;
+    background-color: navy;
+
+}
+</style>
+
 ## Installation
 
 You will need to install `devtools` if you have not already done so:
@@ -92,6 +117,19 @@ plot(iris$Petal.Length,
 ```{r}
 
 library(ggplot2)
+
+```
+
+```{r}
+
+ggplot(iris, 
+       aes(x = Petal.Length, 
+           fill = Species)) + 
+  geom_density(alpha = .5) + 
+  ggtitle("Density Plot of Species in Iris Data Set") + 
+  theme_minimal() + 
+  scale_fill_manual(values = michigancolors())
+
 
 ```
 
