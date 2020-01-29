@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6670 64-bit) (preloaded format=pdflatex 2018.5.1)  26 JUN 2019 09:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6670 64-bit) (preloaded format=pdflatex 2018.5.1)  29 JAN 2020 14:25
 entering extended mode
 **./two-page-ggplot2.tex
 (two-page-ggplot2.tex
@@ -843,179 +843,179 @@ Package morefloats Info: Maximum number of possible floats asked for: 36
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 105.
+(hyperref)                removing `\begingroup' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\catcode' on input line 105.
+(hyperref)                removing `\catcode' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\active' on input line 105.
+(hyperref)                removing `\active' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\csname\endcsname' on input line 105.
+(hyperref)                removing `\csname\endcsname' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\catcode' on input line 105.
+(hyperref)                removing `\catcode' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\active' on input line 105.
+(hyperref)                removing `\active' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\csname\endcsname' on input line 105.
+(hyperref)                removing `\csname\endcsname' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\%' on input line 105.
+(hyperref)                removing `\%' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\catcode' on input line 105.
+(hyperref)                removing `\catcode' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\active' on input line 105.
+(hyperref)                removing `\active' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\csname\endcsname' on input line 105.
+(hyperref)                removing `\csname\endcsname' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\#' on input line 105.
+(hyperref)                removing `\#' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\catcode' on input line 105.
+(hyperref)                removing `\catcode' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\csname\endcsname' on input line 105.
+(hyperref)                removing `\csname\endcsname' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\&' on input line 105.
+(hyperref)                removing `\&' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textunderscore' on input line 105.
+(hyperref)                removing `\textunderscore' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\_' on input line 105.
+(hyperref)                removing `\_' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\catcode' on input line 105.
+(hyperref)                removing `\catcode' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\active' on input line 105.
+(hyperref)                removing `\active' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\csname\endcsname' on input line 105.
+(hyperref)                removing `\csname\endcsname' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\csname\endcsname' on input line 105.
+(hyperref)                removing `\csname\endcsname' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\~' on input line 105.
+(hyperref)                removing `\~' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textasciitilde' on input line 105.
+(hyperref)                removing `\textasciitilde' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 105.
+(hyperref)                removing `\\' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\csname\endcsname' on input line 105.
+(hyperref)                removing `\csname\endcsname' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Hy@tempa' on input line 105.
+(hyperref)                removing `\Hy@tempa' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 105.
+(hyperref)                removing `\<def>-command' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Hy@tempa' on input line 105.
+(hyperref)                removing `\Hy@tempa' on input line 108.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\roboto\roboto.sty"
 Package: roboto 2017/04/10 (Bob Tennent) Supports Roboto fonts for all LaTeX en
@@ -1193,7 +1193,7 @@ LaTeX Info: Redefining \ttfamily on input line 94.
 )
 LaTeX Info: Redefining \oldstylenums on input line 189.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 122.
+Package hyperref Info: Option `colorlinks' set `true' on input line 125.
 
 LaTeX Warning: Unused global option(s):
     [10pt].
@@ -1201,39 +1201,39 @@ LaTeX Warning: Unused global option(s):
 (two-page-ggplot2.aux)
 \openout1 = `two-page-ggplot2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 245.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 245.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 248.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 248.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 245.
+LaTeX Font Info:    ... okay on input line 248.
 LaTeX Font Info:    Try loading font information for T1+RobotoCondensed-LF on i
-nput line 245.
+nput line 248.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\roboto\t1robotocondensed-lf.fd"
 File: T1RobotoCondensed-LF.fd 2015/09/15 (autoinst) Font definitions for T1/Rob
 otoCondensed-LF.
 )
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 245.
+(Font)              scaled to size 10.0pt on input line 248.
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring ON on input line 245.
+Package hyperref Info: Link coloring ON on input line 248.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -1241,15 +1241,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 245.
-LaTeX Info: Redefining \pageref on input line 245.
-LaTeX Info: Redefining \nameref on input line 245.
+LaTeX Info: Redefining \ref on input line 248.
+LaTeX Info: Redefining \pageref on input line 248.
+LaTeX Info: Redefining \nameref on input line 248.
 (two-page-ggplot2.out) (two-page-ggplot2.out)
 \@outlinefile=\write4
 \openout4 = `two-page-ggplot2.out'.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 245.
+LaTeX Info: Redefining \selectfont on input line 248.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1313,75 +1313,75 @@ G,.JBIG2,.JB2,.eps]
 \c@mv@tabular=\count146
 \c@mv@boldtabular=\count147
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 247.
+(Font)              scaled to size 10.0pt on input line 250.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 247.
+(Font)              scaled to size 14.4pt on input line 250.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/l/n' will be
-(Font)              scaled to size 10.0pt on input line 247.
+(Font)              scaled to size 10.0pt on input line 250.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/l/n' will be
-(Font)              scaled to size 12.0pt on input line 247.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 247.
+(Font)              scaled to size 12.0pt on input line 250.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 250.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 247.
+LaTeX Font Info:    Try loading font information for U+msa on input line 250.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 247.
+LaTeX Font Info:    Try loading font information for U+msb on input line 250.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 257.
+(Font)              scaled to size 12.0pt on input line 261.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 257.
+(Font)              scaled to size 8.0pt on input line 261.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 257.
+(Font)              scaled to size 6.0pt on input line 261.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 257.
+(Font)              scaled to size 5.0pt on input line 261.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 265.
+(Font)              scaled to size 7.0pt on input line 269.
 
 LaTeX Warning: Marginpar on page 1 moved.
 
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 285.
+(Font)              scaled to size 10.0pt on input line 289.
 <two-page-ggplot2_files/figure-latex/unnamed-chunk-4-1.pdf, id=22, 289.08pt x 1
 80.675pt>
 File: two-page-ggplot2_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (t
 ype pdf)
 <use two-page-ggplot2_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: two-page-ggplot2_files/figure-latex/unnamed-chunk-4-1.
-pdf  used on input line 299.
+pdf  used on input line 303.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 318.
+(Font)              scaled to size 8.0pt on input line 322.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 321.
+(Font)              scaled to size 10.95pt on input line 325.
 [1
 
 {C:/Users/agrogan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./two-pag
 e-ggplot2_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<two-page-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf, id=48, 289.08pt x 1
+<two-page-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf, id=49, 289.08pt x 1
 80.675pt>
 File: two-page-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (t
 ype pdf)
 <use two-page-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: two-page-ggplot2_files/figure-latex/unnamed-chunk-5-1.
-pdf  used on input line 334.
+pdf  used on input line 338.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-<two-page-ggplot2_files/figure-latex/unnamed-chunk-6-1.pdf, id=49, 289.08pt x 1
+<two-page-ggplot2_files/figure-latex/unnamed-chunk-6-1.pdf, id=50, 289.08pt x 1
 80.675pt>
 File: two-page-ggplot2_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (t
 ype pdf)
 <use two-page-ggplot2_files/figure-latex/unnamed-chunk-6-1.pdf>
 Package pdftex.def Info: two-page-ggplot2_files/figure-latex/unnamed-chunk-6-1.
-pdf  used on input line 351.
+pdf  used on input line 355.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
 LaTeX Warning: Marginpar on page 2 moved.
@@ -1389,13 +1389,13 @@ LaTeX Warning: Marginpar on page 2 moved.
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-<two-page-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf, id=50, 289.08pt x 1
+<two-page-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf, id=51, 289.08pt x 1
 80.675pt>
 File: two-page-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (t
 ype pdf)
 <use two-page-ggplot2_files/figure-latex/unnamed-chunk-8-1.pdf>
 Package pdftex.def Info: two-page-ggplot2_files/figure-latex/unnamed-chunk-8-1.
-pdf  used on input line 369.
+pdf  used on input line 373.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
 LaTeX Warning: Marginpar on page 2 moved.
@@ -1403,38 +1403,38 @@ LaTeX Warning: Marginpar on page 2 moved.
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-<two-page-ggplot2_files/figure-latex/unnamed-chunk-9-1.pdf, id=51, 289.08pt x 1
+<two-page-ggplot2_files/figure-latex/unnamed-chunk-9-1.pdf, id=52, 289.08pt x 1
 80.675pt>
 File: two-page-ggplot2_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (t
 ype pdf)
 <use two-page-ggplot2_files/figure-latex/unnamed-chunk-9-1.pdf>
 Package pdftex.def Info: two-page-ggplot2_files/figure-latex/unnamed-chunk-9-1.
-pdf  used on input line 403.
+pdf  used on input line 407.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 407.
+(Font)              scaled to size 10.0pt on input line 411.
 [2 <./two-page-ggplot2_files/figure-latex/unnamed-chunk-5-1.pdf> <./two-page-gg
 plot2_files/figure-latex/unnamed-chunk-6-1.pdf> <./two-page-ggplot2_files/figur
 e-latex/unnamed-chunk-8-1.pdf> <./two-page-ggplot2_files/figure-latex/unnamed-c
 hunk-9-1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
 (two-page-ggplot2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
 Package rerunfilecheck Info: File `two-page-ggplot2.out' has not changed.
 (rerunfilecheck)             Checksum: 547CE9929E07E478A776C949C2D4EAEF;535.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 407.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
  ) 
 Here is how much of TeX's memory you used:
  14372 strings out of 493305
  204787 string characters out of 3138869
- 302980 words of memory out of 3000000
+ 302986 words of memory out of 3000000
  17609 multiletter control sequences out of 15000+200000
  90315 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1450,9 +1450,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/cm-super/sftt0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/cm-super/sftt1200.pfb>
-Output written on two-page-ggplot2.pdf (2 pages, 232716 bytes).
+Output written on two-page-ggplot2.pdf (2 pages, 232582 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  22 named destinations out of 1000 (max. 500000)
  1082 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,10 +3,15 @@ title: "A Two Page Guide to ggplot2"
 author: "Andy Grogan-Kaylor (http://www.umich.edu/~agrogan)"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  tint::tintHtml:
-    number_sections: yes
-    toc: yes
+  html_document: 
+    fig_height: 3
     highlight: haddock
+    number_sections: yes
+    theme: flatly
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
   tint::tintPdf:
     number_sections: yes
     toc: no
@@ -14,16 +19,10 @@ output:
   tufte::tufte_handout:
     number_sections: yes
     toc: no
-  html_document:
-    fig_height: 3
-    highlight: haddock
-    keep_md: no
+  tint::tintHtml:
     number_sections: yes
-    theme: yeti
     toc: yes
-    toc_float:
-      collapsed: no
-      smooth_scroll: yes
+    highlight: haddock
   pdf_document:
     fig_height: 1.25
     highlight: haddock
@@ -206,6 +205,6 @@ ggsave(file = "scatterplot.png")
 
 ```
 
-[^moreinformation]: More information can be found here:  http://www-personal.umich.edu/~agrogan/ggplot2 
+[^moreinformation]: More information can be found here:  https://agrogan1.github.io/R/introduction-to-ggplot2/background.html 
 
 
