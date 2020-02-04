@@ -223,7 +223,7 @@ table(mydata$z) # especially suitable for factor variables
 
 # Credits
 
-Prepared by [Andy Grogan-Kaylor](https://agroganweb.wordpress.com/)
+Prepared by [Andy Grogan-Kaylor](https://www.umich.edu/~agrogan)
 
 ```{r, echo=FALSE,eval=FALSE}
 
