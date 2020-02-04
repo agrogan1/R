@@ -7,10 +7,14 @@ output:
     number_sections: yes
     toc: no
     highlight: haddock
+  tint::tintHtml:
+    number_sections: yes
+    toc: yes
+    highlight: haddock
   tufte::tufte_handout:
     number_sections: yes
     toc: no
-  tint::tintHtml:
+  tufte::tufte_html: 
     number_sections: yes
     toc: yes
     highlight: haddock
@@ -130,7 +134,7 @@ mydata$w <- factor(mydata$z, # original numeric variable
                    labels = c("Group A", "Group B", "Group C"), 
                    ordered = TRUE) # whether order matters
 
-mydata$z <- as.numeric(mydata$w) # factor / character to numeric
+mydata$z <- as.numeric(mydata$w) # factor to numeric
 
 ```
 
