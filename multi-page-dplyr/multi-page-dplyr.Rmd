@@ -3,11 +3,11 @@ title: "Multi-Page dplyr"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output: 
-  tint::tintPdf:
+  tint::tintHtml:
     number_sections: yes
     toc: yes
     highlight: haddock
-  tint::tintHtml:
+  tint::tintPdf:
     number_sections: yes
     toc: yes
     highlight: haddock
@@ -238,7 +238,8 @@ mydata %>% # my data
   ggplot(aes(x = year, # the rest is ggplot
              y = myscale)) +
   geom_point() + # points
-  geom_smooth(se = FALSE) + # smoother without confidence interval
+  geom_smooth(se = FALSE, # smoother without confidence interval
+              method = "lm") + # linear smoother
   labs(title = "My Scale By Year") + # labels
   theme(axis.text.x = element_text(size = 10, # tweak theme
                                    angle = 90))
