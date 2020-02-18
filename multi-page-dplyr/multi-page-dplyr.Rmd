@@ -57,7 +57,7 @@ x <- round(rnorm(N, 40, 10), digits = 2)
 
 x[1] <- NA # introduce a missing value
 
-y <- rbinom(N, 1, .5)
+y <- rbinom(N, 1, .25)
 
 y[2] <- 2 # introduce alternate value
 
@@ -234,7 +234,8 @@ Notice how, in the code below, I never actually create the new data set `mynewda
 library(ggplot2)
 
 mydata %>% # my data
-  mutate(myscale = x + z) %>% # dplyr command to make new variable
+  mutate(myscale = x + z) %>% # dplyr command to make new variable 
+  filter(y != "Group C") %>% # filter on values of y
   ggplot(aes(x = year, # the rest is ggplot
              y = myscale)) +
   geom_point() + # points
