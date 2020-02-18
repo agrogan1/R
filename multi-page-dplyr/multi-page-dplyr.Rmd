@@ -3,11 +3,11 @@ title: "Multi-Page dplyr"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output: 
-  tint::tintHtml:
+  tint::tintPdf:
     number_sections: yes
     toc: yes
     highlight: haddock
-  tint::tintPdf:
+  tint::tintHtml:
     number_sections: yes
     toc: yes
     highlight: haddock
@@ -80,6 +80,18 @@ pander(head(mydata))
 # Piping
 
 *Pipes* `%>%` connect pieces of a command e.g. *data* to *data wrangling* to a *graph command.*
+
+`dplyr` commands will often look something like the outline below.
+
+```{r, eval=FALSE}
+
+mydata %>% 
+  data_wrangling %>% 
+  more_data_wrangling %>%
+  graph_command
+
+```
+
 
 # Aggregate Data: `group_by()` & `summarise()`
 
