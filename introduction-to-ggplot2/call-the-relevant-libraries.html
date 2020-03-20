@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4 Call The Relevant Libraries | Introduction to ggplot2</title>
   <meta name="description" content="4 Call The Relevant Libraries | Introduction to ggplot2" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4 Call The Relevant Libraries | Introduction to ggplot2" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2020-01-22" />
+<meta name="date" content="2020-03-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,7 +69,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -125,7 +125,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>1</b> Background</a></li>
 <li class="chapter" data-level="2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><i class="fa fa-check"></i><b>2</b> ggplot in 3 easy steps (maybe 2 easy steps)</a><ul>
-<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.-x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
+<li class="chapter" data-level="2.1" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#aesthetic-what-you-want-to-graph-e.g.x-y-z."><i class="fa fa-check"></i><b>2.1</b> <strong>aesthetic</strong>: <em>what</em> you want to graph (e.g. x, y, z).</a></li>
 <li class="chapter" data-level="2.2" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#geom-how-you-want-to-graph-it."><i class="fa fa-check"></i><b>2.2</b> <strong>geom</strong>: <em>how</em> you want to graph it.</a></li>
 <li class="chapter" data-level="2.3" data-path="ggplot-in-3-easy-steps-maybe-2-easy-steps.html"><a href="ggplot-in-3-easy-steps-maybe-2-easy-steps.html#options-optional-titles-themes-etc."><i class="fa fa-check"></i><b>2.3</b> <strong>options</strong>: <em>optional</em> titles, themes, etc.</a></li>
 </ul></li>
@@ -180,17 +180,17 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="call-the-relevant-libraries" class="section level1">
 <h1><span class="header-section-number">4</span> Call The Relevant Libraries</h1>
 <p>You will need a few <a href="http://www-personal.umich.edu/~agrogan/R/introduction-to-R.html#2_base_r_and_libraries">R libraries</a> to work in ggplot. You may <em>only</em> need <code>library(ggplot2)</code>, but some of these other libraries may also be helpful.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(ggplot2) <span class="co"># beautiful graphs</span></a>
-<a class="sourceLine" id="cb3-2" title="2"></a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="kw">library</span>(ggthemes) <span class="co"># nice themes for ggplot2</span></a>
-<a class="sourceLine" id="cb3-4" title="4"></a>
-<a class="sourceLine" id="cb3-5" title="5"><span class="kw">library</span>(ggbeeswarm) <span class="co"># &quot;beeswarm&quot; plots</span></a>
-<a class="sourceLine" id="cb3-6" title="6"></a>
-<a class="sourceLine" id="cb3-7" title="7"><span class="kw">library</span>(cowplot) <span class="co"># arrrange graphs</span></a>
-<a class="sourceLine" id="cb3-8" title="8"></a>
-<a class="sourceLine" id="cb3-9" title="9"><span class="kw">library</span>(pander) <span class="co"># nice tables</span></a>
-<a class="sourceLine" id="cb3-10" title="10"></a>
-<a class="sourceLine" id="cb3-11" title="11"><span class="kw">library</span>(psych) <span class="co"># nice table of descriptive statistics</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(ggplot2) <span class="co"># beautiful graphs</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw">library</span>(ggthemes) <span class="co"># nice themes for ggplot2</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw">library</span>(ggbeeswarm) <span class="co"># &quot;beeswarm&quot; plots</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="kw">library</span>(cowplot) <span class="co"># arrrange graphs</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="kw">library</span>(pander) <span class="co"># nice tables</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="kw">library</span>(psych) <span class="co"># nice table of descriptive statistics</span></a></code></pre></div>
 </div>
             </section>
 
@@ -217,12 +217,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -234,6 +233,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

@@ -1,7 +1,7 @@
 ---
 title: "Introduction to ggplot2"
 author: "Andy Grogan-Kaylor"
-date: '`r format(Sys.Date(), format="%B %d, %Y")`'
+date: "`r format(Sys.Date(), format='%B %d, %Y')`"
 output:
   pdf_document:
     fig_height: 2
@@ -10,6 +10,13 @@ output:
     number_sections: yes
     toc: yes
     toc_depth: 3
+  bookdown::gitbook:
+    config:
+      download:
+      - introduction-to-ggplot2.pdf
+      - introduction-to-ggplot2.epub
+    css: UM.css
+    highlight: haddock
   html_document:
     code_folding: hide
     fig_height: 3
@@ -21,18 +28,14 @@ output:
     toc_float:
       collapsed: yes
       smooth_scroll: yes
-  bookdown::gitbook:
-    config:
-      download:
-      - introduction-to-ggplot2.pdf
-      - introduction-to-ggplot2.epub
-    highlight: haddock
-    css: UM.css
+  word_document: 
+    fig_caption: yes
+    fig_height: 3
+    toc: yes
   bookdown::epub_book: default
 geometry: margin=1.0in
-mainfont: Tw Cen MT
-fontsize: 12pt
 site: bookdown::bookdown_site
+fontsize: 12pt
 ---
 
 ```{r global_options, echo=FALSE}
@@ -612,13 +615,13 @@ p5 +
 
 More information can be found at [ggplot2](https://ggplot2.tidyverse.org/).
 
-More ggplot2 examples can be found [here](http://www-personal.umich.edu/~agrogan/how_to_choose_a_chart/how_to_choose_a_chart_v3.html).
+More ggplot2 examples can be found [here](https://agrogan1.github.io/dataviz/how-to-choose-a-chart/how-to-choose-a-chart-v3.html).
 
 *****
 
 Graphics made with the [ggplot2](https://ggplot2.tidyverse.org/) graphing library created by Hadley Wickham.
 
-Available online at [https://agroganweb.wordpress.com/data-visualization-dataviz/](https://agroganweb.wordpress.com/data-visualization-dataviz/)
+Available online at [https://www.umich.edu/~agrogan](https://www.umich.edu/~agrogan)
 
 *Quick Introduction to ggplot2* by Andrew Grogan-Kaylor is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
