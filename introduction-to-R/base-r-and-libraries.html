@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Base R and Libraries | Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Base R and Libraries | Introduction to R" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2020-03-02" />
+<meta name="date" content="2020-04-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,7 +69,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -185,13 +185,14 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <h1><span class="header-section-number">3</span> Base R and Libraries</h1>
 <p>Most of this guide makes use of what is most often called <strong>Base R</strong>, the R that you get when you install the R software, and RStudio, on your computer.</p>
 <p>For many social researchers, the data structure of primary interest is the <em>data frame</em>, and thus that is my focus here. In the interests of parsimony I do not go into a great deal of detail on R’s other data structures.</p>
-<p>A great deal can be accomplished with <strong>Base R</strong>. However, as you grow in your use of R, you will likely frequently need to make use of libraries, which are invoked by the <code>library(...)</code> command. Before using a library you need to install it. Below is an example of installing the <em>ggplot2</em> advanced graphics library.</p>
+<p>A great deal can be accomplished with <strong>Base R</strong>. However, as you grow in your use of R, you will likely frequently need to make use of libraries, which are invoked by the <code>library(...)</code> command.</p>
+<p>Before using a library you need to install it. Below is an example of installing the <em>ggplot2</em> advanced graphics library.</p>
 <blockquote>
 <p>You would need to install the library only once. Installation can also be accomplished from the “Packages” tab in RStudio.</p>
 </blockquote>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>) </a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>) </a></code></pre></div>
 <p>Then start the library when you are using R by typing…</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">library</span>(ggplot2)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a></code></pre></div>
 <p>I should mention here the new additions to the R language of the new libraries which make up the <a href="https://www.tidyverse.org/"><strong>tidyverse</strong></a>. Learning the <a href="https://www.tidyverse.org/"><strong>tidyverse</strong></a> requires an additional investment in learning, however the <strong>tidyverse</strong> makes many improvements to the R language and functionality.</p>
 </div>
             </section>
@@ -219,12 +220,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -236,6 +236,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

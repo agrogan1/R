@@ -6,6 +6,10 @@ author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
   bookdown::epub_book: default  
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   bookdown::gitbook:
     highlight: haddock
     css: UM.css
@@ -13,10 +17,6 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   html_document:
     css: UM.css
     fig_height: 3
@@ -128,7 +128,13 @@ My hope in this document is to provide an introduction to R that bypasses some o
 
 > This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
 
-This document is a brief introduction to R[^two_page_Stata].  Commands that you actually type into R are represented  in `courier font`.  `mydata` is the name of your data set.  `x` and `y` and `z` refer to variables in your data.  More documentation on any command is usually available via `help(command)` or `??command`. The R interface makes it extremely easy to do rapid interactive data analysis.  Hit **"Up-Arrow"** to recall the most recent command, which you can then quickly edit and resubmit.  Remember also that one often submits a command or set of commands from a script window. 
+This document is a brief introduction to R[^two_page_Stata].  
+
+Commands that you actually type into R are represented  in `courier font`.  `mydata` is the name of your data set.  `x` and `y` and `z` refer to variables in your data.  More documentation on any command is usually available via `help(command)` or `??command`. 
+
+The R interface makes it extremely easy to do rapid interactive data analysis.  Hit **"Up-Arrow"** to recall the most recent command, which you can then quickly edit and resubmit.  
+
+Remember also that one often submits a command or set of commands from a script window. 
 
 The general idea of many R commands is:
 
@@ -178,7 +184,9 @@ Most of this guide makes use of what is most often called **Base R**, the R that
 
 For many social researchers, the data structure of primary interest is the *data frame*, and thus that is my focus here.  In the interests of parsimony I do not go into a great deal of detail on R's other data structures.
 
-A great deal can be accomplished with **Base R**.  However, as you grow in your use of R, you will likely frequently need to make use of libraries, which are invoked by the `library(...)` command.  Before using a library you need to install it.  Below is an example of installing the *ggplot2* advanced graphics library.
+A great deal can be accomplished with **Base R**.  However, as you grow in your use of R, you will likely frequently need to make use of libraries, which are invoked by the `library(...)` command.  
+
+Before using a library you need to install it.  Below is an example of installing the *ggplot2* advanced graphics library.
 
 > You would need to install the library only once.  Installation can also be accomplished from the "Packages" tab in RStudio.
 
@@ -247,7 +255,9 @@ grid.raster(img)
 
 ```
 
-[**RStudio**](http://www.rstudio.com/) is an **Integrated Development Environment (IDE)** that can be run simultaneously with **RCommander** and provides an easier working enivronment for R Software.  If all the software is installed, Start **RStudio** to start R, then type `library(Rcmdr)` to start **RCommander**.
+[**RStudio**](http://www.rstudio.com/) is an **Integrated Development Environment (IDE)** that can be run simultaneously with **RCommander** and provides an easier working enivronment for R Software.  I
+
+If all the software is installed, Start **RStudio** to start R, then type `library(Rcmdr)` to start **RCommander**.
 
 ```{r, fig.cap="screenshot of RStudio", fig.height=2.5}
 
@@ -590,7 +600,9 @@ alpha(myscale_data)
 
 `summary(mydata$x)` gives you basic descriptive statistics for a variable, such as the mean (average).  Especially useful for continuous variables.  Use `summary(mydata)` to summarize every variable in your data.
 
-`skim(mydata)` from `library(skimr)` or `describe(mydata)` from `library(psych)` will often give you a nicer summary of your variables that is closer to what you want for an academic paper or agency report. `describe(mydata)` is often especially useful when you want to show both the mean and standard deviation for several variables.
+`skim(mydata)` from `library(skimr)` or `describe(mydata)` from `library(psych)` will often give you a nicer summary of your variables that is closer to what you want for an academic paper or agency report. 
+
+`describe(mydata)` is often especially useful when you want to show both the mean and standard deviation for several variables.
 
 ## Categorical Variables
 

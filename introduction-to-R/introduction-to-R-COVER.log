@@ -2,13 +2,12 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**introduction-to-R.tex
-(./introduction-to-R.tex
+**introduction-to-R-COVER.tex
+(./introduction-to-R-COVER.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-02-25>
-(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/tufte-latex/tufte-handout.
-cls
-Document Class: tufte-handout 2015/06/21 v3.5.2 Tufte-handout class
+(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/tufte-latex/tufte-book.cls
+Document Class: tufte-book 2015/06/21 v3.5.2 Tufte-book class
 
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/tufte-latex/tufte-common.d
 ef
@@ -63,23 +62,21 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \hw@wordcount=\count172
 \hw@maxprintline=\count173
 (|kpsewhich -var-value=max_print_line))
-
-Class tufte-handout Warning: Option `12pt' is not supported -- ignoring option
-
-Class tufte-handout Info: Loading the base class `article'
-(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+Class tufte-book Info: Loading the base class `book'
+(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count174
-\c@section=\count175
-\c@subsection=\count176
-\c@subsubsection=\count177
-\c@paragraph=\count178
-\c@subparagraph=\count179
-\c@figure=\count180
-\c@table=\count181
+\c@chapter=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
 \abovecaptionskip=\skip50
 \belowcaptionskip=\skip51
 \bibindent=\dimen136
@@ -124,8 +121,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen143
-\Hy@linkcounter=\count182
-\Hy@pagecounter=\count183
+\Hy@linkcounter=\count183
+\Hy@pagecounter=\count184
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -135,8 +132,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count184
-\pdfmajorversion=\count185
+\Hy@SavedSpaceFactor=\count185
+\pdfmajorversion=\count186
 Package hyperref Info: Option `unicode' set `true' on input line 4421.
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
@@ -151,7 +148,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count186
+\c@Hy@tempcnt=\count187
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -166,7 +163,7 @@ y
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count187
+\Fld@menulength=\count188
 \Field@Width=\dimen145
 \Fld@charsize=\dimen146
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -181,8 +178,8 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count188
-\c@Item=\count189
+\Hy@abspage=\count189
+\c@Item=\count190
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -191,8 +188,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count190
-\c@bookmark@seq@number=\count191
+\Fld@listcount=\count191
+\c@bookmark@seq@number=\count192
 
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilech
 eck.sty
@@ -230,9 +227,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count192
-\Gm@cntv=\count193
-\c@Gm@tempcnt=\count194
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
 \Gm@bindingoffset=\dimen147
 \Gm@wd@mp=\dimen148
 \Gm@odd@mp=\dimen149
@@ -245,8 +242,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/changepage/changepage.st
 y
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count195
-\cp@tempcnt=\count196
+\c@cp@cntr=\count196
+\cp@tempcnt=\count197
 )
 \@tufte@overhang=\skip69
 \@tufte@fullwidth=\skip70
@@ -262,7 +259,7 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
 )
 
-Class tufte-handout Warning: Couldn't locate `soul' package
+Class tufte-book Warning: Couldn't locate `soul' package
 
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -294,12 +291,12 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip76
 \bibsep=\skip77
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count197
+\c@NAT@ctr=\count198
 ) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
-No file introduction-to-R.bbl.
-\c@@tufte@num@bibkeys=\count198
+No file introduction-to-R-COVER.bbl.
+\c@@tufte@num@bibkeys=\count199
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/sauerj/optparams.sty
 Package: optparams 2004/08/14 v0.9 multiple optional parameters in macros
 )
@@ -328,14 +325,14 @@ s
 \tufteskipamount=\skip90
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count199
+\c@tracingmulticols=\count266
 \mult@box=\box49
 \multicol@leftmargin=\dimen155
-\c@unbalance=\count266
-\c@collectmore=\count267
-\doublecol@number=\count268
-\multicoltolerance=\count269
-\multicolpretolerance=\count270
+\c@unbalance=\count267
+\c@collectmore=\count268
+\doublecol@number=\count269
+\multicoltolerance=\count270
+\multicolpretolerance=\count271
 \full@width=\dimen156
 \page@free=\dimen157
 \premulticols=\dimen158
@@ -386,15 +383,15 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box90
 \@tempa=\box91
 \@tempa=\box92
-\c@minrows=\count271
-\c@columnbadness=\count272
-\c@finalcolumnbadness=\count273
+\c@minrows=\count272
+\c@columnbadness=\count273
+\c@finalcolumnbadness=\count274
 \last@try=\dimen161
 \multicolovershoot=\dimen162
 \multicolundershoot=\dimen163
 \mult@nat@firstbox=\box93
 \colbreak@box=\box94
-\mc@col@check@num=\count274
+\mc@col@check@num=\count275
 ))) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -421,13 +418,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count275
+\inf@bad=\count276
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count276
-\leftroot@=\count277
+\uproot@=\count277
+\leftroot@=\count278
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count278
-\DOTSCASE@=\count279
+\classnum@=\count279
+\DOTSCASE@=\count280
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -436,15 +433,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen166
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count280
-\c@MaxMatrixCols=\count281
+\macc@depth=\count281
+\c@MaxMatrixCols=\count282
 \dotsspace@=\muskip17
-\c@parentequation=\count282
-\dspbrk@lvl=\count283
+\c@parentequation=\count283
+\dspbrk@lvl=\count284
 \tag@help=\toks22
-\row@=\count284
-\column@=\count285
-\maxfields@=\count286
+\row@=\count285
+\column@=\count286
+\maxfields@=\count287
 \andhelp@=\toks23
 \eqnshift@=\dimen167
 \alignsep@=\dimen168
@@ -499,12 +496,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen182
 \cmidrulekern=\dimen183
 \defaultaddspace=\dimen184
-\@cmidla=\count287
-\@cmidlb=\count288
+\@cmidla=\count288
+\@cmidlb=\count289
 \@aboverulesep=\dimen185
 \@belowrulesep=\dimen186
-\@thisruleclass=\count289
-\@lastruleclass=\count290
+\@thisruleclass=\count290
+\@lastruleclass=\count291
 \@thisrulewidth=\dimen187
 ) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
@@ -513,32 +510,17 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip96
 \L@UnitsRaiseTextstyle=\skip97
 \L@UnitsRaiseScriptstyle=\skip98
-)) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count291
-\FV@InFile=\read2
-\FV@TabBox=\box97
-\c@FancyVerbLine=\count292
-\FV@StepNumber=\count293
-\FV@OutFile=\write3
-) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip99
-\fb@frw=\dimen188
-\fb@frh=\dimen189
-\FrameRule=\dimen190
-\FrameSep=\dimen191
-) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box98
-\UL@hyphenbox=\box99
-\UL@skip=\skip100
+)) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box97
+\UL@hyphenbox=\box98
+\UL@skip=\skip99
 \UL@hook=\toks28
-\UL@height=\dimen192
-\UL@pe=\count294
-\UL@pixel=\dimen193
-\ULC@box=\box100
+\UL@height=\dimen188
+\UL@pe=\count292
+\UL@pixel=\dimen189
+\ULC@box=\box99
 Package: ulem 2019/11/18
-\ULdepth=\dimen194
+\ULdepth=\dimen190
 ) (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/morefloats/morefloats.st
 y
 Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
@@ -572,50 +554,45 @@ LaTeX Info: Redefining \textulc on input line 49.
 )
 LaTeX Info: Redefining \robotoTOsF on input line 396.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 127.
+Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdfmod
 e.def
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count295
-\l__pdf_internal_box=\box101
-)
+\l__kernel_color_stack_int=\count293
+\l__pdf_internal_box=\box100
+) (./introduction-to-R-COVER.aux)
+\openout1 = `introduction-to-R-COVER.aux'.
 
-LaTeX Warning: Unused global option(s):
-    [12pt].
-
-(./introduction-to-R.aux)
-\openout1 = `introduction-to-R.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 249.
-LaTeX Font Info:    ... okay on input line 249.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 238.
+LaTeX Font Info:    ... okay on input line 238.
 LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input l
-ine 249.
+ine 238.
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/roboto/T1Roboto-LF.fd
 File: T1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/c/n' aliased to
-(Font)              `T1/Roboto-LF/condensed/n' on input line 249.
+(Font)              `T1/Roboto-LF/condensed/n' on input line 238.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/n' will be
-(Font)              scaled to size 10.0pt on input line 249.
-\AtBeginShipoutBox=\box102
-Package hyperref Info: Link coloring ON on input line 249.
+(Font)              scaled to size 10.0pt on input line 238.
+\AtBeginShipoutBox=\box101
+Package hyperref Info: Link coloring ON on input line 238.
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -625,17 +602,17 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count296
+\c@section@level=\count294
 )
-LaTeX Info: Redefining \ref on input line 249.
-LaTeX Info: Redefining \pageref on input line 249.
-LaTeX Info: Redefining \nameref on input line 249.
-(./introduction-to-R.out) (./introduction-to-R.out)
-\@outlinefile=\write4
-\openout4 = `introduction-to-R.out'.
+LaTeX Info: Redefining \ref on input line 238.
+LaTeX Info: Redefining \pageref on input line 238.
+LaTeX Info: Redefining \nameref on input line 238.
+(./introduction-to-R-COVER.out) (./introduction-to-R-COVER.out)
+\@outlinefile=\write3
+\openout3 = `introduction-to-R-COVER.out'.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 249.
+LaTeX Info: Redefining \selectfont on input line 238.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -656,7 +633,7 @@ LaTeX Info: Redefining \selectfont on input line 249.
 * \headheight=14.0pt
 * \headsep=28.0pt
 * \topskip=10.0pt
-* \footskip=30.0pt
+* \footskip=25.29494pt
 * \marginparwidth=144.0pt
 * \marginparsep=24.0pt
 * \columnsep=10.0pt
@@ -683,299 +660,53 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \langwohyphens=\language5
-\c@mv@tabular=\count297
-\c@mv@boldtabular=\count298
+\c@mv@tabular=\count295
+\c@mv@boldtabular=\count296
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
-(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 251.
+(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 240.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
-(Font)              scaled to size 10.0pt on input line 251.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
-(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 251.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
-(Font)              scaled to size 14.4pt on input line 251.
+(Font)              scaled to size 28.0pt on input line 240.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 251.
+(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 240.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 10.0pt on input line 251.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/lc/n' aliased to
-(Font)              `T1/Roboto-LF/lightcondensed/n' on input line 251.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/lightcondensed/n' will be
-(Font)              scaled to size 12.0pt on input line 251.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
-(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 257.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
-(Font)              scaled to size 12.0pt on input line 257.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/c/n' aliased to
-(Font)              `T1/Roboto-LF/condensed/n' on input line 282.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/n' will be
-(Font)              scaled to size 9.0pt on input line 282.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 299
-.
-(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 299
-.
-(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/Roboto-LF/c/n' aliased to
-(Font)              `T1/Roboto-LF/condensed/n' on input line 299.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/n' will be
-(Font)              scaled to size 7.0pt on input line 299.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/c/n' aliased to
-(Font)              `T1/Roboto-LF/condensed/n' on input line 299.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/n' will be
-(Font)              scaled to size 8.0pt on input line 299.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/c/n' aliased to
-(Font)              `T1/Roboto-LF/condensed/n' on input line 299.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/n' will be
-(Font)              scaled to size 6.0pt on input line 299.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/c/n' aliased to
-(Font)              `T1/Roboto-LF/condensed/n' on input line 299.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/n' will be
-(Font)              scaled to size 5.0pt on input line 299.
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-02.
-(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 318.
-[1
-
-{/Users/agrogan/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf, id=80, 289.08pt x 
-108.405pt>
-File: introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
-type pdf)
-<use introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-4-1
-.pdf  used on input line 331.
-(pdftex.def)             Requested size: 143.99709pt x 53.9989pt.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/c/it' aliased to
-(Font)              `T1/Roboto-LF/condensed/it' on input line 365.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/it' will be
-(Font)              scaled to size 10.0pt on input line 365.
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 408.
-
-[2 <./introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf>]
-LaTeX Font Info:    Font shape `T1/Roboto-LF/c/it' aliased to
-(Font)              `T1/Roboto-LF/condensed/it' on input line 435.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/it' will be
-(Font)              scaled to size 9.0pt on input line 435.
-<introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf, id=96, 289.08pt x
- 180.675pt>
-File: introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file 
-(type pdf)
-<use introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf>
-Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-10-
-1.pdf  used on input line 470.
-(pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
-
-Overfull \hbox (25.88153pt too wide) in paragraph at lines 478--480
-[]\T1/Roboto-LF/condensed/n/10 If all the soft-ware is in-stalled, Start \T1/Ro
-boto-LF/boldcondensed/n/10 RStu-dio \T1/Roboto-LF/condensed/n/10 to start R, th
-en type \T1/cmtt/m/n/10 library(Rcmdr) 
- []
-
-<introduction-to-R_files/figure-latex/unnamed-chunk-11-1.pdf, id=98, 289.08pt x
- 180.675pt>
-File: introduction-to-R_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
-(type pdf)
-<use introduction-to-R_files/figure-latex/unnamed-chunk-11-1.pdf>
-Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-11-
-1.pdf  used on input line 482.
-(pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 492.
-
-[3 <./introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf> <./introduct
-ion-to-R_files/figure-latex/unnamed-chunk-11-1.pdf>]
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 495.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 495.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 495.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 495.
-LaTeX Font Info:    Trying to load font information for TS1+Roboto-LF on input 
-line 519.
-(/Users/agrogan/Library/TinyTeX/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
-File: TS1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for TS1/Roboto-LF.
-
-)
-LaTeX Font Info:    Font shape `TS1/Roboto-LF/c/n' aliased to
-(Font)              `TS1/Roboto-LF/condensed/n' on input line 519.
-LaTeX Font Info:    Font shape `TS1/Roboto-LF/condensed/n' will be
-(Font)              scaled to size 10.0pt on input line 519.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/bc/n' aliased to
-(Font)              `T1/Roboto-LF/boldcondensed/n' on input line 527.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/boldcondensed/n' will be
-(Font)              scaled to size 9.0pt on input line 527.
-
-LaTeX Warning: Marginpar on page 4 moved.
-
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 570.
-
-[4]
-LaTeX Font Info:    Font shape `T1/Roboto-LF/c/it' aliased to
-(Font)              `T1/Roboto-LF/condensed/it' on input line 610.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/condensed/it' will be
-(Font)              scaled to size 8.0pt on input line 610.
-
-LaTeX Warning: Marginpar on page 5 moved.
-
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 642.
-
-[5]
-
-LaTeX Warning: Marginpar on page 6 moved.
-
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 733.
-
-[6]
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 802.
-
-[7]
-Overfull \hbox (58.04688pt too wide) in paragraph at lines 832--838
-\T1/Roboto-LF/condensed/n/10 We can re-code vari-ables in R us-ing R's \T1/Robo
-to-LF/condensed/it/10 con-di-tional \T1/Roboto-LF/condensed/n/10 syn-tax: \T1/c
-mtt/m/n/10 dataset$variable[condition] 
- []
-
-
-LaTeX Warning: Marginpar on page 8 moved.
-
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 870.
-
-[8]
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 942.
-
-[9]
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 1014.
-
-[10]
-<introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf, id=204, 289.08pt 
-x 180.675pt>
-File: introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file 
-(type pdf)
-<use introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf>
-Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-47-
-1.pdf  used on input line 1068.
-(pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
-<introduction-to-R_files/figure-latex/unnamed-chunk-50-1.pdf, id=205, 289.08pt 
-x 180.675pt>
-File: introduction-to-R_files/figure-latex/unnamed-chunk-50-1.pdf Graphic file 
-(type pdf)
-<use introduction-to-R_files/figure-latex/unnamed-chunk-50-1.pdf>
-Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-50-
-1.pdf  used on input line 1090.
-(pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
-
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 1110.
-
-[11 <./introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf> <./introduc
-tion-to-R_files/figure-latex/unnamed-chunk-50-1.pdf>]
-<introduction-to-R_files/figure-latex/unnamed-chunk-53-1.pdf, id=227, 289.08pt 
-x 180.675pt>
-File: introduction-to-R_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file 
-(type pdf)
-<use introduction-to-R_files/figure-latex/unnamed-chunk-53-1.pdf>
-Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-53-
-1.pdf  used on input line 1119.
-(pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
+(Font)              scaled to size 16.0pt on input line 240.
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1134.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+[1
 
-Class tufte-handout Warning: Proper spacing of small-caps letters has not been 
-set up.
-This message occurred on input line 1134.
-
-[12 <./introduction-to-R_files/figure-latex/unnamed-chunk-53-1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1134.
-(./introduction-to-R.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1134.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1134.
-
-Package rerunfilecheck Info: File `introduction-to-R.out' has not changed.
-(rerunfilecheck)             Checksum: A713E6E8BA6A635E7682AD4E10D4DF1C;2251.
+{/Users/agrogan/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
+(./introduction-to-R-COVER.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
+Package rerunfilecheck Info: File `introduction-to-R-COVER.out' has not changed
+.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1134.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 249.
  ) 
 Here is how much of TeX's memory you used:
- 14072 strings out of 482913
- 210648 string characters out of 5958407
- 475601 words of memory out of 5000000
- 28940 multiletter control sequences out of 15000+600000
- 628001 words of font info for 89 fonts, out of 8000000 for 9000
+ 13212 strings out of 482913
+ 194251 string characters out of 5958407
+ 454442 words of memory out of 5000000
+ 28231 multiletter control sequences out of 15000+600000
+ 548259 words of font info for 31 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 47i,12n,51p,308b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/agrogan/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt10
-95.600pk> </Users/agrogan/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec
-/ectt0800.600pk>{/Users/agrogan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/robo
-to/rbto_ocbbsb.enc}{/Users/agrogan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/r
-oboto/rbto_b5rac7.enc} </Users/agrogan/Library/TinyTeX/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecit1000.600pk> </Users/agrogan/Library/TinyTeX/texmf-var/fonts/p
-k/ljfour/jknappen/ec/ectt0900.600pk> </Users/agrogan/Library/TinyTeX/texmf-var/
-fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></Users/agrogan/Library/TinyTeX/texm
-f-dist/fonts/type1/google/roboto/Roboto-Regular.pfb></Users/agrogan/Library/Tin
-yTeX/texmf-dist/fonts/type1/google/roboto/RobotoCondensed-Bold.pfb></Users/agro
-gan/Library/TinyTeX/texmf-dist/fonts/type1/google/roboto/RobotoCondensed-Italic
-.pfb></Users/agrogan/Library/TinyTeX/texmf-dist/fonts/type1/google/roboto/Robot
-oCondensed-Light.pfb></Users/agrogan/Library/TinyTeX/texmf-dist/fonts/type1/goo
-gle/roboto/RobotoCondensed-Regular.pfb></Users/agrogan/Library/TinyTeX/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/agrogan/Library/TinyTeX/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/agrogan/Library/TinyT
-eX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/agrogan/Library/T
-inyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/agrogan/Lib
-rary/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/agroga
-n/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on introduction-to-R.pdf (12 pages, 640467 bytes).
+ 47i,11n,51p,271b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/Users/agrogan/Library/TinyTeX/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7
+.enc}</Users/agrogan/Library/TinyTeX/texmf-dist/fonts/type1/google/roboto/Robot
+oCondensed-Bold.pfb></Users/agrogan/Library/TinyTeX/texmf-dist/fonts/type1/goog
+le/roboto/RobotoCondensed-Light.pfb>
+Output written on introduction-to-R-COVER.pdf (1 page, 22625 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
- 87 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 22 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
