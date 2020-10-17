@@ -5,11 +5,6 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  bookdown::epub_book: default  
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   bookdown::gitbook:
     highlight: haddock
     css: UM.css
@@ -17,6 +12,11 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
+  bookdown::epub_book: default  
   html_document:
     css: UM.css
     fig_height: 3
@@ -289,7 +289,7 @@ For example, a data file called **projectdata.RData** could contain:
 
 * A data frame on *clients*, called **clients**.
 * A data frame on *providers*, called **providers**.
-* A data frame on *facilities*, called **facilites**.
+* A data frame on *facilities*, called **facilities**.
 
 > The name of the *RData file* can be **very different** from the name of the *data frames* that it contains.
 
