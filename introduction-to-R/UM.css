@@ -1,11 +1,12 @@
 .book .book-summary ul.summary {
-  background-color: #00274c;
+  background-color: white;
 }
 .book .book-summary ul.summary li a{
-  color: white;
+  color: #00274C;
 }
-.book .book-summary ul.summary li a:hover{
+.book .book-summary ul.summary li a:hover {
   color: #FFCB05;
+  background-color: #00274C;
 }
 .book .book-body .page-wrapper {
   background-color: white;
@@ -23,12 +24,12 @@
   background-color: white;
 }
 h1 {
-  color: #00274c;
+  color: #00274C;
   font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: bold;
 }
 h2 {
-  color: #00274c;
+  color: #00274C;
   font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: bold;
 }
@@ -69,7 +70,7 @@ blockquote {
 .list-group-item.active:focus, 
 .list-group-item.active:hover {
     z-index: 2;
-    color: #fff;
+    color: #FFCB05;
     background-color: navy;
-    border-color: #ffcb05;
+    border-color: blue;
 }

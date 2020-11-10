@@ -5,7 +5,7 @@ library(rmarkdown)
 render("introduction-to-R-COVER.Rmd") # render cover
 
 render("introduction-to-R.Rmd", # render book
-       output_format = tintPdf()) # as tintPdf
+       output_format = tintPdf(highlight = "haddock")) # as tintPdf
 
 library(pdftools)
 
