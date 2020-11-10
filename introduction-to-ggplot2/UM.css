@@ -1,8 +1,12 @@
 .book .book-summary ul.summary {
-  background-color: #00274c;
+  background-color: white;
 }
 .book .book-summary ul.summary li a{
-  color: white;
+  color: #00274C;
+}
+.book .book-summary ul.summary li a:hover {
+  color: #FFCB05;
+  background-color: #00274C;
 }
 .book .book-body .page-wrapper {
   background-color: white;
@@ -20,12 +24,12 @@
   background-color: white;
 }
 h1 {
-  color: #00274c;
+  color: #00274C;
   font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: bold;
 }
 h2 {
-  color: #00274c;
+  color: #00274C;
   font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: bold;
 }
@@ -39,7 +43,7 @@ p {
   font-size: 110%;
 }
 a:link {
-    color: navy;
+    color: #00274C;
 }
 li {
   font-family: "Helvetica", "Arial", sans-serif; 
@@ -49,19 +53,24 @@ li {
     margin: 0 0 .85em;
     padding: 0 15px;
     opacity: 1.00;
-    border-left: 5px solid #ffcb05;
+    border-left: 5px solid #FFCB05;
 }
 blockquote { 
     margin: 0 0 .85em;
     padding: 0 15px;
     opacity: 1.00;
-    border-left: 5px solid #ffcb05;
+    border-left: 5px solid #FFCB05;
+}
+.caption { 
+  display: block;
+  color: #00274C;
+  font-weight: bold;
 }
 .list-group-item.active, 
 .list-group-item.active:focus, 
 .list-group-item.active:hover {
     z-index: 2;
-    color: #fff;
+    color: #FFCB05;
     background-color: navy;
-    border-color: #ffcb05;
+    border-color: blue;
 }
