@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Demonstration of Michigan Colors for R Graphs</title>
   <meta name="description" content="Demonstration of Michigan Colors for R Graphs" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Demonstration of Michigan Colors for R Graphs" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Andrew Grogan-Kaylor" />
 
 
-<meta name="date" content="2020-03-02" />
+<meta name="date" content="2020-11-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,12 +50,13 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +65,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +83,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; } /* Alert */
 code span.an { color: #008000; } /* Annotation */
@@ -151,19 +154,19 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <div id="header">
 <h1 class="title">Demonstration of Michigan Colors for R Graphs</h1>
 <p class="author"><em>Andrew Grogan-Kaylor</em></p>
-<p class="date"><em>2020-03-02</em></p>
+<p class="date"><em>2020-11-10</em></p>
 </div>
 <p><img src="michigancolors-demo_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <div id="installation" class="section level1">
 <h1><span class="header-section-number">1</span> Installation</h1>
 <p>You will need to install <code>devtools</code> if you have not already done so:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</span></code></pre></div>
 <p>Then use <code>devtools</code> to install <code>michigancolors</code>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;agrogan1/michigancolors&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;agrogan1/michigancolors&quot;</span>)</span></code></pre></div>
 </div>
 <div id="usage" class="section level1">
 <h1><span class="header-section-number">2</span> Usage</h1>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(michigancolors)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">library</span>(michigancolors)</span></code></pre></div>
 </div>
 <div id="allowable-colors" class="section level1">
 <h1><span class="header-section-number">3</span> Allowable Colors</h1>
@@ -172,42 +175,42 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </div>
 <div id="help" class="section level1">
 <h1><span class="header-section-number">4</span> Help</h1>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">help</span>(michigancolors)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">help</span>(michigancolors)</span></code></pre></div>
 </div>
 <div id="examples" class="section level1">
 <h1><span class="header-section-number">5</span> Examples</h1>
 <div id="base-r" class="section level2">
 <h2><span class="header-section-number">5.1</span> Base R</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">hist</span>(iris<span class="op">$</span>Petal.Length, <span class="dt">col =</span> <span class="kw">michigancolors</span>())</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">hist</span>(iris<span class="op">$</span>Petal.Length, <span class="dt">col =</span> <span class="kw">michigancolors</span>())</span></code></pre></div>
 <p><img src="michigancolors-demo_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">hist</span>(iris<span class="op">$</span>Petal.Length, <span class="dt">col =</span> <span class="kw">michigancolors</span>(<span class="st">&quot;matthaei violet&quot;</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">hist</span>(iris<span class="op">$</span>Petal.Length, <span class="dt">col =</span> <span class="kw">michigancolors</span>(<span class="st">&quot;matthaei violet&quot;</span>))</span></code></pre></div>
 <p><img src="michigancolors-demo_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">plot</span>(iris<span class="op">$</span>Petal.Length, </a>
-<a class="sourceLine" id="cb7-2" title="2">     iris<span class="op">$</span>Sepal.Length, </a>
-<a class="sourceLine" id="cb7-3" title="3">     <span class="dt">pch =</span> <span class="dv">19</span>,</a>
-<a class="sourceLine" id="cb7-4" title="4">     <span class="dt">col =</span> <span class="kw">michigancolors</span>(<span class="st">&quot;tappan red&quot;</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">plot</span>(iris<span class="op">$</span>Petal.Length, </span>
+<span id="cb7-2"><a href="#cb7-2"></a>     iris<span class="op">$</span>Sepal.Length, </span>
+<span id="cb7-3"><a href="#cb7-3"></a>     <span class="dt">pch =</span> <span class="dv">19</span>,</span>
+<span id="cb7-4"><a href="#cb7-4"></a>     <span class="dt">col =</span> <span class="kw">michigancolors</span>(<span class="st">&quot;tappan red&quot;</span>))</span></code></pre></div>
 <p><img src="michigancolors-demo_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
 <div id="ggplot2" class="section level2">
 <h2><span class="header-section-number">5.2</span> ggplot2</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">library</span>(ggplot2)</a></code></pre></div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">ggplot</span>(iris, </a>
-<a class="sourceLine" id="cb9-2" title="2">       <span class="kw">aes</span>(<span class="dt">x =</span> Petal.Length, </a>
-<a class="sourceLine" id="cb9-3" title="3">           <span class="dt">fill =</span> Species)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb9-4" title="4"><span class="st">  </span><span class="kw">geom_density</span>(<span class="dt">alpha =</span> <span class="fl">.5</span>) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb9-5" title="5"><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Density Plot of Species in Iris Data Set&quot;</span>) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb9-6" title="6"><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb9-7" title="7"><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">michigancolors</span>())</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">library</span>(ggplot2)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">ggplot</span>(iris, </span>
+<span id="cb9-2"><a href="#cb9-2"></a>       <span class="kw">aes</span>(<span class="dt">x =</span> Petal.Length, </span>
+<span id="cb9-3"><a href="#cb9-3"></a>           <span class="dt">fill =</span> Species)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="st">  </span><span class="kw">geom_density</span>(<span class="dt">alpha =</span> <span class="fl">.5</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Density Plot of Species in Iris Data Set&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span><span class="st"> </span></span>
+<span id="cb9-7"><a href="#cb9-7"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">michigancolors</span>())</span></code></pre></div>
 <p><img src="michigancolors-demo_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">ggplot</span>(iris, </a>
-<a class="sourceLine" id="cb10-2" title="2">       <span class="kw">aes</span>(<span class="dt">x =</span> Petal.Length, </a>
-<a class="sourceLine" id="cb10-3" title="3">           <span class="dt">y =</span> Sepal.Length, </a>
-<a class="sourceLine" id="cb10-4" title="4">           <span class="dt">color =</span> Species)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb10-5" title="5"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb10-6" title="6"><span class="st">  </span><span class="kw">geom_smooth</span>() <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb10-7" title="7"><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Scatterplot of Iris Data Set&quot;</span>) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb10-8" title="8"><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb10-9" title="9"><span class="st">  </span><span class="kw">scale_color_manual</span>(<span class="dt">values =</span> <span class="kw">michigancolors</span>())</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">ggplot</span>(iris, </span>
+<span id="cb10-2"><a href="#cb10-2"></a>       <span class="kw">aes</span>(<span class="dt">x =</span> Petal.Length, </span>
+<span id="cb10-3"><a href="#cb10-3"></a>           <span class="dt">y =</span> Sepal.Length, </span>
+<span id="cb10-4"><a href="#cb10-4"></a>           <span class="dt">color =</span> Species)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span><span class="st"> </span></span>
+<span id="cb10-6"><a href="#cb10-6"></a><span class="st">  </span><span class="kw">geom_smooth</span>() <span class="op">+</span><span class="st"> </span></span>
+<span id="cb10-7"><a href="#cb10-7"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Scatterplot of Iris Data Set&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb10-8"><a href="#cb10-8"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span><span class="st"> </span></span>
+<span id="cb10-9"><a href="#cb10-9"></a><span class="st">  </span><span class="kw">scale_color_manual</span>(<span class="dt">values =</span> <span class="kw">michigancolors</span>())</span></code></pre></div>
 <p><img src="michigancolors-demo_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
 </div>
@@ -236,12 +239,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -253,6 +255,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
