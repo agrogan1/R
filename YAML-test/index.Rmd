@@ -18,6 +18,7 @@ output:
     footer: Andrew Grogan-Kaylor
     highlight: haddock
     theme: default
+    css: UMslidy.css
   tint::tintHtml:
     highlight: haddock
     number_sections: yes
@@ -28,11 +29,6 @@ output:
   distill::distill_article:
     highlight: haddock
     toc: yes
-  pagedown::html_paged: 
-    highlight: haddock
-    toc: yes
-    number_sections: yes
-    theme: default
   bookdown::gitbook:
     highlight: haddock
   xaringan::moon_reader:
@@ -46,23 +42,6 @@ output:
     number_sections: yes
     toc: yes
   bookdown::epub_book: default  
-  revealjs::revealjs_presentation:
-    fig_height: 4
-    highlight: haddock
-    reveal_options:
-      chalkboard:
-        theme: chalkboard
-        toggleChalkboardButton: yes
-        toggleNotesButton: yes
-      previewLinks: yes
-      progress: yes
-      slideNumber: yes
-    reveal_plugins:
-    - chalkboard
-    - zoom
-    self_contained: no
-    theme: sky
-    transition: convex
   tufte::tufte_handout:
     fig_height: 2.5
     toc: yes
