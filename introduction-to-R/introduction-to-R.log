@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6670 64-bit) (preloaded format=pdflatex 2018.5.1)  10 NOV 2020 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6670 64-bit) (preloaded format=pdflatex 2018.5.1)  30 NOV 2020 17:26
 entering extended mode
 **./introduction-to-R.tex
 (introduction-to-R.tex
@@ -1145,173 +1145,179 @@ LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/l/n' will be
 (Font)              scaled to size 12.0pt on input line 249.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 255.
+(introduction-to-R.toc
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 280.
-LaTeX Font Info:    Try loading font information for U+msa on input line 297.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 297.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+(Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 297.
-LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 297.
-LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 297.
-LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 297.
-
-LaTeX Warning: Marginpar on page 1 moved.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 300.
-
+(Font)              scaled to size 10.95pt on input line 8.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 11.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1
 
-{C:/Users/agrogan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf, id=79, 289.08pt x 
-108.405pt>
+{C:/Users/agrogan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+\tf@toc=\write5
+\openout5 = `introduction-to-R.toc'.
+
+LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 284.
+LaTeX Font Info:    Try loading font information for U+msa on input line 301.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 301.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 301.
+LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 301.
+LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 301.
+LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 301.
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 313.
+[2]
+<introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf, id=181, 289.08pt x
+ 108.405pt>
 File: introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (
 type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-4-1
-.pdf  used on input line 329.
+.pdf  used on input line 333.
 (pdftex.def)             Requested size: 143.99709pt x 53.9989pt.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 344.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 348.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 363.
-LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 414.
-[2 <./introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf>]
+(Font)              scaled to size 10.0pt on input line 367.
+[3 <./introduction-to-R_files/figure-latex/unnamed-chunk-4-1.pdf>]
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 433.
+(Font)              scaled to size 9.0pt on input line 437.
 
-Overfull \hbox (28.48058pt too wide) in paragraph at lines 433--437
+Overfull \hbox (28.48058pt too wide) in paragraph at lines 437--441
 []\T1/RobotoCondensed-LF/m/n/9 R Com-mands are stored in a \T1/RobotoCondensed-
 LF/m/it/9 script \T1/RobotoCondensed-LF/m/n/9 or \T1/RobotoCondensed-LF/m/it/9 
 code \T1/RobotoCondensed-LF/m/n/9 file that usu-ally ends in .R, e.g. \T1/cmtt/
 m/n/9 myRscript.R\T1/RobotoCondensed-LF/m/n/9 . 
  []
 
-<introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf, id=96, 289.08pt x
- 180.675pt>
+<introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf, id=197, 289.08pt 
+x 180.675pt>
 File: introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file 
 (type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-10-
-1.pdf  used on input line 468.
+1.pdf  used on input line 472.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
-Overfull \hbox (26.10152pt too wide) in paragraph at lines 476--478
+Overfull \hbox (26.10152pt too wide) in paragraph at lines 480--482
 []\T1/RobotoCondensed-LF/m/n/10 If all the soft-ware is in-stalled, Start \T1/R
 obotoCondensed-LF/b/n/10 RStu-dio \T1/RobotoCondensed-LF/m/n/10 to start R, the
 n type \T1/cmtt/m/n/10 library(Rcmdr) 
  []
 
-<introduction-to-R_files/figure-latex/unnamed-chunk-11-1.pdf, id=98, 289.08pt x
- 180.675pt>
+<introduction-to-R_files/figure-latex/unnamed-chunk-11-1.pdf, id=199, 289.08pt 
+x 180.675pt>
 File: introduction-to-R_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file 
 (type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-11-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-11-
-1.pdf  used on input line 480.
+1.pdf  used on input line 484.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
-LaTeX Warning: Marginpar on page 3 moved.
+LaTeX Warning: Marginpar on page 4 moved.
 
-LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 493.
-[3 <./introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf> <./introduct
+[4 <./introduction-to-R_files/figure-latex/unnamed-chunk-10-1.pdf> <./introduct
 ion-to-R_files/figure-latex/unnamed-chunk-11-1.pdf>]
 LaTeX Font Info:    Try loading font information for TS1+RobotoCondensed-LF on 
-input line 517.
+input line 521.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\roboto\ts1robotocondensed-lf.fd"
 File: TS1RobotoCondensed-LF.fd 2015/09/15 (autoinst) Font definitions for TS1/R
 obotoCondensed-LF.
 )
 LaTeX Font Info:    Font shape `TS1/RobotoCondensed-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 517.
+(Font)              scaled to size 10.0pt on input line 521.
 LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 525.
-
-LaTeX Warning: Marginpar on page 4 moved.
-
-[4]
-LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 608.
+(Font)              scaled to size 9.0pt on input line 529.
 
 LaTeX Warning: Marginpar on page 5 moved.
 
 [5]
+LaTeX Font Info:    Font shape `T1/RobotoCondensed-LF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 612.
 
 LaTeX Warning: Marginpar on page 6 moved.
 
-[6] [7]
-Overfull \hbox (58.25095pt too wide) in paragraph at lines 830--836
+[6]
+
+LaTeX Warning: Marginpar on page 7 moved.
+
+[7] [8]
+Overfull \hbox (58.25095pt too wide) in paragraph at lines 834--840
 \T1/RobotoCondensed-LF/m/n/10 We can re-code vari-ables in R us-ing R's \T1/Rob
 otoCondensed-LF/m/it/10 con-di-tional \T1/RobotoCondensed-LF/m/n/10 syn-tax: \T
 1/cmtt/m/n/10 dataset$variable[condition] 
  []
 
 
-LaTeX Warning: Marginpar on page 8 moved.
+LaTeX Warning: Marginpar on page 9 moved.
 
-[8] [9] [10]
-<introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf, id=205, 289.08pt 
+[9] [10] [11]
+<introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf, id=283, 289.08pt 
 x 180.675pt>
 File: introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf Graphic file 
 (type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-47-
-1.pdf  used on input line 1066.
+1.pdf  used on input line 1070.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
-<introduction-to-R_files/figure-latex/unnamed-chunk-50-1.pdf, id=206, 289.08pt 
+<introduction-to-R_files/figure-latex/unnamed-chunk-50-1.pdf, id=284, 289.08pt 
 x 180.675pt>
 File: introduction-to-R_files/figure-latex/unnamed-chunk-50-1.pdf Graphic file 
 (type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-50-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-50-
-1.pdf  used on input line 1088.
+1.pdf  used on input line 1092.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
-<introduction-to-R_files/figure-latex/unnamed-chunk-53-1.pdf, id=207, 289.08pt 
+<introduction-to-R_files/figure-latex/unnamed-chunk-53-1.pdf, id=285, 289.08pt 
 x 180.675pt>
 File: introduction-to-R_files/figure-latex/unnamed-chunk-53-1.pdf Graphic file 
 (type pdf)
 <use introduction-to-R_files/figure-latex/unnamed-chunk-53-1.pdf>
 Package pdftex.def Info: introduction-to-R_files/figure-latex/unnamed-chunk-53-
-1.pdf  used on input line 1117.
+1.pdf  used on input line 1121.
 (pdftex.def)             Requested size: 143.99709pt x 89.99817pt.
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1132.
-[11 <./introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf> <./introduc
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1136.
+[12 <./introduction-to-R_files/figure-latex/unnamed-chunk-47-1.pdf> <./introduc
 tion-to-R_files/figure-latex/unnamed-chunk-50-1.pdf> <./introduction-to-R_files
 /figure-latex/unnamed-chunk-53-1.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1136.
 (introduction-to-R.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1136.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1136.
 
 Package rerunfilecheck Info: File `introduction-to-R.out' has not changed.
-(rerunfilecheck)             Checksum: 233C409C9788DD1594AE474553DFBCA0;2266.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1132.
+(rerunfilecheck)             Checksum: 5C68EF03E513A54448F2A2EC576BB1FD;2249.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1136.
  ) 
 Here is how much of TeX's memory you used:
- 14517 strings out of 493305
- 207735 string characters out of 3138869
- 301149 words of memory out of 3000000
- 17678 multiletter control sequences out of 15000+200000
- 105478 words of font info for 81 fonts, out of 3000000 for 9000
+ 14525 strings out of 493305
+ 207928 string characters out of 3138869
+ 303253 words of memory out of 3000000
+ 17681 multiletter control sequences out of 15000+200000
+ 110670 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,11n,45p,310b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,12n,59p,310b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Pro
 gram Files/MiKTeX 2.9/fonts/enc/dvips/roboto/rbto_bergpl.enc}{C:/Program Files/
 MiKTeX 2.9/fonts/enc/dvips/roboto/rbto_idpkzy.enc}{C:/Program Files/MiKTeX 2.9/
@@ -1329,9 +1335,9 @@ Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt0800.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/cm-super/sftt0900.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/cm-super/sftt1000.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/cm-super/sftt1095.pfb>
-Output written on introduction-to-R.pdf (11 pages, 734982 bytes).
+Output written on introduction-to-R.pdf (12 pages, 748976 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
  1175 words of extra memory for PDF output out of 10000 (max. 10000000)
 
