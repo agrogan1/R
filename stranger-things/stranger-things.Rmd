@@ -1,9 +1,6 @@
 ---
 title: "Stranger Things CSS Test"
 output: 
-  revealjs::revealjs_presentation:
-    theme: black
-    css: stranger-things.css
   slidy_presentation: 
     css: stranger-things.css
     highlight: haddock

@@ -2,7 +2,10 @@
 title: "Leaflet Map Demo"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
-output: html_document
+output: 
+  distill::distill_article:
+    highlight: haddock
+    toc: no
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Leaflet Map Demo
 
-```{r}
+```{r, layout="l-body"}
 
 # per https://rstudio.github.io/leaflet/morefeatures.html#terminator-daynight-indicator
 
@@ -23,7 +26,7 @@ leaflet() %>%
   setView(lng = 0, lat = 0, zoom = 1) %>%
   addProviderTiles(providers$Esri.NatGeoWorldMap) %>%
   addTerminator(
-    resolution=10,
+    resolution = 10,
     time = Sys.time(),
     group = "daylight") %>%
   addLayersControl(
