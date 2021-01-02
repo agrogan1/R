@@ -1,9 +1,8 @@
 ---
 title: "Introduction to R"
-site: bookdown::bookdown_site
 subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
-date: '`r format(Sys.Date(), format="%B %d, %Y")`'
+date: '`Sys.Date()`'
 output:
   bookdown::gitbook:
     highlight: haddock
@@ -30,7 +29,6 @@ output:
       smooth_scroll: yes
 fontsize: 12pt
 geometry: margin=1.0in
-mainfont: Tw Cen MT
 description: An Introduction to R
 ---
 
