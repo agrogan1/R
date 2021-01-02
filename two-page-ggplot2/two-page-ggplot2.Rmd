@@ -1,17 +1,12 @@
 ---
 title: "A Two Page Guide to ggplot2"
-author: "Andy Grogan-Kaylor (http://www.umich.edu/~agrogan)"
-date: '`r format(Sys.Date(), format="%B %d, %Y")`'
+author: "Andy Grogan-Kaylor"
+date: '`r Sys.Date()`'
 output:
-  html_document: 
-    fig_height: 3
+  distill::distill_article:
     highlight: haddock
-    number_sections: yes
-    theme: flatly
-    toc: yes
-    toc_float:
-      collapsed: no
-      smooth_scroll: yes
+    toc: true
+    toc_float: true
   tint::tintPdf:
     number_sections: yes
     toc: no
@@ -19,14 +14,6 @@ output:
   tufte::tufte_handout:
     number_sections: yes
     toc: no
-  tint::tintHtml:
-    number_sections: yes
-    toc: yes
-    highlight: haddock
-  pdf_document:
-    fig_height: 1.25
-    highlight: haddock
-    latex_engine: xelatex
 geometry: margin=0.25in
 subtitle: For Applied and Community Based Research and Program Evaluation
 header-includes:
@@ -62,8 +49,6 @@ library(png) # for png's
 library(grid)
 
 ```
-
-[[Share on Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fagrogan1.github.io%2Ftwo_page_ggplot.pdf&text=Two%20Page%20%23ggplot2%20%23dataviz)] 
 
 # Why?[^moreinformation] 
 
@@ -124,6 +109,8 @@ library(ggplot2) # beautiful graphs
 library(ggthemes) # nice themes for ggplot2
 
 ```
+
+\newpage
 
 # Some Examples[^vartype]
 
