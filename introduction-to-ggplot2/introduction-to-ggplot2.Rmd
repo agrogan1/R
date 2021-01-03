@@ -3,13 +3,6 @@ title: "Introduction to ggplot2"
 author: "Andy Grogan-Kaylor"
 date: "`r format(Sys.Date(), format='%B %d, %Y')`"
 output:
-  pdf_document:
-    fig_height: 2
-    highlight: haddock
-    latex_engine: xelatex
-    number_sections: yes
-    toc: yes
-    toc_depth: 3
   bookdown::gitbook:
     config:
       download:
@@ -17,6 +10,14 @@ output:
       - introduction-to-ggplot2.epub
     css: UM.css
     highlight: haddock
+    split_by: none
+  pdf_document:
+    fig_height: 2
+    highlight: haddock
+    latex_engine: xelatex
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
   html_document:
     code_folding: hide
     fig_height: 3
@@ -31,8 +32,8 @@ output:
   bookdown::epub_book: default
 geometry: margin=1.0in
 site: bookdown::bookdown_site
-fontsize: 11pt
-mainfont: Arial
+fontsize: 12pt
+mainfont: Tw Cen MT
 ---
 
 ```{r global_options, echo=FALSE}
