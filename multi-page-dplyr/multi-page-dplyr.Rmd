@@ -3,16 +3,15 @@ title: "Multi-Page dplyr"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output: 
-  tint::tintPdf:
-    number_sections: yes
-    toc: yes
-    highlight: haddock
   tint::tintHtml:
     number_sections: yes
     toc: yes
     highlight: haddock
+  tint::tintPdf:
+    number_sections: yes
+    toc: yes
+    highlight: haddock
 geometry: margin=0.5in
-mainfont: Roboto Condensed
 fontsize: 12pt
 ---
 
