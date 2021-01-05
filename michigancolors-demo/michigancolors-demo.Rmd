@@ -3,19 +3,9 @@ title: "Demonstration of Michigan Colors for R Graphs"
 author: "Andrew Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output:
-  bookdown::gitbook:
-    css: UM.css
+  distill::distill_article:
     highlight: haddock
-    split_by: none
-  html_document:
-    css: UM.css
-    fig_height: 4
-    highlight: haddock
-    number_sections: yes
     toc: yes
-    toc_float:
-      collapsed: yes
-      smooth_scroll: yes
   pdf_document: 
     fig_caption: yes
     fig_height: 3
