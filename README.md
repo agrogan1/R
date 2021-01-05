@@ -12,6 +12,14 @@
 
 * [Two Page ggplot2](./two-page-ggplot2/two-page-ggplot2.pdf)
 
+## dplyr
+
+* [Multi-Page dplyr](./multi-page-dplyr/multi-page-dplyr.html)
+
+## Michigan Colors Graph Scheme
+
+* [Michigan Colors Graph Scheme](./michigancolors-demo/michigancolors-demo.html)
+
 ## Working With Data
 
 * [World Bank Demo](https://agrogan1.github.io/R/wbdemo/)
