@@ -1,0 +1,66 @@
+---
+title: "Colors in R"
+description: |
+  An R Color Chart
+author:
+  - name: Andy Grogan-Kaylor
+    url: https://www.umich.edu/~agrogan
+    affiliation: University of Michigan
+    affiliation_url: https://www.umich.edu
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    highlight: haddock
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+```{r}
+
+library(ggplot2)
+
+library(ggrepel)
+
+```
+
+```{r, results='asis'}
+
+for (start in c(1, 101, 201, 301, 401, 501, 601)) {
+  
+  cat(paste("\n<p># Colors Starting At Color Number", start, "\n<p>")) 
+  
+  end <- start + 99 # ending point for this graph
+  
+  colornumber <- seq(start, start + 99) # sequence of color numbers
+  
+  colornumber[colornumber > 657] <- NA # change values > 657 to NA
+  
+  x <- rep(seq(1,10), times = 10) # grid of x's
+  
+  y <- rep(seq(1,10), each = 10) # and y's
+  
+  colorname <- colors()[colornumber] # get color name associated with that number
+  
+  print(ggplot(data = NULL,
+         aes(x = x, # x is x
+             y = y, # y is y
+             label = colorname)) + # label is colorname
+    geom_point(color = colorname, # color is colorname
+               shape = "square", # square points
+               size = 10) + # adjust size
+    geom_label_repel(size = 2) + # repelling labels
+    # labs(title = paste("Colors Starting At Color Number", start)) +
+    coord_flip() + # flip the graph
+    scale_x_reverse() + # reverse the x scale
+    theme_void()) # empty theme
+  
+}
+
+
+```
+
