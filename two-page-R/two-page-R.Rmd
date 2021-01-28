@@ -3,17 +3,17 @@ title: "A Two Page Guide to R"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output:
-  tint::tintPdf:
-    number_sections: yes
-    toc: no
-    highlight: haddock
-  tufte::tufte_handout:
-    number_sections: yes
-    toc: no
   distill::distill_article:
     highlight: haddock
     toc: true
     toc_float: true
+  tufte::tufte_handout:
+    number_sections: yes
+    toc: no
+  tint::tintPdf:
+    number_sections: yes
+    toc: no
+    highlight: haddock
 mainfont: Arial
 geometry: margin=0.25in
 subtitle: For Applied Researchers and Program Evaluators
@@ -101,7 +101,7 @@ R makes a strong distinction between *continuous* *numeric* variables that measu
 
 ```
 
-# Manage Data [^dollarsign] 
+# Process and Clean Data [^dollarsign] 
 
 ```{r}
 
@@ -191,7 +191,7 @@ When scatterplots have fewer dots than you think they should have, often due to 
 
 ```
 
-# Descriptive Statistics
+# Analyze Data: Descriptive Statistics
 
 ```{marginfigure}
 
@@ -207,9 +207,6 @@ table(mydata$z) # especially suitable for factor variables
 
 ```
 
-# Credits
-
-Prepared by [Andy Grogan-Kaylor](https://www.umich.edu/~agrogan)
 
 ```{r, echo=FALSE,eval=FALSE}
 
