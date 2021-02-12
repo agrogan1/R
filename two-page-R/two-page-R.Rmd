@@ -7,14 +7,14 @@ output:
     highlight: haddock
     toc: true
     toc_float: true
-  tint::tintPdf:
-    number_sections: yes
-    toc: no
-    highlight: haddock
   pdf_document: 
     toc: yes
     number_sections: yes
     fig_height: 3
+  tint::tintPdf:
+    number_sections: yes
+    toc: no
+    highlight: haddock
 mainfont: Arial
 geometry: margin=0.25in
 subtitle: For Applied Researchers and Program Evaluators
@@ -37,6 +37,19 @@ library(DiagrammeR)
 library(pander)
 
 library(tufte)
+
+```
+
+
+```{r, echo=FALSE, results='asis'}
+
+# for HTML5, make clear that footnotes have hover text.
+
+if(knitr::opts_knit$get("rmarkdown.pandoc.to") == "html5") {
+  
+  cat("> Hover over the footnotes for additional information.")
+  
+}
 
 ```
 
