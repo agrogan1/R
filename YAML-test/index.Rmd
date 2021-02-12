@@ -37,12 +37,6 @@ output:
     toc: yes
   bookdown::gitbook:
     highlight: haddock
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      countIncrementalSlides: no
-      highlightLines: yes
-      highlightStyle: github
   tint::tintPdf:
     highlight: haddock
     number_sections: yes
