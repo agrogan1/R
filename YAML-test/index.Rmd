@@ -3,6 +3,12 @@ title: "RMarkdown YAML Test"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output:
+  pdf_document:
+    toc: yes
+    number_sections: yes
+  tufte::tufte_html:
+    toc: yes
+    number_sections: yes
   html_document:
     code_download: true
     highlight: haddock
