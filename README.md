@@ -12,6 +12,10 @@
 
 * [Two Page ggplot2](./two-page-ggplot2/two-page-ggplot2.pdf)
 
+## R Colors
+
+* [R Color Chart](./colors/)
+
 ## dplyr
 
 * [Multi-Page dplyr](./multi-page-dplyr/multi-page-dplyr.html)
