@@ -11,11 +11,17 @@ output:
     toc: yes
     number_sections: yes
     fig_height: 3
+    latex_engine: xelatex
   tint::tintPdf:
     number_sections: yes
     toc: no
     highlight: haddock
-mainfont: Arial
+    latex_engine: xelatex
+  tufte::tufte_handout:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
+    latex_engine: xelatex
 geometry: margin=0.25in
 subtitle: For Applied Researchers and Program Evaluators
 fontsize: 10pt
@@ -70,11 +76,11 @@ A great deal of data analysis and visualization involves the same core set of st
 $$\text{have a question} \rightarrow \text{get data} \rightarrow \text{process and clean data} \rightarrow$$ 
 $$\text{visualize data} \rightarrow \text{analyze data} \rightarrow \text{make conclusions}$$
 
-# Get R[^getR]
+# Get R [^getR]
 
 [^getR]: [R](https://www.r-project.org/) is available at [https://www.r-project.org/](https://www.r-project.org/). R is a lot easier to run if you run it from RStudio, [http://www.rstudio.com](http://www.rstudio.com).
 
-# Get Data[^getdata]
+# Get Data [^getdata]
 
 [^getdata]: Data often comes from other types of data files like SPSS, Stata, or Excel.  Especially in beginning R programming, getting the data into R can be the most complicated part of your program.
 
@@ -110,13 +116,14 @@ mydata <- data.frame(x,y,z)
 ```
 
 
-# Process and Clean Data [^dollarsign] [^factor] [^factoroptions]
+# Process and Clean Data [^process]  
 
 ```{r}
 
 mydata$x[mydata$x == -9] <- NA # missing to NA
 
 ```
+
 
 ```{r, tidy=FALSE}
 
@@ -154,7 +161,7 @@ barplot(table(mydata$z), # what I'm graphing
 
 ```
 
-## Scatterplot [^plotoptions] [^fewerdots]
+## Scatterplot [^plotoptions] 
 
 ```{r, tidy=FALSE}
 
@@ -209,18 +216,12 @@ lm(y ~ x, data = mydata) # regression of y on x
 
 ```
 
-[^dollarsign]:  The \$ sign is a kind of "connector".  mydata\$x means:  "The variable x in the dataset called mydata".
-
-[^factor]: R makes a strong distinction between *continuous* *numeric* variables that measure  scales like mental health or neighborhood safety, and *categorical* *factor variables* that measure non-ordered categories like religious identity or gender identity. Many statistical and graphical procedures are designed to recognize and work with different variable types.
-
-[^factoroptions]: You *don't* need to use all of the options.  e.g. `mydata$w <- factor(mydata$z)` will work just fine. **Changing variables from factor to numeric, and vice versa can sometimes be the simple solution that solves a lot of problems when you are trying to graph your variables.**
+[^process]:  The \$ sign is a kind of "connector".  mydata\$x means:  "The variable x in the dataset called mydata". R makes a strong distinction between *continuous* *numeric* variables that measure  scales like mental health or neighborhood safety, and *categorical* *factor variables* that measure non-ordered categories like religious identity or gender identity. Many statistical and graphical procedures are designed to recognize and work with different variable types. You *don't* need to use all of the options.  e.g. `mydata$w <- factor(mydata$z)` will work just fine. **Changing variables from factor to numeric, and vice versa can sometimes be the simple solution that solves a lot of problems when you are trying to graph your variables.**
 
 [^histoptions]: You *don't* need to use all of the options.  e.g. `hist(mydata$x)` will work just fine.
 
 [^barplotoptions]: You *don't* need to use all of the options.  e.g. `barplot(table(mydata$z))` will work just fine.
 
-[^plotoptions]: You *don't* need to use all of the options.  e.g. `plot(mydata$x,mydata$y)` will work just fine.
-
-[^fewerdots]: When scatterplots have fewer dots than you think they should have, often due to "over-printing", adding some random noise, or "jittering" the dots in the scatterplot may help:  `plot(jitter(mydata$y, factor = 5000) ~ mydata$x)`.  Experiment with different sizes of *factor*.
+[^plotoptions]: You *don't* need to use all of the options.  e.g. `plot(mydata$x,mydata$y)` will work just fine. When scatterplots have fewer dots than you think they should have, often due to "over-printing", adding some random noise, or "jittering" the dots in the scatterplot may help:  `plot(jitter(mydata$y, factor = 5000) ~ mydata$x)`.  Experiment with different sizes of *factor*.
 
 [^skimr]: For another approach to summarizing your data, try `library(skimr)` then `skim(mydata)` or `skim(mydata$x)`.
