@@ -14,7 +14,7 @@
 
 ## R Colors
 
-* [R Color Chart](./colors/)
+* [R Color Chart](./colors/colors.html)
 
 ## dplyr
 
