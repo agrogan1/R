@@ -9,31 +9,30 @@ h1, h2 {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: red;
 }
-.reveal h1 {
-    font-family: Georgia;
-    color: black;
-    background-color:black;
-    font-weight: bold;
-    font-size: 300%;
-    text-align: center;
-    text-decoration: /* underline */ overline;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: red;
-    background: -webkit-linear-gradient(#000, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.reveal h2 {
-    font-family: Georgia; 
-    color: black;
-    background-color:black;
-    font-weight: bold;
-    font-size: 100%;
-    text-align: center;
-    text-decoration: /* underline */ overline;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: red;
-}
 body {
   background-color: black;
+}
+p {
+  color:red
+}
+pre {
+  color: red;
+  background-color: black;
+  border: 2px solid red;
+  border-left: 12px solid red;
+}
+.slide.titlepage {
+  color: red;
+  font-size: 200%;
+  font-weight: bold;
+  background-color: black; 
+}
+code span.kw {
+  color: white;
+}
+a:link {
+  color: white;
+}
+a:active {
+  color: white;
 }

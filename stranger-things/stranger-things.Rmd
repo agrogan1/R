@@ -22,7 +22,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r}
 
-summary(cars)
+summary(mtcars)
 
 ```
 
@@ -35,7 +35,16 @@ par(col.main = "red",
     col.axis = "red",
     bg = "black")
 
-plot(cars,
-     col = "red")
+plot(mtcars$mpg, mtcars$hp,
+     col = "red",
+     pch = 19)
+
 ```
+
+
+
+
+
+
+
 
