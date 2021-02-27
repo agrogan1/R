@@ -12,6 +12,10 @@ output:
     toc_float:
       collapsed: no
       smooth_scroll: yes
+  distill::distill_article:
+    highlight: haddock
+    code_folding: hide    
+    toc: yes
 mainfont: Tw Cen MT
 ---
 
@@ -368,6 +372,28 @@ base %>%
 ```
 
 
+# Three Dimensional Scatterplot
+
+```{r}
+
+p2 <- plot_ly(mydata,
+              x = ~year, 
+              y = ~GDP,
+              z = ~life_expectancy, 
+              size = ~population, 
+              color = ~region,
+              text = ~country, 
+              # hoverinfo = "text",
+              # type = 'scatter',
+              # mode = 'markers',
+              theta = 45,
+              showlegend = FALSE) %>% 
+  layout(title = "Life Expectancy by Year",
+         yaxis = list(title = "life expectancy"))
+
+p2
+
+```
 
 
 
