@@ -29,11 +29,15 @@ output:
     toc_float:
       collapsed: yes
       smooth_scroll: yes
+  word_document: 
+    toc: yes
+    toc_depth: 4
+    fig_height: 3
   bookdown::epub_book: default
 geometry: margin=1.0in
 site: bookdown::bookdown_site
-fontsize: 12pt
-mainfont: Tw Cen MT
+fontsize: 11pt
+mainfont: Futura
 ---
 
 ```{r global_options, echo=FALSE}
@@ -348,7 +352,7 @@ p_stacked_barchart
 p_barchart_of_mean <- ggplot(mydata, 
                              aes(x = group, # slightly different aesthetic
                                  y = outcome)) + 
-  stat_summary(fun.y = mean, # take the mean of the data
+  stat_summary(fun = mean, # take the mean of the data
                fill = "blue", # fill color
                geom = "bar") # we want to summarize data with bars
 
