@@ -3,6 +3,10 @@ title: "World Bank Data Demo"
 author: "Andy Grogan-Kaylor"
 date: '`r format(Sys.Date(), format="%B %d, %Y")`'
 output: 
+  distill::distill_article:
+    highlight: haddock
+    code_folding: true    
+    toc: yes
   html_document: 
     code_folding: hide
     highlight: haddock
@@ -12,10 +16,6 @@ output:
     toc_float:
       collapsed: no
       smooth_scroll: yes
-  distill::distill_article:
-    highlight: haddock
-    code_folding: hide    
-    toc: yes
 mainfont: Tw Cen MT
 ---
 
@@ -104,7 +104,7 @@ save(mydata, file="WorldBankData.RData")
 
 ```
 
-```{r, echo = FALSE, eval=FALSE}
+```{r, echo=FALSE, eval=FALSE}
 
 write.dta(mydata, "WorldBankData.dta")
 
@@ -114,7 +114,7 @@ write.csv(mydata,
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo=FALSE}
 
 load("WorldBankData.RData")
 
@@ -268,7 +268,7 @@ p1
 
 ```
 
-```{r, eval = FALSE, echo = FALSE}
+```{r, eval=FALSE, echo=FALSE}
 
 p1 <- mydata %>%
   plot_ly(x = ~year, 
@@ -368,6 +368,29 @@ base %>%
               ids = ~country) %>%
   animation_opts(1000, 
                  redraw = FALSE)
+
+```
+
+```{r, echo=FALSE, eval=FALSE}
+
+p3 <- mydata %>%
+  # filter(!is.na(GDP)) %>% 
+  # filter(is.finite(GDP)) %>%
+  plot_ly(x = ~Gini, 
+          y = ~life_expectancy, 
+          size = ~population, 
+          color = ~region,
+          frame = ~year, 
+          text = ~country, 
+          hoverinfo = "text",
+          type = 'scatter',
+          mode = 'markers',
+          showlegend = FALSE) %>%
+  layout(title = "Life Expectancy by Gini Coefficient of Inequality", 
+         yaxis = list(title = "life expectancy"))
+
+
+p3
 
 ```
 
