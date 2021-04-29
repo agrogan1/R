@@ -8,7 +8,7 @@ output:
       download:
       - introduction-to-ggplot2.pdf
       - introduction-to-ggplot2.epub
-    css: UM.css
+    css: UMGitBook.css
     highlight: haddock
     split_by: none
   pdf_document:
