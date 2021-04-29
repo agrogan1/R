@@ -15,6 +15,7 @@
 ## R Colors
 
 * [R Color Chart](./colors/colors.html)
+* [Viridis Color Palettes](./viridis/viridis.html)
 
 ## dplyr
 
