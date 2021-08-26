@@ -1,18 +1,26 @@
 ## Xaringan Themes
 
+[Xaringan](https://github.com/yihui/xaringan) is a slideshow system for RMarkdown.
+
 ### University of Michigan Xaringan Theme
 
-* [RMarkdown Document](https://github.com/agrogan1/newstuff/blob/master/xaringan-themes/MichiganTest.Rmd) [[Knit to HTML](https://agrogan1.github.io/newstuff/xaringan-themes/MichiganTest.html)]
-* [michigan.css](https://github.com/agrogan1/newstuff/blob/master/xaringan-themes/michigan.css)
-* [michigan-fonts.css](https://github.com/agrogan1/newstuff/blob/master/xaringan-themes/michigan-fonts.css)
+* [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/MichiganTest.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/MichiganTest.Rmd)]
+* [michigan.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/michigan.css)
+* [michigan-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/michigan-fonts.css)
 
 ### OsloMet Xaringan Theme
 
 Inspired by: [https://github.com/martinhelso/OsloMet](https://github.com/martinhelso/OsloMet)
 
-* [RMarkdown Document](https://github.com/agrogan1/newstuff/blob/master/xaringan-themes/OsloMetTest.Rmd) [[Knit to HTML](https://agrogan1.github.io/newstuff/xaringan-themes/OsloMetTest.html)]
-* [oslomet.css](https://github.com/agrogan1/newstuff/blob/master/xaringan-themes/oslomet.css)
-* [oslomet-fonts.css](https://github.com/agrogan1/newstuff/blob/master/xaringan-themes/oslomet-fonts.css)
+* [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/OsloMetTest.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/OsloMetTest.Rmd)]
+* [oslomet.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/oslomet.css)
+* [oslomet-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/oslomet-fonts.css)
+
+### Tufte(-ish) Xaringan Theme
+
+* [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/TufteTest.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/TufteTest.Rmd)]
+* [tufte.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/tufte.css)
+* [tufte-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/tufte-fonts.css)
 
 ### Supplemental Materials
 
