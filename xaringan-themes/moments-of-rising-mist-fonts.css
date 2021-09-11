@@ -1,0 +1,24 @@
+.title-slide h1 {
+    color: #FF0000;
+}
+h1, h2, h3 {
+  color: #FF0000;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; 
+  font-weight: normal;
+}
+p {
+  color: black;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; 
+  font-size: 110%;
+}
+ul {
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; 
+    font-size: 110%;
+}
+ol {
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif; 
+  font-size: 110%;
+}
+a {
+  color: #FF0000;
+}
