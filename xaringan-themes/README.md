@@ -22,6 +22,14 @@ Inspired by: [https://github.com/martinhelso/OsloMet](https://github.com/martinh
 * [tufte.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/tufte.css)
 * [tufte-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/tufte-fonts.css)
 
+### *Moments of Rising Mist* Xaringan Theme
+
+CSS to replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
+
+* [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/Moments-Of-Rising-Mist.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/Moments-Of-Rising-Mist.Rmd)]
+* [moments-of-rising-mist.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist.css)
+* [moments-of-rising-mist-test-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist-fonts.css)
+
 ### Supplemental Materials
 
 * My page on HTML Slides: [https://agrogan1.github.io/myposts/slide-formats.html](https://agrogan1.github.io/myposts/slide-formats.html)
