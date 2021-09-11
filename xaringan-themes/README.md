@@ -28,7 +28,7 @@ CSS to replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
 
 * [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/Moments-Of-Rising-Mist.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/Moments-Of-Rising-Mist.Rmd)]
 * [moments-of-rising-mist.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist.css)
-* [moments-of-rising-mist-test-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist-fonts.css)
+* [moments-of-rising-mist-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist-fonts.css)
 
 ### Supplemental Materials
 
