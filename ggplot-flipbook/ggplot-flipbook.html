@@ -4,19 +4,20 @@
     <title>ggplot flipbook</title>
     <meta charset="utf-8" />
     <meta name="author" content="Andy Grogan-Kaylor" />
-    <meta name="date" content="2020-12-02" />
+    <meta name="date" content="2021-09-13" />
+    <script src="libs/header-attrs-2.10/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/ninjutsu.css" rel="stylesheet" />
-    <link href="libs/tile-view-0.2.3/tile-view.css" rel="stylesheet" />
-    <script src="libs/tile-view-0.2.3/tile-view.js"></script>
+    <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view-0.2.6/tile-view.js"></script>
     <script src="libs/tone-13.8.34/Tone.js"></script>
-    <script src="libs/slide-tone-0.2.3/slide-tone.js"></script>
+    <script src="libs/slide-tone-0.2.6/slide-tone.js"></script>
     <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
     <link href="libs/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
     <script src="libs/shareon-1.4.1/shareon.min.js"></script>
-    <link href="libs/xaringanExtra-shareagain-0.2.3/shareagain.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-shareagain-0.2.3/shareagain.js"></script>
+    <link href="libs/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
     <link rel="stylesheet" href="animate.css" type="text/css" />
   </head>
   <body>
@@ -26,7 +27,7 @@ class: center, middle, inverse, title-slide
 # ggplot flipbook
 ## Use <span style="font-size:50px">⇦</span> and <span style="font-size:50px">⇨</span> to navigate.
 ### Andy Grogan-Kaylor
-### 2020-12-02
+### 2021-09-13
 
 ---
 
@@ -268,54 +269,41 @@ class: animated, slideInRight
 count: false
  
 
-.panel1-graph1colorful-auto[
+.panel1-graph1colorful-non_seq[
 
 ```r
-*ggplot(mydata,  # data
-*      aes(x = outcome))   # variable
+ggplot(mydata,  # data
+       aes(x = outcome)) +  # variable
+  geom_histogram(
+    )
 ```
 ]
  
-.panel2-graph1colorful-auto[
-&lt;img src="ggplot-flipbook_files/figure-html/graph1colorful_auto_01_output-1.png" width="432" /&gt;
+.panel2-graph1colorful-non_seq[
+&lt;img src="ggplot-flipbook_files/figure-html/graph1colorful_non_seq_01_output-1.png" width="432" /&gt;
 ]
 
 ---
 count: false
  
 
-.panel1-graph1colorful-auto[
+.panel1-graph1colorful-non_seq[
 
 ```r
 ggplot(mydata,  # data
        aes(x = outcome)) +  # variable
-* geom_histogram(fill = "red")
+  geom_histogram(
+*   fill = "red"
+    )
 ```
 ]
  
-.panel2-graph1colorful-auto[
-&lt;img src="ggplot-flipbook_files/figure-html/graph1colorful_auto_02_output-1.png" width="432" /&gt;
-]
-
----
-count: false
- 
-
-.panel1-graph1colorful-auto[
-
-```r
-ggplot(mydata,  # data
-       aes(x = outcome)) +  # variable
-  geom_histogram(fill = "red")
-```
-]
- 
-.panel2-graph1colorful-auto[
-&lt;img src="ggplot-flipbook_files/figure-html/graph1colorful_auto_03_output-1.png" width="432" /&gt;
+.panel2-graph1colorful-non_seq[
+&lt;img src="ggplot-flipbook_files/figure-html/graph1colorful_non_seq_02_output-1.png" width="432" /&gt;
 ]
 
 &lt;style&gt;
-.panel1-graph1colorful-auto {
+.panel1-graph1colorful-non_seq {
   color: black;
   width: 65.3333333333333%;
   hight: 32%;
@@ -323,7 +311,7 @@ ggplot(mydata,  # data
   padding-left: 1%;
   font-size: 80%
 }
-.panel2-graph1colorful-auto {
+.panel2-graph1colorful-non_seq {
   color: black;
   width: 32.6666666666667%;
   hight: 32%;
@@ -331,7 +319,7 @@ ggplot(mydata,  # data
   padding-left: 1%;
   font-size: 80%
 }
-.panel3-graph1colorful-auto {
+.panel3-graph1colorful-non_seq {
   color: black;
   width: NA%;
   hight: 33%;
@@ -357,54 +345,41 @@ class: animated, slideInRight
 count: false
  
 
-.panel1-graph1A-auto[
+.panel1-graph1A-non_seq[
 
 ```r
-*ggplot(mydata,  # data
-*      aes(x = outcome))   # variable
+ggplot(mydata,  # data
+       aes(x = outcome)) +  # variable
+  geom_density(
+    )
 ```
 ]
  
-.panel2-graph1A-auto[
-&lt;img src="ggplot-flipbook_files/figure-html/graph1A_auto_01_output-1.png" width="432" /&gt;
+.panel2-graph1A-non_seq[
+&lt;img src="ggplot-flipbook_files/figure-html/graph1A_non_seq_01_output-1.png" width="432" /&gt;
 ]
 
 ---
 count: false
  
 
-.panel1-graph1A-auto[
+.panel1-graph1A-non_seq[
 
 ```r
 ggplot(mydata,  # data
        aes(x = outcome)) +  # variable
-* geom_density(fill = "blue")
+  geom_density(
+*   fill = "blue"
+    )
 ```
 ]
  
-.panel2-graph1A-auto[
-&lt;img src="ggplot-flipbook_files/figure-html/graph1A_auto_02_output-1.png" width="432" /&gt;
-]
-
----
-count: false
- 
-
-.panel1-graph1A-auto[
-
-```r
-ggplot(mydata,  # data
-       aes(x = outcome)) +  # variable
-  geom_density(fill = "blue")
-```
-]
- 
-.panel2-graph1A-auto[
-&lt;img src="ggplot-flipbook_files/figure-html/graph1A_auto_03_output-1.png" width="432" /&gt;
+.panel2-graph1A-non_seq[
+&lt;img src="ggplot-flipbook_files/figure-html/graph1A_non_seq_02_output-1.png" width="432" /&gt;
 ]
 
 &lt;style&gt;
-.panel1-graph1A-auto {
+.panel1-graph1A-non_seq {
   color: black;
   width: 65.3333333333333%;
   hight: 32%;
@@ -412,7 +387,7 @@ ggplot(mydata,  # data
   padding-left: 1%;
   font-size: 80%
 }
-.panel2-graph1A-auto {
+.panel2-graph1A-non_seq {
   color: black;
   width: 32.6666666666667%;
   hight: 32%;
@@ -420,7 +395,7 @@ ggplot(mydata,  # data
   padding-left: 1%;
   font-size: 80%
 }
-.panel3-graph1A-auto {
+.panel3-graph1A-non_seq {
   color: black;
   width: NA%;
   hight: 33%;
@@ -813,6 +788,8 @@ Wickham, H. (2016). _ggplot2: Elegant Graphics for Data
 Analysis_. Springer-Verlag New York. ISBN:
 978-3-319-24277-4. URL:
 [https://ggplot2.tidyverse.org](https://ggplot2.tidyverse.org).
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

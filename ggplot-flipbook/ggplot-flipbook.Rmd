@@ -149,7 +149,9 @@ class: animated, slideInRight
 
 ggplot(mydata, # data
        aes(x = outcome)) + # variable
-  geom_histogram(fill = "red") #BREAK2
+  geom_histogram(
+    fill = "red" #BREAK2
+    ) 
 
 ```
 
@@ -158,7 +160,7 @@ ggplot(mydata, # data
 ```{r, code = knitr::knit_code$get("graph1colorful"), eval = FALSE, echo = FALSE}
 ```
 
-`r chunk_reveal("graph1colorful", break_type = "auto", widths = c(4,2))`
+`r chunk_reveal("graph1colorful", break_type = "non_seq", widths = c(4,2))`
 
 ---
 class: animated, slideInRight
@@ -169,7 +171,9 @@ class: animated, slideInRight
 
 ggplot(mydata, # data
        aes(x = outcome)) + # variable
-  geom_density(fill = "blue") #BREAK2
+  geom_density(
+    fill = "blue" #BREAK2
+    ) 
 
 ```
 
@@ -178,7 +182,7 @@ ggplot(mydata, # data
 ```{r, code = knitr::knit_code$get("graph1A"), eval = FALSE, echo = FALSE}
 ```
 
-`r chunk_reveal("graph1A", break_type = "auto", widths = c(4,2))`
+`r chunk_reveal("graph1A", break_type = "non_seq", widths = c(4,2))`
 
 ---
 class: animated, slideInRight
