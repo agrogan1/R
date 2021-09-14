@@ -18,11 +18,15 @@ output:
 
 options(htmltools.dir.version = FALSE)
 
+xaringanExtra::use_tile_view()
+
+xaringanExtra::use_share_again()
+
 ```
 
 # Introduction
 
-CSS to replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
+CSS to approximately replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
 
 ---
 # Slide with text
