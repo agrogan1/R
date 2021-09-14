@@ -28,24 +28,47 @@ blockquote {
 .description {
   color: blue;
 }
-.theorem-box-header{
-  background: #FFDC00;
-  color: #000000;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 40px;
-}
 .theorem-box{
-  background: #A9A9A9;
+  background: #CCCCCC;
   color: #000000;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
   display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 40px;  
+  margin-top: 0;
+  margin-right: 40px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
 }
-
+.theorem-box::first-line{
+  background: #FFDC00;
+}
+.example-box {
+  background: #CCCCCC;
+  color: #000000;
+  display: block;
+  margin-top: 0;
+  margin-right: 40px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;  
+}
+.example-box::first-line{ 
+  color: white;
+  background: #0099FF;
+}
+.important-message-box{
+  background: #CCCCCC;
+  color: #000000;
+  display: block;
+  margin-top: 0;
+  margin-right: 40px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+}
+.important-message-box::first-line{
+  color: white;
+  background: #E02D2D;
+}
