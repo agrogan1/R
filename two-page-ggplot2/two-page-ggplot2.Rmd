@@ -3,17 +3,17 @@ title: "A Two Page Guide to ggplot2"
 author: "Andy Grogan-Kaylor"
 date: '`r Sys.Date()`'
 output:
-  tint::tintPdf:
-    number_sections: yes
-    toc: no
-    highlight: haddock
-  tufte::tufte_handout:
-    number_sections: yes
-    toc: no
   distill::distill_article:
     highlight: haddock
     toc: true
     toc_float: true
+  tufte::tufte_handout:
+    number_sections: yes
+    toc: no
+  tint::tintPdf:
+    number_sections: yes
+    toc: no
+    highlight: haddock
 geometry: margin=0.25in
 subtitle: For Applied and Community Based Research and Program Evaluation
 header-includes:
@@ -165,7 +165,7 @@ ggplot(mydata, # the data I am using
 
 ## Add Some Options[^legend]
 
-[^legend]: Notice how use of `scale_ ...` governs both the use of color in the graph below, as well as the legend that is produced in the graph. This graph uses official UNICEF colors to illustrate this idea. The graph below uses `scale...manual...` to manually choose the colors, but there are many other options, particularly when using `library(ggthemes)`.  `scale_..._viridis_...` are especially good color palettes.
+[^legend]: Notice how use of `scale_ ...` governs both the use of color in the graph below, as well as the legend that is produced in the graph. This graph uses official **UN** colors to illustrate this idea. The graph below uses `scale...manual...` to manually choose the colors, but there are many other options, particularly when using `library(ggthemes)`.  `scale_..._viridis_...` are especially good color palettes.
 
 ```{r}
 
@@ -174,17 +174,17 @@ ggplot(mydata, # the data I am using
            color = group)) + # the variables I am using
   geom_point() + # how I am graphing it
   geom_smooth() + 
-  labs(title = "My title", 
+  labs(title = "My Title", 
        x = "title for x axis", 
        y = "title for y axis") + 
   scale_colour_manual(name = "Group",
-                      values = c("#FF0099", 
-                                 "#0099FF"), # manual colors 
+                      values = c("#009edb", 
+                                 "#000000"), # manual colors 
                       labels = c("group1", 
                                  "group2")) +
   theme_minimal() + # theme
   theme(plot.title = element_text(size = 20, # add to theme
-                                  color = "#0099FF")) 
+                                  color = "#009edb")) 
 
 ```
 
@@ -194,6 +194,6 @@ ggsave(file = "scatterplot.png")
 
 ```
 
-[^moreinformation]: More information can be found here:  https://agrogan1.github.io/R/introduction-to-ggplot2/background.html 
+[^moreinformation]: More information can be found here:  https://agrogan1.github.io/R/introduction-to-ggplot2/introduction-to-ggplot2.html
 
 
