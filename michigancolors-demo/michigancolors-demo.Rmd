@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE,
                       message = FALSE)
 
-library(icon)
+# library(icon)
 
 ```
 
@@ -94,6 +94,8 @@ help(michigancolors)
 
 ## Base R
 
+### Entire Palette Of Colors
+
 ```{r}
 
 hist(iris$Petal.Length, col = michigancolors())
@@ -108,6 +110,8 @@ hist(iris$Petal.Length,
      xlab = "Petal Length")
 
 ```
+
+# Specific Color
 
 ```{r}
 
@@ -132,13 +136,15 @@ library(ggplot2)
 
 ```
 
+### Entire Palette Of Colors
+
 ```{r}
 
 ggplot(iris, 
        aes(x = Petal.Length, 
            fill = Species)) + 
   geom_density(alpha = .5) + 
-  ggtitle("Density Plot of Species in Iris Data Set") + 
+  labs(title = "Density Plot of Species in Iris Data Set") + 
   theme_minimal() + 
   scale_fill_manual(values = michigancolors())
 
@@ -153,12 +159,30 @@ ggplot(iris,
            color = Species)) + 
   geom_point() + 
   geom_smooth() + 
-  ggtitle("Scatterplot of Iris Data Set") + 
+  labs(title = "Scatterplot of Iris Data Set") + 
   theme_minimal() + 
   scale_color_manual(values = michigancolors())
 
 ```
 
+### Specific Colors
+
+```{r}
+
+library(ggdist) # distribution plots
+
+ggplot(iris,
+       aes(x = Species,
+           y = Petal.Length,
+           fill = Species)) +
+  geom_dots(dotsize = 3) +
+  labs(title = "Petal Length by Iris Species") + 
+  theme_minimal() + 
+  scale_fill_manual(values = c(michigancolors("arboretum blue"),
+                               michigancolors("ann arbor amethyst"),
+                               michigancolors("matthaei violet")))
+
+```
 
 
 
