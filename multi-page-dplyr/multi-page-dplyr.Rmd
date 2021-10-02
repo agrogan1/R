@@ -3,16 +3,23 @@ title: "Multi-Page dplyr"
 author: "Andy Grogan-Kaylor"
 date: "`r Sys.Date()`"
 output: 
-  tint::tintHtml:
+  distill::distill_article:
+    highlight: haddock
+    toc: yes
+  tufte::tufte_handout:
+    highlight: haddock
     number_sections: yes
     toc: yes
+  pdf_document: 
+    fig_caption: yes
+    fig_height: 3
     highlight: haddock
-  tint::tintPdf:
+    latex_engine: xelatex
     number_sections: yes
     toc: yes
-    highlight: haddock
 geometry: margin=0.5in
-fontsize: 12pt
+fontsize: 11pt
+mainfont: Arial
 ---
 
 ```{r setup, include=FALSE}
@@ -46,25 +53,18 @@ library(dplyr)
 
 ```{r, echo=FALSE}
 
-N <- 5
-
-year <- round(runif(N, min = 2015, max = 2018),
-              digits = 0)
+year <- c(2019, 2020, 2020, 2021, 2021)
 
 
-x <- round(rnorm(N, 40, 10), digits = 2)
+x <- c(NA, 50, NA, 70, 80)
 
-x[1] <- NA # introduce a missing value
-
-y <- rbinom(N, 1, .25)
-
-y[2] <- 2 # introduce alternate value
+y <- c(1, 2, 0, 0, 1)
 
 y <- factor(y,
             levels = c(0, 1, 2),
             labels = c("Group A", "Group B", "Group C"))
 
-z <- round(rnorm(N, 100, 10), digits = 2)
+z <- c(90, 90, 100, 110, 120)
 
 mydata <- tibble(year, x, y, z)
 
@@ -94,11 +94,13 @@ mydata %>%
 
 # Aggregate Data: `group_by()` & `summarise()`
 
+> Notice how when aggregating data, we need to be explicit about whether we are removing `NA` values.
+
 ```{r}
 
 mynewdata <- mydata %>% 
   group_by(year) %>% # group by y
-  summarise(mean_x = mean(x), # mean of x
+  summarise(mean_x = mean(x, na.rm = TRUE), # mean of x; removing NA's
             n = n()) # count up
 
 ```
@@ -129,7 +131,7 @@ pander(head(mynewdata))
 ```{r}
 
 mynewdata <- mydata %>% 
-  filter(year > 2010) # filter on year
+  filter(year > 2020) # filter on year
 
 ```
 
@@ -248,11 +250,11 @@ mydata %>% # my data
   mutate(myscale = x + z) %>% # dplyr command to make new variable 
   filter(y != "Group C") %>% # filter on values of y
   ggplot(aes(x = year, # the rest is ggplot
-             y = myscale)) +
-  geom_point() + # points
-  geom_smooth(se = FALSE, # smoother without confidence interval
-              method = "lm") + # linear smoother
-  labs(title = "My Scale By Year") + # labels
+             fill = y)) +
+  geom_bar() +
+  scale_fill_viridis_d(option = "cividis") + # beautiful cividis colors
+  theme_minimal() + # minimal theme
+  labs(title = "Group by Year") + # labels
   theme(axis.text.x = element_text(size = 10, # tweak theme
                                    angle = 90))
   
