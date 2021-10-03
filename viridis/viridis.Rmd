@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-# Viridis
+# Introduction
 
 The Viridis color palettes are designed to have a number of advantages.
 
@@ -48,6 +48,7 @@ p1 <- ggplot(mydata,
 
 ```
 
+# Palettes
 
 ## Viridis
 
@@ -55,7 +56,7 @@ p1 <- ggplot(mydata,
 
 p1 + 
   labs(title = "Viridis") +
-  scale_fill_viridis_d(name = "Viridis")
+  scale_fill_viridis_d(name = "viridis")
 
 ```
 ## Cividis
@@ -68,6 +69,7 @@ p1 +
                        option = "cividis")
 
 ```
+
 ## Plasma
 
 ```{r}
@@ -89,3 +91,49 @@ p1 +
                        option = "magma")
 
 ```
+
+## Mako
+
+```{r}
+
+p1 + 
+  labs(title = "Magma") +
+  scale_fill_viridis_d(name = "Mako",
+                       option = "mako")
+
+```
+
+## Rocket
+
+```{r}
+
+p1 + 
+  labs(title = "Rocket") +
+  scale_fill_viridis_d(name = "Rocket",
+                       option = "rocket")
+
+```
+
+## Turbo
+
+```{r}
+
+p1 + 
+  labs(title = "Turbo") +
+  scale_fill_viridis_d(name = "Turbo",
+                       option = "turbo")
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
