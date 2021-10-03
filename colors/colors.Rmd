@@ -13,10 +13,6 @@ output:
     highlight: haddock
     toc: yes
     fig_height: 6
-  pdf_document: 
-    toc: yes
-    number_sections: yes
-    fig_height: 6
 ---
 
 ```{r setup, include=FALSE}
@@ -59,7 +55,47 @@ hexcode <- factor(hexcode)
 
 Rcolors <- data.frame(colornumber, colorname, hexcode)
 
-DT::datatable(Rcolors)
+# DT::datatable(Rcolors)
 
 
 ```
+
+```{r}
+
+# from https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html
+
+colorize <- function(x, color) {
+  
+  if (knitr::is_latex_output()) {
+  
+      sprintf("\\textcolor{%s}{%s}", color, x)
+  
+  } else if (knitr::is_html_output()) {
+    
+    sprintf("<span style='background-color: %s;'>%s</span>", color, x)
+    
+  } else x
+  
+}
+
+```
+
+# Table of Colors
+
+```{r}
+
+knitr::raw_html("<table>")
+
+knitr::raw_html(paste("<tr><td>",
+            hexcode, 
+            "</td><td>",
+            colorname,
+            "</td><td>",
+            colorize(Rcolors$colorname, Rcolors$hexcode),
+            "</td></tr>"))
+
+knitr::raw_html("</table>")
+
+```
+
+
