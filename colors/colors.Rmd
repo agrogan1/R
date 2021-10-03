@@ -9,13 +9,13 @@ author:
     affiliation_url: https://www.umich.edu
 date: "`r Sys.Date()`"
 output:
-  pdf_document: 
-    toc: yes
-    number_sections: yes
-    fig_height: 6
   distill::distill_article:
     highlight: haddock
     toc: yes
+    fig_height: 6
+  pdf_document: 
+    toc: yes
+    number_sections: yes
     fig_height: 6
 ---
 
@@ -37,55 +37,29 @@ library(dplyr)
 
 ```
 
-```{r, results='asis'}
+```{r}
 
-for (start in seq(1, 601, 50)) {
-  
-  cat(paste("\n<p># Colors Starting At Color Number", start, "\n<p>")) 
-  
-  end <- start + 49 # ending point for this graph
-  
-  colornumber <- seq(start, start + 49) # sequence of color numbers
-  
-  colornumber[colornumber > 657] <- NA # change values > 657 to NA
-  
-  x <- rep(seq(1,10), each = 5) # grid of x's
-  
-  y <- rep(seq(1,5), times = 10) # and y's
-  
-  colorname <- colors()[colornumber] # get color name associated with that number
-  
-  colorname[colorname == "indianred"] <- NA
-  colorname[colorname == "indianred1"] <- NA
-  colorname[colorname == "indianred2"] <- NA
-  colorname[colorname == "indianred3"] <- NA
-  colorname[colorname == "indianred4"] <- NA
 
-  hexcode <- rgb(col2rgb(colorname)[1], 
-                 col2rgb(colorname)[2], 
-                 col2rgb(colorname)[3], 
-                 max = 255) # hex code
+colornumber <- seq(1, 657, 1) # sequence of color numbers
+
+colorname <- colors()[colornumber] # get color name associated with that number
   
-  mylabel <- paste0(colorname, 
-                   " (",
-                   hexcode,
-                   ")")
-  
-  print(ggplot(data = NULL,
-         aes(x = x, # x is x
-             y = y, # y is y
-             label = mylabel)) + # label is colorname
-    geom_point(color = colorname, # color is colorname
-               shape = "square", # square points
-               size = 15) + # adjust size
-    geom_label_repel(size = 2) + # repelling labels
-    # labs(title = paste("Colors Starting At Color Number", start)) +
-    coord_flip() + # flip the graph
-    scale_x_reverse() + # reverse the x scale
-    theme_void()) # empty theme
-  
-}
+colorname[colorname == "indianred"] <- NA
+colorname[colorname == "indianred1"] <- NA
+colorname[colorname == "indianred2"] <- NA
+colorname[colorname == "indianred3"] <- NA
+colorname[colorname == "indianred4"] <- NA
+
+hexcode <- rgb(col2rgb(colorname)[1,], 
+               col2rgb(colorname)[2,], 
+               col2rgb(colorname)[3,], 
+               max = 255) # hex code
+
+hexcode <- factor(hexcode)
+
+Rcolors <- data.frame(colornumber, colorname, hexcode)
+
+DT::datatable(Rcolors)
 
 
 ```
-
