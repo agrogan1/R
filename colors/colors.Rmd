@@ -13,6 +13,12 @@ output:
     highlight: haddock
     toc: yes
     fig_height: 6
+  pdf_document: 
+    fig_height: 3
+    highlight: haddock
+    latex_engine: xelatex
+    number_sections: yes
+    toc: yes
 ---
 
 ```{r setup, include=FALSE}
