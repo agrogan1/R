@@ -61,6 +61,8 @@ hexcode <- factor(hexcode)
 
 Rcolors <- data.frame(colornumber, colorname, hexcode)
 
+# write.csv(Rcolors, file = "Rcolors.csv")
+
 # DT::datatable(Rcolors)
 
 
@@ -88,9 +90,11 @@ colorize <- function(x, color) {
 
 # Table of Colors
 
-```{r}
+```{r, results='asis', eval=TRUE}
 
 knitr::raw_html("<table>")
+
+knitr::raw_html("<tr><td><b>hexcode</b></td><td><b>color name</b></td><td><b>color</b></td></tr>")
 
 knitr::raw_html(paste("<tr><td>",
             hexcode, 
@@ -104,4 +108,9 @@ knitr::raw_html("</table>")
 
 ```
 
+```{r, eval = FALSE}
+
+# `r paste('red', 'FF0000', kableExtra::text_spec('red', background = 'red'))`
+
+```
 
