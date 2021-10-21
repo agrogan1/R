@@ -4,11 +4,6 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r Sys.Date()`'
 output:
-  bookdown::epub_book: default  
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   bookdown::gitbook:
     highlight: haddock
     css: UMGitBook.css
@@ -17,17 +12,30 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
+  tufte::tufte_handout:
+    number_sections: yes
+    toc: yes
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
+  bookdown::epub_book: default  
+  pdf_document: 
+    toc: yes
+    number_sections: yes
+    latex_engine: xelatex
   html_document:
     fig_height: 3
     highlight: haddock
     keep_md: no
     number_sections: yes
-    theme: flatly
+    theme: yeti
     toc: yes
     toc_float:
       collapsed: yes
       smooth_scroll: yes
-fontsize: 12pt
+fontsize: 11pt
+mainfont: Arial
 geometry: margin=1.0in
 description: An Introduction to R
 ---
@@ -475,6 +483,27 @@ mydata$w <- factor(mydata$z, # original numeric variable
                    ordered = TRUE) # often useful to order the levels
 
 ```
+
+
+Lastly, it may sometimes be helpful--especially for graphing--to reorder the levels of a factor.
+
+```{r, eval=FALSE, echo=TRUE}
+
+mydata$w <- factor(mydata$w, levels = c(2, 0, 1))
+
+```
+
+Or, when the levels are in text:
+
+```{r, eval=FALSE, echo=TRUE}
+
+mydata$q <- factor(mydata$q, levels = c("Group B",
+                                        "Group A",
+                                        "Group C"))
+
+```
+
+
 
 ## Missing Values
 
