@@ -1,0 +1,49 @@
+---
+title: "R Stuff"
+description: |
+  Various R Resources
+author:
+  - name: Andy Grogan-Kaylor 
+    url: https://agrogan1.github.io/
+    affiliation: University of Michigan
+    affiliation_url: https://www.umich.edu
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    highlight: haddock
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+# R
+
+* [Introduction to R](./introduction-to-R/introduction-to-R.html)
+* [Two Page R](./two-page-R/two-page-R.pdf)
+
+# ggplot
+
+* [Introduction to ggplot](https://agrogan1.github.io/R/introduction-to-ggplot2/introduction-to-ggplot2.html)
+* [Two Page ggplot2](./two-page-ggplot2/two-page-ggplot2.pdf)
+
+# R Colors
+
+* [R Color Chart](./colors/colors.html)
+* [Viridis Color Palettes](./viridis/viridis.html)
+
+# dplyr
+
+* [Multi-Page dplyr](./multi-page-dplyr/multi-page-dplyr.html)
+
+# Michigan Colors Graph Scheme
+
+* [Michigan Colors Graph Scheme](./michigancolors-demo/michigancolors-demo.html)
+
+# Working With Data
+
+* [World Bank Demo](https://agrogan1.github.io/R/wbdemo/)
+
