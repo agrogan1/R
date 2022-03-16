@@ -19,6 +19,10 @@ output:
 
 knitr::opts_chunk$set(echo = FALSE)
 
+options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+
+library(xaringanExtra)
+
 ```
 
 # Introduction
@@ -27,29 +31,57 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # University of Michigan Xaringan Theme
 
-* [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/MichiganTest.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/MichiganTest.Rmd)]
+```{r}
+
+embed_xaringan(url = "https://agrogan1.github.io/R/xaringan-themes/MichiganTest.html",
+               ratio = "4:3")
+
+```
+
+* [RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/MichiganTest.Rmd)
 * [michigan.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/michigan.css)
 * [michigan-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/michigan-fonts.css)
 
 # OsloMet Xaringan Theme
 
+```{r}
+
+embed_xaringan(url = "https://agrogan1.github.io/R/xaringan-themes/OsloMetTest.html",
+               ratio = "4:3")
+
+```
+
 Inspired by: [https://github.com/martinhelso/OsloMet](https://github.com/martinhelso/OsloMet)
 
-* [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/OsloMetTest.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/OsloMetTest.Rmd)]
+* [RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/OsloMetTest.Rmd)
 * [oslomet.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/oslomet.css)
 * [oslomet-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/oslomet-fonts.css)
 
 # Tufte(-ish) Xaringan Theme
 
-* [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/TufteTest.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/TufteTest.Rmd)]
+```{r}
+
+embed_xaringan(url = "https://agrogan1.github.io/R/xaringan-themes/TufteTest.html",
+               ratio = "4:3")
+
+```
+
+* [RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/TufteTest.Rmd)
 * [tufte.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/tufte.css)
 * [tufte-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/tufte-fonts.css)
 
 # *Moments of Rising Mist* Xaringan Theme
 
+```{r}
+
+embed_xaringan(url = "https://agrogan1.github.io/R/xaringan-themes/Moments-Of-Rising-Mist.html",
+               ratio = "4:3")
+
+```
+
 CSS to replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
 
-* [Knit to HTML](https://agrogan1.github.io/R/xaringan-themes/Moments-Of-Rising-Mist.html) [[RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/Moments-Of-Rising-Mist.Rmd)]
+* [RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/Moments-Of-Rising-Mist.Rmd)
 * [moments-of-rising-mist.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist.css)
 * [moments-of-rising-mist-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist-fonts.css)
 
