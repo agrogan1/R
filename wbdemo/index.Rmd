@@ -7,16 +7,6 @@ output:
     highlight: haddock
     code_folding: true    
     toc: yes
-  html_document: 
-    code_folding: hide
-    highlight: haddock
-    number_sections: yes
-    theme: default
-    toc: yes
-    toc_float:
-      collapsed: no
-      smooth_scroll: yes
-mainfont: Tw Cen MT
 ---
 
 ```{r setup, include=FALSE}
@@ -55,6 +45,8 @@ library(DT) # data table
 
 library(foreign) # exporting to Stata
 
+library(haven) # exporting to Stata
+
 ```
 
 # Get Some Data From the World Development Indicators (WDI)
@@ -71,7 +63,7 @@ mydata <- WDI(country="all",
                           "SP.POP.TOTL", # population
                           "SN.ITK.DEFC.ZS"), # undernourishment
               start = 1980, 
-              end = 2017, 
+              end = 2021, 
               extra = TRUE) 
 
 
@@ -106,7 +98,9 @@ save(mydata, file="WorldBankData.RData")
 
 ```{r, echo=FALSE, eval=FALSE}
 
-write.dta(mydata, "WorldBankData.dta")
+write_dta(mydata, "WorldBankData.dta")
+
+# write.dta(mydata, "WorldBankData.dta")
 
 write.csv(mydata, 
           file = "WorldBankData.csv",
