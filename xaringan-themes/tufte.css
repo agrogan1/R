@@ -5,6 +5,9 @@
 .title-slide h1 {
     color: #111111;
 }
+.remark-slide-content {
+  background-color: #fffff8; 
+}
 pre {
   white-space: pre-wrap;
 }
