@@ -28,9 +28,11 @@ library(xaringanExtra)
 
 # Introduction
 
-[Xaringan](https://github.com/yihui/xaringan) is a slideshow system for RMarkdown.
+[Xaringan](https://github.com/yihui/xaringan) is a slideshow system for RMarkdown. Alison Hill has an [excellent demonstration of the possibilities of Xaringan](https://arm.rbind.io/slides/xaringan.html).
 
-# University of Michigan Xaringan Theme
+# Themes
+
+## University of Michigan Xaringan Theme
 
 ```{r}
 
@@ -43,7 +45,7 @@ embed_xaringan(url = "https://agrogan1.github.io/R/xaringan-themes/MichiganTest.
 * [michigan.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/michigan.css)
 * [michigan-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/michigan-fonts.css)
 
-# OsloMet Xaringan Theme
+## OsloMet Xaringan Theme
 
 ```{r}
 
@@ -58,7 +60,7 @@ Inspired by: [https://github.com/martinhelso/OsloMet](https://github.com/martinh
 * [oslomet.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/oslomet.css)
 * [oslomet-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/oslomet-fonts.css)
 
-# Tufte(-ish) Xaringan Theme
+## Tufte(-ish) Xaringan Theme
 
 ```{r}
 
@@ -71,7 +73,7 @@ embed_xaringan(url = "https://agrogan1.github.io/R/xaringan-themes/TufteTest.htm
 * [tufte.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/tufte.css)
 * [tufte-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/tufte-fonts.css)
 
-# *Moments of Rising Mist* Xaringan Theme
+## *Moments of Rising Mist* Xaringan Theme
 
 ```{r}
 
@@ -86,7 +88,7 @@ CSS to replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
 * [moments-of-rising-mist.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist.css)
 * [moments-of-rising-mist-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist-fonts.css)
 
-# Banff Theme
+## Banff Theme
 
 ```{r}
 
