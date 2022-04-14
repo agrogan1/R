@@ -4,7 +4,7 @@
     <title>Moments of Rising Mist</title>
     <meta charset="utf-8" />
     <meta name="author" content="Andy Grogan-Kaylor" />
-    <meta name="date" content="2021-09-14" />
+    <meta name="date" content="2022-04-14" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
@@ -13,6 +13,7 @@
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
     <link rel="stylesheet" href="moments-of-rising-mist.css" type="text/css" />
     <link rel="stylesheet" href="moments-of-rising-mist-fonts.css" type="text/css" />
   </head>
@@ -24,16 +25,39 @@ class: center, middle, inverse, title-slide
 ## Test
 ### Andy Grogan-Kaylor
 ### University of Michigan
-### 2021-09-14
+### 2022-04-14
 
 ---
 
 
 
 
+<style>.xe__progress-bar__container {
+  bottom:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 0.25em;
+  background-color: #FF0000;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style>
+
 # Introduction
 
 CSS to approximately replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
+
+&gt; Press `o` for an overview of the presentation
 
 ---
 # Slide with text

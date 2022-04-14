@@ -17,15 +17,25 @@ output:
 
 options(htmltools.dir.version = FALSE)
 
+```
+
+```{r, echo=FALSE}
+
 xaringanExtra::use_tile_view()
 
 xaringanExtra::use_share_again()
+
+xaringanExtra::use_progress_bar(color = "#FFDC00", 
+                                location = "bottom")
+
 
 ```
 
 # Introduction
 
 Following the inspiration of the OsloMet Beamer theme at: [https://github.com/martinhelso/OsloMet](https://github.com/martinhelso/OsloMet)
+
+> Press `o` for an overview of the presentation
 
 ---
 # Bulleted List
@@ -75,6 +85,14 @@ This is the content of the example.
 The content of this important message goes here.
 
 ]
+
+---
+# Blockquote
+
+> This is a blockquote.
+
+
+
 
 
 

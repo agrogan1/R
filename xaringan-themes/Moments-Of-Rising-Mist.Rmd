@@ -18,15 +18,24 @@ output:
 
 options(htmltools.dir.version = FALSE)
 
+```
+
+```{r, echo=FALSE}
+
 xaringanExtra::use_tile_view()
 
 xaringanExtra::use_share_again()
+
+xaringanExtra::use_progress_bar(color = "#FF0000", 
+                                location = "bottom")
 
 ```
 
 # Introduction
 
 CSS to approximately replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
+
+> Press `o` for an overview of the presentation
 
 ---
 # Slide with text
