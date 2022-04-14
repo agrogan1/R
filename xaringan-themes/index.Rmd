@@ -19,7 +19,8 @@ output:
 
 knitr::opts_chunk$set(echo = FALSE)
 
-options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+options(htmltools.dir.version = FALSE, 
+        htmltools.preserve.raw = FALSE)
 
 library(xaringanExtra)
 
@@ -84,6 +85,21 @@ CSS to replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
 * [RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/Moments-Of-Rising-Mist.Rmd)
 * [moments-of-rising-mist.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist.css)
 * [moments-of-rising-mist-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist-fonts.css)
+
+# Banff Theme
+
+```{r}
+
+embed_xaringan(url = "https://agrogan1.github.io/R/xaringan-themes/BanffTest.html",
+               ratio = "4:3")
+
+```
+
+Based upon design ideas from the [Banff Mountain Film Festival](https://www.banffcentre.ca/banffmountainfestival/tour)
+
+* [RMarkdown Document](https://github.com/agrogan1/R/blob/master/xaringan-themes/BanffTest.Rmd)
+* [banff.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/banff.css)
+* [banff-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/banff-fonts.css)
 
 # Supplemental Materials
 

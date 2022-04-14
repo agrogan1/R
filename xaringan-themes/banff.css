@@ -1,9 +1,12 @@
 .title-slide { 
-  color: firebrick;
+  background-image: url('mountains.png');
   background-color: black; 
 }
 .title-slide h1 {
-    color: firebrick;
+  color: red;
+}
+.title-slide h2, h3 {
+  color: black;
 }
 pre {
   white-space: pre-wrap;
@@ -11,7 +14,16 @@ pre {
 blockquote {
   background: #FFFFFF;
   color: #000;
-  border-left: 5px solid firebrick;
+  border-left: 5px solid red;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
 }
+.majorsection {
+  color: white;
+  background-color: black;
+}
+.majorsection h1 {
+  color: white;
+  background-color: red;
+}
+  
