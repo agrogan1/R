@@ -35,7 +35,11 @@ xaringanExtra::use_progress_bar(color = "#FFDC00",
 
 Following the inspiration of the OsloMet Beamer theme at: [https://github.com/martinhelso/OsloMet](https://github.com/martinhelso/OsloMet)
 
-> Press `o` for an overview of the presentation
+.important-message-box[Important 
+
+Press `o` for an overview of the presentation
+
+]
 
 ---
 # Bulleted List
