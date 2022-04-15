@@ -88,7 +88,7 @@ CSS to replicate design of *Moments of Rising Mist: A Book of Sung Poetry*
 * [moments-of-rising-mist.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist.css)
 * [moments-of-rising-mist-fonts.css](https://github.com/agrogan1/R/blob/master/xaringan-themes/moments-of-rising-mist-fonts.css)
 
-## Banff Theme
+## Banff Xaringan Theme
 
 ```{r}
 
