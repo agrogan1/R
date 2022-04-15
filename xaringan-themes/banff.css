@@ -1,6 +1,7 @@
 .title-slide { 
   background-image: url('mountains.png');
   background-color: black; 
+  background-size: cover;
 }
 .title-slide h1 {
   color: red;
