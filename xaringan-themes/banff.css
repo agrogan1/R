@@ -1,5 +1,5 @@
 .title-slide { 
-  background-image: url('mountains.png');
+  background-image: url('mountains2.png');
   background-color: black; 
   background-size: cover;
 }
@@ -7,7 +7,7 @@
   color: red;
 }
 .title-slide h2, h3 {
-  color: black;
+  color: white;
 }
 pre {
   white-space: pre-wrap;
