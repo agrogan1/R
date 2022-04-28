@@ -2,8 +2,10 @@
 title: "Demonstration of Michigan Colors for R Graphs"
 author: "Andrew Grogan-Kaylor"
 date: "`r Sys.Date()`"
-format: html
-mainfont: Arial
+format:
+  html:
+    toc: true
+    number-sections: true
 ---
 
 ```{r setup, include=FALSE}
