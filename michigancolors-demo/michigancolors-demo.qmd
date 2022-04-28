@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 format:
   html:
     toc: true
+    toc-location: left
     number-sections: true
 ---
 
@@ -104,6 +105,8 @@ hist(iris$Petal.Length,
 ```
 
 # Specific Color
+
+## Base R
 
 ```{r}
 

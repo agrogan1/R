@@ -111,10 +111,11 @@
 </ul></li>
 <li><a href="#specific-color" class="nav-link" data-scroll-target="#specific-color"> <span class="header-section-number">6</span> Specific Color</a>
 <ul class="collapse">
-<li><a href="#ggplot2" class="nav-link" data-scroll-target="#ggplot2"> <span class="header-section-number">6.1</span> ggplot2</a>
+<li><a href="#base-r-1" class="nav-link" data-scroll-target="#base-r-1"> <span class="header-section-number">6.1</span> Base R</a></li>
+<li><a href="#ggplot2" class="nav-link" data-scroll-target="#ggplot2"> <span class="header-section-number">6.2</span> ggplot2</a>
 <ul class="collapse">
-<li><a href="#entire-palette-of-colors-1" class="nav-link" data-scroll-target="#entire-palette-of-colors-1"> <span class="header-section-number">6.1.1</span> Entire Palette Of Colors</a></li>
-<li><a href="#specific-colors" class="nav-link" data-scroll-target="#specific-colors"> <span class="header-section-number">6.1.2</span> Specific Colors</a></li>
+<li><a href="#entire-palette-of-colors-1" class="nav-link" data-scroll-target="#entire-palette-of-colors-1"> <span class="header-section-number">6.2.1</span> Entire Palette Of Colors</a></li>
+<li><a href="#specific-colors" class="nav-link" data-scroll-target="#specific-colors"> <span class="header-section-number">6.2.2</span> Specific Colors</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -188,6 +189,8 @@
 </section>
 <section id="specific-color" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Specific Color</h1>
+<section id="base-r-1" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="base-r-1"><span class="header-section-number">6.1</span> Base R</h2>
 <div class="cell">
 <div class="sourceCode" id="cb7"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Petal.Length, <span class="at">col =</span> <span class="fu">michigancolors</span>(<span class="st">"matthaei violet"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -203,13 +206,14 @@
 <p><img src="michigancolors-demo_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<section id="ggplot2" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="ggplot2"><span class="header-section-number">6.1</span> ggplot2</h2>
+</section>
+<section id="ggplot2" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="ggplot2"><span class="header-section-number">6.2</span> ggplot2</h2>
 <div class="cell">
 <div class="sourceCode" id="cb9"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="entire-palette-of-colors-1" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="entire-palette-of-colors-1"><span class="header-section-number">6.1.1</span> Entire Palette Of Colors</h3>
+<section id="entire-palette-of-colors-1" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="entire-palette-of-colors-1"><span class="header-section-number">6.2.1</span> Entire Palette Of Colors</h3>
 <div class="cell">
 <div class="sourceCode" id="cb10"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris, </span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, </span>
@@ -237,8 +241,8 @@
 </div>
 </div>
 </section>
-<section id="specific-colors" class="level3" data-number="6.1.2">
-<h3 data-number="6.1.2" class="anchored" data-anchor-id="specific-colors"><span class="header-section-number">6.1.2</span> Specific Colors</h3>
+<section id="specific-colors" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="specific-colors"><span class="header-section-number">6.2.2</span> Specific Colors</h3>
 <div class="cell">
 <div class="sourceCode" id="cb12"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggdist) <span class="co"># distribution plots</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
