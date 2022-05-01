@@ -1,0 +1,37 @@
+\contentsline {section}{\numberline {1}Background}{2}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{3}{section.2}%
+\contentsline {section}{\numberline {3}Base R and Libraries}{4}{section.3}%
+\contentsline {section}{\numberline {4}Working Directory}{4}{section.4}%
+\contentsline {section}{\numberline {5}Writing R Code or Script}{5}{section.5}%
+\contentsline {section}{\numberline {6}Graphical User Interface}{5}{section.6}%
+\contentsline {section}{\numberline {7}Get Your Data}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1}R format (*.RData)}{7}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Comma Separated Values (*.csv)}{7}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Statistical Packages and Excel}{7}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}\texttt {foreign}}{7}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}\texttt {readxl}}{8}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}\texttt {haven}}{8}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Save Your Data in R Format}{8}{section.8}%
+\contentsline {section}{\numberline {9}Save and Document Your Work}{9}{section.9}%
+\contentsline {section}{\numberline {10}Process Your Data}{9}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Random Sample}{9}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Data Subsets}{9}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Numeric and Factor Variables}{9}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Missing Values}{11}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Renaming Variables}{11}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Sorting Data}{11}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}Creating New Variables}{11}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Recoding Variables}{12}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.9}Scales or Measures}{12}{subsection.10.9}%
+\contentsline {section}{\numberline {11}Descriptive Statistics}{13}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Continuous Variables}{13}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Categorical Variables}{13}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Scientific Notation}{13}{subsection.11.3}%
+\contentsline {section}{\numberline {12}Bivariate Statistics}{13}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Crosstabulation}{13}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Correlation}{14}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}t Test}{14}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}ANOVA}{15}{subsection.12.4}%
+\contentsline {section}{\numberline {13}Multivariate Statistics}{15}{section.13}%
+\contentsline {section}{\numberline {14}Graphing}{15}{section.14}%
+\contentsline {section}{\numberline {15}Comments, Questions and Corrections}{19}{section.15}%
