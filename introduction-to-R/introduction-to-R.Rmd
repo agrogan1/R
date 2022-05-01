@@ -4,10 +4,6 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r Sys.Date()`'
 output:
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
   bookdown::gitbook:
     highlight: haddock
     css: UMGitBook.css
@@ -16,6 +12,10 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
   tufte::tufte_handout:
     number_sections: yes
     toc: yes

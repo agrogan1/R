@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Introduction to R</title>
   <meta name="description" content="An Introduction to R" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Introduction to R" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="An Introduction to R" />
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Andy Grogan-Kaylor" />
 
 
-<meta name="date" content="2022-01-29" />
+<meta name="date" content="2022-05-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 
 
-<script src="libs/header-attrs/header-attrs.js"></script>
 <script src="libs/jquery/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
@@ -52,6 +50,7 @@
 
 
 <link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections/anchor-sections.js"></script>
 
 
@@ -129,51 +128,51 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path=""><a href="#background"><i class="fa fa-check"></i><b>1</b> Background</a></li>
-<li class="chapter" data-level="2" data-path=""><a href="#introduction"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
-<li class="chapter" data-level="3" data-path=""><a href="#base-r-and-libraries"><i class="fa fa-check"></i><b>3</b> Base R and Libraries</a></li>
-<li class="chapter" data-level="4" data-path=""><a href="#working-directory"><i class="fa fa-check"></i><b>4</b> Working Directory</a></li>
-<li class="chapter" data-level="5" data-path=""><a href="#writing-r-code-or-script"><i class="fa fa-check"></i><b>5</b> Writing R Code or Script</a></li>
-<li class="chapter" data-level="6" data-path=""><a href="#graphical-user-interface"><i class="fa fa-check"></i><b>6</b> Graphical User Interface</a></li>
-<li class="chapter" data-level="7" data-path=""><a href="#get-your-data"><i class="fa fa-check"></i><b>7</b> Get Your Data</a>
+<li class="chapter" data-level="1" data-path=""><a href="#background"><i class="fa fa-check"></i><b>1</b> Background<span></span></a></li>
+<li class="chapter" data-level="2" data-path=""><a href="#introduction"><i class="fa fa-check"></i><b>2</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="3" data-path=""><a href="#base-r-and-libraries"><i class="fa fa-check"></i><b>3</b> Base R and Libraries<span></span></a></li>
+<li class="chapter" data-level="4" data-path=""><a href="#working-directory"><i class="fa fa-check"></i><b>4</b> Working Directory<span></span></a></li>
+<li class="chapter" data-level="5" data-path=""><a href="#writing-r-code-or-script"><i class="fa fa-check"></i><b>5</b> Writing R Code or Script<span></span></a></li>
+<li class="chapter" data-level="6" data-path=""><a href="#graphical-user-interface"><i class="fa fa-check"></i><b>6</b> Graphical User Interface<span></span></a></li>
+<li class="chapter" data-level="7" data-path=""><a href="#get-your-data"><i class="fa fa-check"></i><b>7</b> Get Your Data<span></span></a>
 <ul>
-<li class="chapter" data-level="7.1" data-path=""><a href="#r-format-.rdata"><i class="fa fa-check"></i><b>7.1</b> R format (*.RData)</a></li>
-<li class="chapter" data-level="7.2" data-path=""><a href="#comma-separated-values-.csv"><i class="fa fa-check"></i><b>7.2</b> Comma Separated Values (*.csv)</a></li>
-<li class="chapter" data-level="7.3" data-path=""><a href="#statistical-packages-and-excel"><i class="fa fa-check"></i><b>7.3</b> Statistical Packages and Excel</a></li>
-<li class="chapter" data-level="7.4" data-path=""><a href="#foreign"><i class="fa fa-check"></i><b>7.4</b> <code>foreign</code></a></li>
-<li class="chapter" data-level="7.5" data-path=""><a href="#readxl"><i class="fa fa-check"></i><b>7.5</b> <code>readxl</code></a></li>
-<li class="chapter" data-level="7.6" data-path=""><a href="#haven"><i class="fa fa-check"></i><b>7.6</b> <code>haven</code></a></li>
+<li class="chapter" data-level="7.1" data-path=""><a href="#r-format-.rdata"><i class="fa fa-check"></i><b>7.1</b> R format (*.RData)<span></span></a></li>
+<li class="chapter" data-level="7.2" data-path=""><a href="#comma-separated-values-.csv"><i class="fa fa-check"></i><b>7.2</b> Comma Separated Values (*.csv)<span></span></a></li>
+<li class="chapter" data-level="7.3" data-path=""><a href="#statistical-packages-and-excel"><i class="fa fa-check"></i><b>7.3</b> Statistical Packages and Excel<span></span></a></li>
+<li class="chapter" data-level="7.4" data-path=""><a href="#foreign"><i class="fa fa-check"></i><b>7.4</b> <code>foreign</code><span></span></a></li>
+<li class="chapter" data-level="7.5" data-path=""><a href="#readxl"><i class="fa fa-check"></i><b>7.5</b> <code>readxl</code><span></span></a></li>
+<li class="chapter" data-level="7.6" data-path=""><a href="#haven"><i class="fa fa-check"></i><b>7.6</b> <code>haven</code><span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path=""><a href="#save-your-data-in-r-format"><i class="fa fa-check"></i><b>8</b> Save Your Data in R Format</a></li>
-<li class="chapter" data-level="9" data-path=""><a href="#save-and-document-your-work"><i class="fa fa-check"></i><b>9</b> Save and Document Your Work</a></li>
-<li class="chapter" data-level="10" data-path=""><a href="#process-your-data"><i class="fa fa-check"></i><b>10</b> Process Your Data</a>
+<li class="chapter" data-level="8" data-path=""><a href="#save-your-data-in-r-format"><i class="fa fa-check"></i><b>8</b> Save Your Data in R Format<span></span></a></li>
+<li class="chapter" data-level="9" data-path=""><a href="#save-and-document-your-work"><i class="fa fa-check"></i><b>9</b> Save and Document Your Work<span></span></a></li>
+<li class="chapter" data-level="10" data-path=""><a href="#process-your-data"><i class="fa fa-check"></i><b>10</b> Process Your Data<span></span></a>
 <ul>
-<li class="chapter" data-level="10.1" data-path=""><a href="#random-sample"><i class="fa fa-check"></i><b>10.1</b> Random Sample</a></li>
-<li class="chapter" data-level="10.2" data-path=""><a href="#subsets"><i class="fa fa-check"></i><b>10.2</b> Data Subsets</a></li>
-<li class="chapter" data-level="10.3" data-path=""><a href="#numeric-and-factor-variables"><i class="fa fa-check"></i><b>10.3</b> Numeric and Factor Variables</a></li>
-<li class="chapter" data-level="10.4" data-path=""><a href="#missing-values"><i class="fa fa-check"></i><b>10.4</b> Missing Values</a></li>
-<li class="chapter" data-level="10.5" data-path=""><a href="#renaming-variables"><i class="fa fa-check"></i><b>10.5</b> Renaming Variables</a></li>
-<li class="chapter" data-level="10.6" data-path=""><a href="#sorting-data"><i class="fa fa-check"></i><b>10.6</b> Sorting Data</a></li>
-<li class="chapter" data-level="10.7" data-path=""><a href="#creating-new-variables"><i class="fa fa-check"></i><b>10.7</b> Creating New Variables</a></li>
-<li class="chapter" data-level="10.8" data-path=""><a href="#recoding-variables"><i class="fa fa-check"></i><b>10.8</b> Recoding Variables</a></li>
-<li class="chapter" data-level="10.9" data-path=""><a href="#scales-or-measures"><i class="fa fa-check"></i><b>10.9</b> Scales or Measures</a></li>
+<li class="chapter" data-level="10.1" data-path=""><a href="#random-sample"><i class="fa fa-check"></i><b>10.1</b> Random Sample<span></span></a></li>
+<li class="chapter" data-level="10.2" data-path=""><a href="#subsets"><i class="fa fa-check"></i><b>10.2</b> Data Subsets<span></span></a></li>
+<li class="chapter" data-level="10.3" data-path=""><a href="#numeric-and-factor-variables"><i class="fa fa-check"></i><b>10.3</b> Numeric and Factor Variables<span></span></a></li>
+<li class="chapter" data-level="10.4" data-path=""><a href="#missing-values"><i class="fa fa-check"></i><b>10.4</b> Missing Values<span></span></a></li>
+<li class="chapter" data-level="10.5" data-path=""><a href="#renaming-variables"><i class="fa fa-check"></i><b>10.5</b> Renaming Variables<span></span></a></li>
+<li class="chapter" data-level="10.6" data-path=""><a href="#sorting-data"><i class="fa fa-check"></i><b>10.6</b> Sorting Data<span></span></a></li>
+<li class="chapter" data-level="10.7" data-path=""><a href="#creating-new-variables"><i class="fa fa-check"></i><b>10.7</b> Creating New Variables<span></span></a></li>
+<li class="chapter" data-level="10.8" data-path=""><a href="#recoding-variables"><i class="fa fa-check"></i><b>10.8</b> Recoding Variables<span></span></a></li>
+<li class="chapter" data-level="10.9" data-path=""><a href="#scales-or-measures"><i class="fa fa-check"></i><b>10.9</b> Scales or Measures<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path=""><a href="#descriptive-statistics"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics</a>
+<li class="chapter" data-level="11" data-path=""><a href="#descriptive-statistics"><i class="fa fa-check"></i><b>11</b> Descriptive Statistics<span></span></a>
 <ul>
-<li class="chapter" data-level="11.1" data-path=""><a href="#continuous-variables"><i class="fa fa-check"></i><b>11.1</b> Continuous Variables</a></li>
-<li class="chapter" data-level="11.2" data-path=""><a href="#categorical-variables"><i class="fa fa-check"></i><b>11.2</b> Categorical Variables</a></li>
-<li class="chapter" data-level="11.3" data-path=""><a href="#scientific-notation"><i class="fa fa-check"></i><b>11.3</b> Scientific Notation</a></li>
+<li class="chapter" data-level="11.1" data-path=""><a href="#continuous-variables"><i class="fa fa-check"></i><b>11.1</b> Continuous Variables<span></span></a></li>
+<li class="chapter" data-level="11.2" data-path=""><a href="#categorical-variables"><i class="fa fa-check"></i><b>11.2</b> Categorical Variables<span></span></a></li>
+<li class="chapter" data-level="11.3" data-path=""><a href="#scientific-notation"><i class="fa fa-check"></i><b>11.3</b> Scientific Notation<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path=""><a href="#bivariate-statistics"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics</a>
+<li class="chapter" data-level="12" data-path=""><a href="#bivariate-statistics"><i class="fa fa-check"></i><b>12</b> Bivariate Statistics<span></span></a>
 <ul>
-<li class="chapter" data-level="12.1" data-path=""><a href="#crosstabulation"><i class="fa fa-check"></i><b>12.1</b> Crosstabulation</a></li>
-<li class="chapter" data-level="12.2" data-path=""><a href="#correlation"><i class="fa fa-check"></i><b>12.2</b> Correlation</a></li>
-<li class="chapter" data-level="12.3" data-path=""><a href="#t-test"><i class="fa fa-check"></i><b>12.3</b> t Test</a></li>
-<li class="chapter" data-level="12.4" data-path=""><a href="#anova"><i class="fa fa-check"></i><b>12.4</b> ANOVA</a></li>
+<li class="chapter" data-level="12.1" data-path=""><a href="#crosstabulation"><i class="fa fa-check"></i><b>12.1</b> Crosstabulation<span></span></a></li>
+<li class="chapter" data-level="12.2" data-path=""><a href="#correlation"><i class="fa fa-check"></i><b>12.2</b> Correlation<span></span></a></li>
+<li class="chapter" data-level="12.3" data-path=""><a href="#t-test"><i class="fa fa-check"></i><b>12.3</b> t Test<span></span></a></li>
+<li class="chapter" data-level="12.4" data-path=""><a href="#anova"><i class="fa fa-check"></i><b>12.4</b> ANOVA<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path=""><a href="#multivariate-statistics"><i class="fa fa-check"></i><b>13</b> Multivariate Statistics</a></li>
-<li class="chapter" data-level="14" data-path=""><a href="#graphing"><i class="fa fa-check"></i><b>14</b> Graphing</a></li>
-<li class="chapter" data-level="15" data-path=""><a href="#comments-questions-and-corrections"><i class="fa fa-check"></i><b>15</b> Comments, Questions and Corrections</a></li>
+<li class="chapter" data-level="13" data-path=""><a href="#multivariate-statistics"><i class="fa fa-check"></i><b>13</b> Multivariate Statistics<span></span></a></li>
+<li class="chapter" data-level="14" data-path=""><a href="#graphing"><i class="fa fa-check"></i><b>14</b> Graphing<span></span></a></li>
+<li class="chapter" data-level="15" data-path=""><a href="#comments-questions-and-corrections"><i class="fa fa-check"></i><b>15</b> Comments, Questions and Corrections<span></span></a></li>
 </ul>
 
       </nav>
@@ -195,10 +194,10 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <h1 class="title">Introduction to R</h1>
 <h2 class="subtitle"><em>A Practically Focused Guide</em></h2>
 <p class="author"><em>Andy Grogan-Kaylor</em></p>
-<p class="date"><em>2022-01-29</em></p>
+<p class="date"><em>2022-05-01</em></p>
 </div>
-<div id="background" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Background</h1>
+<div id="background" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">1</span> Background<a href="#background" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This guide is mainly written for academics, community based researchers, and advocates, who are interested in using <a href="https://www.r-project.org/">R</a> to analyze and visualize data.</p>
 <p>R has a number of advantages for individuals working in academic settings, agencies, and community settings. First of all because R is open source, R is free, and does not have a high cost like proprietary statistical software or data visualization software.</p>
 <p>Second, using R means that one has access to a worldwide community of people who are constantly developing new R packages, and new materials for learning R.</p>
@@ -208,8 +207,8 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <p>I believe that it is possible to teach R in an accessible way, and that a little bit of R can take you a long way.</p>
 </blockquote>
 </div>
-<div id="introduction" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Introduction</h1>
+<div id="introduction" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Introduction<a href="#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <blockquote>
 <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p>
 </blockquote>
@@ -237,8 +236,8 @@ Figure 2.1: Graphical Possibilities in Base R
 <p>Note that R uses forward slashes <code>/</code> instead of backslashes <code>\</code> for directories. R uses <code>~</code> to refer to the user’s (usually your) home directory.</p>
 </blockquote>
 </div>
-<div id="base-r-and-libraries" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Base R and Libraries</h1>
+<div id="base-r-and-libraries" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Base R and Libraries<a href="#base-r-and-libraries" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Most of this guide makes use of what is most often called <strong>Base R</strong>, the R that you get when you install the R software, and RStudio, on your computer.</p>
 <p>For many social researchers, the data structure of primary interest is the <em>data frame</em>, and thus that is my focus here. In the interests of parsimony I do not go into a great deal of detail on R’s other data structures.</p>
 <p>A great deal can be accomplished with <strong>Base R</strong>. However, as you grow in your use of R, you will likely frequently need to make use of libraries, which are invoked by the <code>library(...)</code> command.</p>
@@ -251,8 +250,8 @@ Figure 2.1: Graphical Possibilities in Base R
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
 <p>I should mention here the new additions to the R language of the new libraries which make up the <a href="https://www.tidyverse.org/"><strong>tidyverse</strong></a>. Learning the <a href="https://www.tidyverse.org/"><strong>tidyverse</strong></a> requires an additional investment in learning, however the <strong>tidyverse</strong> makes many improvements to the R language and functionality.</p>
 </div>
-<div id="working-directory" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Working Directory</h1>
+<div id="working-directory" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Working Directory<a href="#working-directory" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>R uses the concept of a <em>working directory</em> to know where to find files, and where to save files.</p>
 <p>It is often helpful to simply set your working directory to a particular location and by default, files will be accessed from, and saved to, that directory e.g.:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>() <span class="co"># &quot;get&quot;, or find out, your working directory</span></span>
@@ -262,8 +261,8 @@ Figure 2.1: Graphical Possibilities in Base R
 <p>Note that R uses a forward slash <code>/</code> to specify directory paths. R does not understand the use of a backward slash <code>\</code> to specify directories. R uses <code>~</code> to refer to the user’s (usually your) home directory.</p>
 </blockquote>
 </div>
-<div id="writing-r-code-or-script" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> Writing R Code or Script</h1>
+<div id="writing-r-code-or-script" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Writing R Code or Script<a href="#writing-r-code-or-script" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>R is a command or syntax based program, and many advanced functions are only available via syntax.</p>
 <blockquote>
 <p>R Commands are stored in a <em>script</em> or <em>code</em> file that usually ends in .R, e.g. <code>myRscript.R</code>. The command file is distinct from your actual data, stored in an .RData file, e.g. <code>mydata.RData</code>.</p>
@@ -273,8 +272,8 @@ Figure 2.1: Graphical Possibilities in Base R
 <p>However, a little bit of Base R can go a long way, and you can get a great learning return for a little bit of investment in learning Base R.</p>
 </blockquote>
 </div>
-<div id="graphical-user-interface" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> Graphical User Interface</h1>
+<div id="graphical-user-interface" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Graphical User Interface<a href="#graphical-user-interface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>A good <strong>Graphical User Interface</strong> (GUI) can make some of the base functionality of R available without the use of syntax. <a href="http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/"><strong>RCommander</strong></a> is the best GUI, and can be installed from the command line by typing:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;Rcmdr&quot;</span>, <span class="at">dependencies=</span><span class="cn">TRUE</span>)</span></code></pre></div>
 <p><strong>RCommander</strong> can make some tasks easier, but the syntax that it produces can sometimes be non-intuitive. Often it is easiest (and more in the interests of replicable research) just to learn how to write the <code>R code</code> that accomplishes a particular task. Further, your learning may go quicker if you bypass <strong>RCommander</strong> altogether and simply learn how to write R code.</p>
@@ -293,13 +292,13 @@ Figure 6.2: screenshot of RStudio
 </p>
 </div>
 </div>
-<div id="get-your-data" class="section level1" number="7">
-<h1><span class="header-section-number">7</span> Get Your Data</h1>
+<div id="get-your-data" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">7</span> Get Your Data<a href="#get-your-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <blockquote>
 <p>Remember that R uses a forward slash <code>/</code> to specify directory paths. R does not understand the use of a backward slash <span class="math inline">\(\backslash\)</span> to specify directories.</p>
 </blockquote>
-<div id="r-format-.rdata" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> R format (*.RData)</h2>
+<div id="r-format-.rdata" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> R format (*.RData)<a href="#r-format-.rdata" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>R most easily makes use of data in R format. Data can be loaded with the <code>load()</code> command.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;the/path/to/myRfile.RData&quot;</span>) <span class="co"># specific directory path and file</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -317,33 +316,33 @@ Figure 6.2: screenshot of RStudio
 <p>The name of the <em>RData file</em> can be <strong>very different</strong> from the name of the <em>data frames</em> that it contains.</p>
 </blockquote>
 </div>
-<div id="comma-separated-values-.csv" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Comma Separated Values (*.csv)</h2>
+<div id="comma-separated-values-.csv" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Comma Separated Values (*.csv)<a href="#comma-separated-values-.csv" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>R can also read <em>comma separated values (csv)</em>.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr) <span class="co"># to read csv</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;myCSVfile.csv&quot;</span>)</span></code></pre></div>
 </div>
-<div id="statistical-packages-and-excel" class="section level2" number="7.3">
-<h2><span class="header-section-number">7.3</span> Statistical Packages and Excel</h2>
+<div id="statistical-packages-and-excel" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Statistical Packages and Excel<a href="#statistical-packages-and-excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>R can easily import well-formatted data from other packages} like SPSS, Stata, or Excel<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
 </div>
-<div id="foreign" class="section level2" number="7.4">
-<h2><span class="header-section-number">7.4</span> <code>foreign</code></h2>
+<div id="foreign" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> <code>foreign</code><a href="#foreign" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(foreign) <span class="co"># library for importing from stats software</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">&lt;-</span> <span class="fu">read.spss</span>(<span class="st">&quot;mySPSSfile.sav&quot;</span>) <span class="co"># SPSS</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">&lt;-</span> <span class="fu">read.dta</span>(<span class="st">&quot;myStatafile.dta&quot;</span>) <span class="co"># Stata</span></span></code></pre></div>
 </div>
-<div id="readxl" class="section level2" number="7.5">
-<h2><span class="header-section-number">7.5</span> <code>readxl</code></h2>
+<div id="readxl" class="section level2 hasAnchor" number="7.5">
+<h2><span class="header-section-number">7.5</span> <code>readxl</code><a href="#readxl" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl) <span class="co"># library for importing Excel files</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">&quot;mySpreadsheet.xls&quot;</span>) <span class="co"># Excel</span></span></code></pre></div>
 </div>
-<div id="haven" class="section level2" number="7.6">
-<h2><span class="header-section-number">7.6</span> <code>haven</code></h2>
+<div id="haven" class="section level2 hasAnchor" number="7.6">
+<h2><span class="header-section-number">7.6</span> <code>haven</code><a href="#haven" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><code>haven</code> is a new library for reading in data from statistical packages that may work better.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven) <span class="co"># new library for importing from stats software</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -352,8 +351,8 @@ Figure 6.2: screenshot of RStudio
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>dataset <span class="ot">&lt;-</span> <span class="fu">read_dta</span>(<span class="st">&quot;myStatafile.dta&quot;</span>) <span class="co"># Stata</span></span></code></pre></div>
 </div>
 </div>
-<div id="save-your-data-in-r-format" class="section level1" number="8">
-<h1><span class="header-section-number">8</span> Save Your Data in R Format</h1>
+<div id="save-your-data-in-r-format" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">8</span> Save Your Data in R Format<a href="#save-your-data-in-r-format" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Once you have your data in R, it will likely make sense to save it in <code>*.RData</code> format for future use.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(mydata, <span class="at">file =</span> <span class="st">&quot;mydata.RData&quot;</span>)</span></code></pre></div>
 <blockquote>
@@ -364,22 +363,22 @@ Figure 6.2: screenshot of RStudio
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>     facilities, <span class="co"># a third data frame, about facilities</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">file =</span> <span class="st">&quot;projectdata.RData&quot;</span>)</span></code></pre></div>
 </div>
-<div id="save-and-document-your-work" class="section level1" number="9">
-<h1><span class="header-section-number">9</span> Save and Document Your Work</h1>
+<div id="save-and-document-your-work" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">9</span> Save and Document Your Work<a href="#save-and-document-your-work" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Use the Script Editor to save R commands that you want to use again, or to modify for the next project, as well as to create an “audit trail” of your work so that your workflow is documented and replicable. R commands are saved in a <em>.R</em> file, e.g. <strong>myscript.R</strong>.</p>
 </div>
-<div id="process-your-data" class="section level1" number="10">
-<h1><span class="header-section-number">10</span> Process Your Data</h1>
-<div id="random-sample" class="section level2" number="10.1">
-<h2><span class="header-section-number">10.1</span> Random Sample</h2>
+<div id="process-your-data" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">10</span> Process Your Data<a href="#process-your-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="random-sample" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Random Sample<a href="#random-sample" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Working with a <em>random sample</em> of your data can often be helpful.</p>
 <p>The exact syntax of the R sample command is notably <em>non-intuitive</em>.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sample 10 observations from mydata </span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>mydata_sample <span class="ot">&lt;-</span> mydata[<span class="fu">sample</span>(<span class="fu">nrow</span>(mydata),<span class="dv">10</span>),]</span></code></pre></div>
 </div>
-<div id="subsets" class="section level2" number="10.2">
-<h2><span class="header-section-number">10.2</span> Data Subsets</h2>
+<div id="subsets" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Data Subsets<a href="#subsets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Working with a <em>subset</em> of your data (i.e. fewer variables rather than many many variables) is often helpful. The subset function can be especially helpful.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>mydata_subset <span class="ot">&lt;-</span> <span class="fu">subset</span>(mydata, <span class="co"># name of data</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>                        age <span class="sc">&gt;</span> <span class="dv">18</span>, <span class="co"># condition(s)</span></span>
@@ -389,8 +388,8 @@ Figure 6.2: screenshot of RStudio
 <p>You can also save this subset for future use.</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(mydata_subset, <span class="at">file =</span> <span class="st">&quot;mydata_subset.RData&quot;</span>)</span></code></pre></div>
 </div>
-<div id="numeric-and-factor-variables" class="section level2" number="10.3">
-<h2><span class="header-section-number">10.3</span> Numeric and Factor Variables</h2>
+<div id="numeric-and-factor-variables" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Numeric and Factor Variables<a href="#numeric-and-factor-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>R recognizes two basic kinds of variables: <em>continuous variables</em> (which R calls <em>numeric variables</em>) which are often scales like income, mental health, or neighborhood quality; and <em>categorical variables</em> (which R calls <em>factor variables</em>) like race, gender or religion.</p>
 <p>R seems to make a stronger distinction between these two types of variables than some other statistical software.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
 <p>Before changing your variables use <code>summary</code> to check their variable type.</p>
@@ -399,13 +398,13 @@ Figure 6.2: screenshot of RStudio
 </blockquote>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(x1) </span></code></pre></div>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-##   71.41   93.76   99.59   99.93  105.20  129.25</code></pre>
+##   74.09   91.78  100.04   99.80  107.15  130.40</code></pre>
 <blockquote>
 <p>x2 is a factor.</p>
 </blockquote>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(x2)</span></code></pre></div>
 <pre><code>##  0  1 
-## 75 25</code></pre>
+## 81 19</code></pre>
 <p>It can sometimes be useful to change variables from one type to another.</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>mydata<span class="sc">$</span>x <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(mydata<span class="sc">$</span>y)</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -426,8 +425,8 @@ Figure 6.2: screenshot of RStudio
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">&quot;Group A&quot;</span>,</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">&quot;Group C&quot;</span>))</span></code></pre></div>
 </div>
-<div id="missing-values" class="section level2" number="10.4">
-<h2><span class="header-section-number">10.4</span> Missing Values</h2>
+<div id="missing-values" class="section level2 hasAnchor" number="10.4">
+<h2><span class="header-section-number">10.4</span> Missing Values<a href="#missing-values" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Data with missing values, often represented as negative numbers (e.g. -99, -9, -8) need to be recoded so that the missing values are represented as a missing value character (“NA”) that R knows to exclude from calculations.</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>mydata<span class="sc">$</span>x[mydata<span class="sc">$</span>x <span class="sc">==</span> <span class="sc">-</span><span class="dv">9</span>] <span class="ot">&lt;-</span><span class="cn">NA</span> <span class="co"># Example 1</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -441,24 +440,24 @@ Figure 6.2: screenshot of RStudio
 <span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>mydata_subset2 <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(mydata_subset)</span></code></pre></div>
 </div>
-<div id="renaming-variables" class="section level2" number="10.5">
-<h2><span class="header-section-number">10.5</span> Renaming Variables</h2>
+<div id="renaming-variables" class="section level2 hasAnchor" number="10.5">
+<h2><span class="header-section-number">10.5</span> Renaming Variables<a href="#renaming-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>It is often convenient to rename your data so that the variables have more intuitively understandable names e.g. </p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>mydata<span class="sc">$</span>age <span class="ot">&lt;-</span> mydata<span class="sc">$</span>var123</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>mydata<span class="sc">$</span>gender <span class="ot">&lt;-</span> mydata<span class="sc">$</span>var456</span></code></pre></div>
 </div>
-<div id="sorting-data" class="section level2" number="10.6">
-<h2><span class="header-section-number">10.6</span> Sorting Data</h2>
+<div id="sorting-data" class="section level2 hasAnchor" number="10.6">
+<h2><span class="header-section-number">10.6</span> Sorting Data<a href="#sorting-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>It is sometimes useful to sort your data. <code>sort(mydata$x)</code> will sort mydata by the values of <code>x</code>.</p>
 </div>
-<div id="creating-new-variables" class="section level2" number="10.7">
-<h2><span class="header-section-number">10.7</span> Creating New Variables</h2>
+<div id="creating-new-variables" class="section level2 hasAnchor" number="10.7">
+<h2><span class="header-section-number">10.7</span> Creating New Variables<a href="#creating-new-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>You can easily create new variables in R. For example, a change score between a measure collected at two time-points, like a pre-test, and a post-test, would be:</p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>mydata<span class="sc">$</span>change_x <span class="ot">&lt;-</span> mydata<span class="sc">$</span>xTime2 <span class="sc">-</span> mydata<span class="sc">$</span>xTime1</span></code></pre></div>
 </div>
-<div id="recoding-variables" class="section level2" number="10.8">
-<h2><span class="header-section-number">10.8</span> Recoding Variables</h2>
+<div id="recoding-variables" class="section level2 hasAnchor" number="10.8">
+<h2><span class="header-section-number">10.8</span> Recoding Variables<a href="#recoding-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We can recode variables in R using R’s <em>conditional</em> syntax: <code>dataset$variable[condition] &lt;- value</code><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> as in the example below.</p>
 <p>Below we create a new variable <code>ynew</code> based upon the value of <code>y</code>.</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># initialize ynew to 0 (or some other value)</span></span>
@@ -476,8 +475,8 @@ Figure 6.2: screenshot of RStudio
 <span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(mydata<span class="sc">$</span>y, mydata<span class="sc">$</span>ynew)</span></code></pre></div>
 </div>
-<div id="scales-or-measures" class="section level2" number="10.9">
-<h2><span class="header-section-number">10.9</span> Scales or Measures</h2>
+<div id="scales-or-measures" class="section level2 hasAnchor" number="10.9">
+<h2><span class="header-section-number">10.9</span> Scales or Measures<a href="#scales-or-measures" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Similarly, you can sum the items of a scale into a scale as follows:</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>mydata<span class="sc">$</span>myscale <span class="ot">&lt;-</span> mydata<span class="sc">$</span>x1 <span class="sc">+</span> mydata<span class="sc">$</span>x2 <span class="sc">+</span> mydata<span class="sc">$</span>x3</span></code></pre></div>
 <p>You can test the alpha reliability of this scale with the following syntax:</p>
@@ -489,16 +488,16 @@ Figure 6.2: screenshot of RStudio
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="fu">alpha</span>(myscale_data)</span></code></pre></div>
 </div>
 </div>
-<div id="descriptive-statistics" class="section level1" number="11">
-<h1><span class="header-section-number">11</span> Descriptive Statistics</h1>
-<div id="continuous-variables" class="section level2" number="11.1">
-<h2><span class="header-section-number">11.1</span> Continuous Variables</h2>
+<div id="descriptive-statistics" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">11</span> Descriptive Statistics<a href="#descriptive-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="continuous-variables" class="section level2 hasAnchor" number="11.1">
+<h2><span class="header-section-number">11.1</span> Continuous Variables<a href="#continuous-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><code>summary(mydata$x)</code> gives you basic descriptive statistics for a variable, such as the mean (average). Especially useful for continuous variables. Use <code>summary(mydata)</code> to summarize every variable in your data.</p>
 <p><code>skim(mydata)</code> from <code>library(skimr)</code> or <code>describe(mydata)</code> from <code>library(psych)</code> will often give you a nicer summary of your variables that is closer to what you want for an academic paper or agency report.</p>
 <p><code>describe(mydata)</code> is often especially useful when you want to show both the mean and standard deviation for several variables.</p>
 </div>
-<div id="categorical-variables" class="section level2" number="11.2">
-<h2><span class="header-section-number">11.2</span> Categorical Variables</h2>
+<div id="categorical-variables" class="section level2 hasAnchor" number="11.2">
+<h2><span class="header-section-number">11.2</span> Categorical Variables<a href="#categorical-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><code>table(mydata$x)</code> gives you a frequency distribution for your variable. Especially useful for <em>factor variables</em>.</p>
 <p><code>prop.table(table(mydata$x))</code> will give you a table of proportions.</p>
 <p>Calling up <code>library(descr)</code> and then using <code>freq(mydata$x)</code> will give you a more nicely formatted frequency distribution.</p>
@@ -506,8 +505,8 @@ Figure 6.2: screenshot of RStudio
 <p>You may only want to look at descriptive statistics for a subset of your data. Creating a <a href="#subsets">subset</a> and then running descriptive statistics on that subset may be helpful.</p>
 </blockquote>
 </div>
-<div id="scientific-notation" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> Scientific Notation</h2>
+<div id="scientific-notation" class="section level2 hasAnchor" number="11.3">
+<h2><span class="header-section-number">11.3</span> Scientific Notation<a href="#scientific-notation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>R will, by default, often make use of <em>scientific notation</em> to express very large, or very small numbers, e.g. <span class="math inline">\(1.03 \times 10^7\)</span> instead of <span class="math inline">\(1,030,000\)</span>, or <span class="math inline">\(1.03 \times 10^{-7}\)</span> to express <span class="math inline">\(.000000103\)</span>.</p>
 <p>Sometimes you will want to <em>turn off</em> this use of <em>scientific notation</em>.</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># heavily penalize the use of scientific notation</span></span>
@@ -516,10 +515,10 @@ Figure 6.2: screenshot of RStudio
 <span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">scipen=</span><span class="dv">999</span>) </span></code></pre></div>
 </div>
 </div>
-<div id="bivariate-statistics" class="section level1" number="12">
-<h1><span class="header-section-number">12</span> Bivariate Statistics</h1>
-<div id="crosstabulation" class="section level2" number="12.1">
-<h2><span class="header-section-number">12.1</span> Crosstabulation</h2>
+<div id="bivariate-statistics" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">12</span> Bivariate Statistics<a href="#bivariate-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="crosstabulation" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> Crosstabulation<a href="#crosstabulation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Tabulating two categorical variables (<em>factor variables</em>) together gives you a cross-tabulation of those variables, e.g:</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(mydata<span class="sc">$</span>x, mydata<span class="sc">$</span>y) <span class="co"># simple table of counts</span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -534,8 +533,8 @@ Figure 6.2: screenshot of RStudio
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(<span class="fu">table</span>(mydata<span class="sc">$</span>x, mydata<span class="sc">$</span>y))</span></code></pre></div>
 <p>will give you a chi-square test of the relationship of <code>x</code> and <code>y</code>.</p>
 </div>
-<div id="correlation" class="section level2" number="12.2">
-<h2><span class="header-section-number">12.2</span> Correlation</h2>
+<div id="correlation" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> Correlation<a href="#correlation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The easiest way to test a correlation in R seems to be to create a subset of the data that contains the variables for which you are interested in testing the correlation.</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>mydatasubset <span class="ot">&lt;-</span> <span class="fu">subset</span>(mydata,</span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">select =</span> <span class="fu">c</span>(x,y))</span>
@@ -546,28 +545,28 @@ Figure 6.2: screenshot of RStudio
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">method=</span><span class="st">&quot;pearson&quot;</span>)</span></code></pre></div>
 <p>will test the statistical significance of this correlation.</p>
 </div>
-<div id="t-test" class="section level2" number="12.3">
-<h2><span class="header-section-number">12.3</span> t Test</h2>
+<div id="t-test" class="section level2 hasAnchor" number="12.3">
+<h2><span class="header-section-number">12.3</span> t Test<a href="#t-test" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">numSummary</span>(mydata<span class="sc">$</span>x, <span class="at">groups=</span>mydata<span class="sc">$</span>z)</span></code></pre></div>
 <p>gives you a summary of continuous variable <code>x</code> by <em>factor variable</em> <code>z</code>.</p>
 <div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(mydata<span class="sc">$</span>x<span class="sc">~</span>mydata<span class="sc">$</span>z)</span></code></pre></div>
 <p>runs a t-test of continuous variable <code>x</code> over <em>factor variable</em> <code>z</code>.</p>
 </div>
-<div id="anova" class="section level2" number="12.4">
-<h2><span class="header-section-number">12.4</span> ANOVA</h2>
+<div id="anova" class="section level2 hasAnchor" number="12.4">
+<h2><span class="header-section-number">12.4</span> ANOVA<a href="#anova" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aov</span>(x <span class="sc">~</span> z, <span class="at">data=</span>mydata)</span></code></pre></div>
 <p>runs the corresponding ANOVA of continuous variable <code>x</code> across <em>factor variable</em> <code>z</code>.</p>
 </div>
 </div>
-<div id="multivariate-statistics" class="section level1" number="13">
-<h1><span class="header-section-number">13</span> Multivariate Statistics</h1>
+<div id="multivariate-statistics" class="section level1 hasAnchor" number="13">
+<h1><span class="header-section-number">13</span> Multivariate Statistics<a href="#multivariate-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Run a regression (linear model) of <code>y</code> on <code>x</code> and <code>z</code>.</p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>mymodel <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x <span class="sc">+</span> z, <span class="at">data =</span> mydata) <span class="co"># fit a linear model</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mymodel) <span class="co"># get a summary of the model</span></span></code></pre></div>
 </div>
-<div id="graphing" class="section level1" number="14">
-<h1><span class="header-section-number">14</span> Graphing</h1>
+<div id="graphing" class="section level1 hasAnchor" number="14">
+<h1><span class="header-section-number">14</span> Graphing<a href="#graphing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mydata<span class="sc">$</span>x)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-49"></span>
 <img src="introduction-to-R_files/figure-html/unnamed-chunk-49-1.png" alt="histogram of x" width="672" />
@@ -602,12 +601,12 @@ Figure 14.3: scatterplot of y against x
 </p>
 </div>
 </div>
-<div id="comments-questions-and-corrections" class="section level1" number="15">
-<h1><span class="header-section-number">15</span> Comments, Questions and Corrections</h1>
+<div id="comments-questions-and-corrections" class="section level1 hasAnchor" number="15">
+<h1><span class="header-section-number">15</span> Comments, Questions and Corrections<a href="#comments-questions-and-corrections" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Comments, questions and corrections most welcome and may be sent to: Andrew Grogan-Kaylor @ <a href="http://www.umich.edu/~agrogan">http://www.umich.edu/~agrogan</a> &amp; @ <a href="agrogan@umich.edu">agrogan@umich.edu</a>.</p>
-<p>Last updated: <code>January 29 2022</code> at <code>13:43</code></p>
+<p>Last updated: <code>May 01 2022</code> at <code>09:05</code></p>
 </div>
-<div class="footnotes">
+<div class="footnotes footnotes-end-of-document">
 <hr />
 <ol>
 <li id="fn1"><p>This document is inspired by my longstanding “Two Page Stata” document: <a href="https://agrogan1.github.io/Stata/two-page-stata/TwoPageStata.pdf">(PDF)</a> <a href="https://agrogan1.github.io/Stata/two-page-stata/TwoPageStata.html">(HTML)</a>.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
