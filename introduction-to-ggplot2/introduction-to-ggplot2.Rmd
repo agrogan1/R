@@ -11,13 +11,10 @@ output:
     css: UMGitBook.css
     highlight: haddock
     split_by: none
-  pdf_document:
-    fig_height: 2
-    highlight: haddock
-    latex_engine: xelatex
-    number_sections: yes
+  word_document: 
     toc: yes
-    toc_depth: 3
+    toc_depth: 4
+    fig_height: 3
   html_document:
     code_folding: hide
     fig_height: 3
@@ -29,11 +26,14 @@ output:
     toc_float:
       collapsed: yes
       smooth_scroll: yes
-  word_document: 
-    toc: yes
-    toc_depth: 4
-    fig_height: 3
   bookdown::epub_book: default
+  pdf_document:
+    fig_height: 2
+    highlight: haddock
+    latex_engine: xelatex
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
 geometry: margin=1.0in
 site: bookdown::bookdown_site
 fontsize: 11pt
