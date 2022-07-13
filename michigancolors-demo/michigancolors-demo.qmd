@@ -4,8 +4,10 @@ author: "Andrew Grogan-Kaylor"
 date: "`r Sys.Date()`"
 format:
   html:
+    theme: 
+      light: united
+      dark: vapor
     toc: true
-    toc-location: left
     number-sections: true
 ---
 
