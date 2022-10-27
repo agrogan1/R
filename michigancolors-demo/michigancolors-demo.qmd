@@ -172,7 +172,8 @@ ggplot(iris,
        aes(x = Species,
            y = Petal.Length,
            fill = Species)) +
-  geom_dots(dotsize = 3) +
+  geom_dots(dotsize = 3, # dot size
+            color = "black") + # outline color
   labs(title = "Petal Length by Iris Species") + 
   theme_minimal() + 
   scale_fill_manual(values = c(michigancolors("arboretum blue"),
