@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # R
 
 * [Introduction to R](./introduction-to-R/introduction-to-R.html)
-* [Two Page R](./two-page-R/two-page-R.pdf)
+* [Quick Introduction to R](./quick-intro-R/quick-intro-R.html) | [[PDF](./quick-intro-R/quick-intro-R.pdf)]
 
 # ggplot
 
