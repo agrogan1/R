@@ -1,5 +1,5 @@
 ---
-title: "A Quick Guide to R"
+title: "A Quick Introduction to R"
 author: "Andy Grogan-Kaylor"
 date: "today"
 format:
