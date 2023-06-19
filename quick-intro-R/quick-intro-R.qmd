@@ -16,17 +16,7 @@ format:
     colorlinks: true
 ---
 
-```{r, echo = FALSE}
-
-library(DiagrammeR)
-
-library(pander)
-
-library(tufte)
-
-```
-
-# Why?
+# Why Use R?
 
 R has a reputation for being difficult to learn, and a lot of that reputation is deserved. However, it is possible to teach R in an accessible way, and **a little bit of R can take you a long way**.  
 
