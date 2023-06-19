@@ -14,7 +14,6 @@ format:
     toc-depth: 3
     number-sections: true
     colorlinks: true
-    reference-location: margin
 ---
 
 ```{r, echo = FALSE}
@@ -29,11 +28,11 @@ library(tufte)
 
 # Why?
 
-R has a reputation for being difficult to learn, and a lot of that reputation is deserved. I believe that it is possible to teach R in an accessible way, and that **a little bit of R can take you a long way**.  
+R has a reputation for being difficult to learn, and a lot of that reputation is deserved. However, it is possible to teach R in an accessible way, and **a little bit of R can take you a long way**.  
 
 [R](https://www.r-project.org/) is open source, and therefore free, statistical software that is particularly good at obtaining, analyzing and visualizing data.
 
-R Commands are stored in a *script* or *code* file that usually ends in .R, e.g. `myRscript.R`. The command file is distinct from your actual data, stored in an .RData file, e.g. `mydata.RData`.
+R Commands are stored in a *script* or *code* file that usually ends in .R, e.g. `myscript.R`. The command file is distinct from your actual data, stored in an .RData file, e.g. `mydata.RData`.
 
 A great deal of data analysis and visualization involves the same core set of steps.
 
@@ -48,15 +47,15 @@ $$\text{visualize data} \rightarrow \text{analyze data} \rightarrow \text{make c
 
 # Get Data 
 
-Data often comes from other types of data files like SPSS, Stata, or Excel.  Especially in beginning R programming, getting the data into R can be the most complicated part of your program.
+Data often comes from other types of data files like SPSS, Stata, or Excel. Especially in beginning R programming, getting the data into R can be the most complicated part of your program.
 
 ```{r, eval=FALSE, echo=TRUE}
 
 load("the/path/to/mydata.Rdata") # data in R format
 
-library(foreign) # library for importing data 
-mydata <- read.spss("the/path/to/mySPSSfile.sav") # SPSS
-mydata <- read.dta("the/path/to/myStatafile.dta") # Stata
+library(haven) # library for importing data 
+mydata <- read_sav("the/path/to/mySPSSfile.sav") # SPSS
+mydata <- read_dta("the/path/to/myStatafile.dta") # Stata
 
 library(readxl) # library for importing Excel files
 mydata <- read_excel("the/path/to/mySpreadsheet.xls")
@@ -84,7 +83,7 @@ mydata <- data.frame(x,y,z)
 
 # Process and Clean Data  
 
-The \$ sign is a kind of "connector".  mydata\$x means:  "The variable x in the dataset called mydata". 
+The `$` sign is a kind of "connector".  `mydata$x` means:  "The variable `x` in the dataset called `mydata`". 
 
 ```{r}
 
@@ -94,7 +93,7 @@ mydata$x[mydata$x == -9] <- NA # missing to NA
 
 R makes a strong distinction between *continuous* *numeric* variables that measure  scales like mental health or neighborhood safety, and *categorical* *factor variables* that measure non-ordered categories like religious identity or gender identity. 
 
-Many statistical and graphical procedures are designed to recognize and work with different variable types. You *don't* need to use all of the options.  e.g. `mydata$w <- factor(mydata$z)` will work just fine. **Changing variables from factor to numeric, and vice versa can sometimes be the simple solution that solves a lot of problems when you are trying to graph your variables.**
+Many statistical and graphical procedures are designed to recognize and work with different variable types. You often *don't* need to use all of the options.  e.g. `mydata$w <- factor(mydata$z)` will often work just fine. **Changing variables from factor to numeric, and vice versa can sometimes be the simple solution that solves a lot of problems when you are trying to graph your variables.**
 
 ```{r, tidy=FALSE}
 
@@ -109,10 +108,10 @@ mydata$z <- as.numeric(mydata$w) # factor to numeric
 
 # Visualize Data
 
-## Histogram [^histoptions]
+## Histogram
 
 ```{r, tidy=FALSE}
-#| column: margin
+#| fig-height: 3
 
 hist(mydata$x, # what I'm graphing
      main = "your title goes here", # title
@@ -121,10 +120,14 @@ hist(mydata$x, # what I'm graphing
 
 ```
 
-## Barplot [^barplotoptions]
+:::{.callout-tip}
+You often *don't* need to use all of the options.  e.g. `hist(mydata$x)` will work just fine.
+:::
+
+## Barplot 
 
 ```{r}
-#| column: margin
+#| fig-height: 3
 
 barplot(table(mydata$z), # what I'm graphing
         names.arg = c("Group A", "Group B"), # names
@@ -134,10 +137,14 @@ barplot(table(mydata$z), # what I'm graphing
 
 ```
 
-## Scatterplot [^plotoptions] 
+:::{.callout-tip}
+You often *don't* need to use all of the options.  e.g. `barplot(table(mydata$z))` will work just fine.
+:::
+
+## Scatterplot 
 
 ```{r, tidy=FALSE}
-#| column: margin
+#| fig-height: 3
 
 plot(mydata$x, mydata$y, # plot x and y
      main = "your title goes here", # title
@@ -149,7 +156,13 @@ plot(mydata$x, mydata$y, # plot x and y
 
 ```
 
+:::{.callout-tip}
+You often *don't* need to use all of the options.  e.g. `plot(mydata$x, mydata$y)` will work just fine. 
+:::
+
+:::{.callout-tip}
 When scatterplots have fewer dots than you think they should have, often due to "over-printing", adding some random noise, or "jittering" the dots in the scatterplot may help:  `plot(jitter(mydata$y, factor = 5000) ~ mydata$x)`.  Experiment with different sizes of *factor*.
+:::
 
 # Analyze Data: Descriptive Statistics
 
@@ -204,8 +217,8 @@ lm(y ~ x, data = mydata) # regression of y on x
 ```
 
 
-[^histoptions]: You *don't* need to use all of the options.  e.g. `hist(mydata$x)` will work just fine.
 
-[^barplotoptions]: You *don't* need to use all of the options.  e.g. `barplot(table(mydata$z))` will work just fine.
 
-[^plotoptions]: You *don't* need to use all of the options.  e.g. `plot(mydata$x, mydata$y)` will work just fine. 
+
+
+
