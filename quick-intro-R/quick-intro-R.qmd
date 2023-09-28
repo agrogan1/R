@@ -10,7 +10,10 @@ format:
       light: cosmo
       dark: vapor
   pdf:
-    toc: false
+    include-in-header:
+      - text: | 
+          \usepackage[sfdefault]{roboto}
+    toc: true
     toc-depth: 3
     number-sections: true
     colorlinks: true
