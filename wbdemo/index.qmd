@@ -9,7 +9,7 @@ format:
     code-fold: true
     code-summary: "Show the code"
     theme:
-      light: united
+      light: cosmo
       dark: vapor
 ---
 
