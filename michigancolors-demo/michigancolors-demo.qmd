@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 format:
   html:
     theme: 
-      light: united
+      light: cosmo
       dark: vapor
     toc: true
     number-sections: true
