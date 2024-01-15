@@ -43,6 +43,8 @@ ggplot(data = NULL,
         axis.text = element_blank(),
         axis.title = element_blank())
 
+ggsave("michigancolors.png")
+
 ```
 
 # Installation
