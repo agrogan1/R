@@ -13,14 +13,6 @@ format:
       dark: vapor
 ---
 
-```{r setup, include=FALSE}
-
-knitr::opts_chunk$set(echo = TRUE,
-                      message = FALSE,
-                      warning = FALSE)
-
-```
-
 # Background
 
 The [World Bank](http://www.worldbank.org/) collects statistical information from countries around the world.  A particularly useful data set is the **W**orld **D**evelopment **I**ndicators [(WDI)](http://data.worldbank.org/data-catalog/world-development-indicators) which are country level statistical information from around the world.
