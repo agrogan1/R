@@ -13,10 +13,10 @@ format:
       dark: vapor
 ---
 
-# Call Libraries
 
 ```{r}
 #| output: false
+#| echo: false
 
 library(dplyr) # data wrangling
 
@@ -24,9 +24,9 @@ library(gt) # nifty tables
 
 ```
 
-# Wrangle the Colors
 
 ```{r}
+#| echo: false
 
 colornumber <- seq(1, 657, 1) # sequence of color numbers
 
@@ -71,9 +71,9 @@ colorize <- function(x, color) {
 
 ```
 
-# Table of Colors
 
 ```{r}
+#| echo: false
 
 gt::gt(Rcolors) %>% 
  cols_add(color = rep("  ", 657)) %>%

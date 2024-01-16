@@ -78,15 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#call-libraries" id="toc-call-libraries" class="nav-link active" data-scroll-target="#call-libraries"><span class="header-section-number">1</span> Call Libraries</a></li>
-  <li><a href="#wrangle-the-colors" id="toc-wrangle-the-colors" class="nav-link" data-scroll-target="#wrangle-the-colors"><span class="header-section-number">2</span> Wrangle the Colors</a></li>
-  <li><a href="#table-of-colors" id="toc-table-of-colors" class="nav-link" data-scroll-target="#table-of-colors"><span class="header-section-number">3</span> Table of Colors</a></li>
-  </ul>
-</nav>
+  
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -114,72 +106,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="call-libraries" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Call Libraries</h1>
 <div class="cell">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr) <span class="co"># data wrangling</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt) <span class="co"># nifty tables</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="wrangle-the-colors" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Wrangle the Colors</h1>
-<div class="cell">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>colornumber <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">657</span>, <span class="dv">1</span>) <span class="co"># sequence of color numbers</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>colorname <span class="ot">&lt;-</span> <span class="fu">colors</span>()[colornumber] <span class="co"># get color name associated with that number</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>hexcode <span class="ot">&lt;-</span> <span class="fu">rgb</span>(<span class="fu">col2rgb</span>(colorname)[<span class="dv">1</span>,], </span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>               <span class="fu">col2rgb</span>(colorname)[<span class="dv">2</span>,], </span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>               <span class="fu">col2rgb</span>(colorname)[<span class="dv">3</span>,], </span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">max =</span> <span class="dv">255</span>) <span class="co"># hex code</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># hexcode &lt;- factor(hexcode)</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>Rcolors <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(colornumber, colorname, hexcode)</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># write.csv(Rcolors, file = "Rcolors.csv")</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># DT::datatable(Rcolors)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="table-of-colors" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Table of Colors</h1>
-<div class="cell">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>gt<span class="sc">::</span><span class="fu">gt</span>(Rcolors) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">cols_add</span>(<span class="at">color =</span> <span class="fu">rep</span>(<span class="st">"  "</span>, <span class="dv">657</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="fu">tab_style</span>(</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="fu">from_column</span>(<span class="at">column =</span> <span class="st">"hexcode"</span>)),</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_body</span>(<span class="at">columns =</span> color)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  )     </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output-display">
 
-<div id="fipaenuhqo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fipaenuhqo table {
+<div id="fqegcpubau" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fqegcpubau table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fipaenuhqo thead, #fipaenuhqo tbody, #fipaenuhqo tfoot, #fipaenuhqo tr, #fipaenuhqo td, #fipaenuhqo th {
+#fqegcpubau thead, #fqegcpubau tbody, #fqegcpubau tfoot, #fqegcpubau tr, #fqegcpubau td, #fqegcpubau th {
   border-style: none;
 }
 
-#fipaenuhqo p {
+#fqegcpubau p {
   margin: 0;
   padding: 0;
 }
 
-#fipaenuhqo .gt_table {
+#fqegcpubau .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -205,12 +151,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_caption {
+#fqegcpubau .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fipaenuhqo .gt_title {
+#fqegcpubau .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -222,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#fipaenuhqo .gt_subtitle {
+#fqegcpubau .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -234,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#fipaenuhqo .gt_heading {
+#fqegcpubau .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -246,13 +192,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_bottom_border {
+#fqegcpubau .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_col_headings {
+#fqegcpubau .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -267,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_col_heading {
+#fqegcpubau .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -287,7 +233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fipaenuhqo .gt_column_spanner_outer {
+#fqegcpubau .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -299,15 +245,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#fipaenuhqo .gt_column_spanner_outer:first-child {
+#fqegcpubau .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fipaenuhqo .gt_column_spanner_outer:last-child {
+#fqegcpubau .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fipaenuhqo .gt_column_spanner {
+#fqegcpubau .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -319,11 +265,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#fipaenuhqo .gt_spanner_row {
+#fqegcpubau .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fipaenuhqo .gt_group_heading {
+#fqegcpubau .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -349,7 +295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#fipaenuhqo .gt_empty_group_heading {
+#fqegcpubau .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -364,15 +310,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#fipaenuhqo .gt_from_md > :first-child {
+#fqegcpubau .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fipaenuhqo .gt_from_md > :last-child {
+#fqegcpubau .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fipaenuhqo .gt_row {
+#fqegcpubau .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -391,7 +337,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fipaenuhqo .gt_stub {
+#fqegcpubau .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -404,7 +350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fipaenuhqo .gt_stub_row_group {
+#fqegcpubau .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -418,15 +364,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#fipaenuhqo .gt_row_group_first td {
+#fqegcpubau .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fipaenuhqo .gt_row_group_first th {
+#fqegcpubau .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fipaenuhqo .gt_summary_row {
+#fqegcpubau .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -436,16 +382,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fipaenuhqo .gt_first_summary_row {
+#fqegcpubau .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_first_summary_row.thick {
+#fqegcpubau .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fipaenuhqo .gt_last_summary_row {
+#fqegcpubau .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -455,7 +401,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_grand_summary_row {
+#fqegcpubau .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -465,7 +411,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fipaenuhqo .gt_first_grand_summary_row {
+#fqegcpubau .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -475,7 +421,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_last_grand_summary_row_top {
+#fqegcpubau .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -485,11 +431,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_striped {
+#fqegcpubau .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fipaenuhqo .gt_table_body {
+#fqegcpubau .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -498,7 +444,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_footnotes {
+#fqegcpubau .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -512,7 +458,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_footnote {
+#fqegcpubau .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -521,7 +467,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fipaenuhqo .gt_sourcenotes {
+#fqegcpubau .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -535,7 +481,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fipaenuhqo .gt_sourcenote {
+#fqegcpubau .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -543,63 +489,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fipaenuhqo .gt_left {
+#fqegcpubau .gt_left {
   text-align: left;
 }
 
-#fipaenuhqo .gt_center {
+#fqegcpubau .gt_center {
   text-align: center;
 }
 
-#fipaenuhqo .gt_right {
+#fqegcpubau .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fipaenuhqo .gt_font_normal {
+#fqegcpubau .gt_font_normal {
   font-weight: normal;
 }
 
-#fipaenuhqo .gt_font_bold {
+#fqegcpubau .gt_font_bold {
   font-weight: bold;
 }
 
-#fipaenuhqo .gt_font_italic {
+#fqegcpubau .gt_font_italic {
   font-style: italic;
 }
 
-#fipaenuhqo .gt_super {
+#fqegcpubau .gt_super {
   font-size: 65%;
 }
 
-#fipaenuhqo .gt_footnote_marks {
+#fqegcpubau .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fipaenuhqo .gt_asterisk {
+#fqegcpubau .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fipaenuhqo .gt_indent_1 {
+#fqegcpubau .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fipaenuhqo .gt_indent_2 {
+#fqegcpubau .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fipaenuhqo .gt_indent_3 {
+#fqegcpubau .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fipaenuhqo .gt_indent_4 {
+#fqegcpubau .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fipaenuhqo .gt_indent_5 {
+#fqegcpubau .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -3252,10 +3198,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># `r paste('red', 'FF0000', kableExtra::text_spec('red', background = 'red'))`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># `r paste('red', 'FF0000', kableExtra::text_spec('red', background = 'red'))`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-</section>
 
 </main>
 <!-- /main column -->
