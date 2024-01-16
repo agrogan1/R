@@ -77,6 +77,8 @@ colorize <- function(x, color) {
 
 gt::gt(Rcolors) %>% 
  cols_add(color = rep("  ", 657)) %>%
+  tab_header(
+    title = "Colors in R") %>%
  tab_style(
     style = cell_fill(color = from_column(column = "hexcode")),
     locations = cells_body(columns = color)
