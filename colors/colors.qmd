@@ -1,63 +1,43 @@
 ---
 title: "Colors in R"
-description: |
-  An R Color Chart
-author:
-  - name: Andy Grogan-Kaylor
-    url: https://agrogan1.github.io/
-    affiliation: University of Michigan
-    affiliation_url: https://www.umich.edu
-date: "`r Sys.Date()`"
-output:
-  distill::distill_article:
-    highlight: haddock
-    toc: no
-    fig_height: 6
-  pdf_document: 
-    fig_height: 3
-    highlight: haddock
-    latex_engine: xelatex
-    number_sections: yes
-    toc: yes
+subtitle: "An R Color Chart"
+date: "today"
+format:
+  html:
+    toc: true
+    number-sections: true
+    code-fold: true
+    code-summary: "Show the code"
+    theme:
+      light: cosmo
+      dark: vapor
 ---
 
-```{r setup, include=FALSE}
+# Call Libraries
 
-knitr::opts_chunk$set(echo = FALSE,
-                      warning = FALSE,
-                      message = FALSE)
+```{r}
+#| output: false
+
+library(dplyr) # data wrangling
+
+library(gt) # nifty tables
 
 ```
 
-```{r}
-
-library(ggplot2)
-
-library(ggrepel)
-
-library(dplyr)
-
-```
+# Wrangle the Colors
 
 ```{r}
-
 
 colornumber <- seq(1, 657, 1) # sequence of color numbers
 
 colorname <- colors()[colornumber] # get color name associated with that number
   
-colorname[colorname == "indianred"] <- NA
-colorname[colorname == "indianred1"] <- NA
-colorname[colorname == "indianred2"] <- NA
-colorname[colorname == "indianred3"] <- NA
-colorname[colorname == "indianred4"] <- NA
-
 hexcode <- rgb(col2rgb(colorname)[1,], 
                col2rgb(colorname)[2,], 
                col2rgb(colorname)[3,], 
                max = 255) # hex code
 
-hexcode <- factor(hexcode)
+# hexcode <- factor(hexcode)
 
 Rcolors <- data.frame(colornumber, colorname, hexcode)
 
@@ -68,7 +48,10 @@ Rcolors <- data.frame(colornumber, colorname, hexcode)
 
 ```
 
+
 ```{r}
+#| echo: false
+#| eval: false
 
 # from https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html
 
@@ -90,7 +73,21 @@ colorize <- function(x, color) {
 
 # Table of Colors
 
-```{r, results='asis', eval=TRUE}
+```{r}
+
+gt::gt(Rcolors) %>% 
+ cols_add(color = rep("  ", 657)) %>%
+ tab_style(
+    style = cell_fill(color = from_column(column = "hexcode")),
+    locations = cells_body(columns = color)
+  )     
+
+```
+
+```{r}
+#| echo: false
+#| eval: false
+#| results: asis
 
 knitr::raw_html("<table>")
 
