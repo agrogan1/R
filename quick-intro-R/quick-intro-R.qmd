@@ -112,6 +112,13 @@ mydata$z <- as.numeric(mydata$w) # factor to numeric
 
 png("histogram.png", width = 500, height = 500)
 
+hist(mydata$x, # what I'm graphing
+     main = "your title goes here", # title
+     xlab = "income", # label for x axis
+     col = "blue") # color
+
+dev.off() 
+
 ```
 
 ```{r}
@@ -123,15 +130,6 @@ hist(mydata$x, # what I'm graphing
      col = "blue") # color
 
 ```
-
-```{r}
-#| echo: false
-#| output: false
-
-dev.off() 
-
-```
-
 
 :::{.callout-tip}
 You often *don't* need to use all of the options.  e.g. `hist(mydata$x)` will work just fine.
