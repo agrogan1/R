@@ -42,7 +42,9 @@ $$\text{visualize data} \rightarrow \text{analyze data} \rightarrow \text{make c
 
 Data often comes from other types of data files like SPSS, Stata, or Excel. Especially in beginning R programming, getting the data into R can be the most complicated part of your program.
 
-```{r, eval=FALSE, echo=TRUE}
+```{r}
+#| eval: false
+#| echo: true
 
 load("the/path/to/mydata.Rdata") # data in R format
 
@@ -57,7 +59,9 @@ save(mydata, file = "mydata.RData") # save in R format
 
 ```
 
-```{r, eval = TRUE, echo = FALSE}
+```{r}
+#| eval: true
+#| echo: false
 
 N <- 100
 
@@ -88,7 +92,7 @@ R makes a strong distinction between *continuous* *numeric* variables that measu
 
 Many statistical and graphical procedures are designed to recognize and work with different variable types. You often *don't* need to use all of the options.  e.g. `mydata$w <- factor(mydata$z)` will often work just fine. **Changing variables from factor to numeric, and vice versa can sometimes be the simple solution that solves a lot of problems when you are trying to graph your variables.**
 
-```{r, tidy=FALSE}
+```{r}
 
 mydata$w <- factor(mydata$z, # original numeric variable
                    levels = c(0, 1, 2), 
@@ -103,7 +107,14 @@ mydata$z <- as.numeric(mydata$w) # factor to numeric
 
 ## Histogram
 
-```{r, tidy=FALSE}
+```{r}
+#| echo: false
+
+png("histogram.png", width = 500, height = 500)
+
+```
+
+```{r}
 #| fig-height: 3
 
 hist(mydata$x, # what I'm graphing
@@ -112,6 +123,15 @@ hist(mydata$x, # what I'm graphing
      col = "blue") # color
 
 ```
+
+```{r}
+#| echo: false
+#| output: false
+
+dev.off() 
+
+```
+
 
 :::{.callout-tip}
 You often *don't* need to use all of the options.  e.g. `hist(mydata$x)` will work just fine.
@@ -136,7 +156,7 @@ You often *don't* need to use all of the options.  e.g. `barplot(table(mydata$z)
 
 ## Scatterplot 
 
-```{r, tidy=FALSE}
+```{r}
 #| fig-height: 3
 
 plot(mydata$x, mydata$y, # plot x and y
@@ -169,7 +189,8 @@ table(mydata$z) # especially suitable for factor variables
 
 For another approach to summarizing your data, try:
 
-```{r, eval=FALSE}
+```{r}
+#| eval: false
 
 library(skimr)
 
@@ -179,7 +200,9 @@ skim(mydata$x)
 
 ```
 
-```{r, echo=FALSE,eval=FALSE}
+```{r}
+#| echo: false
+#| eval: false
 
 ## t-Tests and Correlations[^ttest]
 
@@ -187,15 +210,19 @@ skim(mydata$x)
 
 ```
 
-```{r, echo = FALSE, eval = FALSE}
-
+```{r}
+#| echo: false
+#| eval: false
+ 
 t.test(mydata$y ~ mydata$z) # y is numeric; z is a factor
 
 cor(mydata$x, mydata$y) # get the correlation
 
 ```
 
-```{r, echo=FALSE,eval=FALSE}
+```{r}
+#| echo: false
+#| eval: false
 
 ## Regressions[^regression]
 
@@ -203,7 +230,9 @@ cor(mydata$x, mydata$y) # get the correlation
 
 ```
 
-```{r, echo = FALSE, eval = FALSE}
+```{r}
+#| echo: false
+#| eval: false
 
 lm(y ~ x, data = mydata) # regression of y on x
 
