@@ -9,14 +9,9 @@ format:
     theme:
       light: cosmo
       dark: vapor
-  pdf:
-    include-in-header:
-      - text: | 
-          \usepackage[sfdefault]{roboto}
+  typst: 
     toc: true
-    toc-depth: 3
     number-sections: true
-    colorlinks: true
 ---
 
 # Why Use R?
@@ -109,6 +104,7 @@ mydata$z <- as.numeric(mydata$w) # factor to numeric
 
 ```{r}
 #| echo: false
+#| output: false
 
 png("histogram.png", width = 500, height = 500)
 
