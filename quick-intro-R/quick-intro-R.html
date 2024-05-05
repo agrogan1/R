@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.545">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andy Grogan-Kaylor">
-<meta name="dcterms.date" content="2024-02-06">
+<meta name="dcterms.date" content="2024-05-05">
 
 <title>A Quick Introduction to R</title>
 <style>
@@ -124,7 +124,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#analyze-data-descriptive-statistics" id="toc-analyze-data-descriptive-statistics" class="nav-link" data-scroll-target="#analyze-data-descriptive-statistics"><span class="header-section-number">6</span> Analyze Data: Descriptive Statistics</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="quick-intro-R.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="quick-intro-R.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -147,7 +147,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 6, 2024</p>
+      <p class="date">May 5, 2024</p>
     </div>
   </div>
   
@@ -318,13 +318,13 @@ Tip
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mydata<span class="sc">$</span>x) <span class="co"># for continuous or factor variables</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  83.55   93.69  101.93  101.19  107.80  119.33 </code></pre>
+  73.80   95.51  100.52  100.03  105.59  126.52 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(mydata<span class="sc">$</span>z) <span class="co"># especially suitable for factor variables</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
  1  2 
-74 26 </code></pre>
+75 25 </code></pre>
 </div>
 </div>
 <p>For another approach to summarizing your data, try:</p>
