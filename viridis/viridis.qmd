@@ -5,7 +5,7 @@ date: "today"
 format:
   html:
     theme: 
-      light: cosmo
+      light: yeti
       dark: vapor
     toc: true
     number-sections: true
