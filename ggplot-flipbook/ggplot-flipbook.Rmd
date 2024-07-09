@@ -245,9 +245,9 @@ ggplot(mydata, # data
   geom_point() + # 1st geometry
   geom_smooth() + # 2nd geometry
   labs(title = "My Title", caption = "Colors Inspired by UNICEF", x = "Predictor", y = "Outcome") + # labels
-  scale_colour_manual(name = "Group", values = c("#FF0099", "#0099FF"),  labels = c("group 1", "group 2")) + # manual colors 
+  scale_colour_manual(name = "Group", values = c("#6A1E74", "#1CABE2"),  labels = c("group 1", "group 2")) + # manual colors 
   theme_minimal() + # theme
-  theme(plot.title = element_text(size = 20, color = "#0099FF"), plot.caption = element_text(size=rel(1.25))) # add to theme
+  theme(plot.title = element_text(size = 20, color = "#1CABE2"), plot.caption = element_text(size=rel(1.25))) # add to theme
 
 ```
 
