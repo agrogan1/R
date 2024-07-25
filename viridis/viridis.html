@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andrew Grogan-Kaylor">
-<meta name="dcterms.date" content="2024-07-09">
+<meta name="dcterms.date" content="2024-07-25">
 
 <title>Viridis Color Schemes</title>
 <style>
@@ -84,15 +84,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#palettes" id="toc-palettes" class="nav-link" data-scroll-target="#palettes"><span class="header-section-number">2</span> Palettes</a>
+  <li><a href="#a-basic-plot" id="toc-a-basic-plot" class="nav-link" data-scroll-target="#a-basic-plot"><span class="header-section-number">2</span> A Basic Plot</a></li>
+  <li><a href="#palettes" id="toc-palettes" class="nav-link" data-scroll-target="#palettes"><span class="header-section-number">3</span> Palettes</a>
   <ul class="collapse">
-  <li><a href="#viridis" id="toc-viridis" class="nav-link" data-scroll-target="#viridis"><span class="header-section-number">2.1</span> Viridis</a></li>
-  <li><a href="#cividis" id="toc-cividis" class="nav-link" data-scroll-target="#cividis"><span class="header-section-number">2.2</span> Cividis</a></li>
-  <li><a href="#plasma" id="toc-plasma" class="nav-link" data-scroll-target="#plasma"><span class="header-section-number">2.3</span> Plasma</a></li>
-  <li><a href="#magma" id="toc-magma" class="nav-link" data-scroll-target="#magma"><span class="header-section-number">2.4</span> Magma</a></li>
-  <li><a href="#mako" id="toc-mako" class="nav-link" data-scroll-target="#mako"><span class="header-section-number">2.5</span> Mako</a></li>
-  <li><a href="#rocket" id="toc-rocket" class="nav-link" data-scroll-target="#rocket"><span class="header-section-number">2.6</span> Rocket</a></li>
-  <li><a href="#turbo" id="toc-turbo" class="nav-link" data-scroll-target="#turbo"><span class="header-section-number">2.7</span> Turbo</a></li>
+  <li><a href="#viridis" id="toc-viridis" class="nav-link" data-scroll-target="#viridis"><span class="header-section-number">3.1</span> Viridis</a></li>
+  <li><a href="#cividis" id="toc-cividis" class="nav-link" data-scroll-target="#cividis"><span class="header-section-number">3.2</span> Cividis</a></li>
+  <li><a href="#plasma" id="toc-plasma" class="nav-link" data-scroll-target="#plasma"><span class="header-section-number">3.3</span> Plasma</a></li>
+  <li><a href="#magma" id="toc-magma" class="nav-link" data-scroll-target="#magma"><span class="header-section-number">3.4</span> Magma</a></li>
+  <li><a href="#mako" id="toc-mako" class="nav-link" data-scroll-target="#mako"><span class="header-section-number">3.5</span> Mako</a></li>
+  <li><a href="#rocket" id="toc-rocket" class="nav-link" data-scroll-target="#rocket"><span class="header-section-number">3.6</span> Rocket</a></li>
+  <li><a href="#turbo" id="toc-turbo" class="nav-link" data-scroll-target="#turbo"><span class="header-section-number">3.7</span> Turbo</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -118,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 9, 2024</p>
+      <p class="date">July 25, 2024</p>
     </div>
   </div>
   
@@ -139,6 +140,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Color-blind friendly</li>
 </ol>
 <p>More details can be found at <a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html</a></p>
+</section>
+<section id="a-basic-plot" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> A Basic Plot</h1>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
@@ -157,14 +161,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.y =</span> <span class="fu">element_blank</span>(),</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.ticks.y =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>p1 <span class="co"># replay this plot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="viridis_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
-<section id="palettes" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Palettes</h1>
-<section id="viridis" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="viridis"><span class="header-section-number">2.1</span> Viridis</h2>
+<section id="palettes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Palettes</h1>
+<section id="viridis" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="viridis"><span class="header-section-number">3.1</span> Viridis</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
@@ -188,8 +201,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="cividis" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="cividis"><span class="header-section-number">2.2</span> Cividis</h2>
+<section id="cividis" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="cividis"><span class="header-section-number">3.2</span> Cividis</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
@@ -207,8 +220,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="plasma" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="plasma"><span class="header-section-number">2.3</span> Plasma</h2>
+<section id="plasma" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="plasma"><span class="header-section-number">3.3</span> Plasma</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
@@ -226,8 +239,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="magma" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="magma"><span class="header-section-number">2.4</span> Magma</h2>
+<section id="magma" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="magma"><span class="header-section-number">3.4</span> Magma</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
@@ -245,8 +258,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="mako" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="mako"><span class="header-section-number">2.5</span> Mako</h2>
+<section id="mako" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="mako"><span class="header-section-number">3.5</span> Mako</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
@@ -264,8 +277,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="rocket" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="rocket"><span class="header-section-number">2.6</span> Rocket</h2>
+<section id="rocket" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="rocket"><span class="header-section-number">3.6</span> Rocket</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
@@ -283,8 +296,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="turbo" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="turbo"><span class="header-section-number">2.7</span> Turbo</h2>
+<section id="turbo" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="turbo"><span class="header-section-number">3.7</span> Turbo</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>

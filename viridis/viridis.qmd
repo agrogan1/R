@@ -24,6 +24,8 @@ The Viridis color palettes are designed to have a number of advantages.
 
 More details can be found at [https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
 
+# A Basic Plot
+
 ```{r}
 
 x <- seq(1,10)
@@ -43,6 +45,7 @@ p1 <- ggplot(mydata,
         axis.ticks.y = element_blank(),
         axis.title.y = element_blank())
 
+p1 # replay this plot
 
 ```
 
