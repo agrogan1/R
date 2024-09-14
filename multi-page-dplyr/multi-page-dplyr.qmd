@@ -6,11 +6,15 @@ format:
   html:
     toc: true
     number-sections: true
+    highlight-style: haddock
     code-fold: false
     lightbox: true
     theme:
       light: yeti
       dark: vapor
+  pdf:
+    toc: true
+    number-sections: true
 ---
 
 # Background
@@ -22,17 +26,27 @@ format:
 While `dplyr` is very powerful, learning to use `dplyr` can be very confusing. This guide aims to present some of the most common `dplyr` functions and commands in the form of a brief cheatsheet.
 
 ```{r}
+#| echo: false
 
-library(dplyr)
+library(pander)
+
+```
+
+
+```{r}
+#| output: false
+
+library(dplyr) # data wrangling
 
 ```
 
 # Simulated Data
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
+#| output: false
 
 year <- c(2019, 2020, 2020, 2021, 2021)
-
 
 x <- c(NA, 50, NA, 70, 80)
 
@@ -48,7 +62,8 @@ mydata <- tibble(year, x, y, z)
 
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
 
 pander(head(mydata))
   
@@ -60,7 +75,8 @@ pander(head(mydata))
 
 `dplyr` commands will often look something like the outline below.
 
-```{r, eval=FALSE}
+```{r}
+#| eval: false
 
 mydata %>% 
   data_wrangling %>% 
@@ -78,12 +94,14 @@ mydata %>%
 
 mynewdata <- mydata %>% 
   group_by(year) %>% # group by y
-  summarise(mean_x = mean(x, na.rm = TRUE), # mean of x; removing NA's
+  summarise(mean_x = mean(x, 
+                          na.rm = TRUE), # mean of x; removing NA's
             n = n()) # count up
 
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
 
 pander(head(mynewdata))
   
@@ -98,7 +116,8 @@ mynewdata <- mydata %>%
 
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
 
 pander(head(mynewdata))
   
@@ -113,7 +132,8 @@ mynewdata <- mydata %>%
 
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
 
 pander(head(mynewdata))
   
@@ -128,7 +148,8 @@ mynewdata <- mydata %>%
 
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
 
 pander(head(mynewdata))
   
@@ -147,7 +168,8 @@ mynewdata <- mydata %>%
 
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
 
 pander(head(mynewdata))
   
@@ -164,7 +186,8 @@ mynewdata <- mydata %>%
                          .default = "Other"))
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
 
 pander(head(mynewdata))
   
@@ -180,7 +203,8 @@ newdata <- mydata %>%
 
 ```
 
-```{r, echo = FALSE}
+```{r}
+#| echo: false
 
 pander(head(newdata))
 
@@ -195,7 +219,8 @@ newdata <- mydata %>%
 
 ```
 
-```{r, echo = FALSE}
+```{r}
+#| echo: false
 
 pander(head(newdata))
 
@@ -210,7 +235,8 @@ newdata <- mydata %>%
 
 ```
 
-```{r, echo = FALSE}
+```{r}
+#| echo: false
 
 pander(head(newdata))
 
@@ -230,7 +256,7 @@ mydata %>% # my data
   ggplot(aes(x = year, # the rest is ggplot
              fill = y)) +
   geom_bar() +
-  scale_fill_viridis_d(option = "cividis") + # beautiful cividis colors
+  scale_fill_viridis_d(option = "viridis") + # viridis colors
   theme_minimal() + # minimal theme
   labs(title = "Group by Year") + # labels
   theme(axis.text.x = element_text(size = 10, # tweak theme
