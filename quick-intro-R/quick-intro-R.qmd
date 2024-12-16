@@ -9,6 +9,7 @@ format:
     theme:
       light: yeti
       dark: vapor
+    lightbox: true
   pdf: 
     toc: true
     number-sections: true
@@ -26,8 +27,7 @@ A great deal of data analysis and visualization involves the same core set of st
 
 Given the fact that we often want to apply the same core set of tasks to new questions and new data, there are ways to overcome the steep learning curve and learn a replicable set of commands that can be applied to problem after problem. **The same 5 to 10 lines of R code can often be tweaked over and over again for multiple projects.**
 
-$$\text{have a question} \rightarrow \text{get data} \rightarrow \text{process and clean data} \rightarrow$$ 
-$$\text{visualize data} \rightarrow \text{analyze data} \rightarrow \text{make conclusions}$$
+![A common data workflow](workflow.png){width=80%} 
 
 # Get R
 
@@ -220,7 +220,7 @@ cor(mydata$x, mydata$y) # get the correlation
 
 ## Regressions[^regression]
 
-[^regression]: A regression is an analysis of the influence of one or more independent variables on an outcome of interest.
+# [^regression]: A regression is an analysis of the influence of one or more independent variables on an outcome of interest.
 
 ```
 
