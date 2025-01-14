@@ -9,8 +9,9 @@ format:
     code-fold: true
     code-summary: "Show the code"
     theme:
-      light: cosmo
+      light: yeti
       dark: vapor
+    lightbox: true
 ---
 
 # Background
@@ -24,6 +25,7 @@ While the code below is seemingly arcane, it is important to recognize that it i
 # Call Relevant Libraries
 
 ```{r}
+#| output: false
 
 library(WDI) # for accessing World Bank data
 
@@ -38,6 +40,7 @@ library(DT) # data table
 ```
 
 ```{r, echo = FALSE}
+#| output: false
 
 library(foreign) # exporting to Stata
 
@@ -47,7 +50,8 @@ library(haven) # exporting to Stata
 
 # Get Some Data From the World Development Indicators (WDI)
 
-```{r, eval = FALSE}
+```{r}
+#| eval: false
 
 # get names of specific indicators from WDI Data Catalog
 
@@ -104,7 +108,8 @@ write.csv(mydata,
 
 ```
 
-```{r, echo=FALSE}
+```{r}
+#| echo: false
 
 load("WorldBankData.RData")
 
@@ -143,6 +148,7 @@ mydata %>%
 # ggplot Graphs
 
 ```{r}
+#| warning: false
 
 p1 <- ggplot(mydata,
        aes(x = GDP,
@@ -164,6 +170,7 @@ p1 + facet_wrap(~region)
 # Map
 
 ```{r}
+#| warning: false
 
 mymap <- mydata %>% 
   filter(year == 2015) %>% 
@@ -243,6 +250,7 @@ p1 <- plot_ly(mydata,
               x = ~year, 
               y = ~life_expectancy, 
               size = ~population, 
+              fill = ~'',
               color = ~region,
               frame = ~year, 
               text = ~country, 
@@ -294,6 +302,7 @@ p2 <- mydata %>%
   plot_ly(x = ~GDP, 
           y = ~life_expectancy, 
           size = ~population, 
+          fill = ~'',
           color = ~region,
           frame = ~year, 
           text = ~country, 
@@ -382,34 +391,5 @@ p3 <- mydata %>%
 p3
 
 ```
-
-
-# Three Dimensional Scatterplot
-
-```{r}
-
-p2 <- plot_ly(mydata,
-              x = ~year, 
-              y = ~GDP,
-              z = ~life_expectancy, 
-              size = ~population, 
-              color = ~region,
-              text = ~country, 
-              # hoverinfo = "text",
-              # type = 'scatter',
-              # mode = 'markers',
-              theta = 45,
-              showlegend = FALSE) %>% 
-  layout(title = "Life Expectancy by Year",
-         yaxis = list(title = "life expectancy"))
-
-p2
-
-```
-
-
-
-
-
 
 
