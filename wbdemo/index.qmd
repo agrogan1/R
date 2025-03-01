@@ -37,6 +37,8 @@ library(plotly) # for updated version of cool Hans Rosling style visualizations
 
 library(DT) # data table
 
+options(scipen = 999) # penalize scientific notation
+
 ```
 
 ```{r, echo = FALSE}
@@ -60,10 +62,11 @@ mydata <- WDI(country="all",
                           "NY.GDP.PCAP.CD", # GDP
                           "SE.ADT.LITR.ZS", # adult literacy
                           "SP.DYN.LE00.IN", # life expectancy
+                          "VC.BTL.DETH", # battle related deaths
                           "SP.POP.TOTL", # population
                           "SN.ITK.DEFC.ZS"), # undernourishment
               start = 1980, 
-              end = 2021, 
+              end = 2023, 
               extra = TRUE) 
 
 
@@ -73,7 +76,8 @@ save(mydata, file="WorldBankData.RData")
 
 # Rename Some Variables
 
-```{r, eval=FALSE}
+```{r}
+#| eval: false
 
 # think about renaming some variables with more intuitive names
 # e.g....
@@ -84,6 +88,7 @@ mydata <- dplyr::rename(mydata,
                         GDP = NY.GDP.PCAP.CD,
                         adult_literacy = SE.ADT.LITR.ZS,
                         life_expectancy = SP.DYN.LE00.IN, 
+                        battle_death = VC.BTL.DETH,
                         population = SP.POP.TOTL,
                         Gini = SI.POV.GINI,
                         undernourishment = SN.ITK.DEFC.ZS)
@@ -96,7 +101,9 @@ save(mydata, file="WorldBankData.RData")
 
 ```
 
-```{r, echo=FALSE, eval=FALSE}
+```{r}
+#| echo: false
+#| eval: false
 
 write_dta(mydata, "WorldBankData.dta")
 
@@ -132,6 +139,7 @@ mydata %>%
          GDP, 
          adult_literacy,
          life_expectancy, 
+         battle_death,
          population, 
          Gini,
          undernourishment) %>%
@@ -173,12 +181,12 @@ p1 + facet_wrap(~region)
 #| warning: false
 
 mymap <- mydata %>% 
-  filter(year == 2015) %>% 
+  filter(year == 2020) %>% 
   plot_geo(locations = ~iso3c,
            color = ~life_expectancy,
            z = ~life_expectancy,
            text = ~country) %>% 
-  layout(title = "Countries by Life Expectancy in 2015", 
+  layout(title = "Countries by Life Expectancy in 2020", 
          geo = list(showland = FALSE,
                     showcountries = TRUE)) %>%
   colorbar(title = 'life expectancy') 
@@ -192,12 +200,12 @@ mymap
 ```{r}
 
 myglobe <- mydata %>% 
-  filter(year == 2015) %>% 
+  filter(year == 2020) %>% 
   plot_geo(locations = ~iso3c,
            color = ~life_expectancy,
            z = ~life_expectancy,
            text = ~country) %>% 
-  layout(title = "Countries by Life Expectancy in 2015", 
+  layout(title = "Countries by Life Expectancy in 2020", 
          geo = list(showland = FALSE,
                     showcountries = TRUE,
                     projection = list(type = 'orthographic',
