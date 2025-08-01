@@ -28,7 +28,7 @@ library(ggplot2)
 
 library(michigancolors)
 
-x <- seq(1,12)
+x <- seq(1,14)
 
 ggplot(data = NULL,
        aes(xmin = x,
@@ -78,7 +78,7 @@ library(michigancolors)
 
 Colors are drawn from [https://brand.umich.edu/design-resources/colors/](https://brand.umich.edu/design-resources/colors/).
 
-Allowable colors are: "blue", "maize", "tappan red", "ross school orange", "wave field green", "taubman teal", "arboretum blue", "ann arbor amethyst", "matthaei violet", "umma tan", "burton tower beige", "angell hall ash", and "law quad stone"
+Allowable colors are: "blue", "maize", "tappan red", "ross school orange", "rackham green", "wave field green", "taubman teal", "arboretum blue", "ann arbor amethyst", "matthaei violet", "umma tan", "burton tower beige", "angell hall ash", and "law quad stone"
 
 # Help
 
