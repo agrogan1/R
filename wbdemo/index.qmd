@@ -8,9 +8,7 @@ format:
     number-sections: true
     code-fold: true
     code-summary: "Show the code"
-    theme:
-      light: yeti
-      dark: vapor
+    theme: yeti
     lightbox: true
 ---
 
@@ -41,8 +39,9 @@ options(scipen = 999) # penalize scientific notation
 
 ```
 
-```{r, echo = FALSE}
+```{r}
 #| output: false
+#| echo: false
 
 library(foreign) # exporting to Stata
 
@@ -253,6 +252,7 @@ ggplotly(p0)
 ### `plotly`
 
 ```{r}
+#| warning: false
 
 p1 <- plot_ly(mydata,
               x = ~year, 
@@ -265,7 +265,7 @@ p1 <- plot_ly(mydata,
               hoverinfo = "text",
               type = 'scatter',
               mode = 'markers',
-              showlegend = FALSE) %>% 
+              showlegend = TRUE) %>% 
   layout(title = "Life Expectancy by Year",
          yaxis = list(title = "life expectancy"))
 
@@ -303,6 +303,7 @@ p1 %>%
 ## Life Expectancy by GDP
 
 ```{r}
+#| warning: false
 
 p2 <- mydata %>%
   # filter(!is.na(GDP)) %>% 
@@ -317,7 +318,7 @@ p2 <- mydata %>%
           hoverinfo = "text",
           type = 'scatter',
           mode = 'markers',
-          showlegend = FALSE) %>%
+          showlegend = TRUE) %>%
   layout(title = "Life Expectancy by GDP", 
          yaxis = list(title = "life expectancy"))
 
@@ -331,9 +332,10 @@ p2
 Using logged GDP on the *x axis* means that we are looking at *relative*, instead of *absolute* changes in GDP.
 
 ```{r}
+#| warning: false
 
 p2 %>% 
-  layout(xaxis = list(type = "log")) 
+  layout(xaxis = list(type = "log"))
 
 ```
 
