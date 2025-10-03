@@ -229,6 +229,8 @@ mydata <- mydata %>%
 
 ## Life Expectancy by Year
 
+::: {.panel-tabset}
+
 ### `ggplot` with `ggplotly`
 
 ```{r}
@@ -238,7 +240,8 @@ p0 <- ggplot(mydata,
            y = life_expectancy,
            color = region,
            size = population,
-           frame = year)) + 
+           frame = year,
+           label = country)) + 
   geom_point() +
   labs(title = "Life Expectancy by Year",
        x = "Year",
@@ -300,6 +303,8 @@ p1 %>%
 
 ```
 
+:::
+
 ## Life Expectancy by GDP
 
 ```{r}
@@ -331,6 +336,32 @@ p2
 
 Using logged GDP on the *x axis* means that we are looking at *relative*, instead of *absolute* changes in GDP.
 
+::: {.panel-tabset}
+
+### `ggplot` with `ggplotly`
+
+```{r}
+
+p3 <- ggplot(mydata,
+       aes(x = GDP,
+           y = life_expectancy,
+           color = region,
+           size = population,
+           frame = year,
+           label = country)) + 
+  geom_point() +
+  labs(title = "Life Expectancy by GDP",
+       x = "GDP",
+       y = "Life Expectancy") +
+  scale_color_discrete(name = "Region") +
+  scale_x_log10()
+
+ggplotly(p3)
+
+```
+
+### `plotly`
+
 ```{r}
 #| warning: false
 
@@ -339,67 +370,6 @@ p2 %>%
 
 ```
 
-```{r, eval=FALSE, echo=FALSE}
-
-p1a <- mydata %>% 
-  ggplot(aes(x = GDP,
-             y = life_expectancy,
-             color = region,
-             frame = year)) + 
-  geom_point() + 
-  labs(title = "Life Expectancy by GDP",
-       x = "GDP",
-       y = "life expectancy") +
-  theme_minimal() +
-  theme(legend.position="bottom")
-
-ggplotly(p1a)
-
-```
-
-```{r, eval=FALSE, echo=FALSE}
-
-base <- mydata %>%
-  plot_ly(x = ~GDP, 
-          y = ~life_expectancy, 
-          color = ~region,
-          size = ~population, 
-          text = ~country, 
-          hoverinfo = "text") %>%
-  layout(xaxis = list(type = "log"))
-
-base %>% 
-  add_markers(color = I("grey"), 
-              alpha = 0.1,
-              name = "All Years") %>%
-  add_markers(frame = ~year, 
-              ids = ~country) %>%
-  animation_opts(1000, 
-                 redraw = FALSE)
-
-```
-
-```{r, echo=FALSE, eval=FALSE}
-
-p3 <- mydata %>%
-  # filter(!is.na(GDP)) %>% 
-  # filter(is.finite(GDP)) %>%
-  plot_ly(x = ~Gini, 
-          y = ~life_expectancy, 
-          size = ~population, 
-          color = ~region,
-          frame = ~year, 
-          text = ~country, 
-          hoverinfo = "text",
-          type = 'scatter',
-          mode = 'markers',
-          showlegend = FALSE) %>%
-  layout(title = "Life Expectancy by Gini Coefficient of Inequality", 
-         yaxis = list(title = "life expectancy"))
-
-
-p3
-
-```
+:::
 
 
