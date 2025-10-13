@@ -92,6 +92,9 @@ mydata <- dplyr::rename(mydata,
                         Gini = SI.POV.GINI,
                         undernourishment = SN.ITK.DEFC.ZS)
 
+mydata <- mydata %>% 
+  filter(region != "Aggregates") # remove Aggregates
+
 mydata$country_name <- mydata$country
 
 mydata$country <-as.factor(mydata$country)
@@ -118,10 +121,6 @@ write.csv(mydata,
 #| echo: false
 
 load("WorldBankData.RData")
-
-mydata <- mydata %>% 
-  filter(region != "Aggregates") # remove Aggregates
-
 
 ```
 
@@ -197,6 +196,7 @@ mymap
 # Globe
 
 ```{r}
+#| warning: false
 
 myglobe <- mydata %>% 
   filter(year == 2020) %>% 
