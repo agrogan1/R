@@ -5,18 +5,10 @@ author: "Andrew Grogan-Kaylor"
 date: "today"
 format:
   html:
-    theme: 
-      light: cosmo
-      dark: vapor
+    theme: yeti
     toc: true
     number-sections: true
 ---
-
-```{r setup, include=FALSE}
-
-knitr::opts_chunk$set(echo = FALSE)
-
-```
 
 # R
 
@@ -28,18 +20,9 @@ knitr::opts_chunk$set(echo = FALSE)
 * [Introduction to ggplot](https://agrogan1.github.io/R/introduction-to-ggplot2/introduction-to-ggplot2.html)
 * [Two Page ggplot2](./two-page-ggplot2/two-page-ggplot2.pdf)
 
-# R Colors
-
-* [R Color Chart](./colors/colors.html)
-* [Viridis Color Palettes](./viridis/viridis.html)
-
 # dplyr
 
 * [Multi-Page dplyr](./multi-page-dplyr/multi-page-dplyr.html)
-
-# Michigan Colors Graph Scheme
-
-* [Michigan Colors Graph Scheme](./michigancolors-demo/michigancolors-demo.html)
 
 # Working With Data
 
