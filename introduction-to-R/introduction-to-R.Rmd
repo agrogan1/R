@@ -4,14 +4,10 @@ subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
 date: '`r Sys.Date()`'
 output:
-  bookdown::gitbook:
-    highlight: haddock
-    css: UMGitBook.css
-    split_by: none
-    config:
-      download:
-      - introduction-to-R.pdf
-      - introduction-to-R.epub
+  pdf_document: 
+    toc: yes
+    number_sections: yes
+    latex_engine: xelatex
   tint::tintPdf:
     highlight: haddock
     number_sections: yes
@@ -20,10 +16,14 @@ output:
     number_sections: yes
     toc: yes
   bookdown::epub_book: default  
-  pdf_document: 
-    toc: yes
-    number_sections: yes
-    latex_engine: xelatex
+  bookdown::gitbook:
+    highlight: haddock
+    css: UMGitBook.css
+    split_by: none
+    config:
+      download:
+      - introduction-to-R.pdf
+      - introduction-to-R.epub
   html_document:
     fig_height: 3
     highlight: haddock
