@@ -2,20 +2,8 @@
 title: "Introduction to R"
 subtitle:  "A Practically Focused Guide"
 author: "Andy Grogan-Kaylor"
-date: '`r Sys.Date()`'
+date: "`r format(Sys.Date(), format='%B %d, %Y')`"
 output:
-  pdf_document: 
-    toc: yes
-    number_sections: yes
-    latex_engine: xelatex
-  tint::tintPdf:
-    highlight: haddock
-    number_sections: yes
-    toc: yes
-  tufte::tufte_handout:
-    number_sections: yes
-    toc: yes
-  bookdown::epub_book: default  
   bookdown::gitbook:
     highlight: haddock
     css: UMGitBook.css
@@ -24,6 +12,18 @@ output:
       download:
       - introduction-to-R.pdf
       - introduction-to-R.epub
+  tint::tintPdf:
+    highlight: haddock
+    number_sections: yes
+    toc: yes
+  tufte::tufte_handout:
+    number_sections: yes
+    toc: yes
+  bookdown::epub_book: default  
+  pdf_document: 
+    toc: yes
+    number_sections: yes
+    latex_engine: xelatex
   html_document:
     fig_height: 3
     highlight: haddock
