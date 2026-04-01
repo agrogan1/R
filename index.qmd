@@ -20,11 +20,4 @@ format:
 * [Introduction to ggplot](https://agrogan1.github.io/R/introduction-to-ggplot2/introduction-to-ggplot2.html)
 * [Two Page ggplot2](./two-page-ggplot2/two-page-ggplot2.pdf)
 
-# dplyr
-
-* [Multi-Page dplyr](./multi-page-dplyr/multi-page-dplyr.html)
-
-# Working With Data
-
-* [World Bank Demo](https://agrogan1.github.io/R/wbdemo/)
 
