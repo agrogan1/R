@@ -6,10 +6,9 @@ format:
   html:
     toc: true
     number-sections: true
-    theme:
-      light: yeti
-      dark: vapor
+    theme: yeti
     lightbox: true
+    highlight-style: haddock
   pdf: 
     toc: true
     number-sections: true
@@ -27,7 +26,7 @@ A great deal of data analysis and visualization involves the same core set of st
 
 Given the fact that we often want to apply the same core set of tasks to new questions and new data, there are ways to overcome the steep learning curve and learn a replicable set of commands that can be applied to problem after problem. **The same 5 to 10 lines of R code can often be tweaked over and over again for multiple projects.**
 
-![A common data workflow](workflow.png){width=80%} 
+![A common data workflow](workflow.png){width=90%} 
 
 # Get R
 
@@ -186,11 +185,11 @@ For another approach to summarizing your data, try:
 ```{r}
 #| eval: false
 
-library(skimr)
+library(skimr) # excellent library for summarizing data
 
-skim(mydata)
+skim(mydata) # look at data
 
-skim(mydata$x)
+skim(mydata$x) # look at particular variable
 
 ```
 
