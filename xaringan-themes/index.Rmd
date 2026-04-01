@@ -1,26 +1,23 @@
 ---
 title: "Xaringan Themes"
-description: |
-  Themes for the Xaringan Slide Show Format
+subtitle: "Themes for the Xaringan Slide Show Format"
 author:
   - name: Andy Grogan-Kaylor 
     url: https://agrogan1.github.io/
     affiliation: University of Michigan
     affiliation_url: https://www.umich.edu
-date: "`r Sys.Date()`"
-output: 
-  distill::distill_article:
-    highlight: haddock
-    toc: yes
-    code_folding: true
+date: "today"
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: yeti
+    lightbox: true
+    code-fold: true
+    code-summary: "Show the code"
 ---
 
 ```{r setup, include=FALSE}
-
-knitr::opts_chunk$set(echo = FALSE)
-
-options(htmltools.dir.version = FALSE, 
-        htmltools.preserve.raw = FALSE)
 
 library(xaringanExtra)
 
@@ -105,7 +102,6 @@ Based upon design ideas from the [Banff Mountain Film Festival](https://www.banf
 
 # Supplemental Materials
 
-* My page on HTML Slides: [https://agrogan1.github.io/myposts/slide-formats.html](https://agrogan1.github.io/myposts/slide-formats.html)
 * [Branding Guidelines from University of Michigan](https://brand.umich.edu/)
 * Xaringan: [https://github.com/yihui/xaringan](https://github.com/yihui/xaringan)
 * Xaringan Themes: [https://github.com/yihui/xaringan/wiki/Themes](https://github.com/yihui/xaringan/wiki/Themes)
