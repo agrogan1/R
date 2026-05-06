@@ -1,48 +1,34 @@
 ---
-title: "A Two Page Guide to ggplot2"
+title: "A Short Guide to ggplot2"
 author: "Andy Grogan-Kaylor"
-date: '`r Sys.Date()`'
-output:
-  distill::distill_article:
-    highlight: haddock
+date: "today"
+format:
+  html:
     toc: true
-    toc_float: true
-  tufte::tufte_handout:
-    number_sections: yes
-    toc: no
-  tint::tintPdf:
-    number_sections: yes
-    toc: no
-    highlight: haddock
-geometry: margin=0.25in
-subtitle: For Applied and Community Based Research and Program Evaluation
-header-includes:
-   - \usepackage[dvipsnames]{xcolor}
-fontsize: 10pt
+    number-sections: true
+    theme: yeti
+    lightbox: true
+    highlight-style: haddock
+  pdf: 
+    toc: false
+    number-sections: true
+    margin-left: .5in
+    margin-right: .5in
+    margin-top: .5in
+    margin-bottom: .5in
+fig-height: 3
 ---
 
-```{r setup, include=FALSE}
+```{r}
+#| echo: false
 
-knitr::opts_chunk$set(echo = TRUE,
-                      warning = FALSE,
-                      message = FALSE,
-                      fig.margin = TRUE)
-
-```
-
-```{r, echo=FALSE}
+set.seed(54321)
 
 library(ggplot2) # beautiful graphs
 
 library(ggthemes) # nice themes for ggplot2
 
-library(icon) # font awesome icons
-
 library(pander)
-
-library(tufte)
-
-library(tint)
 
 library(png) # for png's
 
@@ -71,7 +57,8 @@ There are 3 essential elements to any ggplot call:
 
 You can also add other options, such as a *graph title*, *axis labels* and *overall theme* for the graph.
 
-```{r, echo = FALSE}
+```{r}
+#| echo: false
 
 N <- 100
 
@@ -81,30 +68,27 @@ e <- rnorm(N, 0, 5)
 
 outcome <- predictor + e
 
-group <- c(rep("A", 30),
-           rep("B", 70))
+group <- rbinom(N, 1, .5)
+
+group <- factor(group)
 
 mydata <- data.frame(predictor, outcome, group)
 
 ```
 
-```{r, echo=FALSE, eval=FALSE}
+```{r}
+#| echo: false
+#| eval: true
 
 pander(head(mydata))
 
 ```
 
-```{r, eval = TRUE, echo=FALSE, fig.margin=TRUE, fig.cap='Sample Data'}
-
-img <- readPNG("mydata.png")
-
-grid.raster(img)
-
-```
-
 # Get Started
 
-```{r call_libraries, echo=TRUE, eval=FALSE}
+```{r call_libraries}
+#| echo: true
+#| eval: false
 
 library(ggplot2) # beautiful graphs
 
@@ -112,13 +96,12 @@ library(ggthemes) # nice themes for ggplot2
 
 ```
 
-\newpage
-
 # Some Examples[^vartype]
 
 ## One Continuous Variable
 
 ```{r}
+#| message: false
 
 # anything that starts with a '#' is a comment
 
@@ -141,7 +124,9 @@ ggplot(mydata, # the data I am using
 
 ```
 
-```{r, echo = FALSE}
+```{r}
+#| echo: false
+#| output: false
 
 ggsave(file = "barchart.png")
 
@@ -152,6 +137,7 @@ ggsave(file = "barchart.png")
 ## Continuous by Continuous[^color]
 
 ```{r}
+#| message: false
 
 ggplot(mydata, # the data I am using
        aes(x = predictor, y = outcome,
@@ -168,6 +154,7 @@ ggplot(mydata, # the data I am using
 [^legend]: Notice how use of `scale_ ...` governs both the use of color in the graph below, as well as the legend that is produced in the graph. This graph uses official **UN** colors to illustrate this idea. The graph below uses `scale...manual...` to manually choose the colors, but there are many other options, particularly when using `library(ggthemes)`.  `scale_..._viridis_...` are especially good color palettes.
 
 ```{r}
+#| message: false
 
 ggplot(mydata, # the data I am using
        aes(x = predictor, y = outcome,
@@ -188,7 +175,9 @@ ggplot(mydata, # the data I am using
 
 ```
 
-```{r, echo = FALSE}
+```{r}
+#| echo: false
+#| output: false
 
 ggsave(file = "scatterplot.png")
 
