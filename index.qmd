@@ -18,6 +18,6 @@ format:
 # ggplot
 
 * [Introduction to ggplot](https://agrogan1.github.io/R/introduction-to-ggplot2/introduction-to-ggplot2.html)
-* [Two Page ggplot2](./two-page-ggplot2/two-page-ggplot2.pdf)
+* [A Short Guide to ggplot2](https://agrogan1.github.io/R/short-guide-ggplot/short-guide-ggplot.html)
 
 
